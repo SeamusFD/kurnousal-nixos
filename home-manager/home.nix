@@ -49,6 +49,12 @@ in
        '';
     };
 
+    programs.git = {
+      enable = true;
+      userName = "SeamusFD";
+      userEmail = "armstrongmediahome@icloud.com";
+    };
+
     programs.starship = {
       enable = true;
       settings = {
