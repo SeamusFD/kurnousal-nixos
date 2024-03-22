@@ -68,18 +68,15 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    git
-    neovim  
+    vim
+    nodejs
     wget
     unzip
     dconf
-    # GUI Packages
-    # hyprland
+    rofi-wayland
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
     xwayland
-    rofi-wayland
     swww
     dolphin
     # Shell Packages
@@ -105,13 +102,7 @@
   ];
 
   programs.steam.enable = true;
-  programs.fish.enable = true;
   programs.gamemode.enable = true;
-
-  # programs.hyprland = {
-  #   enable = true;
-  #   xwayland.enable = true;
-  # };
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
@@ -123,6 +114,10 @@
     XDG_DATA_HOME   = "$HOME/.local/share";
     XDG_STATE_HOME  = "$HOME/.local/state";
   };
+
+  nix.extraOptions = ''
+    experimental-features = nix-command flakes
+  '';
 
   system.stateVersion = "23.11"; # Did you read the comment?
 }

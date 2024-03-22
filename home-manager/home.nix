@@ -26,6 +26,9 @@ in
       ./hyprland/hyprland.nix
       ./kitty/kitty.nix
       ./fish/fish.nix
+      ./neovim/nvim.nix
+      # Removed until I figure out the rofi issues
+      #./rofi/rofi.nix
     ];
 
     home.packages = with pkgs; [

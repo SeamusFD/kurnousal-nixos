@@ -24,6 +24,14 @@
     { device = "/dev/disk/by-uuid/D815-13B2";
       fsType = "vfat";
     };
+  fileSystems."/games" =
+    { device = "/dev/disk/by-uuid/60b721fe-f156-4e2e-a2bd-e7738e20c044";
+      fsType = "ext4";
+    };
+  fileSystems."/kutek" =
+    { device = "/dev/disk/by-uuid/7949fd90-c009-4673-af99-39abe55dd842";
+      fsType = "ext4";
+    };
 
   swapDevices =
     [ { device = "/dev/disk/by-uuid/d889802a-4338-45be-8ba9-06a9261ea5ce"; }
