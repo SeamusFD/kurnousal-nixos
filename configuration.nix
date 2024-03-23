@@ -7,6 +7,7 @@
     # Include the results of the hardware scan.
     ./home-manager/home.nix
     ./hardware-configuration.nix
+    ./scripts/custom-bash-scripts.nix
   ];
 
   # Bootloader.
