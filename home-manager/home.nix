@@ -43,6 +43,7 @@ in {
       fishPlugins.forgit
       fishPlugins.hydro
       pfetch
+      fzf
     ];
 
     programs.bash = {
