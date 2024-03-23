@@ -103,6 +103,7 @@
     wl-clipboard
     wlroots
     nerdfonts
+    gcc
   ];
 
   programs.steam.enable = true;
