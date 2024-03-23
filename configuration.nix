@@ -1,10 +1,13 @@
-{ config, pkgs, ... }:
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./home-manager/home.nix
-      ./hardware-configuration.nix
-    ];
+  config,
+  pkgs,
+  ...
+}: {
+  imports = [
+    # Include the results of the hardware scan.
+    ./home-manager/home.nix
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -70,6 +73,7 @@
   environment.systemPackages = with pkgs; [
     vim
     nodejs
+    alejandra
     wget
     unzip
     dconf
@@ -109,10 +113,10 @@
   # programs.waybar.enable = true;
 
   environment.sessionVariables = rec {
-    XDG_CACHE_HOME  = "$HOME/.cache";
+    XDG_CACHE_HOME = "$HOME/.cache";
     XDG_CONFIG_HOME = "$HOME/.config";
-    XDG_DATA_HOME   = "$HOME/.local/share";
-    XDG_STATE_HOME  = "$HOME/.local/state";
+    XDG_DATA_HOME = "$HOME/.local/share";
+    XDG_STATE_HOME = "$HOME/.local/state";
   };
 
   nix.extraOptions = ''

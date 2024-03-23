@@ -1,7 +1,5 @@
-{ pkgs, ... }:
-with builtins;
-
-{
+{pkgs, ...}:
+with builtins; {
   programs.kitty = {
     enable = true;
     settings = {

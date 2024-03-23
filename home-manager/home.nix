@@ -1,8 +1,10 @@
-{ config, pkgs, ...}:
-let
-  home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/master.tar.gz";
-in 
 {
+  config,
+  pkgs,
+  ...
+}: let
+  home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/master.tar.gz";
+in {
   imports = [
     (import "${home-manager}/nixos")
   ];
@@ -10,7 +12,7 @@ in
   users.users.bcampbell = {
     isNormalUser = true;
     description = "bcampbell";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = ["networkmanager" "wheel"];
     packages = with pkgs; [
       discord
       brave
@@ -27,6 +29,7 @@ in
       ./kitty/kitty.nix
       ./fish/fish.nix
       ./neovim/nvim.nix
+      ./waybar/waybar.nix
       # Removed until I figure out the rofi issues
       #./rofi/rofi.nix
     ];
@@ -44,12 +47,12 @@ in
     programs.bash = {
       enable = true;
       initExtra = ''
-        if [[ $(${pkgs.procps}/bin/ps --no-header --pid=$PPID --format=comm) != "fish" && -z ''${BASH_EXECUTION_STRING} ]]
-          then
-      shopt -q login_shell && LOGIN_OPTION='--login' || LOGIN_OPTION=""
-      exec ${pkgs.fish}/bin/fish $LOGIN_OPTION
-        fi
-       '';
+          if [[ $(${pkgs.procps}/bin/ps --no-header --pid=$PPID --format=comm) != "fish" && -z ''${BASH_EXECUTION_STRING} ]]
+            then
+        shopt -q login_shell && LOGIN_OPTION='--login' || LOGIN_OPTION=""
+        exec ${pkgs.fish}/bin/fish $LOGIN_OPTION
+          fi
+      '';
     };
 
     programs.git = {
