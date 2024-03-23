@@ -5,6 +5,7 @@
 }: {
   imports = [
     # Include the results of the hardware scan.
+    ./shell-aliases.nix
     ./home-manager/home.nix
     ./hardware-configuration.nix
   ];

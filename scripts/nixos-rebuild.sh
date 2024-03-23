@@ -12,9 +12,6 @@
 # A rebuild script that commits on a successful build
 set -e
 
-# Edit your config
-$EDITOR configuration.nix
-
 # cd to your config dir
 pushd /etc/nixos/kurnousal-nixos
 
@@ -24,6 +21,9 @@ if git diff --quiet '*.nix'; then
     popd
     exit 0
 fi
+
+# Ensure all changes are staged
+git add .
 
 # Autoformat your nix files
 alejandra . &>/dev/null \
