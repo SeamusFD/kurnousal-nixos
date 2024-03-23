@@ -74,6 +74,7 @@
     vim
     nodejs
     alejandra
+    libnotify
     wget
     unzip
     dconf
@@ -92,8 +93,6 @@
     fzf
     fishPlugins.grc
     grc
-    # Waubar
-    # waybar
     gamemode
     meson
     cmake
@@ -109,8 +108,6 @@
   programs.gamemode.enable = true;
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
-
-  # programs.waybar.enable = true;
 
   environment.sessionVariables = rec {
     XDG_CACHE_HOME = "$HOME/.cache";
