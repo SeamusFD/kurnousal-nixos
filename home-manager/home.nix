@@ -8,7 +8,6 @@ in {
   imports = [
     (import "${home-manager}/nixos")
   ];
-
   users.users.bcampbell = {
     isNormalUser = true;
     description = "bcampbell";
