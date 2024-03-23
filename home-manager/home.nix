@@ -30,6 +30,7 @@ in {
       ./fish/fish.nix
       ./neovim/nvim.nix
       ./waybar/waybar.nix
+      ./dunst/dunst.nix
       # Removed until I figure out the rofi issues
       #./rofi/rofi.nix
     ];
