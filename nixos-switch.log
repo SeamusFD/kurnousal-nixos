@@ -1,31 +1,29 @@
-building Nix...
-building the system configuration...
-error:
-       … while calling the 'head' builtin
-
-         at /nix/var/nix/profiles/per-user/root/channels/nixos/lib/attrsets.nix:1541:11:
-
-         1540|         || pred here (elemAt values 1) (head values) then
-         1541|           head values
-             |           ^
-         1542|         else
-
-       … while evaluating the attribute 'value'
-
-         at /nix/var/nix/profiles/per-user/root/channels/nixos/lib/modules.nix:809:9:
-
-          808|     in warnDeprecation opt //
-          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
-             |         ^
-          810|         inherit (res.defsFinal') highestPrio;
-
-       (stack trace truncated; use '--show-trace' to show the full trace)
-
-       error: attempt to call something which is not a function but a set
-
-       at /etc/nixos/kurnousal-nixos/scripts/custom-bash-scripts.nix:3:13:
-
-            2| with builtins; let
-            3|   rebuild = pkgs.writeShellScriptBin "rebuild" builtins.readFile "/etc/nixos/kurnousal-home/scripts/nixos-rebuild.sh";
-             |             ^
-            4| in {
+activating the configuration...
+setting up /etc...
+reloading user units for bcampbell...
+restarting sysinit-reactivation.target
+reloading the following units: dbus.service
+restarting the following units: polkit.service
+5vp4gvvxk98b902ka8y33b0jx2pna-X-Restart-Triggers-polkit.drv
+  /nix/store/3ca64mddjl94pz64d2rk3yadiagp50dc-unit-polkit.service.drv
+  /nix/store/wc3ya9cndngvx72y2wjang2gdx6mz1ql-dbus-1.drv
+  /nix/store/ylkwjgmqwv78v89hlaw6jvlciz3s4fl1-X-Restart-Triggers-dbus.drv
+  /nix/store/zhjb56q4pfxaka0yz9x094dvrmzlds0k-unit-dbus.service.drv
+  /nix/store/bb6mx7wmb5n9ryxwpnpcxdqg88y8hy7j-user-units.drv
+  /nix/store/h3jxhnhg07nwxm85b9cb7hzlll6k0cqp-unit-dbus.service.drv
+  /nix/store/clxx2sxgx7pkk8r8h43crv58p8bgzrs1-system-units.drv
+  /nix/store/9vpcl890w9l7v01pq63p7fcvp6af469j-etc.drv
+  /nix/store/84mb23h81fkzx9a88ndclivgmkgm3177-nixos-system-nixos-24.05pre601756.44d0940ea560.drv
+building '/nix/store/kdg19v9srk8f5z0k0k0w12jwzyws80rs-rebuild.drv'...
+building '/nix/store/cz1ijdl24wyqs4iphf6waahpb619wl1g-system-path.drv'...
+created 7637 symlinks in user environment
+building '/nix/store/j5d5vp4gvvxk98b902ka8y33b0jx2pna-X-Restart-Triggers-polkit.drv'...
+building '/nix/store/wc3ya9cndngvx72y2wjang2gdx6mz1ql-dbus-1.drv'...
+building '/nix/store/3ca64mddjl94pz64d2rk3yadiagp50dc-unit-polkit.service.drv'...
+building '/nix/store/ylkwjgmqwv78v89hlaw6jvlciz3s4fl1-X-Restart-Triggers-dbus.drv'...
+building '/nix/store/h3jxhnhg07nwxm85b9cb7hzlll6k0cqp-unit-dbus.service.drv'...
+building '/nix/store/zhjb56q4pfxaka0yz9x094dvrmzlds0k-unit-dbus.service.drv'...
+building '/nix/store/clxx2sxgx7pkk8r8h43crv58p8bgzrs1-system-units.drv'...
+building '/nix/store/bb6mx7wmb5n9ryxwpnpcxdqg88y8hy7j-user-units.drv'...
+building '/nix/store/9vpcl890w9l7v01pq63p7fcvp6af469j-etc.drv'...
+building '/nix/store/84mb23h81fkzx9a88ndclivgmkgm3177-nixos-system-nixos-24.05pre601756.44d0940ea560.drv'...
