@@ -85,15 +85,6 @@
     xwayland
     swww
     dolphin
-    # Shell Packages
-    fish
-    fishPlugins.done
-    fishPlugins.fzf-fish
-    fishPlugins.forgit
-    fishPlugins.hydro
-    fzf
-    fishPlugins.grc
-    grc
     gamemode
     meson
     cmake
