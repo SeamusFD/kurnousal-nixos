@@ -31,6 +31,7 @@ in {
       ./neovim/nvim.nix
       ./waybar/waybar.nix
       ./dunst/dunst.nix
+      ./shell-aliases.nix
       # Removed until I figure out the rofi issues
       #./rofi/rofi.nix
     ];

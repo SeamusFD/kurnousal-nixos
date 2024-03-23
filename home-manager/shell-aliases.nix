@@ -1,7 +1,6 @@
 {...}: {
-  environment.shellAliases = {
+  programs.bash.shellAliases = {
     # ls aliases
-    l = null;
     ll = "ls -l";
     la = "ls -a";
     # Git aliases
