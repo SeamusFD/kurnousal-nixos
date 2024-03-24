@@ -2,7 +2,8 @@
   pkgs,
   config,
   ...
-}: {
+}:
+with builtins; {
   programs.waybar = {
     enable = true;
     settings = {
@@ -40,5 +41,6 @@
         };
       };
     };
+    style = builtins.readFile "/etc/nixos/kurnousal-nixos/home-manager/waybar/theme.css";
   };
 }
