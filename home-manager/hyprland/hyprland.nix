@@ -64,6 +64,10 @@
           col.shadow = rgba(1a1a1aee)
       }
 
+      xwayland {
+        force_zero_scaling = true
+      }
+
       animations {
           enabled = yes
 
