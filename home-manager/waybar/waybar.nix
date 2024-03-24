@@ -17,7 +17,7 @@ with builtins; {
         ];
         modules-left = [];
         modules-center = ["hyprland/workspaces"];
-        modules-right = ["pulseaudio"];
+        modules-right = [];
       };
 
       "pulseaudio" = {
