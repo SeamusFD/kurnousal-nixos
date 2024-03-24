@@ -16,7 +16,7 @@ with builtins; {
           "DP-3"
         ];
         modules-left = [];
-        modules-center = [];
+        modules-center = ["hyprland/workspaces"];
         modules-right = ["pulseaudio"];
       };
 
@@ -38,6 +38,14 @@ with builtins; {
           "portable" = "";
           "car" = "";
           "default" = ["" "" ""];
+        };
+      };
+      "hyprland/workspaces" = {
+        "disable-scroll" = true;
+        "all-outputs" = true;
+        "active-only" = false;
+        "on-click" = "activate";
+        "persistent-workspaces" = {
         };
       };
     };
