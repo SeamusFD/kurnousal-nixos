@@ -10,7 +10,7 @@ with builtins; {
       mainBar = {
         layer = "top";
         position = "top";
-        height = 30;
+        height = 15;
         output = [
           "HDMI-A-1"
           "DP-3"

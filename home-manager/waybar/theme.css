@@ -1,3 +1,13 @@
+@define-color bar-bg rgba(0, 0, 0, 0);
+
+@define-color main-bg #9ca0b0;
+@define-color main-fg #4c4f69;
+
+@define-color wb-act-bg #5c5f77;
+@define-color wb-act-fg #dce0e8;
+
+@define-color wb-hvr-bg #dc8a78;
+@define-color wb-hvr-fg #dce0e8;
 * {
   border: none;
   border-radius: 0px;
@@ -6,8 +16,6 @@
   font-size: 10px;
   min-height: 10px;
 }
-
-@import "themes/theme.css";
 
 window#waybar {
   background: @bar-bg;
