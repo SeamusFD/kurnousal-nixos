@@ -19,7 +19,7 @@ with builtins; {
         ];
         modules-left = ["clock" "cpu" "temperature"];
         modules-center = ["hyprland/workspaces"];
-        modules-right = ["network" "bluetooth" "pulseaudio" "pulseaudio#microphone" "tray"];
+        modules-right = ["bluetooth" "network" "pulseaudio" "pulseaudio#microphone" "tray"];
       };
 
       "pulseaudio" = {
