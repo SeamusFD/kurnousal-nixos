@@ -15,6 +15,9 @@
 
       env = XCURSOR_SIZE,24
 
+      workspace=1,monitor:HDMI-A-1
+      workspace=2,monitor:DP-3
+
       input {
           kb_layout = us
           kb_variant =
