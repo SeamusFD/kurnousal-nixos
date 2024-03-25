@@ -19,6 +19,7 @@ in {
       discord
       jetbrains-toolbox
       protonup-qt
+      nwg-look
     ];
   };
 
