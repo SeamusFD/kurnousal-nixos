@@ -103,6 +103,8 @@
     ruby
     ripgrep
     unzip
+    python3Full
+    haskell-ci
     dotnet-sdk
     dotnet-sdk_7
     dotnet-sdk_8
