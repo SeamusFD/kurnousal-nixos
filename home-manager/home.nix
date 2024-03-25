@@ -21,6 +21,8 @@ in {
       protonup-qt
       nwg-look
       gtk3
+      gtk4
+      bibata-cursors
     ];
   };
 
