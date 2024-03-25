@@ -100,8 +100,12 @@
     # Programming Tools
     rustup
     go
-    gem
+    ruby
     ripgrep
+    unzip
+    dotnet-sdk
+    dotnet-sdk_7
+    dotnet-sdk_8
   ];
 
   programs.steam.enable = true;
