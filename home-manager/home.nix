@@ -20,6 +20,7 @@ in {
       jetbrains-toolbox
       protonup-qt
       nwg-look
+      gtk3
     ];
   };
 
