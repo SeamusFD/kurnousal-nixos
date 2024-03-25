@@ -49,10 +49,21 @@ with builtins; {
         "on-scroll-down" = "pamixer --default-source -d 5";
         "scroll-step" = 5;
       };
-      "wlr/workspaces" = {
+      "hyprland/workspaces" = {
         "disable-scroll" = true;
         "all-outputs" = true;
         "on-click" = "activate";
+        "sort-by-number" = true;
+        "format-icons" = {
+          "1" = "";
+          "2" = "";
+          "3" = "";
+          "4" = "";
+          "5" = "";
+          "urgent" = "";
+          "active" = "";
+          "default" = "";
+        };
         "persistent-workspaces" = {
           "1" = [];
           "2" = [];
