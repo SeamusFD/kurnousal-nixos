@@ -23,6 +23,7 @@ in {
       gtk3
       gtk4
       bibata-cursors
+      xcur2png
     ];
   };
 
