@@ -86,19 +86,27 @@
     swww
     dolphin
     gamemode
+    # Build Tools
     meson
     cmake
     scdoc
+    gcc
     wayland-protocols
     wayland-utils
     wl-clipboard
     wlroots
+    # Fonts
     nerdfonts
-    gcc
+    # Programming Tools
+    rustup
+    go
+    gem
+    ripgrep
   ];
 
   programs.steam.enable = true;
   programs.gamemode.enable = true;
+  programs.java.enable = true;
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
