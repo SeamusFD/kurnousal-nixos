@@ -18,7 +18,7 @@ with builtins; {
           "DP-3"
         ];
         modules-left = ["clock"];
-        modules-center = ["wlr/workspaces"];
+        modules-center = ["hyprland/workspaces"];
         modules-right = ["temperature" "network" "bluetooth" "pulseaudio" "pulseaudio#microphone" "tray"];
       };
 
