@@ -115,6 +115,13 @@ with builtins; {
           "<span color='#dd532e'>█</span>"
         ];
       };
+      "temperature" = {
+        "thermal-zone" = 2;
+        "hwmon-path" = "/sys/class/hwmon/hwmon2/temp1_input";
+        "critical-threshold" = 80;
+        "format-critical" = "{temperatureC}°C ";
+        "format" = "{temperatureC}°C ";
+      };
     };
     style = builtins.readFile "/etc/nixos/kurnousal-nixos/home-manager/waybar/theme.css";
   };
