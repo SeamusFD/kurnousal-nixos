@@ -17,9 +17,9 @@ with builtins; {
           "HDMI-A-1"
           "DP-3"
         ];
-        modules-left = ["clock"];
+        modules-left = ["clock" "cpu" "temperature"];
         modules-center = ["hyprland/workspaces"];
-        modules-right = ["temperature" "network" "bluetooth" "pulseaudio" "pulseaudio#microphone" "tray"];
+        modules-right = ["network" "bluetooth" "pulseaudio" "pulseaudio#microphone" "tray"];
       };
 
       "pulseaudio" = {
@@ -100,6 +100,20 @@ with builtins; {
         "tooltip-format" = "{device_alias}";
         "tooltip-format-connected" = " {device_enumerate}";
         "tooltip-format-enumerate-connected" = "{device_alias}";
+      };
+      "cpu" = {
+        "interval" = 1;
+        "format" = "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}";
+        "format-icons" = [
+          "<span color='#69ff94'>▁</span>"
+          "<span color='#2aa9ff'>▂</span>"
+          "<span color='#f8f8f2'>▃</span>"
+          "<span color='#f8f8f2'>▄</span>"
+          "<span color='#ffffa5'>▅</span>"
+          "<span color='#ffffa5'>▆</span>"
+          "<span color='#ff9977'>▇</span>"
+          "<span color='#dd532e'>█</span>"
+        ];
       };
     };
     style = builtins.readFile "/etc/nixos/kurnousal-nixos/home-manager/waybar/theme.css";
