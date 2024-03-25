@@ -17,9 +17,9 @@ with builtins; {
           "HDMI-A-1"
           "DP-3"
         ];
-        modules-left = ["clock"];
+        modules-left = ["custom/clock"];
         modules-center = ["wlr/workspaces"];
-        modules-right = ["temperature" "network" "bluetooth" "pulseaudio" "pulseaudio#microphone" "tray"];
+        modules-right = ["temperature" "custom/network" "bluetooth" "pulseaudio" "pulseaudio#microphone" "custom/tray"];
       };
 
       "pulseaudio" = {
@@ -66,15 +66,15 @@ with builtins; {
           "10" = [];
         };
       };
-      "tray" = {
+      "custom/tray" = {
         "icon-size" = 15;
         "spacing" = 10;
       };
-      "clock" = {
+      "custom/clock" = {
         "format" = "{: %I:%M %p   %a, %b %e}";
         "tooltip-format" = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
       };
-      "network" = {
+      "custom/network" = {
         "format-wifi" = "  {signalStrength}%";
         "format-ethernet" = "{ipaddr}/{cidr} ";
         "tooltip-format" = "{essid} - {ifname} via {gwaddr} ";
