@@ -9,9 +9,8 @@ with builtins; {
     settings = {
       mainBar = {
         layer = "top";
-        position = "top";
+        position = "bottom";
         height = 30;
-        mod = "dock";
         exclusive = true;
         output = [
           "HDMI-A-1"
