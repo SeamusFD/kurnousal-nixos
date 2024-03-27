@@ -11,6 +11,8 @@
       monitor=DP-3,1920x1080@120,2560x0,1
       exec-once = waybar & hyprpaper & dunst
       exec-once = swww init
+      exec-once = set-primary-monitor
+
       $scrPath = ~/.config/hypr/scripts
 
       env = XCURSOR_SIZE,24
