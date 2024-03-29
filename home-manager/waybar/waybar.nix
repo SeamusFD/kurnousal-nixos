@@ -18,7 +18,7 @@ with builtins; {
         ];
         modules-left = ["clock" "cpu" "temperature"];
         modules-center = ["hyprland/workspaces"];
-        modules-right = ["bluetooth" "network" "custom/pipewire" "pulseaudio#microphone" "tray"];
+        modules-right = ["bluetooth" "network" "custom/pipewire" "tray"];
 
         "custom/pipewire" = {
           "tooltip" = false;
