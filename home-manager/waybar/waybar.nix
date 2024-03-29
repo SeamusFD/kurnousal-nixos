@@ -18,7 +18,7 @@ with builtins; {
         ];
         modules-left = ["clock" "custom/weather" "cpu" "temperature" "memory"];
         modules-center = ["hyprland/workspaces"];
-        modules-right = ["systemd-failed-units" "bluetooth" "network" "custom/pipewire" "tray" "custom/dunst"];
+        modules-right = ["gamemode" "systemd-failed-units" "bluetooth" "network" "custom/pipewire" "tray" "custom/dunst"];
 
         "custom/pipewire" = {
           "tooltip" = false;
@@ -111,6 +111,18 @@ with builtins; {
           "interval" = 5;
           "format" = "󰍛 {used:0.1f}G/{total:0.1f}G  󰳲 {percentage}%";
           "tooltip-format" = "󰳲 Mem. {percentage}%  󰍛 Avail. {avail:0.1f}G  󰯍 Swap. {swapUsed:0.1f}G/{swapTotal:0.1f}G";
+        };
+        "gamemode" = {
+          "format" = "{glyph}";
+          "format-alt" = "{glyph} {count}";
+          "glyph" = "";
+          "hide-not-running" = true;
+          "use-icon" = true;
+          "icon-name" = "input-gaming-symbolic";
+          "icon-spacing" = 4;
+          "icon-size" = 20;
+          "tooltip" = true;
+          "tooltip-format" = "Games running: {count}";
         };
         "custom/dunst" = {
           "return-type" = "json";

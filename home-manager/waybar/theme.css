@@ -57,6 +57,7 @@ tooltip {
 #network,
 #bluetooth,
 #systemd-failed-units,
+#gamemode,
 #cpu,
 #temperature,
 #memory,
@@ -105,6 +106,14 @@ tooltip {
 
 #systemd-failed-units.degraded {
   color: #eba0ac;
+}
+
+#gamemode {
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+#gamemode.running {
 }
 
 #tray {
@@ -170,7 +179,7 @@ tooltip {
 #custom-dunst {
   border-radius: 20px;
   margin-right: 5px;
-  padding: 0px 4px;
+  padding: 5px 10px 5px 5px;
 }
 
 #custom-weather {
