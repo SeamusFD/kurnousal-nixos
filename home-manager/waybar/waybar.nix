@@ -16,7 +16,7 @@ with builtins; {
           "HDMI-A-1"
           "DP-3"
         ];
-        modules-left = ["clock" "custom/weather" "cpu" "temperature" "memory"];
+        modules-left = ["clock" "custom/weather" "cpu" "custom/gpu-usage" "memory"];
         modules-center = ["hyprland/workspaces"];
         modules-right = ["gamemode" "systemd-failed-units" "bluetooth" "network" "custom/pipewire" "tray" "custom/dunst"];
 
@@ -103,7 +103,7 @@ with builtins; {
         };
         "custom/gpu-usage" = {
           "exec" = "cat /sys/class/hwmon/hwmon4/device/gpu_busy_percent";
-          "format" = "GPU: {}%";
+          "format" = "󰢮 {}%";
           "return-type" = "";
           "interval" = 1;
         };
@@ -118,7 +118,7 @@ with builtins; {
           "glyph" = "";
           "hide-not-running" = true;
           "use-icon" = true;
-          "icon-name" = "input-gaming-symbolic";
+          "icon-name" = "nf-fa-gamepad";
           "icon-spacing" = 4;
           "icon-size" = 20;
           "tooltip" = true;

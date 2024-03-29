@@ -84,7 +84,8 @@ tooltip {
 }
 
 #custom-gpu-usage {
-  border-radius: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 #cpu {

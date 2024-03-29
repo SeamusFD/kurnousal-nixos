@@ -8,6 +8,7 @@
     ./home-manager/home.nix
     ./hardware-configuration.nix
     ./system/bluetooth.nix
+    ./system/lifecycle.nix
     ./scripts/custom-bash-scripts.nix
   ];
 
