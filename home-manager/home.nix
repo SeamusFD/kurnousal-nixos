@@ -16,6 +16,7 @@ in {
       discord
       brave
       obsidian
+      tor-browser
       discord
       jetbrains-toolbox
       protonup-qt

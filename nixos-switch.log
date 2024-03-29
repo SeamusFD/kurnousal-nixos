@@ -2,47 +2,753 @@ activating the configuration...
 setting up /etc...
 reloading user units for bcampbell...
 restarting sysinit-reactivation.target
-reloading the following units: dbus.service
-restarting the following units: home-manager-bcampbell.service, polkit.service
-p8wlqqkk14qgdmq1-home-manager-files.drv
-  /nix/store/21zix0q1scdypzn1iql15b6plhgprrf6-home-manager-generation.drv
-  /nix/store/ippb22h776fydl5g1xcw5pb1d39v2rkb-set-primary-monitor.drv
-  /nix/store/zbmkhx9w5fb1ar0yyj6smcbf1q4fpll6-system-path.drv
-  /nix/store/kg2790ci98mvzs7h8l4jabnxpcafw0ra-dbus-1.drv
-  /nix/store/c2fd0f1wqgnmxqc1bfsgpzrv0wvhw0xi-X-Restart-Triggers-dbus.drv
-  /nix/store/9qj8xj34yq64h5qqfrh8809m0khmvfa3-unit-dbus.service.drv
-  /nix/store/9s7n9nignfvsswgy2qzajdnikgxx1vsk-unit-dbus.service.drv
-  /nix/store/c2iw9bll4jr4pghfqr75sgsiw82nva3w-unit-home-manager-bcampbell.service.drv
-  /nix/store/hnvrqgaim0cm5s0rhwsha7dl1lcnjqb1-user-units.drv
-  /nix/store/x1ikald2sjd8qdzgjpxblrjf0hp292ya-X-Restart-Triggers-polkit.drv
-  /nix/store/qp3ib6badwb2kqygc3n60k6hzw0rq6sn-unit-polkit.service.drv
-  /nix/store/pxp2mq87rkqrp32hqv7dk6b0xgqrzfc8-system-units.drv
-  /nix/store/ly9j8llyczy2xy8z06ssni8p02c2plmx-etc.drv
-  /nix/store/hv8wg0gaw4dn23d7flhqs027zmdi8fik-nixos-system-nixos-24.05pre601756.44d0940ea560.drv
-these 3 paths will be fetched (0.09 MiB download, 0.60 MiB unpacked):
-  /nix/store/bvkncad8k28fwci1hc85mp267gpn0w77-getconf-glibc-2.38-44
-  /nix/store/nc2fa5w2dcsfbk0yzns61wm1f56v9k1h-libxslt-1.1.39-bin
-  /nix/store/zirjjcd20j25cn40wzzv4fk4983f883n-wayland-protocols-1.33
-copying path '/nix/store/zirjjcd20j25cn40wzzv4fk4983f883n-wayland-protocols-1.33' from 'https://cache.nixos.org'...
-copying path '/nix/store/bvkncad8k28fwci1hc85mp267gpn0w77-getconf-glibc-2.38-44' from 'https://cache.nixos.org'...
-building '/nix/store/ippb22h776fydl5g1xcw5pb1d39v2rkb-set-primary-monitor.drv'...
-copying path '/nix/store/nc2fa5w2dcsfbk0yzns61wm1f56v9k1h-libxslt-1.1.39-bin' from 'https://cache.nixos.org'...
-building '/nix/store/1dqhbnzd65dlfg6pzv68cck4qvcnw3sw-hm_hyprhyprland.conf.drv'...
-building '/nix/store/zbmkhx9w5fb1ar0yyj6smcbf1q4fpll6-system-path.drv'...
-building '/nix/store/g83h2v18hx6f322hdr0sbsn69w9yy96a-activation-script.drv'...
-building '/nix/store/qpld4i3mq8r23y6dp8wlqqkk14qgdmq1-home-manager-files.drv'...
-warning: collision between `/nix/store/278sy45yivr4dhhgq6x7i4sca6jqx6pz-dotnet-sdk-7.0.406/bin/dotnet' and `/nix/store/ai2d6bsrcaxn3nmaw0ql5i3kmzd8r76d-dotnet-sdk-6.0.419/bin/dotnet'
-warning: collision between `/nix/store/g0l1sx6znj8a3zyapdz56gkyahihhdpf-dotnet-sdk-8.0.201/bin/dotnet' and `/nix/store/ai2d6bsrcaxn3nmaw0ql5i3kmzd8r76d-dotnet-sdk-6.0.419/bin/dotnet'
-building '/nix/store/21zix0q1scdypzn1iql15b6plhgprrf6-home-manager-generation.drv'...
-building '/nix/store/c2iw9bll4jr4pghfqr75sgsiw82nva3w-unit-home-manager-bcampbell.service.drv'...
-created 8004 symlinks in user environment
-building '/nix/store/x1ikald2sjd8qdzgjpxblrjf0hp292ya-X-Restart-Triggers-polkit.drv'...
-building '/nix/store/kg2790ci98mvzs7h8l4jabnxpcafw0ra-dbus-1.drv'...
-building '/nix/store/qp3ib6badwb2kqygc3n60k6hzw0rq6sn-unit-polkit.service.drv'...
-building '/nix/store/c2fd0f1wqgnmxqc1bfsgpzrv0wvhw0xi-X-Restart-Triggers-dbus.drv'...
-building '/nix/store/9qj8xj34yq64h5qqfrh8809m0khmvfa3-unit-dbus.service.drv'...
-building '/nix/store/9s7n9nignfvsswgy2qzajdnikgxx1vsk-unit-dbus.service.drv'...
-building '/nix/store/hnvrqgaim0cm5s0rhwsha7dl1lcnjqb1-user-units.drv'...
-building '/nix/store/pxp2mq87rkqrp32hqv7dk6b0xgqrzfc8-system-units.drv'...
-building '/nix/store/ly9j8llyczy2xy8z06ssni8p02c2plmx-etc.drv'...
-building '/nix/store/hv8wg0gaw4dn23d7flhqs027zmdi8fik-nixos-system-nixos-24.05pre601756.44d0940ea560.drv'...
+restarting the following units: home-manager-bcampbell.service
+the following new units were started: sysinit-reactivation.target, systemd-tmpfiles-resetup.service
+e.drv
+  /nix/store/knhp18i0cl73h06nii4xczwkn5d6b2vh-home-configuration-reference-manpage-fish-completions.drv
+  /nix/store/1m4nax1d22ng9r5qcp3p5m1g0xd8lb1y-bcampbell-fish-completions.drv
+  /nix/store/gjafkw8p229z4brihqnryhbjfr1lsqvf-man-paths.drv
+  /nix/store/r40i53nqb3zrm30m3i7qif73k6lr4218-man-cache.drv
+  /nix/store/fsrdfmfn1f802ild1pl1wyqg8ka6mh6l-hm_.manpath.drv
+  /nix/store/0qy3mnmp9bbi2jc6qf3rlmib4w489490-home-manager-files.drv
+  /nix/store/3kk5g0n55nnpklvyjgfzzkx5b2mcrl4n-torbrowser.desktop.drv
+  /nix/store/jwd4yc24gf0qq2x9hc0l8kgi32w98lbz-distribution.ini.drv
+  /nix/store/fqgacklx4k4wcm47sgl6b1hb5zd6g6xd-tor-browser-13.0.12.drv
+  /nix/store/iahlvxzgrhi9nwl52djx13mrz8hlcaig-user-environment.drv
+  /nix/store/pkdw5i4awmn9n0zcdj0mj0xlvy4c1pdd-home-manager-path.drv
+  /nix/store/s5wyl2xzqkl0mx1v40ibx6q8mhvjqg8b-activation-script.drv
+  /nix/store/a7c7p4lw0kshf2fcr6l2v7q0cdnm6hxa-home-manager-generation.drv
+  /nix/store/vh15f1kl65hbwq0s3r5wi3q4py1fj9kx-unit-home-manager-bcampbell.service.drv
+  /nix/store/lp9hpiwi3j2l3xjdmgsz8blrfgxa7v1m-system-units.drv
+  /nix/store/x31vqhgl49wk0gkx5qc9hz4sd8n4v8m0-etc.drv
+  /nix/store/7xldf30a0ibrvjqhhp1w6xz4p89q41ij-nixos-system-nixos-24.05pre601756.44d0940ea560.drv
+these 61 paths will be fetched (113.90 MiB download, 150.22 MiB unpacked):
+  /nix/store/2m9c5j5lailzqdgy04fn86nxjxnqbnaa-alsa-lib-1.2.11-dev
+  /nix/store/xyaq042lrafij4pvcfgybvzhjz7vikh3-at-spi2-core-2.50.1-dev
+  /nix/store/68mbmdg950s4xiq116r192wqwfgxxyjk-auto-patchelf-hook
+  /nix/store/492ka2nlk6pk52gxhjc7gdr2d9c576xx-binutils-wrapper-2.41
+  /nix/store/0hfcipn4r1w0iw7z9r2qzssdq4iacqsw-brotli-1.1.0
+  /nix/store/mg0d0qpsqnvjrb2g08cpsr5wc5mibgrj-brotli-1.1.0-dev
+  /nix/store/afpmkssdi4j4354v2xngc4iqr8fvdlgy-bzip2-1.0.8-dev
+  /nix/store/fpn5fjysjlllm2j4hk3yx7vr064m6lyv-cairo-1.18.0-dev
+  /nix/store/2l6fhgf7703yrlzm83j6akjbz9l5yn57-copy-desktop-items-hook
+  /nix/store/s8pq32k9hrw2w0djkll3zl3214aqdrr7-cups-2.4.7-dev
+  /nix/store/alzkckkik3myv5qx3nq98v3i2bq8hd1a-dbus-glib-0.112-dev
+  /nix/store/8wq571cg96fd7z1bj0qsga3ldnlbskjr-die-hook
+  /nix/store/pfc9q1bp7lw9s9li5ijk8hjvsfdrfj59-expand-response-params
+  /nix/store/39hr2fzdxa4l77vl1k7h1wbb1iir2y92-fontconfig-2.15.0-dev
+  /nix/store/4ndywwxb09cr0dan563jq0s1m933b34h-freetype-2.13.2-dev
+  /nix/store/x37hqgcvng5djsg7lppcasr3wx48grw6-fribidi-1.0.13-dev
+  /nix/store/62rk1lcryki539590a8pj9pysp6awvs7-gdk-pixbuf-2.42.10-dev
+  /nix/store/f13s3bc6qna2q4qmrgvqg1b4mcr1rzjp-glib-2.78.4-dev
+  /nix/store/qkg9zz9rpd6spva392vxl9i7i7yq98hn-glibc-iconv-2.38
+  /nix/store/65xj1s267mzx9i4rg6702dhgzi9l6z1w-gmp-with-cxx-6.3.0-dev
+  /nix/store/dzpw4hs48xb8lrn6zx9sjf1yb980yfgi-graphite2-1.3.14-dev
+  /nix/store/v7falrvhgqxs59m37vqql6n8hbg24hzy-gtk+3-3.24.41-dev
+  /nix/store/x4qm5fbzchx752fs6sn7h4csx66jr619-harfbuzz-8.3.0-dev
+  /nix/store/xd42mjsmj2s1h9rn9mbz190xsc1nlf0j-install-shell-files
+  /nix/store/yixpzkixsaj1rx9l4p277mshjbvcsjmn-libGL-1.7.0-dev
+  /nix/store/8m7hi0ddqvk8h1qkcllg4lm4ciwdjax4-libICE-1.1.1-dev
+  /nix/store/c59vscm26r5rw41xc66q83ji2n3p804b-libSM-1.2.4-dev
+  /nix/store/c122xiygvrcrp90d4hb1fhmx499c89ha-libX11-1.8.7-dev
+  /nix/store/0h2l5d8rbhdcs4hmimdjjy4dnxf2bjwg-libXau-1.0.11-dev
+  /nix/store/y90055c33f9h09pfgh04nrgrzw27z9ph-libXcomposite-0.4.6-dev
+  /nix/store/4n1lm01waj5sd1y3k7m3qhllaiqcrfz2-libXcursor-1.2.2-dev
+  /nix/store/w3w77hkpsjb4h9vv1rp58s3nhyfk1kxy-libXdamage-1.1.6-dev
+  /nix/store/4faf1z4b3g67y7c9hq9zmlq2h0qg88gi-libXext-1.3.6-dev
+  /nix/store/p06vyjkxkwrghz0j80c12ic6kwfygnyz-libXfixes-6.0.1-dev
+  /nix/store/467zndmbypjznf7ryvfxs5wb2ag1r5fg-libXft-2.3.8-dev
+  /nix/store/byb05sfrwf2l237my6cyxr24dml6anyj-libXi-1.8.1-dev
+  /nix/store/5qm9d2a7j2m3w4nj2dd4wl5sdgq77x1s-libXinerama-1.1.5-dev
+  /nix/store/0nzx7qszahxyf0g4dp1zga8mh84yyvm9-libXrandr-1.5.4-dev
+  /nix/store/akb7bpy6qm8s4hgfx6r8d64mhzm6qwzb-libXrender-0.9.11-dev
+  /nix/store/0ysih9086ryzavixvdnprzzsp22ysrpa-libffi-3.4.6-dev
+  /nix/store/bgza9ixbz3vynhh3lfv3wm99405ynddv-libglvnd-1.7.0-dev
+  /nix/store/xksns72v3b0g736bz9yfwgxx1wf2501l-libjpeg-turbo-3.0.2-dev
+  /nix/store/bm6sw1h5f7ddy8qjmwzs3wbqppdqglkx-libpng-apng-1.6.43-dev
+  /nix/store/rp3spl5xxp9y8x6k9z4gb0fc70naa2l1-librsvg-2.57.1-dev
+  /nix/store/2rwl36fgg4vqxx4nh345ks4fn9fzafd4-libtiff-4.6.0-dev
+  /nix/store/1fwln3g31q97kj79q6jsa337dwld11dc-libxcb-1.16-dev
+  /nix/store/g1d2r8pbng4rccwr2dkkgq0jc2nbk8wq-make-binary-wrapper-hook
+  /nix/store/vpxpmv2krh81630sfj5f61cf5jqvf1pv-make-shell-wrapper-hook
+  /nix/store/asxa52rvds2s4cfg88fxvyp59yxshcv6-nixos-render-docs-0.0
+  /nix/store/6d6kbxpkdy3yhks07hg6rihyg4aw9bbk-pango-1.51.0-dev
+  /nix/store/yvsxjd4zm7dkgl97d8vksinsdbhshnf6-python3-3.11.8-env
+  /nix/store/njkgm7lvpq4csgjy2av6p9y0skq4bv42-python3.11-markdown-it-py-3.0.0
+  /nix/store/j6w9xwfymyd83kcg83gl03azh65haa8y-python3.11-mdit-py-plugins-0.4.0
+  /nix/store/7pbwcbimbi6sqcan5yxg3rny3zrmxwnw-python3.11-mdurl-0.1.2
+  /nix/store/9mazg52m8hp6drkji38df6fhhq039y2i-python3.11-pyelftools-0.30
+  /nix/store/c8dj731bkcdzhgrpawhc8qvdgls4xfjv-stdenv-linux
+  /nix/store/lawwxgdfmlyamygamc5akv9s1hnd2xkx-tor-browser-linux-x86_64-13.0.12.tar.xz
+  /nix/store/1902apvlsax7sr5mk3sfji3m0dwb3zva-wayland-1.22.0-dev
+  /nix/store/z2z69j5pdg9bdarl7d00ygr66zaq9igh-wrap-gapps-hook
+  /nix/store/67n916xpbam6vvwq4wbls5y0lz005wkq-xorgproto-2023.2
+  /nix/store/xcmzy20fnvnp4i9qksp33bj24x2fw0r2-xz-5.6.1-dev
+copying path '/nix/store/2l6fhgf7703yrlzm83j6akjbz9l5yn57-copy-desktop-items-hook' from 'https://cache.nixos.org'...
+copying path '/nix/store/lawwxgdfmlyamygamc5akv9s1hnd2xkx-tor-browser-linux-x86_64-13.0.12.tar.xz' from 'https://cache.nixos.org'...
+copying path '/nix/store/8wq571cg96fd7z1bj0qsga3ldnlbskjr-die-hook' from 'https://cache.nixos.org'...
+copying path '/nix/store/2m9c5j5lailzqdgy04fn86nxjxnqbnaa-alsa-lib-1.2.11-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/c8dj731bkcdzhgrpawhc8qvdgls4xfjv-stdenv-linux' from 'https://cache.nixos.org'...
+copying path '/nix/store/67n916xpbam6vvwq4wbls5y0lz005wkq-xorgproto-2023.2' from 'https://cache.nixos.org'...
+building '/nix/store/jwd4yc24gf0qq2x9hc0l8kgi32w98lbz-distribution.ini.drv'...
+building '/nix/store/0n1bfxdvv29p4gj4azgnp5wxmgrnzb7g-policies.json.drv'...
+building '/nix/store/3kk5g0n55nnpklvyjgfzzkx5b2mcrl4n-torbrowser.desktop.drv'...
+copying path '/nix/store/pfc9q1bp7lw9s9li5ijk8hjvsfdrfj59-expand-response-params' from 'https://cache.nixos.org'...
+copying path '/nix/store/x37hqgcvng5djsg7lppcasr3wx48grw6-fribidi-1.0.13-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/8m7hi0ddqvk8h1qkcllg4lm4ciwdjax4-libICE-1.1.1-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/4n1lm01waj5sd1y3k7m3qhllaiqcrfz2-libXcursor-1.2.2-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/p06vyjkxkwrghz0j80c12ic6kwfygnyz-libXfixes-6.0.1-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/5qm9d2a7j2m3w4nj2dd4wl5sdgq77x1s-libXinerama-1.1.5-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/1902apvlsax7sr5mk3sfji3m0dwb3zva-wayland-1.22.0-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/qkg9zz9rpd6spva392vxl9i7i7yq98hn-glibc-iconv-2.38' from 'https://cache.nixos.org'...
+copying path '/nix/store/65xj1s267mzx9i4rg6702dhgzi9l6z1w-gmp-with-cxx-6.3.0-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/0ysih9086ryzavixvdnprzzsp22ysrpa-libffi-3.4.6-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/0hfcipn4r1w0iw7z9r2qzssdq4iacqsw-brotli-1.1.0' from 'https://cache.nixos.org'...
+copying path '/nix/store/afpmkssdi4j4354v2xngc4iqr8fvdlgy-bzip2-1.0.8-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/dzpw4hs48xb8lrn6zx9sjf1yb980yfgi-graphite2-1.3.14-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/xd42mjsmj2s1h9rn9mbz190xsc1nlf0j-install-shell-files' from 'https://cache.nixos.org'...
+copying path '/nix/store/bgza9ixbz3vynhh3lfv3wm99405ynddv-libglvnd-1.7.0-dev' from 'https://cache.nixos.org'...
+/nix/store/2h785z0wv6g8qhx1bc2yrzblimynzz4w-torbrowser.desktop/share/applications/torbrowser.desktop: hint: value item "Security" in key "Categories" in group "Desktop Entry" can be extended with another category among the following categories: Settings, or System
+copying path '/nix/store/0h2l5d8rbhdcs4hmimdjjy4dnxf2bjwg-libXau-1.0.11-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/xksns72v3b0g736bz9yfwgxx1wf2501l-libjpeg-turbo-3.0.2-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/bm6sw1h5f7ddy8qjmwzs3wbqppdqglkx-libpng-apng-1.6.43-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/1fwln3g31q97kj79q6jsa337dwld11dc-libxcb-1.16-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/g1d2r8pbng4rccwr2dkkgq0jc2nbk8wq-make-binary-wrapper-hook' from 'https://cache.nixos.org'...
+copying path '/nix/store/vpxpmv2krh81630sfj5f61cf5jqvf1pv-make-shell-wrapper-hook' from 'https://cache.nixos.org'...
+copying path '/nix/store/7pbwcbimbi6sqcan5yxg3rny3zrmxwnw-python3.11-mdurl-0.1.2' from 'https://cache.nixos.org'...
+copying path '/nix/store/9mazg52m8hp6drkji38df6fhhq039y2i-python3.11-pyelftools-0.30' from 'https://cache.nixos.org'...
+copying path '/nix/store/xcmzy20fnvnp4i9qksp33bj24x2fw0r2-xz-5.6.1-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/492ka2nlk6pk52gxhjc7gdr2d9c576xx-binutils-wrapper-2.41' from 'https://cache.nixos.org'...
+copying path '/nix/store/s8pq32k9hrw2w0djkll3zl3214aqdrr7-cups-2.4.7-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/f13s3bc6qna2q4qmrgvqg1b4mcr1rzjp-glib-2.78.4-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/c59vscm26r5rw41xc66q83ji2n3p804b-libSM-1.2.4-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/y90055c33f9h09pfgh04nrgrzw27z9ph-libXcomposite-0.4.6-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/w3w77hkpsjb4h9vv1rp58s3nhyfk1kxy-libXdamage-1.1.6-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/mg0d0qpsqnvjrb2g08cpsr5wc5mibgrj-brotli-1.1.0-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/x4qm5fbzchx752fs6sn7h4csx66jr619-harfbuzz-8.3.0-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/yixpzkixsaj1rx9l4p277mshjbvcsjmn-libGL-1.7.0-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/4faf1z4b3g67y7c9hq9zmlq2h0qg88gi-libXext-1.3.6-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/njkgm7lvpq4csgjy2av6p9y0skq4bv42-python3.11-markdown-it-py-3.0.0' from 'https://cache.nixos.org'...
+copying path '/nix/store/c122xiygvrcrp90d4hb1fhmx499c89ha-libX11-1.8.7-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/2rwl36fgg4vqxx4nh345ks4fn9fzafd4-libtiff-4.6.0-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/yvsxjd4zm7dkgl97d8vksinsdbhshnf6-python3-3.11.8-env' from 'https://cache.nixos.org'...
+copying path '/nix/store/byb05sfrwf2l237my6cyxr24dml6anyj-libXi-1.8.1-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/4ndywwxb09cr0dan563jq0s1m933b34h-freetype-2.13.2-dev' from 'https://cache.nixos.org'...
+building '/nix/store/2qvz888cfz54a1rrxq824f7jcw6lj337-options.json.drv'...
+copying path '/nix/store/xyaq042lrafij4pvcfgybvzhjz7vikh3-at-spi2-core-2.50.1-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/68mbmdg950s4xiq116r192wqwfgxxyjk-auto-patchelf-hook' from 'https://cache.nixos.org'...
+copying path '/nix/store/alzkckkik3myv5qx3nq98v3i2bq8hd1a-dbus-glib-0.112-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/39hr2fzdxa4l77vl1k7h1wbb1iir2y92-fontconfig-2.15.0-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/62rk1lcryki539590a8pj9pysp6awvs7-gdk-pixbuf-2.42.10-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/akb7bpy6qm8s4hgfx6r8d64mhzm6qwzb-libXrender-0.9.11-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/j6w9xwfymyd83kcg83gl03azh65haa8y-python3.11-mdit-py-plugins-0.4.0' from 'https://cache.nixos.org'...
+copying path '/nix/store/fpn5fjysjlllm2j4hk3yx7vr064m6lyv-cairo-1.18.0-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/467zndmbypjznf7ryvfxs5wb2ag1r5fg-libXft-2.3.8-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/0nzx7qszahxyf0g4dp1zga8mh84yyvm9-libXrandr-1.5.4-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/asxa52rvds2s4cfg88fxvyp59yxshcv6-nixos-render-docs-0.0' from 'https://cache.nixos.org'...
+copying path '/nix/store/rp3spl5xxp9y8x6k9z4gb0fc70naa2l1-librsvg-2.57.1-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/6d6kbxpkdy3yhks07hg6rihyg4aw9bbk-pango-1.51.0-dev' from 'https://cache.nixos.org'...
+copying path '/nix/store/v7falrvhgqxs59m37vqql6n8hbg24hzy-gtk+3-3.24.41-dev' from 'https://cache.nixos.org'...
+building '/nix/store/3ripxgqf1v8ai740n0xni05ghi9brdz0-home-configuration-reference-manpage.drv'...
+copying path '/nix/store/z2z69j5pdg9bdarl7d00ygr66zaq9igh-wrap-gapps-hook' from 'https://cache.nixos.org'...
+building '/nix/store/knhp18i0cl73h06nii4xczwkn5d6b2vh-home-configuration-reference-manpage-fish-completions.drv'...
+building '/nix/store/pkdw5i4awmn9n0zcdj0mj0xlvy4c1pdd-home-manager-path.drv'...
+building '/nix/store/gjafkw8p229z4brihqnryhbjfr1lsqvf-man-paths.drv'...
+building '/nix/store/1m4nax1d22ng9r5qcp3p5m1g0xd8lb1y-bcampbell-fish-completions.drv'...
+created 918 symlinks in user environment
+created 321 symlinks in user environment
+building '/nix/store/r40i53nqb3zrm30m3i7qif73k6lr4218-man-cache.drv'...
+building '/nix/store/s5wyl2xzqkl0mx1v40ibx6q8mhvjqg8b-activation-script.drv'...
+Processing manual pages under /nix/store/8vh67gx69chk1x0z1c0c26f6afxnmqpi-man-paths/share/man...
+Updating index cache for path `/nix/store/8vh67gx69chk1x0z1c0c26f6afxnmqpi-man-paths/share/man/man1'. Wait...done.
+BDB3028 /nix/store/r2h8ajk67l2qrackp1zjsd6qqazxvq53-man-cache/5: unable to flush: No such file or directory
+Processing manual pages under /nix/store/8vh67gx69chk1x0z1c0c26f6afxnmqpi-man-paths/share/man/it...
+Updating index cache for path `/nix/store/8vh67gx69chk1x0z1c0c26f6afxnmqpi-man-paths/share/man/it/man1'. Wait...done.
+BDB3028 /nix/store/r2h8ajk67l2qrackp1zjsd6qqazxvq53-man-cache/it/5: unable to flush: No such file or directory
+7 man subdirectories contained newer manual pages.
+345 manual pages were added.
+building '/nix/store/fsrdfmfn1f802ild1pl1wyqg8ka6mh6l-hm_.manpath.drv'...
+building '/nix/store/0qy3mnmp9bbi2jc6qf3rlmib4w489490-home-manager-files.drv'...
+building '/nix/store/a7c7p4lw0kshf2fcr6l2v7q0cdnm6hxa-home-manager-generation.drv'...
+building '/nix/store/vh15f1kl65hbwq0s3r5wi3q4py1fj9kx-unit-home-manager-bcampbell.service.drv'...
+building '/nix/store/lp9hpiwi3j2l3xjdmgsz8blrfgxa7v1m-system-units.drv'...
+building '/nix/store/fqgacklx4k4wcm47sgl6b1hb5zd6g6xd-tor-browser-13.0.12.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/lawwxgdfmlyamygamc5akv9s1hnd2xkx-tor-browser-linux-x86_64-13.0.12.tar.xz
+source root is tor-browser
+setting SOURCE_DATE_EPOCH to timestamp 946684800 of file tor-browser/start-tor-browser.desktop
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+no configure script, doing nothing
+Running phase: buildPhase
+/nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser /build/tor-browser
+Setting ELF interpreter on firefox.real ...
+Setting ELF interpreter on TorBrowser/Tor/tor ...
+Checking bundled Tor ...
+Checking tor-browser wrapper ...
+Running phase: glibPreInstallPhase
+Running phase: glibPreInstallPhase
+Running phase: glibPreInstallPhase
+Running phase: installPhase
+'/nix/store/lsdhzh1ksdrifwgn893rmm2a26q41fh5-distribution.ini' -> '/nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/distribution/distribution.ini'
+'/nix/store/3bh71qrcyvgbl4272g7gdrv4vx5jx9ww-policies.json' -> '/nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/distribution/policies.json'
+Copying '/nix/store/2h785z0wv6g8qhx1bc2yrzblimynzz4w-torbrowser.desktop/share/applications/torbrowser.desktop' into '/nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/applications'
+Running phase: glibPreFixupPhase
+Running phase: glibPreFixupPhase
+Running phase: glibPreFixupPhase
+Running phase: gappsWrapperArgsHook
+Running phase: dropIconThemeCache
+Running phase: dropIconThemeCache
+Running phase: dropIconThemeCache
+Running phase: fixupPhase
+Wrapping program '/nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/bin/tor-browser'
+shrinking RPATHs of ELF executables and libraries in /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/bin/.tor-browser-wrapped
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/bin/tor-browser
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/updater
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libmozavcodec.so
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libfreeblpriv3.so
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libxul.so
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/liblgpllibs.so
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libnss3.so
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libssl3.so
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/firefox
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libmozavutil.so
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libsoftokn3.so
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libnssckbi.so
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libmozgtk.so
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libnspr4.so
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/vaapitest
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++/libstdc++.so.6
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libevent-2.1.so.7
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libcrypto.so.3
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libssl.so.3
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/tor
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/PluggableTransports/lyrebird
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/PluggableTransports/snowflake-client
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/PluggableTransports/conjure-client
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/PluggableTransports/webtunnel-client
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/glxtest
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/abicheck
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libplds4.so
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libmozsandbox.so
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libmozwayland.so
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libmozsqlite3.so
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libplc4.so
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/plugin-container
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libipcclientcerts.so
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libnssutil3.so
+shrinking /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libsmime3.so
+checking for references to /build/ in /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12...
+patching script interpreter paths in /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12
+/nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/execdesktop: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/5lr5n3qa4day8l1ivbwlcby2nknczqkq-bash-5.2p26/bin/bash"
+/nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/start-tor-browser: interpreter directive changed from "#!/usr/bin/env bash" to "/nix/store/5lr5n3qa4day8l1ivbwlcby2nknczqkq-bash-5.2p26/bin/bash"
+stripping (with command strip and flags -S -p) in  /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/bin
+automatically fixing dependencies for ELF files
+{'append_rpaths': [],
+ 'extra_args': [],
+ 'ignore_missing': [],
+ 'libs': [PosixPath('/nix/store/68mbmdg950s4xiq116r192wqwfgxxyjk-auto-patchelf-hook/lib'),
+          PosixPath('/nix/store/492ka2nlk6pk52gxhjc7gdr2d9c576xx-binutils-wrapper-2.41/lib'),
+          PosixPath('/nix/store/2l6fhgf7703yrlzm83j6akjbz9l5yn57-copy-desktop-items-hook/lib'),
+          PosixPath('/nix/store/vpxpmv2krh81630sfj5f61cf5jqvf1pv-make-shell-wrapper-hook/lib'),
+          PosixPath('/nix/store/8wq571cg96fd7z1bj0qsga3ldnlbskjr-die-hook/lib'),
+          PosixPath('/nix/store/z2z69j5pdg9bdarl7d00ygr66zaq9igh-wrap-gapps-hook/lib'),
+          PosixPath('/nix/store/g1d2r8pbng4rccwr2dkkgq0jc2nbk8wq-make-binary-wrapper-hook/lib'),
+          PosixPath('/nix/store/v7falrvhgqxs59m37vqql6n8hbg24hzy-gtk+3-3.24.41-dev/lib'),
+          PosixPath('/nix/store/xyaq042lrafij4pvcfgybvzhjz7vikh3-at-spi2-core-2.50.1-dev/lib'),
+          PosixPath('/nix/store/1sfq4kahyykvmhkn7fmjbgm4ypf13bmy-dbus-1.14.10-dev/lib'),
+          PosixPath('/nix/store/hnfpa2y72h0f3d7ljd4ck56wssq1v63i-expat-2.6.0-dev/lib'),
+          PosixPath('/nix/store/5nx5csrqcra26y520zbxjzjvi9hmkrzv-expat-2.6.0/lib'),
+          PosixPath('/nix/store/v7v78ar1l0hcy84vf8xghiyrncyx359d-dbus-1.14.10-lib/lib'),
+          PosixPath('/nix/store/f9w2kp8y55zvcyz33b5lnr7qwhx652y8-dbus-1.14.10/lib'),
+          PosixPath('/nix/store/f13s3bc6qna2q4qmrgvqg1b4mcr1rzjp-glib-2.78.4-dev/lib'),
+          PosixPath('/nix/store/6gbq1krsayq346c7lccn2lbpv74ljqwz-zlib-1.3.1-dev/lib'),
+          PosixPath('/nix/store/zbaajn0dk65kwvrcglhli1j4xx4vhvvj-zlib-1.3.1/lib'),
+          PosixPath('/nix/store/0ysih9086ryzavixvdnprzzsp22ysrpa-libffi-3.4.6-dev/lib'),
+          PosixPath('/nix/store/wb7d5iw5f08qbm6p72pz1mdd4qgcb7gs-libffi-3.4.6/lib'),
+          PosixPath('/nix/store/vpnjryq35yw1mm7p3885nzkzbk6hzgf8-gettext-0.21.1/lib'),
+          PosixPath('/nix/store/qkg9zz9rpd6spva392vxl9i7i7yq98hn-glibc-iconv-2.38/lib'),
+          PosixPath('/nix/store/sa308wgdlli0q7afkqjg5j2779piphai-glib-2.78.4-bin/lib'),
+          PosixPath('/nix/store/gkkabfk5kccd5j8fm1hlrb71pmpcbw1p-glib-2.78.4/lib'),
+          PosixPath('/nix/store/8lmh9vnbw1bhlxnxsaspyvbmzdyb3xj4-at-spi2-core-2.50.1/lib'),
+          PosixPath('/nix/store/fpn5fjysjlllm2j4hk3yx7vr064m6lyv-cairo-1.18.0-dev/lib'),
+          PosixPath('/nix/store/39hr2fzdxa4l77vl1k7h1wbb1iir2y92-fontconfig-2.15.0-dev/lib'),
+          PosixPath('/nix/store/4ndywwxb09cr0dan563jq0s1m933b34h-freetype-2.13.2-dev/lib'),
+          PosixPath('/nix/store/afpmkssdi4j4354v2xngc4iqr8fvdlgy-bzip2-1.0.8-dev/lib'),
+          PosixPath('/nix/store/q5ggwzjigzwqy4vjd6gvbs9jh4z33mrb-bzip2-1.0.8-bin/lib'),
+          PosixPath('/nix/store/vwrm7xc2fha9imwzyz4xm5cvdm45l8m6-bzip2-1.0.8/lib'),
+          PosixPath('/nix/store/mg0d0qpsqnvjrb2g08cpsr5wc5mibgrj-brotli-1.1.0-dev/lib'),
+          PosixPath('/nix/store/0cgs7y6qfn64wvj1wk37zadniq2dqkg4-brotli-1.1.0-lib/lib'),
+          PosixPath('/nix/store/0hfcipn4r1w0iw7z9r2qzssdq4iacqsw-brotli-1.1.0/lib'),
+          PosixPath('/nix/store/bm6sw1h5f7ddy8qjmwzs3wbqppdqglkx-libpng-apng-1.6.43-dev/lib'),
+          PosixPath('/nix/store/li2ms1sxx2vb536m0a912ka3nkmr30a3-libpng-apng-1.6.43/lib'),
+          PosixPath('/nix/store/jxkph070yav94apr5ylb7wzx3z2bqw5l-freetype-2.13.2/lib'),
+          PosixPath('/nix/store/n35a1ncm6b0af6in87m9vda2l7719zhi-fontconfig-2.15.0-bin/lib'),
+          PosixPath('/nix/store/9x1qsbkz0z511850if7585r1l7g3jz4d-fontconfig-2.15.0-lib/lib'),
+          PosixPath('/nix/store/aldmf9w7jiss99b93dfndd1nsb9s5qn7-pixman-0.43.4/lib'),
+          PosixPath('/nix/store/4faf1z4b3g67y7c9hq9zmlq2h0qg88gi-libXext-1.3.6-dev/lib'),
+          PosixPath('/nix/store/67n916xpbam6vvwq4wbls5y0lz005wkq-xorgproto-2023.2/lib'),
+          PosixPath('/nix/store/0h2l5d8rbhdcs4hmimdjjy4dnxf2bjwg-libXau-1.0.11-dev/lib'),
+          PosixPath('/nix/store/pgvbn4556n5368bw866f18n0xdbgj22r-libXau-1.0.11/lib'),
+          PosixPath('/nix/store/9wi57z48m80s40j1bzh2wnpvpi0v4y38-libXext-1.3.6/lib'),
+          PosixPath('/nix/store/akb7bpy6qm8s4hgfx6r8d64mhzm6qwzb-libXrender-0.9.11-dev/lib'),
+          PosixPath('/nix/store/c122xiygvrcrp90d4hb1fhmx499c89ha-libX11-1.8.7-dev/lib'),
+          PosixPath('/nix/store/1fwln3g31q97kj79q6jsa337dwld11dc-libxcb-1.16-dev/lib'),
+          PosixPath('/nix/store/fy2yyv6xji1bkllx2rwvg6hn0p5s4219-libxcb-1.16/lib'),
+          PosixPath('/nix/store/8m69p7c5cjsrhh49mykh62vz8vmp0diw-libX11-1.8.7/lib'),
+          PosixPath('/nix/store/bsn7l0b753ysxzvinlxi4jkx5cn7z3xr-libXrender-0.9.11/lib'),
+          PosixPath('/nix/store/yih8b8glkwgvkj141j27fz1i3hhwy0v7-cairo-1.18.0/lib'),
+          PosixPath('/nix/store/x37hqgcvng5djsg7lppcasr3wx48grw6-fribidi-1.0.13-dev/lib'),
+          PosixPath('/nix/store/47l8yzis9073ygsqf0zxp8kwmk7hjyhi-fribidi-1.0.13/lib'),
+          PosixPath('/nix/store/62rk1lcryki539590a8pj9pysp6awvs7-gdk-pixbuf-2.42.10-dev/lib'),
+          PosixPath('/nix/store/2rwl36fgg4vqxx4nh345ks4fn9fzafd4-libtiff-4.6.0-dev/lib'),
+          PosixPath('/nix/store/6lfbv2p3abhxswg4vh0h1jwrsxmn78bk-libdeflate-1.19/lib'),
+          PosixPath('/nix/store/xksns72v3b0g736bz9yfwgxx1wf2501l-libjpeg-turbo-3.0.2-dev/lib'),
+          PosixPath('/nix/store/8s1py1pd2jnlffy8pp3zf2gz8cdh8069-libjpeg-turbo-3.0.2-bin/lib'),
+          PosixPath('/nix/store/hvcxqzwc95pxp8k3ik8zl1bjjx787wyv-libjpeg-turbo-3.0.2/lib'),
+          PosixPath('/nix/store/xcmzy20fnvnp4i9qksp33bj24x2fw0r2-xz-5.6.1-dev/lib'),
+          PosixPath('/nix/store/2zvi5q6fvrmznavnqgzc947wssilv9vy-xz-5.6.1-bin/lib'),
+          PosixPath('/nix/store/yyqzw7xvsrn3h2zrvincbs1b291yzx8c-xz-5.6.1/lib'),
+          PosixPath('/nix/store/zpafyxg75x3giyimh0c377sgwyypbyql-libtiff-4.6.0-bin/lib'),
+          PosixPath('/nix/store/n351xy2dk3m93s66flf993fhdzhznrn1-libtiff-4.6.0/lib'),
+          PosixPath('/nix/store/hwh2j6sh5626si924l66yddc0y6g0cw4-gdk-pixbuf-2.42.10/lib'),
+          PosixPath('/nix/store/dww77ywm1zj2q2h2l2xifr40fgsk1k7y-gsettings-desktop-schemas-45.0/lib'),
+          PosixPath('/nix/store/8m7hi0ddqvk8h1qkcllg4lm4ciwdjax4-libICE-1.1.1-dev/lib'),
+          PosixPath('/nix/store/h9pqadlyz8jxb6m9gq0sp637sq7h109k-libICE-1.1.1/lib'),
+          PosixPath('/nix/store/c59vscm26r5rw41xc66q83ji2n3p804b-libSM-1.2.4-dev/lib'),
+          PosixPath('/nix/store/y9yyimw6fgx3mayhzbh8z9wplaalfa45-libSM-1.2.4/lib'),
+          PosixPath('/nix/store/y90055c33f9h09pfgh04nrgrzw27z9ph-libXcomposite-0.4.6-dev/lib'),
+          PosixPath('/nix/store/p06vyjkxkwrghz0j80c12ic6kwfygnyz-libXfixes-6.0.1-dev/lib'),
+          PosixPath('/nix/store/vhsc0h999ijdd7yjvyz5hwsm9d10di9q-libXfixes-6.0.1/lib'),
+          PosixPath('/nix/store/lwfgafyzhvpma45xhf6gxh3a4a829n4s-libXcomposite-0.4.6/lib'),
+          PosixPath('/nix/store/4n1lm01waj5sd1y3k7m3qhllaiqcrfz2-libXcursor-1.2.2-dev/lib'),
+          PosixPath('/nix/store/ldi0rb00gmbdg6915lhch3k3b3ib460z-libXcursor-1.2.2/lib'),
+          PosixPath('/nix/store/w3w77hkpsjb4h9vv1rp58s3nhyfk1kxy-libXdamage-1.1.6-dev/lib'),
+          PosixPath('/nix/store/mv79sk80kgq2dsi6igkh8kx1kcp115fy-libXdamage-1.1.6/lib'),
+          PosixPath('/nix/store/byb05sfrwf2l237my6cyxr24dml6anyj-libXi-1.8.1-dev/lib'),
+          PosixPath('/nix/store/bj9p0xg5af6cjlr29jindmpicldyqkbx-libXi-1.8.1/lib'),
+          PosixPath('/nix/store/0nzx7qszahxyf0g4dp1zga8mh84yyvm9-libXrandr-1.5.4-dev/lib'),
+          PosixPath('/nix/store/8xbbv82pabjcbj30vrna4gcz4g9q97z4-libXrandr-1.5.4/lib'),
+          PosixPath('/nix/store/6d6kbxpkdy3yhks07hg6rihyg4aw9bbk-pango-1.51.0-dev/lib'),
+          PosixPath('/nix/store/x4qm5fbzchx752fs6sn7h4csx66jr619-harfbuzz-8.3.0-dev/lib'),
+          PosixPath('/nix/store/dzpw4hs48xb8lrn6zx9sjf1yb980yfgi-graphite2-1.3.14-dev/lib'),
+          PosixPath('/nix/store/xj44335xam0kpv60lqwq68dysv91n40q-graphite2-1.3.14/lib'),
+          PosixPath('/nix/store/kdh8lg6amm1z9r79ja4xaj3ci3wxjlkw-harfbuzz-8.3.0/lib'),
+          PosixPath('/nix/store/467zndmbypjznf7ryvfxs5wb2ag1r5fg-libXft-2.3.8-dev/lib'),
+          PosixPath('/nix/store/kcm6p2mck6h4k5vk2rqwsz1apn13ijwb-libXft-2.3.8/lib'),
+          PosixPath('/nix/store/j8k1d9vfrnsl92mfk0nxzc7lnsv21iqs-pango-1.51.0-bin/lib'),
+          PosixPath('/nix/store/b61xcm9qr9mfq2kqanjs9nrldfkpw18m-pango-1.51.0/lib'),
+          PosixPath('/nix/store/yixpzkixsaj1rx9l4p277mshjbvcsjmn-libGL-1.7.0-dev/lib'),
+          PosixPath('/nix/store/l5wrnffddhbwkl82d7646w7riznxgrb8-libGL-1.7.0/lib'),
+          PosixPath('/nix/store/lpqy1z1h8li6h3cp9ax6vifl71dks1ff-libglvnd-1.7.0/lib'),
+          PosixPath('/nix/store/bgza9ixbz3vynhh3lfv3wm99405ynddv-libglvnd-1.7.0-dev/lib'),
+          PosixPath('/nix/store/1902apvlsax7sr5mk3sfji3m0dwb3zva-wayland-1.22.0-dev/lib'),
+          PosixPath('/nix/store/zi4yi7s1idx5pqrp9mh7ap30s6nrkzwa-wayland-1.22.0-bin/lib'),
+          PosixPath('/nix/store/55kjzqzn2a3g0v3wssbq9507rkpnp3k6-wayland-1.22.0/lib'),
+          PosixPath('/nix/store/zirjjcd20j25cn40wzzv4fk4983f883n-wayland-protocols-1.33/lib'),
+          PosixPath('/nix/store/5qm9d2a7j2m3w4nj2dd4wl5sdgq77x1s-libXinerama-1.1.5-dev/lib'),
+          PosixPath('/nix/store/5bb4ks45libz0x06347yndwxg75aqi5y-libXinerama-1.1.5/lib'),
+          PosixPath('/nix/store/s8pq32k9hrw2w0djkll3zl3214aqdrr7-cups-2.4.7-dev/lib'),
+          PosixPath('/nix/store/65xj1s267mzx9i4rg6702dhgzi9l6z1w-gmp-with-cxx-6.3.0-dev/lib'),
+          PosixPath('/nix/store/bhfwvw0h09nvkaj4vr2pcrfm9i758c54-gmp-with-cxx-6.3.0/lib'),
+          PosixPath('/nix/store/15gkyw2qjrqzz45h0p8y26j42nsiq9sx-cups-2.4.7-lib/lib'),
+          PosixPath('/nix/store/08wi752b7sfy08cg2hs13i5d4j537a71-cups-2.4.7/lib'),
+          PosixPath('/nix/store/15g7m2yncbawq9kz65plgszxyvp8dlax-gtk+3-3.24.41/lib'),
+          PosixPath('/nix/store/rp3spl5xxp9y8x6k9z4gb0fc70naa2l1-librsvg-2.57.1-dev/lib'),
+          PosixPath('/nix/store/f2d8d2nnz2fhx7c8zwkmkq42dqk61ysm-librsvg-2.57.1/lib'),
+          PosixPath('/nix/store/spiwhs9xa145l8qa5i51f1rcpkfd5jvq-patchelf-0.15.0/lib'),
+          PosixPath('/nix/store/4xwfmpljvazd1zbp9f179i33n1acq0cy-update-autotools-gnu-config-scripts-hook/lib'),
+          PosixPath('/nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh/lib'),
+          PosixPath('/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh/lib'),
+          PosixPath('/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh/lib'),
+          PosixPath('/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh/lib'),
+          PosixPath('/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh/lib'),
+          PosixPath('/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh/lib'),
+          PosixPath('/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh/lib'),
+          PosixPath('/nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh/lib'),
+          PosixPath('/nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh/lib'),
+          PosixPath('/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh/lib'),
+          PosixPath('/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh/lib'),
+          PosixPath('/nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh/lib'),
+          PosixPath('/nix/store/wmknncrif06fqxa16hpdldhixk95nds0-strip.sh/lib'),
+          PosixPath('/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/lib'),
+          PosixPath('/nix/store/5ac6jr3asky426rc5qaxrf3wkhzpw1cm-binutils-wrapper-2.41/lib'),
+          PosixPath('/nix/store/zhpxjrdrhlfaajpln332bxgx5d3c1ajy-dconf-0.40.0-lib/lib'),
+          PosixPath('/nix/store/2m9c5j5lailzqdgy04fn86nxjxnqbnaa-alsa-lib-1.2.11-dev/lib'),
+          PosixPath('/nix/store/wsa7cdnm4lfyl4khprk3w9j08yqvpylm-alsa-lib-1.2.11/lib'),
+          PosixPath('/nix/store/alzkckkik3myv5qx3nq98v3i2bq8hd1a-dbus-glib-0.112-dev/lib'),
+          PosixPath('/nix/store/1mcfqfrq16i65f5k4g418sbgklx6pk5x-dbus-glib-0.112/lib'),
+          PosixPath('/nix/store/pkpxss9ab9zp6pryfylnkbmyq7v0p5zp-libXtst-1.2.4/lib'),
+          PosixPath('/nix/store/68mbmdg950s4xiq116r192wqwfgxxyjk-auto-patchelf-hook/lib'),
+          PosixPath('/nix/store/492ka2nlk6pk52gxhjc7gdr2d9c576xx-binutils-wrapper-2.41/lib'),
+          PosixPath('/nix/store/2l6fhgf7703yrlzm83j6akjbz9l5yn57-copy-desktop-items-hook/lib'),
+          PosixPath('/nix/store/vpxpmv2krh81630sfj5f61cf5jqvf1pv-make-shell-wrapper-hook/lib'),
+          PosixPath('/nix/store/8wq571cg96fd7z1bj0qsga3ldnlbskjr-die-hook/lib'),
+          PosixPath('/nix/store/z2z69j5pdg9bdarl7d00ygr66zaq9igh-wrap-gapps-hook/lib'),
+          PosixPath('/nix/store/g1d2r8pbng4rccwr2dkkgq0jc2nbk8wq-make-binary-wrapper-hook/lib'),
+          PosixPath('/nix/store/v7falrvhgqxs59m37vqql6n8hbg24hzy-gtk+3-3.24.41-dev/lib'),
+          PosixPath('/nix/store/xyaq042lrafij4pvcfgybvzhjz7vikh3-at-spi2-core-2.50.1-dev/lib'),
+          PosixPath('/nix/store/1sfq4kahyykvmhkn7fmjbgm4ypf13bmy-dbus-1.14.10-dev/lib'),
+          PosixPath('/nix/store/hnfpa2y72h0f3d7ljd4ck56wssq1v63i-expat-2.6.0-dev/lib'),
+          PosixPath('/nix/store/5nx5csrqcra26y520zbxjzjvi9hmkrzv-expat-2.6.0/lib'),
+          PosixPath('/nix/store/v7v78ar1l0hcy84vf8xghiyrncyx359d-dbus-1.14.10-lib/lib'),
+          PosixPath('/nix/store/f9w2kp8y55zvcyz33b5lnr7qwhx652y8-dbus-1.14.10/lib'),
+          PosixPath('/nix/store/f13s3bc6qna2q4qmrgvqg1b4mcr1rzjp-glib-2.78.4-dev/lib'),
+          PosixPath('/nix/store/6gbq1krsayq346c7lccn2lbpv74ljqwz-zlib-1.3.1-dev/lib'),
+          PosixPath('/nix/store/zbaajn0dk65kwvrcglhli1j4xx4vhvvj-zlib-1.3.1/lib'),
+          PosixPath('/nix/store/0ysih9086ryzavixvdnprzzsp22ysrpa-libffi-3.4.6-dev/lib'),
+          PosixPath('/nix/store/wb7d5iw5f08qbm6p72pz1mdd4qgcb7gs-libffi-3.4.6/lib'),
+          PosixPath('/nix/store/vpnjryq35yw1mm7p3885nzkzbk6hzgf8-gettext-0.21.1/lib'),
+          PosixPath('/nix/store/qkg9zz9rpd6spva392vxl9i7i7yq98hn-glibc-iconv-2.38/lib'),
+          PosixPath('/nix/store/sa308wgdlli0q7afkqjg5j2779piphai-glib-2.78.4-bin/lib'),
+          PosixPath('/nix/store/gkkabfk5kccd5j8fm1hlrb71pmpcbw1p-glib-2.78.4/lib'),
+          PosixPath('/nix/store/8lmh9vnbw1bhlxnxsaspyvbmzdyb3xj4-at-spi2-core-2.50.1/lib'),
+          PosixPath('/nix/store/fpn5fjysjlllm2j4hk3yx7vr064m6lyv-cairo-1.18.0-dev/lib'),
+          PosixPath('/nix/store/39hr2fzdxa4l77vl1k7h1wbb1iir2y92-fontconfig-2.15.0-dev/lib'),
+          PosixPath('/nix/store/4ndywwxb09cr0dan563jq0s1m933b34h-freetype-2.13.2-dev/lib'),
+          PosixPath('/nix/store/afpmkssdi4j4354v2xngc4iqr8fvdlgy-bzip2-1.0.8-dev/lib'),
+          PosixPath('/nix/store/q5ggwzjigzwqy4vjd6gvbs9jh4z33mrb-bzip2-1.0.8-bin/lib'),
+          PosixPath('/nix/store/vwrm7xc2fha9imwzyz4xm5cvdm45l8m6-bzip2-1.0.8/lib'),
+          PosixPath('/nix/store/mg0d0qpsqnvjrb2g08cpsr5wc5mibgrj-brotli-1.1.0-dev/lib'),
+          PosixPath('/nix/store/0cgs7y6qfn64wvj1wk37zadniq2dqkg4-brotli-1.1.0-lib/lib'),
+          PosixPath('/nix/store/0hfcipn4r1w0iw7z9r2qzssdq4iacqsw-brotli-1.1.0/lib'),
+          PosixPath('/nix/store/bm6sw1h5f7ddy8qjmwzs3wbqppdqglkx-libpng-apng-1.6.43-dev/lib'),
+          PosixPath('/nix/store/li2ms1sxx2vb536m0a912ka3nkmr30a3-libpng-apng-1.6.43/lib'),
+          PosixPath('/nix/store/jxkph070yav94apr5ylb7wzx3z2bqw5l-freetype-2.13.2/lib'),
+          PosixPath('/nix/store/n35a1ncm6b0af6in87m9vda2l7719zhi-fontconfig-2.15.0-bin/lib'),
+          PosixPath('/nix/store/9x1qsbkz0z511850if7585r1l7g3jz4d-fontconfig-2.15.0-lib/lib'),
+          PosixPath('/nix/store/aldmf9w7jiss99b93dfndd1nsb9s5qn7-pixman-0.43.4/lib'),
+          PosixPath('/nix/store/4faf1z4b3g67y7c9hq9zmlq2h0qg88gi-libXext-1.3.6-dev/lib'),
+          PosixPath('/nix/store/67n916xpbam6vvwq4wbls5y0lz005wkq-xorgproto-2023.2/lib'),
+          PosixPath('/nix/store/0h2l5d8rbhdcs4hmimdjjy4dnxf2bjwg-libXau-1.0.11-dev/lib'),
+          PosixPath('/nix/store/pgvbn4556n5368bw866f18n0xdbgj22r-libXau-1.0.11/lib'),
+          PosixPath('/nix/store/9wi57z48m80s40j1bzh2wnpvpi0v4y38-libXext-1.3.6/lib'),
+          PosixPath('/nix/store/akb7bpy6qm8s4hgfx6r8d64mhzm6qwzb-libXrender-0.9.11-dev/lib'),
+          PosixPath('/nix/store/c122xiygvrcrp90d4hb1fhmx499c89ha-libX11-1.8.7-dev/lib'),
+          PosixPath('/nix/store/1fwln3g31q97kj79q6jsa337dwld11dc-libxcb-1.16-dev/lib'),
+          PosixPath('/nix/store/fy2yyv6xji1bkllx2rwvg6hn0p5s4219-libxcb-1.16/lib'),
+          PosixPath('/nix/store/8m69p7c5cjsrhh49mykh62vz8vmp0diw-libX11-1.8.7/lib'),
+          PosixPath('/nix/store/bsn7l0b753ysxzvinlxi4jkx5cn7z3xr-libXrender-0.9.11/lib'),
+          PosixPath('/nix/store/yih8b8glkwgvkj141j27fz1i3hhwy0v7-cairo-1.18.0/lib'),
+          PosixPath('/nix/store/x37hqgcvng5djsg7lppcasr3wx48grw6-fribidi-1.0.13-dev/lib'),
+          PosixPath('/nix/store/47l8yzis9073ygsqf0zxp8kwmk7hjyhi-fribidi-1.0.13/lib'),
+          PosixPath('/nix/store/62rk1lcryki539590a8pj9pysp6awvs7-gdk-pixbuf-2.42.10-dev/lib'),
+          PosixPath('/nix/store/2rwl36fgg4vqxx4nh345ks4fn9fzafd4-libtiff-4.6.0-dev/lib'),
+          PosixPath('/nix/store/6lfbv2p3abhxswg4vh0h1jwrsxmn78bk-libdeflate-1.19/lib'),
+          PosixPath('/nix/store/xksns72v3b0g736bz9yfwgxx1wf2501l-libjpeg-turbo-3.0.2-dev/lib'),
+          PosixPath('/nix/store/8s1py1pd2jnlffy8pp3zf2gz8cdh8069-libjpeg-turbo-3.0.2-bin/lib'),
+          PosixPath('/nix/store/hvcxqzwc95pxp8k3ik8zl1bjjx787wyv-libjpeg-turbo-3.0.2/lib'),
+          PosixPath('/nix/store/xcmzy20fnvnp4i9qksp33bj24x2fw0r2-xz-5.6.1-dev/lib'),
+          PosixPath('/nix/store/2zvi5q6fvrmznavnqgzc947wssilv9vy-xz-5.6.1-bin/lib'),
+          PosixPath('/nix/store/yyqzw7xvsrn3h2zrvincbs1b291yzx8c-xz-5.6.1/lib'),
+          PosixPath('/nix/store/zpafyxg75x3giyimh0c377sgwyypbyql-libtiff-4.6.0-bin/lib'),
+          PosixPath('/nix/store/n351xy2dk3m93s66flf993fhdzhznrn1-libtiff-4.6.0/lib'),
+          PosixPath('/nix/store/hwh2j6sh5626si924l66yddc0y6g0cw4-gdk-pixbuf-2.42.10/lib'),
+          PosixPath('/nix/store/dww77ywm1zj2q2h2l2xifr40fgsk1k7y-gsettings-desktop-schemas-45.0/lib'),
+          PosixPath('/nix/store/8m7hi0ddqvk8h1qkcllg4lm4ciwdjax4-libICE-1.1.1-dev/lib'),
+          PosixPath('/nix/store/h9pqadlyz8jxb6m9gq0sp637sq7h109k-libICE-1.1.1/lib'),
+          PosixPath('/nix/store/c59vscm26r5rw41xc66q83ji2n3p804b-libSM-1.2.4-dev/lib'),
+          PosixPath('/nix/store/y9yyimw6fgx3mayhzbh8z9wplaalfa45-libSM-1.2.4/lib'),
+          PosixPath('/nix/store/y90055c33f9h09pfgh04nrgrzw27z9ph-libXcomposite-0.4.6-dev/lib'),
+          PosixPath('/nix/store/p06vyjkxkwrghz0j80c12ic6kwfygnyz-libXfixes-6.0.1-dev/lib'),
+          PosixPath('/nix/store/vhsc0h999ijdd7yjvyz5hwsm9d10di9q-libXfixes-6.0.1/lib'),
+          PosixPath('/nix/store/lwfgafyzhvpma45xhf6gxh3a4a829n4s-libXcomposite-0.4.6/lib'),
+          PosixPath('/nix/store/4n1lm01waj5sd1y3k7m3qhllaiqcrfz2-libXcursor-1.2.2-dev/lib'),
+          PosixPath('/nix/store/ldi0rb00gmbdg6915lhch3k3b3ib460z-libXcursor-1.2.2/lib'),
+          PosixPath('/nix/store/w3w77hkpsjb4h9vv1rp58s3nhyfk1kxy-libXdamage-1.1.6-dev/lib'),
+          PosixPath('/nix/store/mv79sk80kgq2dsi6igkh8kx1kcp115fy-libXdamage-1.1.6/lib'),
+          PosixPath('/nix/store/byb05sfrwf2l237my6cyxr24dml6anyj-libXi-1.8.1-dev/lib'),
+          PosixPath('/nix/store/bj9p0xg5af6cjlr29jindmpicldyqkbx-libXi-1.8.1/lib'),
+          PosixPath('/nix/store/0nzx7qszahxyf0g4dp1zga8mh84yyvm9-libXrandr-1.5.4-dev/lib'),
+          PosixPath('/nix/store/8xbbv82pabjcbj30vrna4gcz4g9q97z4-libXrandr-1.5.4/lib'),
+          PosixPath('/nix/store/6d6kbxpkdy3yhks07hg6rihyg4aw9bbk-pango-1.51.0-dev/lib'),
+          PosixPath('/nix/store/x4qm5fbzchx752fs6sn7h4csx66jr619-harfbuzz-8.3.0-dev/lib'),
+          PosixPath('/nix/store/dzpw4hs48xb8lrn6zx9sjf1yb980yfgi-graphite2-1.3.14-dev/lib'),
+          PosixPath('/nix/store/xj44335xam0kpv60lqwq68dysv91n40q-graphite2-1.3.14/lib'),
+          PosixPath('/nix/store/kdh8lg6amm1z9r79ja4xaj3ci3wxjlkw-harfbuzz-8.3.0/lib'),
+          PosixPath('/nix/store/467zndmbypjznf7ryvfxs5wb2ag1r5fg-libXft-2.3.8-dev/lib'),
+          PosixPath('/nix/store/kcm6p2mck6h4k5vk2rqwsz1apn13ijwb-libXft-2.3.8/lib'),
+          PosixPath('/nix/store/j8k1d9vfrnsl92mfk0nxzc7lnsv21iqs-pango-1.51.0-bin/lib'),
+          PosixPath('/nix/store/b61xcm9qr9mfq2kqanjs9nrldfkpw18m-pango-1.51.0/lib'),
+          PosixPath('/nix/store/yixpzkixsaj1rx9l4p277mshjbvcsjmn-libGL-1.7.0-dev/lib'),
+          PosixPath('/nix/store/l5wrnffddhbwkl82d7646w7riznxgrb8-libGL-1.7.0/lib'),
+          PosixPath('/nix/store/lpqy1z1h8li6h3cp9ax6vifl71dks1ff-libglvnd-1.7.0/lib'),
+          PosixPath('/nix/store/bgza9ixbz3vynhh3lfv3wm99405ynddv-libglvnd-1.7.0-dev/lib'),
+          PosixPath('/nix/store/1902apvlsax7sr5mk3sfji3m0dwb3zva-wayland-1.22.0-dev/lib'),
+          PosixPath('/nix/store/zi4yi7s1idx5pqrp9mh7ap30s6nrkzwa-wayland-1.22.0-bin/lib'),
+          PosixPath('/nix/store/55kjzqzn2a3g0v3wssbq9507rkpnp3k6-wayland-1.22.0/lib'),
+          PosixPath('/nix/store/zirjjcd20j25cn40wzzv4fk4983f883n-wayland-protocols-1.33/lib'),
+          PosixPath('/nix/store/5qm9d2a7j2m3w4nj2dd4wl5sdgq77x1s-libXinerama-1.1.5-dev/lib'),
+          PosixPath('/nix/store/5bb4ks45libz0x06347yndwxg75aqi5y-libXinerama-1.1.5/lib'),
+          PosixPath('/nix/store/s8pq32k9hrw2w0djkll3zl3214aqdrr7-cups-2.4.7-dev/lib'),
+          PosixPath('/nix/store/65xj1s267mzx9i4rg6702dhgzi9l6z1w-gmp-with-cxx-6.3.0-dev/lib'),
+          PosixPath('/nix/store/bhfwvw0h09nvkaj4vr2pcrfm9i758c54-gmp-with-cxx-6.3.0/lib'),
+          PosixPath('/nix/store/15gkyw2qjrqzz45h0p8y26j42nsiq9sx-cups-2.4.7-lib/lib'),
+          PosixPath('/nix/store/08wi752b7sfy08cg2hs13i5d4j537a71-cups-2.4.7/lib'),
+          PosixPath('/nix/store/15g7m2yncbawq9kz65plgszxyvp8dlax-gtk+3-3.24.41/lib'),
+          PosixPath('/nix/store/rp3spl5xxp9y8x6k9z4gb0fc70naa2l1-librsvg-2.57.1-dev/lib'),
+          PosixPath('/nix/store/f2d8d2nnz2fhx7c8zwkmkq42dqk61ysm-librsvg-2.57.1/lib'),
+          PosixPath('/nix/store/spiwhs9xa145l8qa5i51f1rcpkfd5jvq-patchelf-0.15.0/lib'),
+          PosixPath('/nix/store/4xwfmpljvazd1zbp9f179i33n1acq0cy-update-autotools-gnu-config-scripts-hook/lib'),
+          PosixPath('/nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh/lib'),
+          PosixPath('/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh/lib'),
+          PosixPath('/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh/lib'),
+          PosixPath('/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh/lib'),
+          PosixPath('/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh/lib'),
+          PosixPath('/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh/lib'),
+          PosixPath('/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh/lib'),
+          PosixPath('/nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh/lib'),
+          PosixPath('/nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh/lib'),
+          PosixPath('/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh/lib'),
+          PosixPath('/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh/lib'),
+          PosixPath('/nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh/lib'),
+          PosixPath('/nix/store/wmknncrif06fqxa16hpdldhixk95nds0-strip.sh/lib'),
+          PosixPath('/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/lib'),
+          PosixPath('/nix/store/5ac6jr3asky426rc5qaxrf3wkhzpw1cm-binutils-wrapper-2.41/lib'),
+          PosixPath('/nix/store/zhpxjrdrhlfaajpln332bxgx5d3c1ajy-dconf-0.40.0-lib/lib'),
+          PosixPath('/nix/store/2m9c5j5lailzqdgy04fn86nxjxnqbnaa-alsa-lib-1.2.11-dev/lib'),
+          PosixPath('/nix/store/wsa7cdnm4lfyl4khprk3w9j08yqvpylm-alsa-lib-1.2.11/lib'),
+          PosixPath('/nix/store/alzkckkik3myv5qx3nq98v3i2bq8hd1a-dbus-glib-0.112-dev/lib'),
+          PosixPath('/nix/store/1mcfqfrq16i65f5k4g418sbgklx6pk5x-dbus-glib-0.112/lib'),
+          PosixPath('/nix/store/pkpxss9ab9zp6pryfylnkbmyq7v0p5zp-libXtst-1.2.4/lib')],
+ 'paths': [PosixPath('/nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12')],
+ 'recursive': True,
+ 'runtime_dependencies': []}
+setting interpreter of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/bin/.tor-browser-wrapped
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/bin/.tor-browser-wrapped
+setting interpreter of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/bin/tor-browser
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/bin/tor-browser
+setting interpreter of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/updater
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/updater
+    libnspr4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libplc4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libplds4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libnss3.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libnssutil3.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libsmime3.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libmozsqlite3.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libssl3.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libgtk-3.so.0 -> found: /nix/store/15g7m2yncbawq9kz65plgszxyvp8dlax-gtk+3-3.24.41/lib
+    libgdk-3.so.0 -> found: /nix/store/15g7m2yncbawq9kz65plgszxyvp8dlax-gtk+3-3.24.41/lib
+    libpangocairo-1.0.so.0 -> found: /nix/store/b61xcm9qr9mfq2kqanjs9nrldfkpw18m-pango-1.51.0/lib
+    libpango-1.0.so.0 -> found: /nix/store/b61xcm9qr9mfq2kqanjs9nrldfkpw18m-pango-1.51.0/lib
+    libatk-1.0.so.0 -> found: /nix/store/8lmh9vnbw1bhlxnxsaspyvbmzdyb3xj4-at-spi2-core-2.50.1/lib
+    libcairo-gobject.so.2 -> found: /nix/store/yih8b8glkwgvkj141j27fz1i3hhwy0v7-cairo-1.18.0/lib
+    libcairo.so.2 -> found: /nix/store/yih8b8glkwgvkj141j27fz1i3hhwy0v7-cairo-1.18.0/lib
+    libgdk_pixbuf-2.0.so.0 -> found: /nix/store/hwh2j6sh5626si924l66yddc0y6g0cw4-gdk-pixbuf-2.42.10/lib
+    libgio-2.0.so.0 -> found: /nix/store/gkkabfk5kccd5j8fm1hlrb71pmpcbw1p-glib-2.78.4/lib
+    libgobject-2.0.so.0 -> found: /nix/store/gkkabfk5kccd5j8fm1hlrb71pmpcbw1p-glib-2.78.4/lib
+    libglib-2.0.so.0 -> found: /nix/store/gkkabfk5kccd5j8fm1hlrb71pmpcbw1p-glib-2.78.4/lib
+    libstdc++.so.6 -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++
+    libgcc_s.so.1 -> found: /nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+setting RPATH to: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser:/nix/store/15g7m2yncbawq9kz65plgszxyvp8dlax-gtk+3-3.24.41/lib:/nix/store/b61xcm9qr9mfq2kqanjs9nrldfkpw18m-pango-1.51.0/lib:/nix/store/8lmh9vnbw1bhlxnxsaspyvbmzdyb3xj4-at-spi2-core-2.50.1/lib:/nix/store/yih8b8glkwgvkj141j27fz1i3hhwy0v7-cairo-1.18.0/lib:/nix/store/hwh2j6sh5626si924l66yddc0y6g0cw4-gdk-pixbuf-2.42.10/lib:/nix/store/gkkabfk5kccd5j8fm1hlrb71pmpcbw1p-glib-2.78.4/lib:/nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++:/nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libmozavcodec.so
+    libmozavutil.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+setting RPATH to: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libfreeblpriv3.so
+    libnspr4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libplc4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libplds4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+setting RPATH to: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libxul.so
+    libmozsandbox.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libnspr4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libplc4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libplds4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    liblgpllibs.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libnss3.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libnssutil3.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libsmime3.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libmozsqlite3.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libssl3.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libmozgtk.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libmozwayland.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libasound.so.2 -> found: /nix/store/wsa7cdnm4lfyl4khprk3w9j08yqvpylm-alsa-lib-1.2.11/lib
+    libfreetype.so.6 -> found: /nix/store/jxkph070yav94apr5ylb7wzx3z2bqw5l-freetype-2.13.2/lib
+    libfontconfig.so.1 -> found: /nix/store/9x1qsbkz0z511850if7585r1l7g3jz4d-fontconfig-2.15.0-lib/lib
+    libgtk-3.so.0 -> found: /nix/store/15g7m2yncbawq9kz65plgszxyvp8dlax-gtk+3-3.24.41/lib
+    libgdk-3.so.0 -> found: /nix/store/15g7m2yncbawq9kz65plgszxyvp8dlax-gtk+3-3.24.41/lib
+    libpangocairo-1.0.so.0 -> found: /nix/store/b61xcm9qr9mfq2kqanjs9nrldfkpw18m-pango-1.51.0/lib
+    libpango-1.0.so.0 -> found: /nix/store/b61xcm9qr9mfq2kqanjs9nrldfkpw18m-pango-1.51.0/lib
+    libatk-1.0.so.0 -> found: /nix/store/8lmh9vnbw1bhlxnxsaspyvbmzdyb3xj4-at-spi2-core-2.50.1/lib
+    libcairo-gobject.so.2 -> found: /nix/store/yih8b8glkwgvkj141j27fz1i3hhwy0v7-cairo-1.18.0/lib
+    libcairo.so.2 -> found: /nix/store/yih8b8glkwgvkj141j27fz1i3hhwy0v7-cairo-1.18.0/lib
+    libgdk_pixbuf-2.0.so.0 -> found: /nix/store/hwh2j6sh5626si924l66yddc0y6g0cw4-gdk-pixbuf-2.42.10/lib
+    libgio-2.0.so.0 -> found: /nix/store/gkkabfk5kccd5j8fm1hlrb71pmpcbw1p-glib-2.78.4/lib
+    libgobject-2.0.so.0 -> found: /nix/store/gkkabfk5kccd5j8fm1hlrb71pmpcbw1p-glib-2.78.4/lib
+    libglib-2.0.so.0 -> found: /nix/store/gkkabfk5kccd5j8fm1hlrb71pmpcbw1p-glib-2.78.4/lib
+    libdbus-glib-1.so.2 -> found: /nix/store/1mcfqfrq16i65f5k4g418sbgklx6pk5x-dbus-glib-0.112/lib
+    libdbus-1.so.3 -> found: /nix/store/v7v78ar1l0hcy84vf8xghiyrncyx359d-dbus-1.14.10-lib/lib
+    libxcb-shm.so.0 -> found: /nix/store/fy2yyv6xji1bkllx2rwvg6hn0p5s4219-libxcb-1.16/lib
+    libX11-xcb.so.1 -> found: /nix/store/8m69p7c5cjsrhh49mykh62vz8vmp0diw-libX11-1.8.7/lib
+    libX11.so.6 -> found: /nix/store/8m69p7c5cjsrhh49mykh62vz8vmp0diw-libX11-1.8.7/lib
+    libxcb.so.1 -> found: /nix/store/fy2yyv6xji1bkllx2rwvg6hn0p5s4219-libxcb-1.16/lib
+    libXext.so.6 -> found: /nix/store/9wi57z48m80s40j1bzh2wnpvpi0v4y38-libXext-1.3.6/lib
+    libXrandr.so.2 -> found: /nix/store/8xbbv82pabjcbj30vrna4gcz4g9q97z4-libXrandr-1.5.4/lib
+    libstdc++.so.6 -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++
+    libgcc_s.so.1 -> found: /nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+setting RPATH to: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser:/nix/store/wsa7cdnm4lfyl4khprk3w9j08yqvpylm-alsa-lib-1.2.11/lib:/nix/store/jxkph070yav94apr5ylb7wzx3z2bqw5l-freetype-2.13.2/lib:/nix/store/9x1qsbkz0z511850if7585r1l7g3jz4d-fontconfig-2.15.0-lib/lib:/nix/store/15g7m2yncbawq9kz65plgszxyvp8dlax-gtk+3-3.24.41/lib:/nix/store/b61xcm9qr9mfq2kqanjs9nrldfkpw18m-pango-1.51.0/lib:/nix/store/8lmh9vnbw1bhlxnxsaspyvbmzdyb3xj4-at-spi2-core-2.50.1/lib:/nix/store/yih8b8glkwgvkj141j27fz1i3hhwy0v7-cairo-1.18.0/lib:/nix/store/hwh2j6sh5626si924l66yddc0y6g0cw4-gdk-pixbuf-2.42.10/lib:/nix/store/gkkabfk5kccd5j8fm1hlrb71pmpcbw1p-glib-2.78.4/lib:/nix/store/1mcfqfrq16i65f5k4g418sbgklx6pk5x-dbus-glib-0.112/lib:/nix/store/v7v78ar1l0hcy84vf8xghiyrncyx359d-dbus-1.14.10-lib/lib:/nix/store/fy2yyv6xji1bkllx2rwvg6hn0p5s4219-libxcb-1.16/lib:/nix/store/8m69p7c5cjsrhh49mykh62vz8vmp0diw-libX11-1.8.7/lib:/nix/store/9wi57z48m80s40j1bzh2wnpvpi0v4y38-libXext-1.3.6/lib:/nix/store/8xbbv82pabjcbj30vrna4gcz4g9q97z4-libXrandr-1.5.4/lib:/nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++:/nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/liblgpllibs.so
+    libstdc++.so.6 -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++
+    libgcc_s.so.1 -> found: /nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+setting RPATH to: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++:/nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libnss3.so
+    libnspr4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libplc4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libplds4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libnssutil3.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+setting RPATH to: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libssl3.so
+    libnspr4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libplc4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libplds4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libnss3.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libnssutil3.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+setting RPATH to: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+setting interpreter of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/firefox
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/firefox
+    libstdc++.so.6 -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++
+    libgcc_s.so.1 -> found: /nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+setting RPATH to: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++:/nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libmozavutil.so
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libsoftokn3.so
+    libnspr4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libplc4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libplds4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libnssutil3.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libmozsqlite3.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+setting RPATH to: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libnssckbi.so
+    libstdc++.so.6 -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++
+    libgcc_s.so.1 -> found: /nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+setting RPATH to: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++:/nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libmozgtk.so
+    libgtk-3.so.0 -> found: /nix/store/15g7m2yncbawq9kz65plgszxyvp8dlax-gtk+3-3.24.41/lib
+    libgdk-3.so.0 -> found: /nix/store/15g7m2yncbawq9kz65plgszxyvp8dlax-gtk+3-3.24.41/lib
+setting RPATH to: /nix/store/15g7m2yncbawq9kz65plgszxyvp8dlax-gtk+3-3.24.41/lib
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libnspr4.so
+setting interpreter of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/vaapitest
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/vaapitest
+    libxcb-shm.so.0 -> found: /nix/store/fy2yyv6xji1bkllx2rwvg6hn0p5s4219-libxcb-1.16/lib
+    libX11-xcb.so.1 -> found: /nix/store/8m69p7c5cjsrhh49mykh62vz8vmp0diw-libX11-1.8.7/lib
+    libX11.so.6 -> found: /nix/store/8m69p7c5cjsrhh49mykh62vz8vmp0diw-libX11-1.8.7/lib
+    libxcb.so.1 -> found: /nix/store/fy2yyv6xji1bkllx2rwvg6hn0p5s4219-libxcb-1.16/lib
+    libXext.so.6 -> found: /nix/store/9wi57z48m80s40j1bzh2wnpvpi0v4y38-libXext-1.3.6/lib
+    libXrandr.so.2 -> found: /nix/store/8xbbv82pabjcbj30vrna4gcz4g9q97z4-libXrandr-1.5.4/lib
+    libgtk-3.so.0 -> found: /nix/store/15g7m2yncbawq9kz65plgszxyvp8dlax-gtk+3-3.24.41/lib
+    libgdk-3.so.0 -> found: /nix/store/15g7m2yncbawq9kz65plgszxyvp8dlax-gtk+3-3.24.41/lib
+    libpangocairo-1.0.so.0 -> found: /nix/store/b61xcm9qr9mfq2kqanjs9nrldfkpw18m-pango-1.51.0/lib
+    libpango-1.0.so.0 -> found: /nix/store/b61xcm9qr9mfq2kqanjs9nrldfkpw18m-pango-1.51.0/lib
+    libatk-1.0.so.0 -> found: /nix/store/8lmh9vnbw1bhlxnxsaspyvbmzdyb3xj4-at-spi2-core-2.50.1/lib
+    libcairo-gobject.so.2 -> found: /nix/store/yih8b8glkwgvkj141j27fz1i3hhwy0v7-cairo-1.18.0/lib
+    libcairo.so.2 -> found: /nix/store/yih8b8glkwgvkj141j27fz1i3hhwy0v7-cairo-1.18.0/lib
+    libgdk_pixbuf-2.0.so.0 -> found: /nix/store/hwh2j6sh5626si924l66yddc0y6g0cw4-gdk-pixbuf-2.42.10/lib
+    libgio-2.0.so.0 -> found: /nix/store/gkkabfk5kccd5j8fm1hlrb71pmpcbw1p-glib-2.78.4/lib
+    libgobject-2.0.so.0 -> found: /nix/store/gkkabfk5kccd5j8fm1hlrb71pmpcbw1p-glib-2.78.4/lib
+    libglib-2.0.so.0 -> found: /nix/store/gkkabfk5kccd5j8fm1hlrb71pmpcbw1p-glib-2.78.4/lib
+    libstdc++.so.6 -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++
+    libgcc_s.so.1 -> found: /nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+setting RPATH to: /nix/store/fy2yyv6xji1bkllx2rwvg6hn0p5s4219-libxcb-1.16/lib:/nix/store/8m69p7c5cjsrhh49mykh62vz8vmp0diw-libX11-1.8.7/lib:/nix/store/9wi57z48m80s40j1bzh2wnpvpi0v4y38-libXext-1.3.6/lib:/nix/store/8xbbv82pabjcbj30vrna4gcz4g9q97z4-libXrandr-1.5.4/lib:/nix/store/15g7m2yncbawq9kz65plgszxyvp8dlax-gtk+3-3.24.41/lib:/nix/store/b61xcm9qr9mfq2kqanjs9nrldfkpw18m-pango-1.51.0/lib:/nix/store/8lmh9vnbw1bhlxnxsaspyvbmzdyb3xj4-at-spi2-core-2.50.1/lib:/nix/store/yih8b8glkwgvkj141j27fz1i3hhwy0v7-cairo-1.18.0/lib:/nix/store/hwh2j6sh5626si924l66yddc0y6g0cw4-gdk-pixbuf-2.42.10/lib:/nix/store/gkkabfk5kccd5j8fm1hlrb71pmpcbw1p-glib-2.78.4/lib:/nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++:/nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+setting interpreter of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/glxtest
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/glxtest
+    libxcb-shm.so.0 -> found: /nix/store/fy2yyv6xji1bkllx2rwvg6hn0p5s4219-libxcb-1.16/lib
+    libX11-xcb.so.1 -> found: /nix/store/8m69p7c5cjsrhh49mykh62vz8vmp0diw-libX11-1.8.7/lib
+    libX11.so.6 -> found: /nix/store/8m69p7c5cjsrhh49mykh62vz8vmp0diw-libX11-1.8.7/lib
+    libxcb.so.1 -> found: /nix/store/fy2yyv6xji1bkllx2rwvg6hn0p5s4219-libxcb-1.16/lib
+    libXext.so.6 -> found: /nix/store/9wi57z48m80s40j1bzh2wnpvpi0v4y38-libXext-1.3.6/lib
+    libXrandr.so.2 -> found: /nix/store/8xbbv82pabjcbj30vrna4gcz4g9q97z4-libXrandr-1.5.4/lib
+    libgtk-3.so.0 -> found: /nix/store/15g7m2yncbawq9kz65plgszxyvp8dlax-gtk+3-3.24.41/lib
+    libgdk-3.so.0 -> found: /nix/store/15g7m2yncbawq9kz65plgszxyvp8dlax-gtk+3-3.24.41/lib
+    libpangocairo-1.0.so.0 -> found: /nix/store/b61xcm9qr9mfq2kqanjs9nrldfkpw18m-pango-1.51.0/lib
+    libpango-1.0.so.0 -> found: /nix/store/b61xcm9qr9mfq2kqanjs9nrldfkpw18m-pango-1.51.0/lib
+    libatk-1.0.so.0 -> found: /nix/store/8lmh9vnbw1bhlxnxsaspyvbmzdyb3xj4-at-spi2-core-2.50.1/lib
+    libcairo-gobject.so.2 -> found: /nix/store/yih8b8glkwgvkj141j27fz1i3hhwy0v7-cairo-1.18.0/lib
+    libcairo.so.2 -> found: /nix/store/yih8b8glkwgvkj141j27fz1i3hhwy0v7-cairo-1.18.0/lib
+    libgdk_pixbuf-2.0.so.0 -> found: /nix/store/hwh2j6sh5626si924l66yddc0y6g0cw4-gdk-pixbuf-2.42.10/lib
+    libgio-2.0.so.0 -> found: /nix/store/gkkabfk5kccd5j8fm1hlrb71pmpcbw1p-glib-2.78.4/lib
+    libgobject-2.0.so.0 -> found: /nix/store/gkkabfk5kccd5j8fm1hlrb71pmpcbw1p-glib-2.78.4/lib
+    libglib-2.0.so.0 -> found: /nix/store/gkkabfk5kccd5j8fm1hlrb71pmpcbw1p-glib-2.78.4/lib
+    libstdc++.so.6 -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++
+    libgcc_s.so.1 -> found: /nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+setting RPATH to: /nix/store/fy2yyv6xji1bkllx2rwvg6hn0p5s4219-libxcb-1.16/lib:/nix/store/8m69p7c5cjsrhh49mykh62vz8vmp0diw-libX11-1.8.7/lib:/nix/store/9wi57z48m80s40j1bzh2wnpvpi0v4y38-libXext-1.3.6/lib:/nix/store/8xbbv82pabjcbj30vrna4gcz4g9q97z4-libXrandr-1.5.4/lib:/nix/store/15g7m2yncbawq9kz65plgszxyvp8dlax-gtk+3-3.24.41/lib:/nix/store/b61xcm9qr9mfq2kqanjs9nrldfkpw18m-pango-1.51.0/lib:/nix/store/8lmh9vnbw1bhlxnxsaspyvbmzdyb3xj4-at-spi2-core-2.50.1/lib:/nix/store/yih8b8glkwgvkj141j27fz1i3hhwy0v7-cairo-1.18.0/lib:/nix/store/hwh2j6sh5626si924l66yddc0y6g0cw4-gdk-pixbuf-2.42.10/lib:/nix/store/gkkabfk5kccd5j8fm1hlrb71pmpcbw1p-glib-2.78.4/lib:/nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++:/nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+setting interpreter of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/abicheck
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/abicheck
+    libstdc++.so.6 -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++
+    libgcc_s.so.1 -> found: /nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+setting RPATH to: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++:/nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libplds4.so
+    libnspr4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+setting RPATH to: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libmozsandbox.so
+    libnspr4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libplc4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libplds4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libstdc++.so.6 -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++
+    libgcc_s.so.1 -> found: /nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+setting RPATH to: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser:/nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++:/nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libmozwayland.so
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libmozsqlite3.so
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libplc4.so
+    libnspr4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+setting RPATH to: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+setting interpreter of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/plugin-container
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/plugin-container
+    libnspr4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libplc4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libplds4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libxul.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libstdc++.so.6 -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++
+    libgcc_s.so.1 -> found: /nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+setting RPATH to: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser:/nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++:/nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libipcclientcerts.so
+    libstdc++.so.6 -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++
+    libgcc_s.so.1 -> found: /nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+setting RPATH to: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++:/nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libnssutil3.so
+    libnspr4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libplc4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libplds4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+setting RPATH to: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/libsmime3.so
+    libnspr4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libplc4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libplds4.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libnss3.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+    libnssutil3.so -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+setting RPATH to: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libevent-2.1.so.7
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libcrypto.so.3
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libssl.so.3
+    libcrypto.so.3 -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor
+setting RPATH to: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor
+setting interpreter of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/tor
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/tor
+    libz.so.1 -> found: /nix/store/zbaajn0dk65kwvrcglhli1j4xx4vhvvj-zlib-1.3.1/lib
+    libevent-2.1.so.7 -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor
+    libssl.so.3 -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor
+    libcrypto.so.3 -> found: /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor
+setting RPATH to: /nix/store/zbaajn0dk65kwvrcglhli1j4xx4vhvvj-zlib-1.3.1/lib:/nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/libstdc++/libstdc++.so.6
+    libgcc_s.so.1 -> found: /nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+setting RPATH to: /nix/store/6k373ff6rgylb9w6l2qlagb5xdv0fcsf-gcc-13.2.0-libgcc/lib
+setting interpreter of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/PluggableTransports/lyrebird
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/PluggableTransports/lyrebird
+setting interpreter of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/PluggableTransports/snowflake-client
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/PluggableTransports/snowflake-client
+setting interpreter of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/PluggableTransports/conjure-client
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/PluggableTransports/conjure-client
+setting interpreter of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/PluggableTransports/webtunnel-client
+searching for dependencies of /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/tor-browser/TorBrowser/Tor/PluggableTransports/webtunnel-client
+auto-patchelf: 0 dependencies could not be satisfied
+rewriting symlink /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/doc/tor-browser to be relative to /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12
+rewriting symlink /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/icons/hicolor/128x128/apps/tor-browser.png to be relative to /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12
+rewriting symlink /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/icons/hicolor/48x48/apps/tor-browser.png to be relative to /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12
+rewriting symlink /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/icons/hicolor/64x64/apps/tor-browser.png to be relative to /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12
+rewriting symlink /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/icons/hicolor/16x16/apps/tor-browser.png to be relative to /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12
+rewriting symlink /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12/share/icons/hicolor/32x32/apps/tor-browser.png to be relative to /nix/store/rnd2qih2f5jpir67md5yi7rzp02i385p-tor-browser-13.0.12
+building '/nix/store/iahlvxzgrhi9nwl52djx13mrz8hlcaig-user-environment.drv'...
+created 127 symlinks in user environment
+building '/nix/store/x31vqhgl49wk0gkx5qc9hz4sd8n4v8m0-etc.drv'...
+building '/nix/store/7xldf30a0ibrvjqhhp1w6xz4p89q41ij-nixos-system-nixos-24.05pre601756.44d0940ea560.drv'...
