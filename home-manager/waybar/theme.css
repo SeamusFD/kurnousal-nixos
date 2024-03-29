@@ -60,6 +60,7 @@ tooltip {
 #cpu,
 #workspaces,
 #tray,
+#custom-dunst,
 #backlight {
   background: #1e1e2e;
   opacity: 0.8;
@@ -143,6 +144,12 @@ tooltip {
   border-radius: 0px 20px 20px 0px;
   margin-right: 5px;
   padding-right: 8px;
+}
+
+#custom-dunst {
+  border-radius: 20px;
+  margin-right: 5px;
+  padding: 0px 4px;
 }
 
 #custom-weather {

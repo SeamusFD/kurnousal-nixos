@@ -18,7 +18,7 @@ with builtins; {
         ];
         modules-left = ["clock" "custom/weather" "cpu" "temperature"];
         modules-center = ["hyprland/workspaces"];
-        modules-right = ["bluetooth" "network" "custom/pipewire" "tray"];
+        modules-right = ["bluetooth" "network" "custom/pipewire" "tray" "custom/dunst"];
 
         "custom/pipewire" = {
           "tooltip" = false;
@@ -98,6 +98,12 @@ with builtins; {
           "critical-threshold" = 80;
           "format-critical" = "{temperatureC}°C ";
           "format" = "{temperatureC}°C ";
+        };
+        "custom/dunst" = {
+          "return-type" = "json";
+          "exec" = "/etc/nixos/kurnousal-nixos/scripts/notifications/dunst.sh";
+          "on-click" = "dunstctl set-paused toggle";
+          "restart-interval" = 1;
         };
       };
     };
