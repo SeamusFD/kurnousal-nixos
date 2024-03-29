@@ -24,7 +24,6 @@
       workspace=DP-3,2
 
       $srcPath = /etc/nixos/kurnousal-nixos/scripts
-
       input {
           kb_layout = us
           kb_variant =
@@ -43,8 +42,6 @@
       }
 
       general {
-          # See https://wiki.hyprland.org/Configuring/Variables/ for more
-
           gaps_in = 5
           gaps_out = 20
           border_size = 2
@@ -58,18 +55,15 @@
       }
 
       dwindle {
-          # See https://wiki.hyprland.org/Configuring/Dwindle-Layout/ for more
           pseudotile = yes # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
           preserve_split = yes # you probably want this
       }
 
       master {
-          # See https://wiki.hyprland.org/Configuring/Master-Layout/ for more
           new_is_master = true
       }
 
       gestures {
-          # See https://wiki.hyprland.org/Configuring/Variables/ for more
           workspace_swipe = off
       }
 

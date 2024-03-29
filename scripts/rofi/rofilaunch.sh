@@ -1,5 +1,3 @@
-#!/usr/bin/env sh
-
 ScrDir=$(dirname "$(realpath "$0")")
 roconf="~/.config/rofi/config.rasi"
 
