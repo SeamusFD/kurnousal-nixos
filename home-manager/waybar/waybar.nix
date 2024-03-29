@@ -10,7 +10,7 @@ with builtins; {
       mainBar = {
         layer = "top";
         position = "bottom";
-        height = 30;
+        height = 34;
         exclusive = true;
         output = [
           "HDMI-A-1"
@@ -22,6 +22,7 @@ with builtins; {
 
         "custom/pipewire" = {
           "tooltip" = false;
+          "max-length" = 6;
           "exec" = "/etc/nixos/kurnousal-nixos/scripts/audio/pipewire.sh";
           "on-click" = "pavucontrol";
           "on-click-right" = "qpwgraph";
