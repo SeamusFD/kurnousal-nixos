@@ -90,6 +90,7 @@
     meson
     cmake
     scdoc
+    coreutils
     gcc
     wayland-protocols
     wayland-utils
