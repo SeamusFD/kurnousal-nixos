@@ -111,6 +111,7 @@
     dotnet-sdk_8
     # Virtualization
     qemu
+    quickemu
   ];
 
   programs.steam.enable = true;
