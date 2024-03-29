@@ -82,7 +82,7 @@ with builtins; {
         };
         "cpu" = {
           "interval" = 1;
-          "format" = "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7} |  {load}%/{usage}%";
+          "format" = "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7} |  {load}%/{usage}%";
           "format-icons" = [
             "<span color='#69ff94'>▁</span>"
             "<span color='#2aa9ff'>▂</span>"
