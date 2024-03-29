@@ -64,10 +64,10 @@ with builtins; {
         };
         "network" = {
           "format-wifi" = "  {signalStrength}%";
-          "format-ethernet" = "{ipaddr}/{cidr} ";
-          "tooltip-format" = "{essid} - {ifname} via {gwaddr} ";
-          "format-linked" = "{ifname} (No IP) ";
-          "format-disconnected" = "Disconnected ⚠";
+          "format-ethernet" = "{ipaddr}/{cidr} 󰈀";
+          "tooltip-format" = "{essid} - {ifname} via {gwaddr} 󰈀";
+          "format-linked" = "{ifname} (No IP) 󰈁";
+          "format-disconnected" = "Disconnected 󰈂";
           "format-alt" = "{ifname}:{essid} {ipaddr}/{cidr}";
         };
         "bluetooth" = {
