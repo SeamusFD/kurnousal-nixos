@@ -20,7 +20,10 @@ in {
       discord
       jetbrains-toolbox
       protonup-qt
+      # Application Theming
       nwg-look
+      glib
+      gsettings-qt
       gtk3
       gtk4
       bibata-cursors
