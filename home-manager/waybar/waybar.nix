@@ -18,25 +18,14 @@ with builtins; {
         ];
         modules-left = ["clock" "cpu" "temperature"];
         modules-center = ["hyprland/workspaces"];
-        modules-right = ["bluetooth" "network" "pulseaudio" "pulseaudio#microphone" "tray"];
+        modules-right = ["bluetooth" "network" "custom/pipewire" "pulseaudio#microphone" "tray"];
 
-        "pulseaudio" = {
-          "format" = "{icon} {volume}%";
-          "format-muted" = " Muted";
-          "on-click" = "pamixer -t";
-          "on-scroll-up" = "pamixer -i 5";
-          "on-scroll-down" = "pamixer -d 5";
-          "tooltip-format" = "{icon} {desc} // {volume}%";
-          "scroll-step" = 5;
-          "format-icons" = {
-            "headphone" = "";
-            "hands-free" = "";
-            "headset" = "";
-            "phone" = "";
-            "portable" = "";
-            "car" = "";
-            "default" = ["" "" ""];
-          };
+        "custom/pipewire" = {
+          "tooltip" = false;
+          "max-length" = 6;
+          "exec" = "/etc/nixos/kurnousal-nixos/scripts/audio/pipewire.sh";
+          "on-click" = "pavucontrol";
+          "on-click-right" = "qpwgraph";
         };
         "pulseaudio#microphone" = {
           "format" = "{format_source}";

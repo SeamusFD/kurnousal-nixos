@@ -109,6 +109,9 @@
     dotnet-sdk
     dotnet-sdk_7
     dotnet-sdk_8
+    # Sound
+    pavucontrol
+    qpwgraph
     # Virtualization
     qemu
     quickemu
