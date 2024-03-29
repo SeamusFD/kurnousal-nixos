@@ -52,6 +52,7 @@ tooltip {
 
 #window,
 #clock,
+#custom-weather,
 #custom-pipewire,
 #network,
 #bluetooth,
@@ -137,22 +138,11 @@ tooltip {
   color: #89b4fa;
   border-left: 0px;
   border-right: 0px;
-}
-
-#custom-pipewire.microphone {
-  color: #cba6f7;
   border-left: 0px;
   border-right: 0px;
   border-radius: 0px 20px 20px 0px;
   margin-right: 5px;
   padding-right: 8px;
-}
-
-#battery {
-  color: #a6e3a1;
-  border-radius: 0 20px 20px 0;
-  margin-right: 5px;
-  border-left: 0px;
 }
 
 #custom-weather {

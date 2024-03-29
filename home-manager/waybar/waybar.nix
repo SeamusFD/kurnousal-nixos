@@ -16,7 +16,7 @@ with builtins; {
           "HDMI-A-1"
           "DP-3"
         ];
-        modules-left = ["clock" "cpu" "temperature"];
+        modules-left = ["clock" "custom/weather" "cpu" "temperature"];
         modules-center = ["hyprland/workspaces"];
         modules-right = ["bluetooth" "network" "custom/pipewire" "tray"];
 
@@ -26,6 +26,13 @@ with builtins; {
           "exec" = "/etc/nixos/kurnousal-nixos/scripts/audio/pipewire.sh";
           "on-click" = "pavucontrol";
           "on-click-right" = "qpwgraph";
+        };
+        "custom/weather" = {
+          "exec" = "/etc/nixos/kurnousal-nixos/scripts/weather/weather.sh Collierville+Tennessee";
+          "return-type" = "json";
+          "format" = "{}";
+          "tooltip" = true;
+          "interval" = 3600;
         };
         "hyprland/workspaces" = {
           "disable-scroll" = true;
