@@ -27,15 +27,6 @@ with builtins; {
           "on-click" = "pavucontrol";
           "on-click-right" = "qpwgraph";
         };
-        "pulseaudio#microphone" = {
-          "format" = "{format_source}";
-          "format-source" = "Mic: {volume}%";
-          "format-source-muted" = "Mic: Muted";
-          "on-click" = "pamixer --default-source -t";
-          "on-scroll-up" = "pamixer --default-source -i 5";
-          "on-scroll-down" = "pamixer --default-source -d 5";
-          "scroll-step" = 5;
-        };
         "hyprland/workspaces" = {
           "disable-scroll" = true;
           "all-outputs" = true;
@@ -61,7 +52,7 @@ with builtins; {
           "spacing" = 10;
         };
         "clock" = {
-          "format" = "%{: %I:%M %p   %a, %b %e}";
+          "format" = " {:%I:%M}   {:%A, %B %d}";
           "tooltip-format" = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
         };
         "network" = {
