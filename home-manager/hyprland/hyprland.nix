@@ -23,6 +23,8 @@
       workspace=HDMI-A-1,1
       workspace=DP-3,2
 
+      $srcPath = "/etc/nixos/kurnousal-nixos/scripts"
+
       input {
           kb_layout = us
           kb_variant =
