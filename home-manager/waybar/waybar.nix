@@ -22,7 +22,6 @@ with builtins; {
 
         "custom/pipewire" = {
           "tooltip" = false;
-          "max-length" = 6;
           "exec" = "/etc/nixos/kurnousal-nixos/scripts/audio/pipewire.sh";
           "on-click" = "pavucontrol";
           "on-click-right" = "qpwgraph";
