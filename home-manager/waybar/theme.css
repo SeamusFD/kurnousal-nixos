@@ -52,7 +52,7 @@ tooltip {
 
 #window,
 #clock,
-#pipewire,
+#custom-pipewire,
 #network,
 #bluetooth,
 #temperature,
@@ -133,13 +133,13 @@ tooltip {
   margin-right: 10px;
 }
 
-#pipewire {
+#custom-pipewire {
   color: #89b4fa;
   border-left: 0px;
   border-right: 0px;
 }
 
-#pipewire.microphone {
+#custom-pipewire.microphone {
   color: #cba6f7;
   border-left: 0px;
   border-right: 0px;

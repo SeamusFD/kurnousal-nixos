@@ -61,7 +61,7 @@ with builtins; {
           "spacing" = 10;
         };
         "clock" = {
-          "format" = "{: %I:%M %p   %a, %b %e}";
+          "format" = "%{: %I:%M %p   %a, %b %e}";
           "tooltip-format" = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
         };
         "network" = {
