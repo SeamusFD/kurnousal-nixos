@@ -12,10 +12,13 @@
       exec-once = waybar & hyprpaper & dunst
       exec-once = swww init
       exec-once = set-primary-monitor
+      exec-once = hyprctl setcursor Bibata-Modern-Classic 5
 
-      $scrPath = ~/.config/hypr/scripts
-
-      env = XCURSOR_SIZE,24
+      env = GDK_BACKEND,wayland,x11
+      env = QT_QPA_PLATFORM,wayland;xcb
+      env = SLD_VIDEODRIVER,wayland
+      env = CLUTTER_BACKEND,wayland
+      env = GTK_THEME,Nord
 
       workspace=HDMI-A-1,1
       workspace=DP-3,2
@@ -67,10 +70,6 @@
           # See https://wiki.hyprland.org/Configuring/Variables/ for more
           workspace_swipe = off
       }
-
-      misc {
-          # See https://wiki.hyprland.org/Configuring/Variables/ for more
-          force_default_wallpaper = -1 # Set to 0 to disable the anime mascot wallpapers
 
       source = /etc/nixos/kurnousal-nixos/home-manager/hyprland/conf/keybindings.conf
       source = /etc/nixos/kurnousal-nixos/home-manager/hyprland/conf/window_decorations.conf
