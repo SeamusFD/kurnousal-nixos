@@ -52,7 +52,7 @@ with builtins; {
           "spacing" = 10;
         };
         "clock" = {
-          "format" = " {:%I:%M}   {:%A, %B %d}";
+          "format" = " {:%I:%M}";
           "tooltip-format" = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
         };
         "network" = {
