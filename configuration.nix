@@ -108,6 +108,8 @@
     dotnet-sdk
     dotnet-sdk_7
     dotnet-sdk_8
+    # Virtualization
+    qemu
   ];
 
   programs.steam.enable = true;
