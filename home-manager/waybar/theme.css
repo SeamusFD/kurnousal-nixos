@@ -56,8 +56,11 @@ tooltip {
 #custom-pipewire,
 #network,
 #bluetooth,
-#temperature,
+#systemd-failed-units,
 #cpu,
+#temperature,
+#memory,
+#custom-gpu-usage,
 #workspaces,
 #tray,
 #custom-dunst,
@@ -71,7 +74,16 @@ tooltip {
 }
 
 #temperature {
+  border-radius: 0px;
+}
+
+#memory {
   border-radius: 0px 20px 20px 0px;
+  margin-right: 10px;
+}
+
+#custom-gpu-usage {
+  border-radius: 20px;
 }
 
 #cpu {
@@ -82,9 +94,17 @@ tooltip {
   color: #eba0ac;
 }
 
-#backlight {
-  border-radius: 20px 0px 0px 20px;
-  padding-left: 7px;
+#systemd-failed-units {
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+#systemd-failed-units.ok {
+  color: #69ff94;
+}
+
+#systemd-failed-units.degraded {
+  color: #eba0ac;
 }
 
 #tray {
@@ -117,6 +137,7 @@ tooltip {
   color: #fab387;
   border-radius: 20px;
   margin-left: 5px;
+  margin-right: 10px;
   border-right: 0px;
   transition: 0.3s;
   padding-left: 7px;

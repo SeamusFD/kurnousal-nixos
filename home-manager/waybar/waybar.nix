@@ -16,9 +16,9 @@ with builtins; {
           "HDMI-A-1"
           "DP-3"
         ];
-        modules-left = ["clock" "custom/weather" "cpu" "temperature"];
+        modules-left = ["clock" "custom/weather" "cpu" "temperature" "memory"];
         modules-center = ["hyprland/workspaces"];
-        modules-right = ["bluetooth" "network" "custom/pipewire" "tray" "custom/dunst"];
+        modules-right = ["systemd-failed-units" "bluetooth" "network" "custom/pipewire" "tray" "custom/dunst"];
 
         "custom/pipewire" = {
           "tooltip" = false;
@@ -35,7 +35,7 @@ with builtins; {
           "interval" = 3600;
         };
         "hyprland/workspaces" = {
-          "format" = "{name}: {icon}";
+          "format" = "{name}  {icon}";
           "all-outputs" = true;
           "on-click" = "activate";
           "sort-by-number" = true;
@@ -59,7 +59,7 @@ with builtins; {
           "spacing" = 10;
         };
         "clock" = {
-          "format" = " {:%I:%M}";
+          "format" = " {:%H:%M}";
           "tooltip-format" = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
         };
         "network" = {
@@ -82,7 +82,7 @@ with builtins; {
         };
         "cpu" = {
           "interval" = 1;
-          "format" = "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7} |  {load}%/{usage}%";
+          "format" = "  {icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}   {load}%/{usage}%";
           "format-icons" = [
             "<span color='#69ff94'>▁</span>"
             "<span color='#2aa9ff'>▂</span>"
@@ -95,17 +95,35 @@ with builtins; {
           ];
         };
         "temperature" = {
-          "thermal-zone" = 2;
-          "hwmon-path" = "/sys/class/hwmon/hwmon2/temp1_input";
-          "critical-threshold" = 80;
+          # "thermal-zone" = 0;
+          # "hwmon-path" = "/sys/class/hwmon/hwmon2/temp1_input";
+          # "critical-threshold" = 80;
           "format-critical" = "{temperatureC}°C ";
           "format" = "{temperatureC}°C ";
+        };
+        "custom/gpu-usage" = {
+          "exec" = "cat /sys/class/hwmon/hwmon4/device/gpu_busy_percent";
+          "format" = "GPU: {}%";
+          "return-type" = "";
+          "interval" = 1;
+        };
+        "memory" = {
+          "interval" = 5;
+          "format" = "󰍛 {used:0.1f}G/{total:0.1f}G  󰳲 {percentage}%";
+          "tooltip-format" = "󰳲 Mem. {percentage}%  󰍛 Avail. {avail:0.1f}G  󰯍 Swap. {swapUsed:0.1f}G/{swapTotal:0.1f}G";
         };
         "custom/dunst" = {
           "return-type" = "json";
           "exec" = "/etc/nixos/kurnousal-nixos/scripts/notifications/dunst.sh";
           "on-click" = "dunstctl set-paused toggle";
           "restart-interval" = 1;
+        };
+        "systemd-failed-units" = {
+          "hide-on-ok" = false;
+          "format" = "✗ {nr_failed}";
+          "format-ok" = "✓";
+          "system" = true;
+          "user" = false;
         };
       };
     };
