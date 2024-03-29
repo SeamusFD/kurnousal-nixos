@@ -72,8 +72,10 @@ with builtins; {
         };
         "bluetooth" = {
           "format" = " {status}";
+          "on-click" = "blueman-manager";
           "format-disabled" = "";
           "format-connected" = " {num_connections}";
+          "tooltip" = true;
           "tooltip-format" = "{device_alias}";
           "tooltip-format-connected" = " {device_enumerate}";
           "tooltip-format-enumerate-connected" = "{device_alias}";
