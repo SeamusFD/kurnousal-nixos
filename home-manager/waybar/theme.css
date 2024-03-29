@@ -148,5 +148,6 @@ tooltip {
 #custom-weather {
   border-radius: 20px;
   border-right: 0px;
-  margin-left: 0px;
+  margin-right: 10px;
+  /* margin-left: 0px; */
 }

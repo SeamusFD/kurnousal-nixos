@@ -59,9 +59,17 @@
     pulse.enable = true;
   };
 
-  fonts.packages = with pkgs; [
-    nerdfonts
-  ];
+  fonts = {
+    packages = with pkgs; [
+      nerdfonts
+    ];
+    fontconfig.defaultFonts = {
+      serif = ["CaskaydiaCove Nerd Font"];
+      sansSerif = ["CaskaydiaCove Nerd Font"];
+      monospace = ["CaskaydiaMono Nerd Font"];
+      emoji = ["CaskaydiaCove Nerd Font"];
+    };
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -96,8 +104,6 @@
     wayland-utils
     wl-clipboard
     wlroots
-    # Fonts
-    nerdfonts
     # Programming Tools
     rustup
     go
