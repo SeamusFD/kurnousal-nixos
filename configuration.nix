@@ -64,6 +64,7 @@
   fonts = {
     packages = with pkgs; [
       nerdfonts
+      noto-fonts-emoji
     ];
     fontconfig.defaultFonts = {
       serif = ["CaskaydiaCove Nerd Font"];

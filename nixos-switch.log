@@ -1,54 +1,69 @@
 building Nix...
 building the system configuration...
-these 13 derivations will be built:
-  /nix/store/gxsqs5j3kyf768358zwkbva82d34gsik-unicode-emoji-15.0.drv
-  /nix/store/wrz91sw6m16k60iy86mpsjfibr89ca28-system-path.drv
-  /nix/store/bqqxp272visz1jw0iff8jfhqj3s8r92j-dbus-1.drv
-  /nix/store/hgwhynfq8d8h7ak5qn6dx7m8h77m8vmd-X-Restart-Triggers-dbus.drv
-  /nix/store/i7g9cnv9j1wri4hvl4q7y6xljhgk9k8w-unit-dbus.service.drv
-  /nix/store/jv2xw50w1hnw99szr5d48kz2zn5mpa6z-X-Restart-Triggers-polkit.drv
-  /nix/store/md7mpbnn6cmvvac9crwjraix3rb2yy83-unit-polkit.service.drv
-  /nix/store/8fml4pq8mniabarp4whiqx1xbd1j60ic-system-units.drv
-  /nix/store/86sgpdb5r7ymn09lhx3csj718jyj7f3g-unit-dbus.service.drv
-  /nix/store/p1x5s2gn81vl80c28a32yzly6n55b35h-user-units.drv
-  /nix/store/z08nxa3f8f7arxbqph5dx2h8b5s1j3sv-user-environment.drv
-  /nix/store/17xra286z5842nrzkspi2cfasqsgmi28-etc.drv
-  /nix/store/vs770z03rkfr9zh2lp4f7gz86l0z1jh0-nixos-system-nixos-24.05pre604424.d8fe5e6c92d0.drv
-these 7 paths will be fetched (87.81 MiB download, 380.48 MiB unpacked):
-  /nix/store/i7sphgsviibraqx4nq8s39fnmjw7nlhz-electron-29.1.2
-  /nix/store/bd45r3dz7a1c439fs5dqsiib62z8c9qq-electron-unwrapped-29.1.2
-  /nix/store/6jrh4ipvf01bh36dfa737rpnz84594jw-freetube-0.19.2
-  /nix/store/afgxwbkf0p0nm8x6vdxydcgngxprf7pq-twitter-color-emoji-15.0.2
-  /nix/store/fa36cfr1mjmjan6bjbrsh3zhnh84dasj-unicode-emoji-sequences-15.0
-  /nix/store/4sgavcssvhbwic2xakjq5r3s5alsl5bj-unicode-emoji-test-15.0
-  /nix/store/zxsm47xydgldjpdbgpafkgym2dncpsph-unicode-emoji-zwj-sequences-15.0
-copying path '/nix/store/afgxwbkf0p0nm8x6vdxydcgngxprf7pq-twitter-color-emoji-15.0.2' from 'https://cache.nixos.org'...
-copying path '/nix/store/fa36cfr1mjmjan6bjbrsh3zhnh84dasj-unicode-emoji-sequences-15.0' from 'https://cache.nixos.org'...
-copying path '/nix/store/4sgavcssvhbwic2xakjq5r3s5alsl5bj-unicode-emoji-test-15.0' from 'https://cache.nixos.org'...
-copying path '/nix/store/zxsm47xydgldjpdbgpafkgym2dncpsph-unicode-emoji-zwj-sequences-15.0' from 'https://cache.nixos.org'...
-copying path '/nix/store/bd45r3dz7a1c439fs5dqsiib62z8c9qq-electron-unwrapped-29.1.2' from 'https://cache.nixos.org'...
-building '/nix/store/gxsqs5j3kyf768358zwkbva82d34gsik-unicode-emoji-15.0.drv'...
-building '/nix/store/wrz91sw6m16k60iy86mpsjfibr89ca28-system-path.drv'...
-warning: collision between `/nix/store/278sy45yivr4dhhgq6x7i4sca6jqx6pz-dotnet-sdk-7.0.406/bin/dotnet' and `/nix/store/ai2d6bsrcaxn3nmaw0ql5i3kmzd8r76d-dotnet-sdk-6.0.419/bin/dotnet'
-warning: collision between `/nix/store/g0l1sx6znj8a3zyapdz56gkyahihhdpf-dotnet-sdk-8.0.201/bin/dotnet' and `/nix/store/ai2d6bsrcaxn3nmaw0ql5i3kmzd8r76d-dotnet-sdk-6.0.419/bin/dotnet'
-created 8550 symlinks in user environment
-building '/nix/store/jv2xw50w1hnw99szr5d48kz2zn5mpa6z-X-Restart-Triggers-polkit.drv'...
-building '/nix/store/bqqxp272visz1jw0iff8jfhqj3s8r92j-dbus-1.drv'...
-building '/nix/store/md7mpbnn6cmvvac9crwjraix3rb2yy83-unit-polkit.service.drv'...
-building '/nix/store/hgwhynfq8d8h7ak5qn6dx7m8h77m8vmd-X-Restart-Triggers-dbus.drv'...
-building '/nix/store/86sgpdb5r7ymn09lhx3csj718jyj7f3g-unit-dbus.service.drv'...
-building '/nix/store/i7g9cnv9j1wri4hvl4q7y6xljhgk9k8w-unit-dbus.service.drv'...
-building '/nix/store/p1x5s2gn81vl80c28a32yzly6n55b35h-user-units.drv'...
-building '/nix/store/8fml4pq8mniabarp4whiqx1xbd1j60ic-system-units.drv'...
-copying path '/nix/store/i7sphgsviibraqx4nq8s39fnmjw7nlhz-electron-29.1.2' from 'https://cache.nixos.org'...
-copying path '/nix/store/6jrh4ipvf01bh36dfa737rpnz84594jw-freetube-0.19.2' from 'https://cache.nixos.org'...
-building '/nix/store/z08nxa3f8f7arxbqph5dx2h8b5s1j3sv-user-environment.drv'...
-created 156 symlinks in user environment
-building '/nix/store/17xra286z5842nrzkspi2cfasqsgmi28-etc.drv'...
-building '/nix/store/vs770z03rkfr9zh2lp4f7gz86l0z1jh0-nixos-system-nixos-24.05pre604424.d8fe5e6c92d0.drv'...
+these 6 derivations will be built:
+  /nix/store/jh8azkfwla27c4crw6j63jdjky1974j0-fc-cache.drv
+  /nix/store/v8m3rl10jyj8jx36xk2q5nlz23xarllc-fc-00-nixos-cache.conf.drv
+  /nix/store/hwys7wkqmn69qv217addfhqbvd89kvds-fontconfig-conf.drv
+  /nix/store/hh40ga9h5qggp46w23ksj3wyk3z1l4g0-fontconfig-etc.drv
+  /nix/store/qj26mzzsv8bsgx4f7cb7d5x22rx2pq1z-etc.drv
+  /nix/store/fk758md6mm5h8sfhvzg9zw451b3sc6yx-nixos-system-nixos-24.05pre604424.d8fe5e6c92d0.drv
+this path will be fetched (8.68 MiB download, 9.63 MiB unpacked):
+  /nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042
+copying path '/nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042' from 'https://cache.nixos.org'...
+building '/nix/store/jh8azkfwla27c4crw6j63jdjky1974j0-fc-cache.drv'...
+Font directories:
+        /nix/store/5kc1myay29341yzr4q04j6x3936iy0sz-dejavu-fonts-minimal-2.37
+        /nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1
+        /nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042
+        /nix/store/5kc1myay29341yzr4q04j6x3936iy0sz-dejavu-fonts-minimal-2.37/share
+        /nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share
+        /nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042/share
+        /nix/store/5kc1myay29341yzr4q04j6x3936iy0sz-dejavu-fonts-minimal-2.37/share/fonts
+        /nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts
+        /nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042/share/fonts
+        /nix/store/5kc1myay29341yzr4q04j6x3936iy0sz-dejavu-fonts-minimal-2.37/share/fonts/truetype
+        /nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/opentype
+        /nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/truetype
+        /nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042/share/fonts/noto
+        /nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/opentype/NerdFonts
+        /nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/truetype/NerdFonts
+/nix/store/5kc1myay29341yzr4q04j6x3936iy0sz-dejavu-fonts-minimal-2.37: skipping, existing cache is valid: 0 fonts, 1 dirs
+/nix/store/5kc1myay29341yzr4q04j6x3936iy0sz-dejavu-fonts-minimal-2.37/share: skipping, existing cache is valid: 0 fonts, 1 dirs
+/nix/store/5kc1myay29341yzr4q04j6x3936iy0sz-dejavu-fonts-minimal-2.37/share/fonts: skipping, existing cache is valid: 0 fonts, 1 dirs
+/nix/store/5kc1myay29341yzr4q04j6x3936iy0sz-dejavu-fonts-minimal-2.37/share/fonts/truetype: skipping, existing cache is valid: 1 fonts, 0 dirs
+/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1: skipping, existing cache is valid: 0 fonts, 1 dirs
+/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share: skipping, existing cache is valid: 0 fonts, 1 dirs
+/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts: skipping, existing cache is valid: 0 fonts, 2 dirs
+/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/opentype: skipping, existing cache is valid: 0 fonts, 1 dirs
+/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/opentype/NerdFonts: skipping, existing cache is valid: 312 fonts, 0 dirs
+/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/truetype: skipping, existing cache is valid: 0 fonts, 1 dirs
+/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/truetype/NerdFonts: skipping, existing cache is valid: 1598 fonts, 0 dirs
+/nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042: skipping, existing cache is valid: 0 fonts, 1 dirs
+/nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042/share: skipping, existing cache is valid: 0 fonts, 1 dirs
+/nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042/share/fonts: skipping, existing cache is valid: 0 fonts, 1 dirs
+/nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042/share/fonts/noto: skipping, existing cache is valid: 1 fonts, 0 dirs
+/nix/store/5kc1myay29341yzr4q04j6x3936iy0sz-dejavu-fonts-minimal-2.37/share: skipping, looped directory detected
+/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share: skipping, looped directory detected
+/nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042/share: skipping, looped directory detected
+/nix/store/5kc1myay29341yzr4q04j6x3936iy0sz-dejavu-fonts-minimal-2.37/share/fonts: skipping, looped directory detected
+/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts: skipping, looped directory detected
+/nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042/share/fonts: skipping, looped directory detected
+/nix/store/5kc1myay29341yzr4q04j6x3936iy0sz-dejavu-fonts-minimal-2.37/share/fonts/truetype: skipping, looped directory detected
+/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/opentype: skipping, looped directory detected
+/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/truetype: skipping, looped directory detected
+/nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042/share/fonts/noto: skipping, looped directory detected
+/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/opentype/NerdFonts: skipping, looped directory detected
+/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/truetype/NerdFonts: skipping, looped directory detected
+/var/cache/fontconfig: not cleaning non-existent cache directory
+/nix/store/1p45pa0zkgk0dxbr9nwpgwh90rpir7km-fc-cache: cleaning cache directory
+fc-cache: succeeded
+building '/nix/store/v8m3rl10jyj8jx36xk2q5nlz23xarllc-fc-00-nixos-cache.conf.drv'...
+building '/nix/store/hwys7wkqmn69qv217addfhqbvd89kvds-fontconfig-conf.drv'...
+building '/nix/store/hh40ga9h5qggp46w23ksj3wyk3z1l4g0-fontconfig-etc.drv'...
+created 1 symlinks in user environment
+building '/nix/store/qj26mzzsv8bsgx4f7cb7d5x22rx2pq1z-etc.drv'...
+building '/nix/store/fk758md6mm5h8sfhvzg9zw451b3sc6yx-nixos-system-nixos-24.05pre604424.d8fe5e6c92d0.drv'...
 activating the configuration...
 setting up /etc...
 reloading user units for bcampbell...
 restarting sysinit-reactivation.target
-reloading the following units: dbus.service
-restarting the following units: polkit.service
