@@ -1,68 +1,44 @@
 building Nix...
 building the system configuration...
-these 6 derivations will be built:
-  /nix/store/jh8azkfwla27c4crw6j63jdjky1974j0-fc-cache.drv
-  /nix/store/v8m3rl10jyj8jx36xk2q5nlz23xarllc-fc-00-nixos-cache.conf.drv
-  /nix/store/hwys7wkqmn69qv217addfhqbvd89kvds-fontconfig-conf.drv
-  /nix/store/hh40ga9h5qggp46w23ksj3wyk3z1l4g0-fontconfig-etc.drv
-  /nix/store/qj26mzzsv8bsgx4f7cb7d5x22rx2pq1z-etc.drv
-  /nix/store/fk758md6mm5h8sfhvzg9zw451b3sc6yx-nixos-system-nixos-24.05pre604424.d8fe5e6c92d0.drv
-this path will be fetched (8.68 MiB download, 9.63 MiB unpacked):
-  /nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042
-copying path '/nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042' from 'https://cache.nixos.org'...
-building '/nix/store/jh8azkfwla27c4crw6j63jdjky1974j0-fc-cache.drv'...
-Font directories:
-        /nix/store/5kc1myay29341yzr4q04j6x3936iy0sz-dejavu-fonts-minimal-2.37
-        /nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1
-        /nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042
-        /nix/store/5kc1myay29341yzr4q04j6x3936iy0sz-dejavu-fonts-minimal-2.37/share
-        /nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share
-        /nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042/share
-        /nix/store/5kc1myay29341yzr4q04j6x3936iy0sz-dejavu-fonts-minimal-2.37/share/fonts
-        /nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts
-        /nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042/share/fonts
-        /nix/store/5kc1myay29341yzr4q04j6x3936iy0sz-dejavu-fonts-minimal-2.37/share/fonts/truetype
-        /nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/opentype
-        /nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/truetype
-        /nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042/share/fonts/noto
-        /nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/opentype/NerdFonts
-        /nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/truetype/NerdFonts
-/nix/store/5kc1myay29341yzr4q04j6x3936iy0sz-dejavu-fonts-minimal-2.37: skipping, existing cache is valid: 0 fonts, 1 dirs
-/nix/store/5kc1myay29341yzr4q04j6x3936iy0sz-dejavu-fonts-minimal-2.37/share: skipping, existing cache is valid: 0 fonts, 1 dirs
-/nix/store/5kc1myay29341yzr4q04j6x3936iy0sz-dejavu-fonts-minimal-2.37/share/fonts: skipping, existing cache is valid: 0 fonts, 1 dirs
-/nix/store/5kc1myay29341yzr4q04j6x3936iy0sz-dejavu-fonts-minimal-2.37/share/fonts/truetype: skipping, existing cache is valid: 1 fonts, 0 dirs
-/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1: skipping, existing cache is valid: 0 fonts, 1 dirs
-/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share: skipping, existing cache is valid: 0 fonts, 1 dirs
-/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts: skipping, existing cache is valid: 0 fonts, 2 dirs
-/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/opentype: skipping, existing cache is valid: 0 fonts, 1 dirs
-/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/opentype/NerdFonts: skipping, existing cache is valid: 312 fonts, 0 dirs
-/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/truetype: skipping, existing cache is valid: 0 fonts, 1 dirs
-/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/truetype/NerdFonts: skipping, existing cache is valid: 1598 fonts, 0 dirs
-/nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042: skipping, existing cache is valid: 0 fonts, 1 dirs
-/nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042/share: skipping, existing cache is valid: 0 fonts, 1 dirs
-/nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042/share/fonts: skipping, existing cache is valid: 0 fonts, 1 dirs
-/nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042/share/fonts/noto: skipping, existing cache is valid: 1 fonts, 0 dirs
-/nix/store/5kc1myay29341yzr4q04j6x3936iy0sz-dejavu-fonts-minimal-2.37/share: skipping, looped directory detected
-/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share: skipping, looped directory detected
-/nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042/share: skipping, looped directory detected
-/nix/store/5kc1myay29341yzr4q04j6x3936iy0sz-dejavu-fonts-minimal-2.37/share/fonts: skipping, looped directory detected
-/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts: skipping, looped directory detected
-/nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042/share/fonts: skipping, looped directory detected
-/nix/store/5kc1myay29341yzr4q04j6x3936iy0sz-dejavu-fonts-minimal-2.37/share/fonts/truetype: skipping, looped directory detected
-/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/opentype: skipping, looped directory detected
-/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/truetype: skipping, looped directory detected
-/nix/store/jn0pcjxyimbv21gal9magbzkq36fczkf-noto-fonts-color-emoji-2.042/share/fonts/noto: skipping, looped directory detected
-/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/opentype/NerdFonts: skipping, looped directory detected
-/nix/store/idr6fkk9zyx591q15m9bp97p2zsys79m-nerdfonts-3.1.1/share/fonts/truetype/NerdFonts: skipping, looped directory detected
-/var/cache/fontconfig: not cleaning non-existent cache directory
-/nix/store/1p45pa0zkgk0dxbr9nwpgwh90rpir7km-fc-cache: cleaning cache directory
-fc-cache: succeeded
-building '/nix/store/v8m3rl10jyj8jx36xk2q5nlz23xarllc-fc-00-nixos-cache.conf.drv'...
-building '/nix/store/hwys7wkqmn69qv217addfhqbvd89kvds-fontconfig-conf.drv'...
-building '/nix/store/hh40ga9h5qggp46w23ksj3wyk3z1l4g0-fontconfig-etc.drv'...
-created 1 symlinks in user environment
-building '/nix/store/qj26mzzsv8bsgx4f7cb7d5x22rx2pq1z-etc.drv'...
-building '/nix/store/fk758md6mm5h8sfhvzg9zw451b3sc6yx-nixos-system-nixos-24.05pre604424.d8fe5e6c92d0.drv'...
+these 3 derivations will be built:
+  /nix/store/rfc5z7yb5ychfms0vwvg291v86fhgwkw-user-environment.drv
+  /nix/store/8f4xdn6g6whkxf7r4j8slz7dgs29klrp-etc.drv
+  /nix/store/lbg4h091266nf7bazhkb4hpcllmcas2x-nixos-system-nixos-24.05pre604424.d8fe5e6c92d0.drv
+these 15 paths will be fetched (27.98 MiB download, 97.46 MiB unpacked):
+  /nix/store/p8nzw7dwl562f9r1q5hj2g0d53xm8p0m-freefont-ttf-20120503
+  /nix/store/af2h05fd53lqarnhj6nzgivf30jpf8d1-libXpresent-1.0.1
+  /nix/store/8s3dq22zx2z03lyg02grxr27apvbpyn1-libbluray-1.3.4
+  /nix/store/gzhprw3r5jmrhccymiyamhp8wkhfnr0y-libdovi-3.1.2
+  /nix/store/9716n5raasv8xl2s3bcjq3b454s6iycz-libplacebo-6.338.2
+  /nix/store/8klg5mfvw076lcl1y5z2kvq396spwhl4-lua-5.2.4
+  /nix/store/c7pm2ck12rd8xipbj5yha363g61pj2zg-lua-5.2.4-env
+  /nix/store/5m64vzpg5i70y4q61r2vmmyn729bvpp2-lua5.2-luasocket-3.1.0-1
+  /nix/store/73q36n608fiagkyghkc58ih469ksvins-mpv-0.37.0
+  /nix/store/x77q6l1dzz95vdya98p5bj229dfc6apb-mujs-1.3.4
+  /nix/store/x5dr557yxb330rl4f189mfbdn8pv008r-rubberband-3.3.0
+  /nix/store/dkrh7fnzz3z1306n5gm4g7fq13nld2sh-shaderc-2023.8-lib
+  /nix/store/dyrsg7gqlxcmw6rc48lc23fadf2sh50d-spotube-3.5.0
+  /nix/store/4icjaqhbmh7wqsh66mk0s9v6hmnsar0l-uchardet-0.0.8
+  /nix/store/5z8chqyzna9j6gg7nq2mq0y6wz8wv074-vamp-plugin-sdk-2.10
+copying path '/nix/store/p8nzw7dwl562f9r1q5hj2g0d53xm8p0m-freefont-ttf-20120503' from 'https://cache.nixos.org'...
+copying path '/nix/store/af2h05fd53lqarnhj6nzgivf30jpf8d1-libXpresent-1.0.1' from 'https://cache.nixos.org'...
+copying path '/nix/store/8s3dq22zx2z03lyg02grxr27apvbpyn1-libbluray-1.3.4' from 'https://cache.nixos.org'...
+copying path '/nix/store/x77q6l1dzz95vdya98p5bj229dfc6apb-mujs-1.3.4' from 'https://cache.nixos.org'...
+copying path '/nix/store/dkrh7fnzz3z1306n5gm4g7fq13nld2sh-shaderc-2023.8-lib' from 'https://cache.nixos.org'...
+copying path '/nix/store/4icjaqhbmh7wqsh66mk0s9v6hmnsar0l-uchardet-0.0.8' from 'https://cache.nixos.org'...
+copying path '/nix/store/gzhprw3r5jmrhccymiyamhp8wkhfnr0y-libdovi-3.1.2' from 'https://cache.nixos.org'...
+copying path '/nix/store/8klg5mfvw076lcl1y5z2kvq396spwhl4-lua-5.2.4' from 'https://cache.nixos.org'...
+copying path '/nix/store/5z8chqyzna9j6gg7nq2mq0y6wz8wv074-vamp-plugin-sdk-2.10' from 'https://cache.nixos.org'...
+copying path '/nix/store/5m64vzpg5i70y4q61r2vmmyn729bvpp2-lua5.2-luasocket-3.1.0-1' from 'https://cache.nixos.org'...
+copying path '/nix/store/x5dr557yxb330rl4f189mfbdn8pv008r-rubberband-3.3.0' from 'https://cache.nixos.org'...
+copying path '/nix/store/c7pm2ck12rd8xipbj5yha363g61pj2zg-lua-5.2.4-env' from 'https://cache.nixos.org'...
+copying path '/nix/store/9716n5raasv8xl2s3bcjq3b454s6iycz-libplacebo-6.338.2' from 'https://cache.nixos.org'...
+copying path '/nix/store/73q36n608fiagkyghkc58ih469ksvins-mpv-0.37.0' from 'https://cache.nixos.org'...
+copying path '/nix/store/dyrsg7gqlxcmw6rc48lc23fadf2sh50d-spotube-3.5.0' from 'https://cache.nixos.org'...
+building '/nix/store/rfc5z7yb5ychfms0vwvg291v86fhgwkw-user-environment.drv'...
+created 160 symlinks in user environment
+building '/nix/store/8f4xdn6g6whkxf7r4j8slz7dgs29klrp-etc.drv'...
+building '/nix/store/lbg4h091266nf7bazhkb4hpcllmcas2x-nixos-system-nixos-24.05pre604424.d8fe5e6c92d0.drv'...
 activating the configuration...
 setting up /etc...
 reloading user units for bcampbell...

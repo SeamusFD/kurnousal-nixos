@@ -21,6 +21,7 @@ in {
       jetbrains-toolbox
       protonup-qt
       freetube
+      spotube
       # Application Theming
       nwg-look
       glib
