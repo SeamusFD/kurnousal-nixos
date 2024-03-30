@@ -20,12 +20,14 @@ in {
       discord
       jetbrains-toolbox
       protonup-qt
+      freetube
       # Application Theming
       nwg-look
       glib
       gsettings-qt
       gtk3
       gtk4
+      dconf
       bibata-cursors
       xcur2png
     ];

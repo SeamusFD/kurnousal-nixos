@@ -122,6 +122,8 @@
     # Virtualization
     qemu
     quickemu
+    unicode-emoji
+    twitter-color-emoji
   ];
 
   programs.steam.enable = true;
