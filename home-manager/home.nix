@@ -45,6 +45,11 @@ in {
       #./rofi/rofi.nix
     ];
 
+    dconf = {
+      enable = true;
+      settings."org/gnome/desktop/interface".color-scheme = "prefer-dark";
+    };
+
     home.packages = with pkgs; [
       kitty
       # Shell Packages

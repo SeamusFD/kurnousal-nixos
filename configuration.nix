@@ -88,7 +88,6 @@
     libnotify
     wget
     unzip
-    dconf
     rofi-wayland
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
