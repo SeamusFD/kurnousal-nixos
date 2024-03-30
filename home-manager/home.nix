@@ -22,7 +22,7 @@ in {
       protonup-qt
       freetube
       spotube
-      libreoffice
+      libreoffice-fresh
       # Application Theming
       nwg-look
       glib
