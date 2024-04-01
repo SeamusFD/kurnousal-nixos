@@ -14,10 +14,12 @@
       exec-once = set-primary-monitor
       exec-once = hyprctl setcursor Bibata-Modern-Classic 5
 
+      env = GDK_BACKEND,wayland,x11
+      env = QT_QPA_PLATFORM,wayland;xcb
+      env = SLD_VIDEODRIVER,wayland
+      env = CLUTTER_BACKEND,wayland
+      env = XCURSOR_SIZE,32
       env = GTK_THEME,Nord
-
-      workspace=HDMI-A-1,1
-      workspace=DP-3,2
 
       $scrPath = /etc/nixos/kurnousal-nixos/scripts
 
@@ -44,7 +46,10 @@
           border_size = 2
           col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg
           col.inactive_border = rgba(595959aa)
+
           layout = dwindle
+
+          # Please see https://wiki.hyprland.org/Configuring/Tearing/ before you turn this on
           allow_tearing = false
       }
 
