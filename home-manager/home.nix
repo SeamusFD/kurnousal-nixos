@@ -74,20 +74,30 @@ in {
     gtk = {
       enable = true;
       theme = {
-        package = pkgs.flat-remix-gtk;
-        name = "Flat-Remix-GTK-Grey-Darkest";
+        name = "Catppuccin-Macchiato-Standard-Blue-Dark";
+        package = pkgs.catppuccin-gtk.override {
+          accents = ["blue"];
+          size = "compact";
+          tweaks = ["rimless" "black"];
+          variant = "mocha";
+        };
       };
-
       iconTheme = {
         package = pkgs.gnome.adwaita-icon-theme;
         name = "Adwaita";
       };
 
       font = {
-        name = "Sans";
+        name = "CaskaydiaCove Nerd Font";
         size = 11;
       };
     };
+
+    # xdg.configFile = {
+    #   "gtk-4.0/assets".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/assets";
+    #   "gtk-4.0/gtk.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk.css";
+    #   "gtk-4.0/gtk-dark.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk-dark.css";
+    # };
 
     programs.bash = {
       enable = true;
