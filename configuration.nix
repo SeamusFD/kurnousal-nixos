@@ -85,7 +85,6 @@
     rofi-wayland
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
-    xwayland
     swww
     dolphin
     gamemode

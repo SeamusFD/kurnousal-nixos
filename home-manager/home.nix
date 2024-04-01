@@ -24,13 +24,9 @@ in {
       spotube
       libreoffice-fresh
       # Application Theming
-      nwg-look
       glib
       gsettings-qt
-      gtk3
-      gtk4
       dconf
-      bibata-cursors
       xcur2png
     ];
   };
@@ -67,6 +63,31 @@ in {
       grc
       pfetch
     ];
+
+    home.pointerCursor = {
+      name = "Bibata-Modern-Classic";
+      gtk.enable = true;
+      package = pkgs.bibata-cursors;
+      size = 5;
+    };
+
+    gtk = {
+      enable = true;
+      theme = {
+        package = pkgs.flat-remix-gtk;
+        name = "Flat-Remix-GTK-Grey-Darkest";
+      };
+
+      iconTheme = {
+        package = pkgs.gnome.adwaita-icon-theme;
+        name = "Adwaita";
+      };
+
+      font = {
+        name = "Sans";
+        size = 11;
+      };
+    };
 
     programs.bash = {
       enable = true;
