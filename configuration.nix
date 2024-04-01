@@ -9,6 +9,7 @@
     ./hardware-configuration.nix
     ./system/bluetooth.nix
     ./system/lifecycle.nix
+    ./system/sddm.nix
     ./scripts/custom-bash-scripts.nix
   ];
 
@@ -44,14 +45,6 @@
     xkb = {
       layout = "us";
       variant = "";
-    };
-    displayManager.sddm = {
-      enable = true;
-      enableHidpi = true;
-      wayland = {
-        enable = true;
-        # compositor = "hyprland";
-      };
     };
   };
 
