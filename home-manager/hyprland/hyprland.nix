@@ -21,6 +21,9 @@
       env = XCURSOR_SIZE,32
       env = GTK_THEME,Nord
 
+      workspace=HDMI-A-1,1
+      workspace=DP-3,2
+
       $scrPath = /etc/nixos/kurnousal-nixos/scripts
 
       input {
