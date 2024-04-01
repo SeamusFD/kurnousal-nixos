@@ -39,9 +39,20 @@
   };
 
   # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
+  services.xserver = {
+    enable = true;
+    xkb = {
+      layout = "us";
+      variant = "";
+    };
+    displayManager.sddm = {
+      enable = true;
+      enableHidpi = true;
+      wayland = {
+        enable = true;
+        # compositor = "hyprland";
+      };
+    };
   };
 
   sound.enable = true;
