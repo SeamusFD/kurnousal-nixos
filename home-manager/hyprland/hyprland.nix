@@ -14,11 +14,7 @@
       exec-once = set-primary-monitor
       exec-once = hyprctl setcursor Bibata-Modern-Classic 5
 
-      # env = GDK_BACKEND,wayland,x11
-      # env = QT_QPA_PLATFORM,wayland;xcb
-      # env = SLD_VIDEODRIVER,wayland
-      # env = CLUTTER_BACKEND,wayland
-      # env = GTK_THEME,Nord
+      env = GTK_THEME,Nord
 
       workspace=HDMI-A-1,1
       workspace=DP-3,2
