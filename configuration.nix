@@ -87,6 +87,7 @@
     wget
     unzip
     rofi-wayland
+    xwayland
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
     swww
