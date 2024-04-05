@@ -19,7 +19,6 @@
       env = SLD_VIDEODRIVER,wayland
       env = CLUTTER_BACKEND,wayland
       env = XCURSOR_SIZE,32
-      env = GTK_THEME,Nord
 
       workspace=HDMI-A-1,1
       workspace=DP-3,2
