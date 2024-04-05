@@ -41,19 +41,6 @@
           }
       }
 
-      general {
-          gaps_in = 5
-          gaps_out = 20
-          border_size = 2
-          col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg
-          col.inactive_border = rgba(595959aa)
-
-          layout = dwindle
-
-          # Please see https://wiki.hyprland.org/Configuring/Tearing/ before you turn this on
-          allow_tearing = true
-      }
-
       dwindle {
           pseudotile = yes # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
           preserve_split = yes # you probably want this
