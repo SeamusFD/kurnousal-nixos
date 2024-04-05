@@ -60,11 +60,11 @@
 
   xdg.portal.enable = true;
   xdg.portal.extraPortals = with pkgs; [
-    xdg-desktop-portal-kde
+    xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
   ];
   xdg.portal.configPackages = with pkgs; [
-    xdg-desktop-portal-kde
+    xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
   ];
   services.flatpak.enable = true;
@@ -104,6 +104,7 @@
     swww
     dolphin
     gamemode
+    gamescope
     # Build Tools
     meson
     cmake
