@@ -59,13 +59,4 @@
       source = /etc/nixos/kurnousal-nixos/home-manager/hyprland/conf/window_rules.conf
     '';
   };
-  xdg.portal.enable = true;
-  xdg.portal.extraPortals = with pkgs; [
-    xdg-desktop-portal-kde
-    xdg-desktop-portal-hyprland
-  ];
-  xdg.portal.configPackages = with pkgs; [
-    xdg-desktop-portal-kde
-    xdg-desktop-portal-hyprland
-  ];
 }

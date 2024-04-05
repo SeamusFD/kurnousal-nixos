@@ -58,6 +58,17 @@
     pulse.enable = true;
   };
 
+  xdg.portal.enable = true;
+  xdg.portal.extraPortals = with pkgs; [
+    xdg-desktop-portal-kde
+    xdg-desktop-portal-hyprland
+  ];
+  xdg.portal.configPackages = with pkgs; [
+    xdg-desktop-portal-kde
+    xdg-desktop-portal-hyprland
+  ];
+  services.flatpak.enable = true;
+
   fonts = {
     packages = with pkgs; [
       nerdfonts
@@ -123,6 +134,7 @@
     unicode-emoji
     twitter-color-emoji
     jdk
+    flatpak
   ];
 
   programs.steam.enable = true;
