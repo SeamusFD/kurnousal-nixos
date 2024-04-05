@@ -122,6 +122,7 @@
     quickemu
     unicode-emoji
     twitter-color-emoji
+    jdk
   ];
 
   programs.steam.enable = true;
