@@ -137,7 +137,16 @@
     flatpak
   ];
 
-  programs.steam.enable = true;
+  programs.steam = {
+    enable = true;
+    package = pkgs.steam.override {
+      extraPkgs = pkgs:
+        with pkgs; [
+          libkrb5
+          keyutils
+        ];
+    };
+  };
   programs.gamemode.enable = true;
   programs.gamescope.enable = true;
   programs.java.enable = true;
