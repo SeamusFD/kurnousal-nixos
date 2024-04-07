@@ -104,7 +104,6 @@
     swww
     dolphin
     gamemode
-    gamescope
     # Build Tools
     meson
     cmake
@@ -140,6 +139,7 @@
 
   programs.steam.enable = true;
   programs.gamemode.enable = true;
+  programs.gamescope.enable = true;
   programs.java.enable = true;
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
