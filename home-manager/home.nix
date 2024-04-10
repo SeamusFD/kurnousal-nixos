@@ -25,7 +25,6 @@ in {
       libreoffice-fresh
       # Application Theming
       glib
-      gsettings-qt
       dconf
       xcur2png
     ];
@@ -45,9 +44,17 @@ in {
       #./rofi/rofi.nix
     ];
 
-    dconf = {
-      enable = true;
-      settings."org/gnome/desktop/interface".color-scheme = "prefer-dark";
+    dconf.enable = true;
+    dconf.settings = {
+      "org/gnome/desktop/interface" = {
+        gtk-theme = "Catppuccin-Mocha-Standard-Blue-Dark";
+        color-scheme = "prefer-dark";
+      };
+
+      # For Gnome shell
+      "org/gnome/shell/extensions/user-theme" = {
+        name = "Catppuccin-Mocha-Standard-Blue-Dark";
+      };
     };
 
     home.packages = with pkgs; [
@@ -62,6 +69,14 @@ in {
       fishPlugins.grc
       grc
       pfetch
+      # Theming packages
+      (catppuccin-kvantum.override {
+        accent = "Blue";
+        variant = "Mocha";
+      })
+      libsForQt5.qtstyleplugin-kvantum
+      libsForQt5.qt5ct
+      papirus-folders
     ];
 
     home.pointerCursor = {
@@ -74,7 +89,7 @@ in {
     gtk = {
       enable = true;
       theme = {
-        name = "Catppuccin-Macchiato-Standard-Blue-Dark";
+        name = "Catppuccin-Mocha-Standard-Blue-Dark";
         package = pkgs.catppuccin-gtk.override {
           accents = ["blue"];
           size = "compact";
@@ -83,10 +98,15 @@ in {
         };
       };
       iconTheme = {
-        package = pkgs.gnome.adwaita-icon-theme;
-        name = "Adwaita";
+        name = "Papirus-Dark";
+        package = pkgs.catppuccin-papirus-folders.override {
+          flavor = "mocha";
+          accent = "blue";
+        };
       };
-
+      gtk3 = {
+        extraConfig.gtk-application-prefer-dark-theme = true;
+      };
       font = {
         name = "CaskaydiaCove Nerd Font";
         size = 11;
@@ -99,6 +119,9 @@ in {
       style.name = "kvantum";
     };
 
+    xdg.configFile."Kvantum/kvantum.kvconfig".source = (pkgs.formats.ini {}).generate "kvantum.kvconfig" {
+      General.theme = "Catppuccin-Mocha-Blue";
+    };
     # xdg.configFile = {
     #   "gtk-4.0/assets".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/assets";
     #   "gtk-4.0/gtk.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk.css";
