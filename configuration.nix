@@ -136,6 +136,8 @@
     twitter-color-emoji
     jdk
     flatpak
+    # Automation (move some day)
+    ansible
   ];
 
   programs.steam = {
