@@ -12,12 +12,11 @@
       }
     ];
   };
-  services.xserver.displayManager.sddm = {
+  services.displayManager.sddm = {
     enable = true;
     enableHidpi = true;
     wayland = {
       enable = true;
-      compositorCommand = "Hyprland";
     };
     settings = {
       AutoLogin = {
