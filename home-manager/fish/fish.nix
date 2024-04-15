@@ -7,4 +7,5 @@
       };
     };
   };
+  programs.zoxide.enable = true;
 }
