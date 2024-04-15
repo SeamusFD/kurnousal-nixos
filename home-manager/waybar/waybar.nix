@@ -35,7 +35,7 @@ with builtins; {
           "interval" = 3600;
         };
         "hyprland/workspaces" = {
-          "format" = "{name}  {icon}";
+          "format" = "{name}";
           "all-outputs" = true;
           "on-click" = "activate";
           "sort-by-number" = true;
