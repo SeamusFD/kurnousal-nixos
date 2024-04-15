@@ -136,6 +136,7 @@
     twitter-color-emoji
     jdk
     flatpak
+    sshpass
     # Automation (move some day)
     ansible
   ];
