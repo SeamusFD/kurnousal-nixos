@@ -9,7 +9,7 @@ with builtins; {
     settings = {
       mainBar = {
         layer = "top";
-        position = "bottom";
+        position = "top";
         height = 34;
         exclusive = true;
         output = [
