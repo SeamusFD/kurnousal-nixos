@@ -9,7 +9,7 @@
     ./hardware-configuration.nix
     ./system/bluetooth.nix
     ./system/lifecycle.nix
-    ./system/sddm.nix
+    # ./system/sddm.nix
     ./system/monitoring.nix
     ./scripts/custom-bash-scripts.nix
   ];

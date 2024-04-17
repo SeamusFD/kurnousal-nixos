@@ -17,7 +17,9 @@
       env = QT_QPA_PLATFORM,wayland;xcb
       env = SLD_VIDEODRIVER,wayland
       env = CLUTTER_BACKEND,wayland
-      env = XCURSOR_SIZE,32
+      env = HYPRCURSOR_THEME,Bibata-Modern-Classic
+      env = HYPRCURSOR_SIZE,5
+      env = XCURSOR_SIZE,5
 
       workspace=1,monitor:HDMI-A-1
       workspace=2,monitor:DP-3
