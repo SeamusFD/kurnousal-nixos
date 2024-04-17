@@ -19,8 +19,8 @@
       env = CLUTTER_BACKEND,wayland
       env = XCURSOR_SIZE,32
 
-      workspace=HDMI-A-1,1
-      workspace=DP-3,2
+      workspace=1,monitor:HDMI-A-1
+      workspace=2,monitor:DP-3
 
       $scrPath = /etc/nixos/kurnousal-nixos/scripts
 
