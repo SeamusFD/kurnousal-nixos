@@ -133,6 +133,7 @@
     # Virtualization
     qemu
     quickemu
+    qemu_full
     unicode-emoji
     twitter-color-emoji
     jdk
