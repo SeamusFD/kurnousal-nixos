@@ -134,6 +134,10 @@
     qemu
     quickemu
     qemu_full
+    qemu_kvm
+    qemu-utils
+    qemu-python-utils
+    # Misc
     unicode-emoji
     twitter-color-emoji
     jdk
