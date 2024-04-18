@@ -10,6 +10,7 @@
     ./system/bluetooth.nix
     ./system/lifecycle.nix
     # ./system/sddm.nix
+    ./system/pentesting-utils.nix
     ./system/monitoring.nix
     ./scripts/custom-bash-scripts.nix
   ];
