@@ -120,6 +120,8 @@
     rustup
     go
     ruby
+    nim
+    #
     ripgrep
     unzip
     python3Full
