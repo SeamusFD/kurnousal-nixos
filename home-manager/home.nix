@@ -55,6 +55,10 @@ in {
       "org/gnome/shell/extensions/user-theme" = {
         name = "Catppuccin-Mocha-Standard-Blue-Dark";
       };
+      "org/virt-manager/virt-manager/connections" = {
+        autoconnect = ["qemu:///system"];
+        uris = ["qemu:///system"];
+      };
     };
 
     home.packages = with pkgs; [
