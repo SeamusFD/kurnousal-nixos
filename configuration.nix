@@ -139,7 +139,6 @@
     qemu_kvm
     qemu-utils
     qemu-python-utils
-    virt-manager
     # Misc
     unicode-emoji
     twitter-color-emoji
@@ -163,6 +162,7 @@
   programs.gamemode.enable = true;
   programs.gamescope.enable = true;
   programs.java.enable = true;
+  programs.virt-manager.enable = true;
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
