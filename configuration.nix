@@ -139,6 +139,7 @@
     qemu_kvm
     qemu-utils
     qemu-python-utils
+    libvirt
     # Misc
     unicode-emoji
     twitter-color-emoji
