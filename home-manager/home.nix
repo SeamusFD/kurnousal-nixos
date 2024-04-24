@@ -11,7 +11,7 @@ in {
   users.users.bcampbell = {
     isNormalUser = true;
     description = "bcampbell";
-    extraGroups = ["networkmanager" "wheel"];
+    extraGroups = ["networkmanager" "wheel" "libvirtd"];
     packages = with pkgs; [
       discord
       brave
