@@ -12,6 +12,7 @@
     # ./system/sddm.nix
     ./system/pentesting-utils.nix
     ./system/monitoring.nix
+    ./system/godot.nix
     ./scripts/custom-bash-scripts.nix
   ];
 
