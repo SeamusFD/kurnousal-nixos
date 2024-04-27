@@ -161,6 +161,7 @@ in {
     programs.jq.enable = true;
 
     services.cliphist.enable = true;
+    services.network-manager-applet.enable = true;
 
     home.stateVersion = "24.05";
   };
