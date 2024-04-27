@@ -110,6 +110,7 @@
     gamemode
     openvpn
     protonvpn-cli_2
+    vlc
     # Build Tools
     meson
     cmake
