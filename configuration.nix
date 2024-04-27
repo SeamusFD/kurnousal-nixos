@@ -150,6 +150,7 @@
     sshpass
     # Automation (move some day)
     ansible
+    python312Packages.proton-vpn-network-manager
   ];
 
   programs.steam = {
