@@ -107,6 +107,7 @@
     swww
     dolphin
     gamemode
+    protonvpn-gui
     # Build Tools
     meson
     cmake
