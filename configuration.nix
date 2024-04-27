@@ -108,7 +108,8 @@
     swww
     dolphin
     gamemode
-    protonvpn-gui
+    openvpn
+    protonvpn-cli_2
     # Build Tools
     meson
     cmake
@@ -150,8 +151,6 @@
     sshpass
     # Automation (move some day)
     ansible
-    python312Packages.proton-vpn-network-manager
-    python312Packages.proton-vpn-network-manager-openvpn
   ];
 
   programs.steam = {
