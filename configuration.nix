@@ -151,6 +151,7 @@
     # Automation (move some day)
     ansible
     python312Packages.proton-vpn-network-manager
+    python312Packages.proton-vpn-network-manager-openvpn
   ];
 
   programs.steam = {
