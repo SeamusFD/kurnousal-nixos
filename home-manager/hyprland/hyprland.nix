@@ -9,7 +9,7 @@
     extraConfig = ''
       monitor=HDMI-A-1,2560x1440@144,0x0,1
       monitor=DP-3,1920x1080@120,2560x0,1
-      exec-once = waybar & dunst & swww init
+      exec-once = waybar & dunst & swww-daemon
       exec-once = set-primary-monitor
       exec-once = hyprctl setcursor Bibata-Modern-Classic 5
 
