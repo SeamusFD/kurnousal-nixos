@@ -15,22 +15,25 @@ set -e
 # cd to your config dir
 pushd /etc/nixos/kurnousal-nixos
 
-# Early return if no changes were detected (thanks @singiamtel!)
-if git diff --quiet '*.nix'; then
-    echo "No changes detected, exiting."
-    popd
-    exit 0
-fi
+# Autoformat your nix files
+alejandra . &>/dev/null ||
+	(
+		alejandra .
+		echo "formatting failed!" && exit 1
+	)
 
 # Ensure all changes are staged
 git add .
 
-# Autoformat your nix files
-alejandra . &>/dev/null \
-  || ( alejandra . ; echo "formatting failed!" && exit 1)
+# Early return if no changes were detected (thanks @singiamtel!)
+if git diff --quiet --staged; then
+	echo "No changes detected, exiting."
+	popd
+	exit 0
+fi
 
 # Shows your changes
-git diff -U0 '*.nix'
+git diff -U0
 
 echo "NixOS Rebuilding..."
 
