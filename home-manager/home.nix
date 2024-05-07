@@ -42,6 +42,7 @@ in {
       ./dunst/dunst.nix
       ./shell-aliases.nix
       ./xserver/xserver.nix
+      ./thunderbird/default.nix
       # Removed until I figure out the rofi issues
       # ./rofi/rofi.nix
     ];
