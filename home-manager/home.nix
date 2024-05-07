@@ -64,6 +64,7 @@ in {
       };
     };
 
+    home.sessionPath = ["/kutek/development/tree-sitter-paradox/node_modules/bin"];
     home.packages = with pkgs; [
       kitty
       # Shell Packages
