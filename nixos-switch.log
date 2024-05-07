@@ -1,62 +1,23 @@
 building Nix...
 building the system configuration...
-these 12 derivations will be built:
-  /nix/store/9jz4qhadw6dahzl3qz3qqai3bpf1386k-system-path.drv
-  /nix/store/6xsl7lwgg9jllb70b04jqg17s977rcqj-dbus-1.drv
-  /nix/store/c5r657vq740himjxnq6pnhldxa0kdjy2-X-Restart-Triggers-dbus.drv
-  /nix/store/0yd60vwgvhhf07z7vbh5jdjqq32ymnaj-unit-dbus.service.drv
-  /nix/store/0f60mcriv4lni65q39n1s8rrwai5y2ad-user-units.drv
-  /nix/store/5glcrcrzailjbsxkykxrwsb9dg9by9ah-unit-dbus.service.drv
-  /nix/store/iw6ppzs4k3kq13hl1rmnyvm7lkv5sps6-X-Restart-Triggers-polkit.drv
-  /nix/store/frd8fdnzzy7v32v1qfk52vzj7pyqa3yv-unit-polkit.service.drv
-  /nix/store/miapksvf4r0iymysij84m111g94q6qy4-unit-accounts-daemon.service.drv
-  /nix/store/5g530kr49fzs60rlza13pfff2i8ppgxb-system-units.drv
-  /nix/store/qkdvgmdw88g3fjwjwncl6l2m153nxmn5-etc.drv
-  /nix/store/l32h5y69yl7nbgkj790y25rzingkiqk4-nixos-system-nixos-24.05pre619660.63c3a29ca824.drv
-building '/nix/store/9jz4qhadw6dahzl3qz3qqai3bpf1386k-system-path.drv'...
-warning: collision between `/nix/store/vsc3bdmmclah7zkns2qbq4bay9pyl8dz-dotnet-sdk-7.0.408/bin/dotnet' and `/nix/store/ybxpg06p7262zblwa4cax6icigasfm8b-dotnet-sdk-6.0.421/bin/dotnet'
-warning: collision between `/nix/store/vsc3bdmmclah7zkns2qbq4bay9pyl8dz-dotnet-sdk-7.0.408/share/bash-completion/completions/dotnet.bash' and `/nix/store/ybxpg06p7262zblwa4cax6icigasfm8b-dotnet-sdk-6.0.421/share/bash-completion/completions/dotnet.bash'
-warning: collision between `/nix/store/8r5qm7fkz984zhcyxjsa1nrcvia3c9gw-dotnet-sdk-8.0.204/bin/dotnet' and `/nix/store/ybxpg06p7262zblwa4cax6icigasfm8b-dotnet-sdk-6.0.421/bin/dotnet'
-warning: collision between `/nix/store/8r5qm7fkz984zhcyxjsa1nrcvia3c9gw-dotnet-sdk-8.0.204/share/bash-completion/completions/dotnet.bash' and `/nix/store/ybxpg06p7262zblwa4cax6icigasfm8b-dotnet-sdk-6.0.421/share/bash-completion/completions/dotnet.bash'
-warning: collision between `/nix/store/ffbqsjjxqqj0ldaf3pyap1sppqlf1j3d-qemu-utils-8.2.3/bin/qemu-storage-daemon' and `/nix/store/572mcnj8zmal9w4dxvaqwmrxa8fcqv3i-qemu-8.2.3/bin/qemu-storage-daemon'
-warning: collision between `/nix/store/ffbqsjjxqqj0ldaf3pyap1sppqlf1j3d-qemu-utils-8.2.3/bin/qemu-img' and `/nix/store/572mcnj8zmal9w4dxvaqwmrxa8fcqv3i-qemu-8.2.3/bin/qemu-img'
-warning: collision between `/nix/store/ffbqsjjxqqj0ldaf3pyap1sppqlf1j3d-qemu-utils-8.2.3/bin/qemu-nbd' and `/nix/store/572mcnj8zmal9w4dxvaqwmrxa8fcqv3i-qemu-8.2.3/bin/qemu-nbd'
-warning: collision between `/nix/store/ffbqsjjxqqj0ldaf3pyap1sppqlf1j3d-qemu-utils-8.2.3/bin/qemu-pr-helper' and `/nix/store/572mcnj8zmal9w4dxvaqwmrxa8fcqv3i-qemu-8.2.3/bin/qemu-pr-helper'
-warning: collision between `/nix/store/ffbqsjjxqqj0ldaf3pyap1sppqlf1j3d-qemu-utils-8.2.3/bin/qemu-edid' and `/nix/store/572mcnj8zmal9w4dxvaqwmrxa8fcqv3i-qemu-8.2.3/bin/qemu-edid'
-warning: collision between `/nix/store/ffbqsjjxqqj0ldaf3pyap1sppqlf1j3d-qemu-utils-8.2.3/bin/qemu-io' and `/nix/store/572mcnj8zmal9w4dxvaqwmrxa8fcqv3i-qemu-8.2.3/bin/qemu-io'
-warning: collision between `/nix/store/ffbqsjjxqqj0ldaf3pyap1sppqlf1j3d-qemu-utils-8.2.3/bin/elf2dmp' and `/nix/store/572mcnj8zmal9w4dxvaqwmrxa8fcqv3i-qemu-8.2.3/bin/elf2dmp'
-warning: collision between `/nix/store/ffbqsjjxqqj0ldaf3pyap1sppqlf1j3d-qemu-utils-8.2.3/share/man/man8/qemu-nbd.8.gz' and `/nix/store/572mcnj8zmal9w4dxvaqwmrxa8fcqv3i-qemu-8.2.3/share/man/man8/qemu-nbd.8.gz'
-warning: collision between `/nix/store/ffbqsjjxqqj0ldaf3pyap1sppqlf1j3d-qemu-utils-8.2.3/share/man/man8/qemu-pr-helper.8.gz' and `/nix/store/572mcnj8zmal9w4dxvaqwmrxa8fcqv3i-qemu-8.2.3/share/man/man8/qemu-pr-helper.8.gz'
-warning: collision between `/nix/store/ffbqsjjxqqj0ldaf3pyap1sppqlf1j3d-qemu-utils-8.2.3/share/man/man7/qemu-cpu-models.7.gz' and `/nix/store/572mcnj8zmal9w4dxvaqwmrxa8fcqv3i-qemu-8.2.3/share/man/man7/qemu-cpu-models.7.gz'
-warning: collision between `/nix/store/ffbqsjjxqqj0ldaf3pyap1sppqlf1j3d-qemu-utils-8.2.3/share/man/man7/qemu-storage-daemon-qmp-ref.7.gz' and `/nix/store/572mcnj8zmal9w4dxvaqwmrxa8fcqv3i-qemu-8.2.3/share/man/man7/qemu-storage-daemon-qmp-ref.7.gz'
-warning: collision between `/nix/store/ffbqsjjxqqj0ldaf3pyap1sppqlf1j3d-qemu-utils-8.2.3/share/man/man7/qemu-block-drivers.7.gz' and `/nix/store/572mcnj8zmal9w4dxvaqwmrxa8fcqv3i-qemu-8.2.3/share/man/man7/qemu-block-drivers.7.gz'
-warning: collision between `/nix/store/ffbqsjjxqqj0ldaf3pyap1sppqlf1j3d-qemu-utils-8.2.3/share/man/man7/qemu-qmp-ref.7.gz' and `/nix/store/572mcnj8zmal9w4dxvaqwmrxa8fcqv3i-qemu-8.2.3/share/man/man7/qemu-qmp-ref.7.gz'
-warning: collision between `/nix/store/ffbqsjjxqqj0ldaf3pyap1sppqlf1j3d-qemu-utils-8.2.3/share/man/man1/virtfs-proxy-helper.1.gz' and `/nix/store/572mcnj8zmal9w4dxvaqwmrxa8fcqv3i-qemu-8.2.3/share/man/man1/virtfs-proxy-helper.1.gz'
-warning: collision between `/nix/store/ffbqsjjxqqj0ldaf3pyap1sppqlf1j3d-qemu-utils-8.2.3/share/man/man1/qemu-img.1.gz' and `/nix/store/572mcnj8zmal9w4dxvaqwmrxa8fcqv3i-qemu-8.2.3/share/man/man1/qemu-img.1.gz'
-warning: collision between `/nix/store/ffbqsjjxqqj0ldaf3pyap1sppqlf1j3d-qemu-utils-8.2.3/share/man/man1/qemu-storage-daemon.1.gz' and `/nix/store/572mcnj8zmal9w4dxvaqwmrxa8fcqv3i-qemu-8.2.3/share/man/man1/qemu-storage-daemon.1.gz'
-warning: collision between `/nix/store/ffbqsjjxqqj0ldaf3pyap1sppqlf1j3d-qemu-utils-8.2.3/share/man/man1/qemu.1.gz' and `/nix/store/572mcnj8zmal9w4dxvaqwmrxa8fcqv3i-qemu-8.2.3/share/man/man1/qemu.1.gz'
-warning: collision between `/nix/store/9ngirpid7vq4ny710b2ai2ph1xwlflci-xorg-server-21.1.13/lib/xorg/protocol.txt' and `/nix/store/i3yspjhpqz8n25phd91p5cyrh2jl1xvh-xwayland-23.2.6/lib/xorg/protocol.txt'
-warning: collision between `/nix/store/9ngirpid7vq4ny710b2ai2ph1xwlflci-xorg-server-21.1.13/share/man/man1/Xserver.1.gz' and `/nix/store/i3yspjhpqz8n25phd91p5cyrh2jl1xvh-xwayland-23.2.6/share/man/man1/Xserver.1.gz'
-created 12227 symlinks in user environment
+these 3 derivations will be built:
+  /nix/store/rhsgc8gadv8jka22x573aqv9vprxrvqi-user-environment.drv
+  /nix/store/jvf91cijw6c72qhqakxgwv7qd18z8558-etc.drv
+  /nix/store/vp2vzlfbivrq1qqbfchg61j37vykbqsi-nixos-system-nixos-24.05pre619660.63c3a29ca824.drv
+these 2 paths will be fetched (2.78 MiB download, 16.09 MiB unpacked):
+  /nix/store/7q6vadhif8qdas69dgqvkr3cz638gvz7-vencord-1.7.9
+  /nix/store/yqa1x1zb6wk76km0p77bj5mv0pp1yb5q-webcord-vencord-4.8.0
+copying path '/nix/store/7q6vadhif8qdas69dgqvkr3cz638gvz7-vencord-1.7.9' from 'https://cache.nixos.org'...
+copying path '/nix/store/yqa1x1zb6wk76km0p77bj5mv0pp1yb5q-webcord-vencord-4.8.0' from 'https://cache.nixos.org'...
+building '/nix/store/rhsgc8gadv8jka22x573aqv9vprxrvqi-user-environment.drv'...
+created 227 symlinks in user environment
 gtk-update-icon-cache: Cache file created successfully.
-building '/nix/store/iw6ppzs4k3kq13hl1rmnyvm7lkv5sps6-X-Restart-Triggers-polkit.drv'...
-building '/nix/store/6xsl7lwgg9jllb70b04jqg17s977rcqj-dbus-1.drv'...
-building '/nix/store/miapksvf4r0iymysij84m111g94q6qy4-unit-accounts-daemon.service.drv'...
-building '/nix/store/c5r657vq740himjxnq6pnhldxa0kdjy2-X-Restart-Triggers-dbus.drv'...
-building '/nix/store/frd8fdnzzy7v32v1qfk52vzj7pyqa3yv-unit-polkit.service.drv'...
-building '/nix/store/0yd60vwgvhhf07z7vbh5jdjqq32ymnaj-unit-dbus.service.drv'...
-building '/nix/store/5glcrcrzailjbsxkykxrwsb9dg9by9ah-unit-dbus.service.drv'...
-building '/nix/store/0f60mcriv4lni65q39n1s8rrwai5y2ad-user-units.drv'...
-building '/nix/store/5g530kr49fzs60rlza13pfff2i8ppgxb-system-units.drv'...
-building '/nix/store/qkdvgmdw88g3fjwjwncl6l2m153nxmn5-etc.drv'...
-building '/nix/store/l32h5y69yl7nbgkj790y25rzingkiqk4-nixos-system-nixos-24.05pre619660.63c3a29ca824.drv'...
-stopping the following units: accounts-daemon.service
+gtk-update-icon-cache: Cache file created successfully.
+building '/nix/store/jvf91cijw6c72qhqakxgwv7qd18z8558-etc.drv'...
+building '/nix/store/vp2vzlfbivrq1qqbfchg61j37vykbqsi-nixos-system-nixos-24.05pre619660.63c3a29ca824.drv'...
 activating the configuration...
 setting up /etc...
 reloading user units for lightdm...
 reloading user units for bcampbell...
 restarting sysinit-reactivation.target
-reloading the following units: dbus.service
-restarting the following units: polkit.service
-starting the following units: accounts-daemon.service
 the following new units were started: libvirtd.service, sysinit-reactivation.target, systemd-tmpfiles-resetup.service

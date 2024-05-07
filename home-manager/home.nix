@@ -14,10 +14,10 @@ in {
     extraGroups = ["networkmanager" "wheel" "libvirtd"];
     packages = with pkgs; [
       discord
+      webcord-vencord
       brave
       # obsidian
       tor-browser
-      discord
       jetbrains-toolbox
       protonup-qt
       freetube
