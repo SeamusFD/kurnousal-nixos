@@ -43,7 +43,7 @@ in {
       ./shell-aliases.nix
       ./xserver/xserver.nix
       # Removed until I figure out the rofi issues
-      #./rofi/rofi.nix
+      # ./rofi/rofi.nix
     ];
 
     dconf.enable = true;
