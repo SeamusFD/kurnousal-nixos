@@ -14,6 +14,7 @@
     ./system/monitoring.nix
     ./system/godot.nix
     ./system/keyboard.nix
+    ./system/drivers.nix
     ./scripts/custom-bash-scripts.nix
   ];
 
