@@ -8,5 +8,6 @@
     nix-top
     btop
     wirelesstools
+    usbutils
   ];
 }
