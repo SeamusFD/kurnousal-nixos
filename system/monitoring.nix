@@ -9,5 +9,6 @@
     btop
     wirelesstools
     usbutils
+    tree-sitter
   ];
 }
