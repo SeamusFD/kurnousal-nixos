@@ -12,21 +12,23 @@ in {
     isNormalUser = true;
     description = "bcampbell";
     extraGroups = ["networkmanager" "wheel" "libvirtd"];
-    packages = with pkgs; [
-      discord
-      webcord-vencord
-      brave
+    packages = [
+      (pkgs.discord.override {
+        withOpenASAR = true;
+        withVencord = true;
+      })
+      pkgs.brave
       # obsidian
-      tor-browser
-      jetbrains-toolbox
-      protonup-qt
-      freetube
-      spotube
-      libreoffice-fresh
+      pkgs.tor-browser
+      pkgs.jetbrains-toolbox
+      pkgs.protonup-qt
+      pkgs.freetube
+      pkgs.spotube
+      pkgs.libreoffice-fresh
       # Application Theming
-      glib
-      dconf
-      xcur2png
+      pkgs.glib
+      pkgs.dconf
+      pkgs.xcur2png
     ];
   };
 
