@@ -64,7 +64,7 @@ in {
       };
     };
 
-    home.sessionPath = ["/kutek/development/tree-sitter-paradox/node_modules/bin"];
+    home.sessionPath = ["/kutek/development/tree-sitter-paradox/node_modulesttree-sitter-cli/"];
     home.packages = with pkgs; [
       kitty
       # Shell Packages
