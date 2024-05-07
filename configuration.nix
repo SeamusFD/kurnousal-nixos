@@ -152,6 +152,7 @@
     jdk
     flatpak
     sshpass
+    wttrbar
     # Automation (move some day)
     ansible
   ];
