@@ -7,5 +7,6 @@
     amdgpu_top
     nix-top
     btop
+    wirelesstools
   ];
 }
