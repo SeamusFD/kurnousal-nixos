@@ -28,7 +28,7 @@ with builtins; {
           "on-click-right" = "qpwgraph";
         };
         "custom/weather" = {
-          "exec" = "/etc/nixos/kurnousal-nixos/scripts/weather/weather.sh Collierville+Tennessee";
+          "exec" = "wttrbar --fahrenheit --location Collierville+Tennessee";
           "return-type" = "json";
           "format" = "{}";
           "tooltip" = true;
