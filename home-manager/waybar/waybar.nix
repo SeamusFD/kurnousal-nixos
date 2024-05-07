@@ -30,9 +30,9 @@ with builtins; {
         "custom/weather" = {
           "exec" = "wttrbar --fahrenheit --location Collierville+Tennessee";
           "return-type" = "json";
-          "format" = "{}";
+          "format" = "{}°";
           "tooltip" = true;
-          "interval" = 3600;
+          "interval" = 1800;
         };
         "hyprland/workspaces" = {
           "format" = "{name}";
