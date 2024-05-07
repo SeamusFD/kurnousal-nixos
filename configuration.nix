@@ -111,6 +111,7 @@
     openvpn
     protonvpn-cli_2
     vlc
+    gnumake
     # Build Tools
     meson
     cmake
