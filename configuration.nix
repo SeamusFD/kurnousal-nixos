@@ -14,30 +14,29 @@
     ./system/monitoring.nix
     ./system/godot.nix
     ./system/keyboard.nix
-    ./system/drivers.nix
     ./scripts/custom-bash-scripts.nix
   ];
 
   # Security
-  security.sudo = {
-    enable = true;
-    extraRules = [
-      {
-        commands = [
-          {
-            command = "${pkgs.systemd}/bin/nix-rebuild";
-            options = ["NOPASSWD"];
-          }
-        ];
-        groups = ["wheel"];
-      }
-    ];
-    extraConfig = with pkgs; ''
-      Defaults:picloud secure_path="${lib.makeBinPath [
-        systemd
-      ]}:/nix/var/nix/profiles/default/bin:/run/current-system/sw/bin"
-    '';
-  };
+  # security.sudo = {
+  #   enable = true;
+  #   extraRules = [
+  #     {
+  #       commands = [
+  #         {
+  #           command = "${pkgs.systemd}/bin/nix-rebuild";
+  #           options = ["NOPASSWD"];
+  #         }
+  #       ];
+  #       groups = ["wheel"];
+  #     }
+  #   ];
+  #   extraConfig = with pkgs; ''
+  #     Defaults:picloud secure_path="${lib.makeBinPath [
+  #       systemd
+  #     ]}:/nix/var/nix/profiles/default/bin:/run/current-system/sw/bin"
+  #   '';
+  # };
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -133,7 +132,6 @@
     openvpn
     protonvpn-cli_2
     vlc
-    gnumake
     # Build Tools
     meson
     cmake
@@ -152,7 +150,7 @@
     #
     ripgrep
     unzip
-    python3Full
+    python3
     haskell-ci
     dotnet-sdk
     dotnet-sdk_7
