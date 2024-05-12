@@ -128,7 +128,6 @@
     xdg-desktop-portal-hyprland
     swww
     dolphin
-    gamemode
     openvpn
     protonvpn-cli_2
     vlc
@@ -138,6 +137,9 @@
     scdoc
     coreutils
     gcc
+    xdotool
+    xorg.xwininfo
+    yad
     wayland-protocols
     wayland-utils
     wl-clipboard
@@ -186,7 +188,10 @@
         ];
     };
   };
-  programs.gamemode.enable = true;
+  programs.gamemode = {
+    enable = true;
+    settings.general.inhibit_screensaver = 0;
+  };
   programs.gamescope.enable = true;
   programs.java.enable = true;
   programs.virt-manager.enable = true;

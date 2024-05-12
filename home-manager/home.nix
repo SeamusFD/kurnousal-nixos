@@ -11,7 +11,7 @@ in {
   users.users.bcampbell = {
     isNormalUser = true;
     description = "bcampbell";
-    extraGroups = ["networkmanager" "wheel" "libvirtd"];
+    extraGroups = ["networkmanager" "wheel" "gamemode" "libvirtd"];
     packages = [
       (pkgs.discord.override {
         withOpenASAR = true;
