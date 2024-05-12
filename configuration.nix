@@ -118,6 +118,7 @@
   environment.systemPackages = with pkgs; [
     vim
     nodejs
+    nodePackages_latest.pnpm
     alejandra
     libnotify
     wget
