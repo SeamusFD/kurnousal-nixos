@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 HYPR_CONFIG="/etc/nixos/kurnousal-nixos/home-manager/hyprland/conf/"
 ACTIVEWINDOW=$(hyprctl activewindow -j | jq -r ".class")
 

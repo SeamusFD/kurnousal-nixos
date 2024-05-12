@@ -162,7 +162,6 @@ in {
           vimcmd_symbol = "[❮](green)";
         };
         directory = {
-          truncation_length = 4;
           style = "bold lavender";
         };
         palettes.catppuccin_mocha = {
