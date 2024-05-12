@@ -44,7 +44,7 @@ in {
       ./xserver/xserver.nix
       ./thunderbird/default.nix
       # Removed until I figure out the rofi issues
-      # ./rofi/rofi.nix
+      ./rofi/rofi.nix
     ];
 
     dconf.enable = true;
@@ -64,7 +64,6 @@ in {
       };
     };
 
-    home.sessionPath = ["/kutek/development/tree-sitter-paradox/node_modulesttree-sitter-cli/"];
     home.packages = with pkgs; [
       kitty
       # Shell Packages
@@ -78,6 +77,7 @@ in {
       grc
       pfetch
       # Theming packages
+      catppuccin-gtk
       (catppuccin-kvantum.override {
         accent = "Blue";
         variant = "Mocha";
@@ -162,6 +162,7 @@ in {
           vimcmd_symbol = "[❮](green)";
         };
         directory = {
+          truncation_length = 4;
           style = "bold lavender";
         };
         palettes.catppuccin_mocha = {
