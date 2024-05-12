@@ -6,5 +6,6 @@
   environment.systemPackages = with pkgs; [
     # Packages for locking
     hyprlock
+    psmisc
   ];
 }
