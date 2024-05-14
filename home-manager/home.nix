@@ -18,7 +18,7 @@ in {
         withVencord = true;
       })
       pkgs.brave
-      # obsidian
+      pkgs.obsidian
       pkgs.tor-browser
       pkgs.jetbrains-toolbox
       pkgs.protonup-qt
