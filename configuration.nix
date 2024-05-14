@@ -191,7 +191,19 @@
   };
   programs.gamemode = {
     enable = true;
-    settings.general.inhibit_screensaver = 0;
+    settings = {
+      general = {
+        renice = 10;
+        softrealtime = "auto";
+        desiredgov = "performance";
+        inhibit_screensaver = 0;
+      };
+
+      custom = {
+        start = "${pkgs.libnotify}/bin/notify-send 'GameMode started'";
+        end = "${pkgs.libnotify}/bin/notify-send 'GameMode ended'";
+      };
+    };
   };
   programs.gamescope.enable = true;
   programs.java.enable = true;
