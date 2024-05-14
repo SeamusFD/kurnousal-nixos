@@ -14,6 +14,8 @@
     ./system/monitoring.nix
     ./system/godot.nix
     ./system/keyboard.nix
+    ./system/drivers.nix
+    ./system/python/default.nix
     ./scripts/custom-bash-scripts.nix
   ];
 
@@ -153,7 +155,6 @@
     #
     ripgrep
     unzip
-    python3
     haskell-ci
     dotnet-sdk
     dotnet-sdk_7
@@ -167,7 +168,6 @@
     qemu_full
     qemu_kvm
     qemu-utils
-    qemu-python-utils
     # Misc
     unicode-emoji
     twitter-color-emoji

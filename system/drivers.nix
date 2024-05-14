@@ -4,7 +4,6 @@
   ...
 }: {
   environment.systemPackages = with pkgs; [
-    godot_4
-    blender
+    linuxKernel.packages.linux_6_6.amdgpu-pro
   ];
 }

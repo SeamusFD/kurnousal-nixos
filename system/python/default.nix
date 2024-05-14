@@ -4,7 +4,7 @@
   ...
 }: {
   environment.systemPackages = with pkgs; [
-    godot_4
-    blender
+    python3
+    pipenv
   ];
 }

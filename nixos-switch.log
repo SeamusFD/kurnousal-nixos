@@ -1,58 +1,75 @@
 building Nix...
 building the system configuration...
 these 12 derivations will be built:
-  /nix/store/3da17v29vnan23sjks0rlfwbpksjcw2h-system-path.drv
-  /nix/store/21s1414jm3mlhw74v11ss0nyf4n6rxhg-unit-accounts-daemon.service.drv
-  /nix/store/6ypqdyryhfy2glrfsrfgwhjsa9xp3rl5-dbus-1.drv
-  /nix/store/9cqkmbmiby97v8h4lzbinj9c8shdw01a-X-Restart-Triggers-dbus.drv
-  /nix/store/ay9wf6g4pimlww8qfqvprs43977a7bpa-unit-dbus.service.drv
-  /nix/store/wlp0ddr6d8xmn8jd38liqn37zqj5sk73-X-Restart-Triggers-polkit.drv
-  /nix/store/k9gi9k1c08mrac3hhb19w5p3j2fbng16-unit-polkit.service.drv
-  /nix/store/8lir4mgrq0sxg5ic5bl1yn2mj5zvzl4q-system-units.drv
-  /nix/store/z6a4mcayirj9ggg2xh0fjx3l1a0mrhrm-unit-dbus.service.drv
-  /nix/store/ggzifvkgjbs7al7c2x8z3cfcri7xdpkz-user-units.drv
-  /nix/store/wfvdyy6cpa1hgqx85ybhpypbfpmvciig-etc.drv
-  /nix/store/k3gh120bd017fz0dvb2xnwpx8p96a978-nixos-system-nixos-24.05pre622847.b211b392b848.drv
-this path will be fetched (0.12 MiB download, 0.69 MiB unpacked):
-  /nix/store/0glfnkyg4y7fx4p7mma83c671k93jcvz-psmisc-23.7
-copying path '/nix/store/0glfnkyg4y7fx4p7mma83c671k93jcvz-psmisc-23.7' from 'https://cache.nixos.org'...
-building '/nix/store/3da17v29vnan23sjks0rlfwbpksjcw2h-system-path.drv'...
-warning: collision between `/nix/store/s3q0fj5karqlynas4w8hwybkwhb34rwb-dotnet-sdk-7.0.408/bin/dotnet' and `/nix/store/9n6zzilsssfhxhki4zdbr420h5bk8v0h-dotnet-sdk-6.0.421/bin/dotnet'
-warning: collision between `/nix/store/s3q0fj5karqlynas4w8hwybkwhb34rwb-dotnet-sdk-7.0.408/share/bash-completion/completions/dotnet.bash' and `/nix/store/9n6zzilsssfhxhki4zdbr420h5bk8v0h-dotnet-sdk-6.0.421/share/bash-completion/completions/dotnet.bash'
-warning: collision between `/nix/store/m3jnvzqh93cil0ki1c573zzgw52hmllr-dotnet-sdk-8.0.204/bin/dotnet' and `/nix/store/9n6zzilsssfhxhki4zdbr420h5bk8v0h-dotnet-sdk-6.0.421/bin/dotnet'
-warning: collision between `/nix/store/m3jnvzqh93cil0ki1c573zzgw52hmllr-dotnet-sdk-8.0.204/share/bash-completion/completions/dotnet.bash' and `/nix/store/9n6zzilsssfhxhki4zdbr420h5bk8v0h-dotnet-sdk-6.0.421/share/bash-completion/completions/dotnet.bash'
-warning: collision between `/nix/store/2wmcn23j80ii82dbycjra6bbyw1pzw2j-qemu-utils-8.2.3/bin/qemu-storage-daemon' and `/nix/store/yji397fspxvawqfiyx47kkfvkk46rfpa-qemu-8.2.3/bin/qemu-storage-daemon'
-warning: collision between `/nix/store/2wmcn23j80ii82dbycjra6bbyw1pzw2j-qemu-utils-8.2.3/bin/qemu-img' and `/nix/store/yji397fspxvawqfiyx47kkfvkk46rfpa-qemu-8.2.3/bin/qemu-img'
-warning: collision between `/nix/store/2wmcn23j80ii82dbycjra6bbyw1pzw2j-qemu-utils-8.2.3/bin/qemu-nbd' and `/nix/store/yji397fspxvawqfiyx47kkfvkk46rfpa-qemu-8.2.3/bin/qemu-nbd'
-warning: collision between `/nix/store/2wmcn23j80ii82dbycjra6bbyw1pzw2j-qemu-utils-8.2.3/bin/qemu-pr-helper' and `/nix/store/yji397fspxvawqfiyx47kkfvkk46rfpa-qemu-8.2.3/bin/qemu-pr-helper'
-warning: collision between `/nix/store/2wmcn23j80ii82dbycjra6bbyw1pzw2j-qemu-utils-8.2.3/bin/qemu-edid' and `/nix/store/yji397fspxvawqfiyx47kkfvkk46rfpa-qemu-8.2.3/bin/qemu-edid'
-warning: collision between `/nix/store/2wmcn23j80ii82dbycjra6bbyw1pzw2j-qemu-utils-8.2.3/bin/qemu-io' and `/nix/store/yji397fspxvawqfiyx47kkfvkk46rfpa-qemu-8.2.3/bin/qemu-io'
-warning: collision between `/nix/store/2wmcn23j80ii82dbycjra6bbyw1pzw2j-qemu-utils-8.2.3/bin/elf2dmp' and `/nix/store/yji397fspxvawqfiyx47kkfvkk46rfpa-qemu-8.2.3/bin/elf2dmp'
-warning: collision between `/nix/store/2wmcn23j80ii82dbycjra6bbyw1pzw2j-qemu-utils-8.2.3/share/man/man8/qemu-nbd.8.gz' and `/nix/store/yji397fspxvawqfiyx47kkfvkk46rfpa-qemu-8.2.3/share/man/man8/qemu-nbd.8.gz'
-warning: collision between `/nix/store/2wmcn23j80ii82dbycjra6bbyw1pzw2j-qemu-utils-8.2.3/share/man/man8/qemu-pr-helper.8.gz' and `/nix/store/yji397fspxvawqfiyx47kkfvkk46rfpa-qemu-8.2.3/share/man/man8/qemu-pr-helper.8.gz'
-warning: collision between `/nix/store/2wmcn23j80ii82dbycjra6bbyw1pzw2j-qemu-utils-8.2.3/share/man/man7/qemu-cpu-models.7.gz' and `/nix/store/yji397fspxvawqfiyx47kkfvkk46rfpa-qemu-8.2.3/share/man/man7/qemu-cpu-models.7.gz'
-warning: collision between `/nix/store/2wmcn23j80ii82dbycjra6bbyw1pzw2j-qemu-utils-8.2.3/share/man/man7/qemu-storage-daemon-qmp-ref.7.gz' and `/nix/store/yji397fspxvawqfiyx47kkfvkk46rfpa-qemu-8.2.3/share/man/man7/qemu-storage-daemon-qmp-ref.7.gz'
-warning: collision between `/nix/store/2wmcn23j80ii82dbycjra6bbyw1pzw2j-qemu-utils-8.2.3/share/man/man7/qemu-block-drivers.7.gz' and `/nix/store/yji397fspxvawqfiyx47kkfvkk46rfpa-qemu-8.2.3/share/man/man7/qemu-block-drivers.7.gz'
-warning: collision between `/nix/store/2wmcn23j80ii82dbycjra6bbyw1pzw2j-qemu-utils-8.2.3/share/man/man7/qemu-qmp-ref.7.gz' and `/nix/store/yji397fspxvawqfiyx47kkfvkk46rfpa-qemu-8.2.3/share/man/man7/qemu-qmp-ref.7.gz'
-warning: collision between `/nix/store/2wmcn23j80ii82dbycjra6bbyw1pzw2j-qemu-utils-8.2.3/share/man/man1/virtfs-proxy-helper.1.gz' and `/nix/store/yji397fspxvawqfiyx47kkfvkk46rfpa-qemu-8.2.3/share/man/man1/virtfs-proxy-helper.1.gz'
-warning: collision between `/nix/store/2wmcn23j80ii82dbycjra6bbyw1pzw2j-qemu-utils-8.2.3/share/man/man1/qemu-img.1.gz' and `/nix/store/yji397fspxvawqfiyx47kkfvkk46rfpa-qemu-8.2.3/share/man/man1/qemu-img.1.gz'
-warning: collision between `/nix/store/2wmcn23j80ii82dbycjra6bbyw1pzw2j-qemu-utils-8.2.3/share/man/man1/qemu-storage-daemon.1.gz' and `/nix/store/yji397fspxvawqfiyx47kkfvkk46rfpa-qemu-8.2.3/share/man/man1/qemu-storage-daemon.1.gz'
-warning: collision between `/nix/store/2wmcn23j80ii82dbycjra6bbyw1pzw2j-qemu-utils-8.2.3/share/man/man1/qemu.1.gz' and `/nix/store/yji397fspxvawqfiyx47kkfvkk46rfpa-qemu-8.2.3/share/man/man1/qemu.1.gz'
-warning: collision between `/nix/store/liwrqjm9d7zgnr3jwnh1pqsls0rhc6r5-xorg-server-21.1.13/lib/xorg/protocol.txt' and `/nix/store/3spcjqp5zcyg8arz6dnsj59fal5yk3jy-xwayland-23.2.6/lib/xorg/protocol.txt'
-warning: collision between `/nix/store/liwrqjm9d7zgnr3jwnh1pqsls0rhc6r5-xorg-server-21.1.13/share/man/man1/Xserver.1.gz' and `/nix/store/3spcjqp5zcyg8arz6dnsj59fal5yk3jy-xwayland-23.2.6/share/man/man1/Xserver.1.gz'
-created 12125 symlinks in user environment
+  /nix/store/41x24x1rb4fkj39wppbn6dhnmzg9xn14-system-path.drv
+  /nix/store/m7jj2wa57xdnhzd3cs1rgnmldvbz0hgb-dbus-1.drv
+  /nix/store/ckgignpsbc0i9qxw0ni4yfcy923pfrq8-X-Restart-Triggers-dbus.drv
+  /nix/store/q1fz3q9fghl9k12b5bj733dk2ym6xjg7-unit-dbus.service.drv
+  /nix/store/nfkfy78sg5ca5bnic903x1h27hrgyqa1-user-units.drv
+  /nix/store/6vwxfzpm7zgadwq6v91zi14vka36klaa-unit-dbus.service.drv
+  /nix/store/vlxzy2xqfir7vji5i7rv4lwxv9hmlv23-unit-accounts-daemon.service.drv
+  /nix/store/78lk17j44kh6wnkyrhv12jy0zpnmjyp0-X-Restart-Triggers-polkit.drv
+  /nix/store/xc50ibpgipi3n3za4kqhiz9lj0bfnhg8-unit-polkit.service.drv
+  /nix/store/qk7y5zfkz2hhh9ks8h73c39z6jbj30z7-system-units.drv
+  /nix/store/9a3y56f1hlg8xl698wl6jy3x3pn9v73m-etc.drv
+  /nix/store/2h9d097xmn79kr2flzc79mdnfbxjlvcw-nixos-system-nixos-24.05pre625274.205781405197.drv
+these 9 paths will be fetched (10.76 MiB download, 59.62 MiB unpacked):
+  /nix/store/6wfc7p3j3clx2jzfkqjkq9a50qsir6ab-pipenv-2023.2.4
+  /nix/store/lxsgffsag318rzfaf7g17bxkh040zvsq-python3-3.11.9-env
+  /nix/store/4znx8na9n0b12z5fhap488wijmrz4ib0-python3.11-distlib-0.3.8
+  /nix/store/3lza7lysjz3ccb16inwvwqr6hi000fhv-python3.11-filelock-3.13.4
+  /nix/store/hflgawzlbc3mqm5cf84y1zficzsjl7z9-python3.11-pip-24.0
+  /nix/store/4l6f6jlr2md3nilx6px128axfmbb9m0h-python3.11-pip-24.0-man
+  /nix/store/8rbkfv30n7lxkzn45j862spkiwidq8xf-python3.11-platformdirs-4.2.0
+  /nix/store/jl24v2mhmd0c78c6sbn9klb1hh7vn883-python3.11-virtualenv-20.25.3
+  /nix/store/a5z63kn9fzrsm1nnpirb9flis4phbmik-python3.11-virtualenv-clone-0.5.7
+copying path '/nix/store/4l6f6jlr2md3nilx6px128axfmbb9m0h-python3.11-pip-24.0-man' from 'https://cache.nixos.org'...
+copying path '/nix/store/4znx8na9n0b12z5fhap488wijmrz4ib0-python3.11-distlib-0.3.8' from 'https://cache.nixos.org'...
+copying path '/nix/store/3lza7lysjz3ccb16inwvwqr6hi000fhv-python3.11-filelock-3.13.4' from 'https://cache.nixos.org'...
+copying path '/nix/store/hflgawzlbc3mqm5cf84y1zficzsjl7z9-python3.11-pip-24.0' from 'https://cache.nixos.org'...
+copying path '/nix/store/8rbkfv30n7lxkzn45j862spkiwidq8xf-python3.11-platformdirs-4.2.0' from 'https://cache.nixos.org'...
+copying path '/nix/store/jl24v2mhmd0c78c6sbn9klb1hh7vn883-python3.11-virtualenv-20.25.3' from 'https://cache.nixos.org'...
+copying path '/nix/store/a5z63kn9fzrsm1nnpirb9flis4phbmik-python3.11-virtualenv-clone-0.5.7' from 'https://cache.nixos.org'...
+copying path '/nix/store/lxsgffsag318rzfaf7g17bxkh040zvsq-python3-3.11.9-env' from 'https://cache.nixos.org'...
+copying path '/nix/store/6wfc7p3j3clx2jzfkqjkq9a50qsir6ab-pipenv-2023.2.4' from 'https://cache.nixos.org'...
+building '/nix/store/41x24x1rb4fkj39wppbn6dhnmzg9xn14-system-path.drv'...
+warning: collision between `/nix/store/8ycn4yw0lc02dlziirqjs9islr03nar1-dotnet-sdk-7.0.408/bin/dotnet' and `/nix/store/3p2v489xyw5kzbrc4mk1mya8sdbcpkyx-dotnet-sdk-6.0.421/bin/dotnet'
+warning: collision between `/nix/store/8ycn4yw0lc02dlziirqjs9islr03nar1-dotnet-sdk-7.0.408/share/bash-completion/completions/dotnet.bash' and `/nix/store/3p2v489xyw5kzbrc4mk1mya8sdbcpkyx-dotnet-sdk-6.0.421/share/bash-completion/completions/dotnet.bash'
+warning: collision between `/nix/store/h1cjcq31jnhl5g8z7vg16k1vhmyadani-dotnet-sdk-8.0.204/bin/dotnet' and `/nix/store/3p2v489xyw5kzbrc4mk1mya8sdbcpkyx-dotnet-sdk-6.0.421/bin/dotnet'
+warning: collision between `/nix/store/h1cjcq31jnhl5g8z7vg16k1vhmyadani-dotnet-sdk-8.0.204/share/bash-completion/completions/dotnet.bash' and `/nix/store/3p2v489xyw5kzbrc4mk1mya8sdbcpkyx-dotnet-sdk-6.0.421/share/bash-completion/completions/dotnet.bash'
+warning: collision between `/nix/store/lw9335s634hgykzn5khj9656ggcwmyd9-qemu-utils-8.2.3/bin/qemu-storage-daemon' and `/nix/store/rp0r6rfw5imlgz8x9w54n2w3jq8bg37b-qemu-8.2.3/bin/qemu-storage-daemon'
+warning: collision between `/nix/store/lw9335s634hgykzn5khj9656ggcwmyd9-qemu-utils-8.2.3/bin/qemu-img' and `/nix/store/rp0r6rfw5imlgz8x9w54n2w3jq8bg37b-qemu-8.2.3/bin/qemu-img'
+warning: collision between `/nix/store/lw9335s634hgykzn5khj9656ggcwmyd9-qemu-utils-8.2.3/bin/qemu-nbd' and `/nix/store/rp0r6rfw5imlgz8x9w54n2w3jq8bg37b-qemu-8.2.3/bin/qemu-nbd'
+warning: collision between `/nix/store/lw9335s634hgykzn5khj9656ggcwmyd9-qemu-utils-8.2.3/bin/qemu-pr-helper' and `/nix/store/rp0r6rfw5imlgz8x9w54n2w3jq8bg37b-qemu-8.2.3/bin/qemu-pr-helper'
+warning: collision between `/nix/store/lw9335s634hgykzn5khj9656ggcwmyd9-qemu-utils-8.2.3/bin/qemu-edid' and `/nix/store/rp0r6rfw5imlgz8x9w54n2w3jq8bg37b-qemu-8.2.3/bin/qemu-edid'
+warning: collision between `/nix/store/lw9335s634hgykzn5khj9656ggcwmyd9-qemu-utils-8.2.3/bin/qemu-io' and `/nix/store/rp0r6rfw5imlgz8x9w54n2w3jq8bg37b-qemu-8.2.3/bin/qemu-io'
+warning: collision between `/nix/store/lw9335s634hgykzn5khj9656ggcwmyd9-qemu-utils-8.2.3/bin/elf2dmp' and `/nix/store/rp0r6rfw5imlgz8x9w54n2w3jq8bg37b-qemu-8.2.3/bin/elf2dmp'
+warning: collision between `/nix/store/lw9335s634hgykzn5khj9656ggcwmyd9-qemu-utils-8.2.3/share/man/man8/qemu-nbd.8.gz' and `/nix/store/rp0r6rfw5imlgz8x9w54n2w3jq8bg37b-qemu-8.2.3/share/man/man8/qemu-nbd.8.gz'
+warning: collision between `/nix/store/lw9335s634hgykzn5khj9656ggcwmyd9-qemu-utils-8.2.3/share/man/man8/qemu-pr-helper.8.gz' and `/nix/store/rp0r6rfw5imlgz8x9w54n2w3jq8bg37b-qemu-8.2.3/share/man/man8/qemu-pr-helper.8.gz'
+warning: collision between `/nix/store/lw9335s634hgykzn5khj9656ggcwmyd9-qemu-utils-8.2.3/share/man/man7/qemu-cpu-models.7.gz' and `/nix/store/rp0r6rfw5imlgz8x9w54n2w3jq8bg37b-qemu-8.2.3/share/man/man7/qemu-cpu-models.7.gz'
+warning: collision between `/nix/store/lw9335s634hgykzn5khj9656ggcwmyd9-qemu-utils-8.2.3/share/man/man7/qemu-storage-daemon-qmp-ref.7.gz' and `/nix/store/rp0r6rfw5imlgz8x9w54n2w3jq8bg37b-qemu-8.2.3/share/man/man7/qemu-storage-daemon-qmp-ref.7.gz'
+warning: collision between `/nix/store/lw9335s634hgykzn5khj9656ggcwmyd9-qemu-utils-8.2.3/share/man/man7/qemu-block-drivers.7.gz' and `/nix/store/rp0r6rfw5imlgz8x9w54n2w3jq8bg37b-qemu-8.2.3/share/man/man7/qemu-block-drivers.7.gz'
+warning: collision between `/nix/store/lw9335s634hgykzn5khj9656ggcwmyd9-qemu-utils-8.2.3/share/man/man7/qemu-qmp-ref.7.gz' and `/nix/store/rp0r6rfw5imlgz8x9w54n2w3jq8bg37b-qemu-8.2.3/share/man/man7/qemu-qmp-ref.7.gz'
+warning: collision between `/nix/store/lw9335s634hgykzn5khj9656ggcwmyd9-qemu-utils-8.2.3/share/man/man1/virtfs-proxy-helper.1.gz' and `/nix/store/rp0r6rfw5imlgz8x9w54n2w3jq8bg37b-qemu-8.2.3/share/man/man1/virtfs-proxy-helper.1.gz'
+warning: collision between `/nix/store/lw9335s634hgykzn5khj9656ggcwmyd9-qemu-utils-8.2.3/share/man/man1/qemu-img.1.gz' and `/nix/store/rp0r6rfw5imlgz8x9w54n2w3jq8bg37b-qemu-8.2.3/share/man/man1/qemu-img.1.gz'
+warning: collision between `/nix/store/lw9335s634hgykzn5khj9656ggcwmyd9-qemu-utils-8.2.3/share/man/man1/qemu-storage-daemon.1.gz' and `/nix/store/rp0r6rfw5imlgz8x9w54n2w3jq8bg37b-qemu-8.2.3/share/man/man1/qemu-storage-daemon.1.gz'
+warning: collision between `/nix/store/lw9335s634hgykzn5khj9656ggcwmyd9-qemu-utils-8.2.3/share/man/man1/qemu.1.gz' and `/nix/store/rp0r6rfw5imlgz8x9w54n2w3jq8bg37b-qemu-8.2.3/share/man/man1/qemu.1.gz'
+warning: collision between `/nix/store/0c9wn8nb04qs9kyh2zhll4wzjmp0fmag-xorg-server-21.1.13/lib/xorg/protocol.txt' and `/nix/store/7q83znq247cfc65h3zzq6l82z8dr9d56-xwayland-23.2.6/lib/xorg/protocol.txt'
+warning: collision between `/nix/store/0c9wn8nb04qs9kyh2zhll4wzjmp0fmag-xorg-server-21.1.13/lib/xorg/modules/extensions/libglx.so' and `/nix/store/j7zv9q2pjp5jdnv31jmmh5czv30anhks-amdgpu-pro-21.30/lib/xorg/modules/extensions/libglx.so'
+warning: collision between `/nix/store/0c9wn8nb04qs9kyh2zhll4wzjmp0fmag-xorg-server-21.1.13/share/man/man1/Xserver.1.gz' and `/nix/store/7q83znq247cfc65h3zzq6l82z8dr9d56-xwayland-23.2.6/share/man/man1/Xserver.1.gz'
+created 12213 symlinks in user environment
 gtk-update-icon-cache: Cache file created successfully.
-building '/nix/store/wlp0ddr6d8xmn8jd38liqn37zqj5sk73-X-Restart-Triggers-polkit.drv'...
-building '/nix/store/6ypqdyryhfy2glrfsrfgwhjsa9xp3rl5-dbus-1.drv'...
-building '/nix/store/21s1414jm3mlhw74v11ss0nyf4n6rxhg-unit-accounts-daemon.service.drv'...
-building '/nix/store/9cqkmbmiby97v8h4lzbinj9c8shdw01a-X-Restart-Triggers-dbus.drv'...
-building '/nix/store/k9gi9k1c08mrac3hhb19w5p3j2fbng16-unit-polkit.service.drv'...
-building '/nix/store/ay9wf6g4pimlww8qfqvprs43977a7bpa-unit-dbus.service.drv'...
-building '/nix/store/z6a4mcayirj9ggg2xh0fjx3l1a0mrhrm-unit-dbus.service.drv'...
-building '/nix/store/8lir4mgrq0sxg5ic5bl1yn2mj5zvzl4q-system-units.drv'...
-building '/nix/store/ggzifvkgjbs7al7c2x8z3cfcri7xdpkz-user-units.drv'...
-building '/nix/store/wfvdyy6cpa1hgqx85ybhpypbfpmvciig-etc.drv'...
-building '/nix/store/k3gh120bd017fz0dvb2xnwpx8p96a978-nixos-system-nixos-24.05pre622847.b211b392b848.drv'...
+building '/nix/store/78lk17j44kh6wnkyrhv12jy0zpnmjyp0-X-Restart-Triggers-polkit.drv'...
+building '/nix/store/m7jj2wa57xdnhzd3cs1rgnmldvbz0hgb-dbus-1.drv'...
+building '/nix/store/vlxzy2xqfir7vji5i7rv4lwxv9hmlv23-unit-accounts-daemon.service.drv'...
+building '/nix/store/ckgignpsbc0i9qxw0ni4yfcy923pfrq8-X-Restart-Triggers-dbus.drv'...
+building '/nix/store/xc50ibpgipi3n3za4kqhiz9lj0bfnhg8-unit-polkit.service.drv'...
+building '/nix/store/6vwxfzpm7zgadwq6v91zi14vka36klaa-unit-dbus.service.drv'...
+building '/nix/store/q1fz3q9fghl9k12b5bj733dk2ym6xjg7-unit-dbus.service.drv'...
+building '/nix/store/qk7y5zfkz2hhh9ks8h73c39z6jbj30z7-system-units.drv'...
+building '/nix/store/nfkfy78sg5ca5bnic903x1h27hrgyqa1-user-units.drv'...
+building '/nix/store/9a3y56f1hlg8xl698wl6jy3x3pn9v73m-etc.drv'...
+building '/nix/store/2h9d097xmn79kr2flzc79mdnfbxjlvcw-nixos-system-nixos-24.05pre625274.205781405197.drv'...
 stopping the following units: accounts-daemon.service
 activating the configuration...
 setting up /etc...
