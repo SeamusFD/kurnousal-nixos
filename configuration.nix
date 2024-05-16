@@ -7,15 +7,17 @@
     # Include the results of the hardware scan.
     ./home-manager/home.nix
     ./hardware-configuration.nix
-    ./system/bluetooth.nix
+
+    ./system/peripherals/bluetooth.nix
+    ./system/peripherals/keyboard.nix
+
     ./system/lifecycle.nix
-    # ./system/sddm.nix
     ./system/pentesting-utils.nix
     ./system/monitoring.nix
     ./system/godot.nix
-    ./system/keyboard.nix
     ./system/drivers.nix
     ./system/python/default.nix
+
     ./scripts/custom-bash-scripts.nix
   ];
 
