@@ -34,17 +34,18 @@ in {
 
   home-manager.users.bcampbell = {
     imports = [
-      ./hyprland/hyprland.nix
-      ./kitty/kitty.nix
-      ./fish/fish.nix
-      ./neovim/nvim.nix
-      ./waybar/waybar.nix
-      ./dunst/dunst.nix
-      ./shell-aliases.nix
-      ./xserver/xserver.nix
+      ./dunst/default.nix
+      ./fish/default.nix
+      ./hyprland/default.nix
+      ./kitty/default.nix
+      ./neovim/default.nix
+      ./rofi/default.nix
       ./thunderbird/default.nix
-      # Removed until I figure out the rofi issues
-      ./rofi/rofi.nix
+      ./waybar/default.nix
+      ./xserver/default.nix
+
+      # Shell Aliases for Home manager
+      ./shell-aliases.nix
     ];
 
     dconf.enable = true;
@@ -65,7 +66,6 @@ in {
     };
 
     home.packages = with pkgs; [
-      kitty
       # Shell Packages
       fzf
       grc
