@@ -15,7 +15,6 @@ in {
     GDK_BACKEND = "wayland";
     GTK_USE_PORTAL = "1";
     QT_QPA_PLATFORMTHEME = "qt5ct";
-    QT_QPA_PLATFORM = "wayland";
     QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
     QT_AUTO_SCREEN_SCALE_FACTOR = "1";
     MOZ_ENABLE_WAYLAND = "1";
@@ -83,15 +82,17 @@ in {
       grc
       pfetch
       # Theming packages
+      catppuccin
       catppuccin-gtk
+      catppuccin-qt5ct
       (catppuccin-kvantum.override {
         accent = "Blue";
         variant = "Mocha";
       })
       libsForQt5.qtstyleplugin-kvantum
       libsForQt5.qt5ct
-      qt6ct
       papirus-folders
+      catppuccin-papirus-folders
     ];
 
     home.pointerCursor = {
@@ -120,6 +121,9 @@ in {
         };
       };
       gtk3 = {
+        extraConfig.gtk-application-prefer-dark-theme = true;
+      };
+      gtk4 = {
         extraConfig.gtk-application-prefer-dark-theme = true;
       };
       font = {
