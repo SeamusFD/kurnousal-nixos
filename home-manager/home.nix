@@ -78,6 +78,7 @@ in {
       })
       libsForQt5.qtstyleplugin-kvantum
       libsForQt5.qt5ct
+      qt6ct
       papirus-folders
     ];
 
@@ -117,7 +118,7 @@ in {
 
     qt = {
       enable = true;
-      platformTheme.name = "qt5ct";
+      platformTheme.name = "qtct";
     };
 
     xdg.configFile."Kvantum/kvantum.kvconfig".source = (pkgs.formats.ini {}).generate "kvantum.kvconfig" {
