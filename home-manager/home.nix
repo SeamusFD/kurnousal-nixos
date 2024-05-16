@@ -67,13 +67,7 @@ in {
     home.packages = with pkgs; [
       kitty
       # Shell Packages
-      fish
-      fishPlugins.done
-      fishPlugins.fzf-fish
-      fishPlugins.forgit
-      fishPlugins.hydro
       fzf
-      fishPlugins.grc
       grc
       pfetch
       # Theming packages
