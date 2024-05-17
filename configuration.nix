@@ -189,7 +189,6 @@
 
   programs.virt-manager = {
     enable = true;
-    package = pkgs.virt-manager-qt;
   };
   programs.gamescope.enable = true;
   programs.java.enable = true;
