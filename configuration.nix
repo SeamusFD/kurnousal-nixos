@@ -15,7 +15,7 @@
     ./system/pentesting-utils.nix
     ./system/monitoring.nix
     ./system/godot.nix
-    ./system/drivers.nix
+    # ./system/drivers.nix
     ./system/python/default.nix
 
     ./scripts/custom-bash-scripts.nix
@@ -133,6 +133,7 @@
     go
     ruby
     nim
+    nimble
     #
     ripgrep
     unzip
@@ -172,21 +173,7 @@
   };
   programs.gamemode = {
     enable = true;
-    settings = {
-      general = {
-        renice = 10;
-        softrealtime = "auto";
-        desiredgov = "performance";
-        inhibit_screensaver = 0;
-      };
-
-      custom = {
-        start = "${pkgs.libnotify}/bin/notify-send 'GameMode started'";
-        end = "${pkgs.libnotify}/bin/notify-send 'GameMode ended'";
-      };
-    };
   };
-
   programs.virt-manager = {
     enable = true;
   };

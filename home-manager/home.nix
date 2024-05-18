@@ -8,14 +8,9 @@ in {
   imports = [
     (import "${home-manager}/nixos")
   ];
-  environment.sessionVariables = {
-    XDG_SESSION_TYPE = "wayland";
-    GDK_BACKEND = "wayland";
-    GTK_USE_PORTAL = "1";
-    QT_QPA_PLATFORMTHEME = "qt5ct";
-    QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
-    QT_AUTO_SCREEN_SCALE_FACTOR = "1";
-    MOZ_ENABLE_WAYLAND = "1";
+  nix = {
+    package = pkgs.nix;
+    settings.experimental-features = ["nix-command" "flakes"];
   };
   users.users.bcampbell = {
     isNormalUser = true;
