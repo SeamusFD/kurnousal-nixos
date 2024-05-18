@@ -27,6 +27,9 @@
   boot.initrd.luks.devices."luks-a020a96e-79d9-4fc2-ac8d-e310b24c49f8".device = "/dev/disk/by-uuid/a020a96e-79d9-4fc2-ac8d-e310b24c49f8";
   networking.hostName = "nixos";
 
+  nix.optimise.automatic = true;
+  nix.optimise.dates = ["03:45"];
+
   # Enable networking
   networking.networkmanager.enable = true;
 
