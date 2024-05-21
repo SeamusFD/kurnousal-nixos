@@ -15,8 +15,7 @@
     ./system/pentesting-utils.nix
     ./system/monitoring.nix
     ./system/godot.nix
-    # ./system/drivers.nix
-    ./system/python/default.nix
+    ./system/development/default.nix
 
     ./scripts/custom-bash-scripts.nix
   ];
@@ -29,6 +28,12 @@
 
   nix.optimise.automatic = true;
   nix.optimise.dates = ["03:45"];
+
+  # nix.gc = {
+  #   automatic = true;
+  #   interval = { Weekday = 0; Hour = 0; Minute = 0; };
+  #   options = "--delete-older-than 30d";
+  # };
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -120,10 +125,8 @@
     vlc
     # Build Tools
     meson
-    cmake
     scdoc
     coreutils
-    gcc
     xdotool
     xorg.xwininfo
     yad

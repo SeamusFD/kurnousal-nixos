@@ -8,10 +8,12 @@ in {
   imports = [
     (import "${home-manager}/nixos")
   ];
+
   nix = {
     package = pkgs.nix;
     settings.experimental-features = ["nix-command" "flakes"];
   };
+
   users.users.bcampbell = {
     isNormalUser = true;
     description = "bcampbell";
