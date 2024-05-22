@@ -1,59 +1,10 @@
 {
   config,
   pkgs,
+  inputs,
   ...
-}: let
-  home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/master.tar.gz";
-in {
-  imports = [
-    (import "${home-manager}/nixos")
-  ];
-
-  nix = {
-    package = pkgs.nix;
-    settings.experimental-features = ["nix-command" "flakes"];
-  };
-
-  users.users.bcampbell = {
-    isNormalUser = true;
-    description = "bcampbell";
-    extraGroups = ["networkmanager" "wheel" "gamemode" "libvirtd"];
-    packages = [
-      (pkgs.discord.override {
-        withOpenASAR = true;
-        withVencord = true;
-      })
-      pkgs.brave
-      pkgs.obsidian
-      pkgs.tor-browser
-      pkgs.jetbrains-toolbox
-      pkgs.protonup-qt
-      pkgs.freetube
-      pkgs.spotube
-      pkgs.libreoffice-fresh
-      # Application Theming
-      pkgs.glib
-      pkgs.dconf
-      pkgs.xcur2png
-    ];
-  };
-
+}: {
   home-manager.users.bcampbell = {
-    imports = [
-      ./dunst/default.nix
-      ./fish/default.nix
-      ./hyprland/default.nix
-      ./kitty/default.nix
-      ./neovim/default.nix
-      ./rofi/default.nix
-      ./thunderbird/default.nix
-      ./waybar/default.nix
-      ./xserver/default.nix
-
-      # Shell Aliases for Home manager
-      ./shell-aliases.nix
-    ];
-
     dconf.enable = true;
     dconf.settings = {
       "org/gnome/desktop/interface" = {

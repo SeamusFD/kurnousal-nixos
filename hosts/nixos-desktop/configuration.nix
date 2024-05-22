@@ -1,42 +1,32 @@
 {
   config,
   pkgs,
+  inputs,
   ...
 }: {
   imports = [
     # Include the results of the hardware scan.
-    ./home-manager/home.nix
     ./hardware-configuration.nix
-
-    ./system/peripherals/bluetooth.nix
-    ./system/peripherals/keyboard.nix
-
-    ./system/lifecycle.nix
-    ./system/pentesting-utils.nix
-    ./system/monitoring.nix
-    ./system/godot.nix
-    ./system/development/default.nix
-
-    ./scripts/custom-bash-scripts.nix
   ];
 
-  # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.initrd.luks.devices."luks-a020a96e-79d9-4fc2-ac8d-e310b24c49f8".device = "/dev/disk/by-uuid/a020a96e-79d9-4fc2-ac8d-e310b24c49f8";
-  networking.hostName = "nixos";
+  super-user.enable = true;
+  super-user.userName = "bcampbell";
+
+  home-manager.${config.super-user.userName} = {
+    extraSpecialArgs = { inherit inputs; };
+    users = {
+      modules = [
+        ./home.nix
+        inputs.self.outputs.homeManagerModules.default
+      ];
+    };
+  };
 
   nix.optimise.automatic = true;
   nix.optimise.dates = ["03:45"];
 
-  # nix.gc = {
-  #   automatic = true;
-  #   interval = { Weekday = 0; Hour = 0; Minute = 0; };
-  #   options = "--delete-older-than 30d";
-  # };
-
-  # Enable networking
-  networking.networkmanager.enable = true;
+  # Set host name
+  network-conf.hostName = "nixos-desktop";
 
   # Set your time zone.
   time.timeZone = "America/Chicago";
@@ -107,6 +97,19 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    brave
+    obsidian
+    tor-browser
+    jetbrains-toolbox
+    protonup-qt
+    freetube
+    spotube
+    libreoffice-fresh
+    # Application Theming
+    glib
+    dconf
+    xcur2png
+
     vim
     nodejs
     nodePackages_latest.pnpm
@@ -165,6 +168,8 @@
     wttrbar
     # Automation (move some day)
     ansible
+    nmap
+    qbittorrent
   ];
 
   programs.steam = {
@@ -186,15 +191,6 @@
   programs.gamescope.enable = true;
   programs.java.enable = true;
   virtualisation.libvirtd.enable = true;
-
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
-
-  environment.sessionVariables = rec {
-    XDG_CACHE_HOME = "$HOME/.cache";
-    XDG_CONFIG_HOME = "$HOME/.config";
-    XDG_DATA_HOME = "$HOME/.local/share";
-    XDG_STATE_HOME = "$HOME/.local/state";
-  };
 
   nix.extraOptions = ''
     experimental-features = nix-command flakes
