@@ -24,7 +24,7 @@
       workspace=1,monitor:HDMI-A-1
       workspace=2,monitor:DP-3
 
-      $scrPath = /etc/nixos/kurnousal-nixos/scripts
+      $scrPath = /etc/nixos/kurnousal-nixos/modules/lib/scripts
 
       input {
           kb_layout = us
@@ -56,9 +56,9 @@
           workspace_swipe = off
       }
 
-      source = /etc/nixos/kurnousal-nixos/home-manager/hyprland/conf/keybindings.conf
-      source = /etc/nixos/kurnousal-nixos/home-manager/hyprland/conf/window_decorations.conf
-      source = /etc/nixos/kurnousal-nixos/home-manager/hyprland/conf/window_rules.conf
+      source = /etc/nixos/kurnousal-nixos/modules/home-manager/hyprland/conf/keybindings.conf
+      source = /etc/nixos/kurnousal-nixos/modules/home-manager/hyprland/conf/window_decorations.conf
+      source = /etc/nixos/kurnousal-nixos/modules/home-manager/hyprland/conf/window_rules.conf
     '';
   };
 }

@@ -13,7 +13,7 @@
       # Testing
       "127.0.0.1" = ["localhost"];
     };
-    networking.useDHCP = true;
+    networking.useDHCP = lib.mkForce true;
     networking.networkmanager.enable = true;
   };
 }

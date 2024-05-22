@@ -6,7 +6,7 @@
     (./. + "/services/networking.nix")
     (./. + "/services/monitoring.nix")
     (./. + "/environment/session-variables.nix")
-    (./. + "/environment/super-user.nix.nix")
+    (./. + "/environment/super-user.nix")
     (./. + "/lifecycle/nixhelper.nix")
     (./. + "/peripherals/bluetooth.nix")
     (./. + "/peripherals/keyboard.nix")

@@ -6,7 +6,7 @@
 
   config = lib.mkIf config.systemd-bootloader.enable {
     boot.loader.systemd-boot.enable = true;
-    boot.systemd-boot.configurationLimit = 25;
+    boot.loader.systemd-boot.configurationLimit = 25;
     boot.loader.timeout = 5;
     boot.loader.efi.canTouchEfiVariables = true;
   };

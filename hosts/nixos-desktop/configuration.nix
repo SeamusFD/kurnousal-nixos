@@ -12,15 +12,10 @@
   super-user.enable = true;
   super-user.userName = "bcampbell";
 
-  home-manager.${config.super-user.userName} = {
-    extraSpecialArgs = { inherit inputs; };
-    users = {
-      modules = [
-        ./home.nix
-        inputs.self.outputs.homeManagerModules.default
-      ];
-    };
-  };
+  home-manager.users.${config.super-user.userName} = ./home.nix;
+  home-manager.sharedModules = [
+    inputs.self.outputs.homeManagerModules.default
+  ];
 
   nix.optimise.automatic = true;
   nix.optimise.dates = ["03:45"];

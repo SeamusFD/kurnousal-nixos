@@ -10,19 +10,26 @@
   };
 
   outputs = {
-    self,
     nixpkgs,
+    home-manager,
     ...
-  } @ inputs: {
+  } @ inputs:
+  let
+    system = "x86_64-linux";
+    pkgs = import nixpkgs { inherit system; };
+  in 
+  {
     nixosConfigurations = {
       nixos-desktop = nixpkgs.lib.nixosSystem {
+        system = system;
         specialArgs = {inherit inputs;};
         modules = [
           ./hosts/nixos-desktop/configuration.nix
           ./modules/nixos
+          home-manager.nixosModules.home-manager
         ];
       };
     };
-    homeManagerModules.nixos-desktop = ./modules/home-manager;
+    homeManagerModules.default = ./modules/home-manager;
   };
 }

@@ -13,7 +13,7 @@
   config = lib.mkIf config.super-user.enable {
     users.users.${config.super-user.userName} = {
       isNormalUser = true;
-      description = config.super-user.userName.description;
+      description = "super user";
       extraGroups = ["networkmanager" "wheel" "gamemode" "libvirtd"];
     };
   };
