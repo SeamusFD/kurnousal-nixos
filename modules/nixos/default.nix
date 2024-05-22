@@ -7,6 +7,7 @@
     (./. + "/services/monitoring.nix")
     (./. + "/environment/session-variables.nix")
     (./. + "/environment/super-user.nix")
+    (./. + "/gaming/steam.nix")
     (./. + "/lifecycle/nixhelper.nix")
     (./. + "/peripherals/bluetooth.nix")
     (./. + "/peripherals/keyboard.nix")

@@ -4,7 +4,7 @@
     (./. + "/fish")
     (./. + "/hyprland")
     (./. + "/kitty")
-    (./. + "/neovim")
+    (./. + "/nixvim")
     (./. + "/rofi")
     (./. + "/waybar")
     (./. + "/xserver")

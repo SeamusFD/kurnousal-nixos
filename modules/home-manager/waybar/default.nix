@@ -139,6 +139,6 @@ with builtins; {
         };
       };
     };
-    style = builtins.readFile "/etc/nixos/kurnousal-nixos/modules/home-manager/waybar/theme.css";
+    style = builtins.readFile (./. + "/theme.css");
   };
 }

@@ -13,9 +13,15 @@
   super-user.userName = "bcampbell";
 
   home-manager.users.${config.super-user.userName} = ./home.nix;
+  home-manager.extraSpecialArgs = { inherit inputs; };
   home-manager.sharedModules = [
     inputs.self.outputs.homeManagerModules.default
   ];
+
+  programs.hyprland = {
+    enable = true;
+    package = inputs.hyprland.packages."${pkgs.system}".hyprland;
+  };
 
   nix.optimise.automatic = true;
   nix.optimise.dates = ["03:45"];
@@ -62,11 +68,9 @@
   xdg.portal.enable = true;
   xdg.portal.extraPortals = with pkgs; [
     xdg-desktop-portal-gtk
-    xdg-desktop-portal-hyprland
   ];
   xdg.portal.configPackages = with pkgs; [
     xdg-desktop-portal-gtk
-    xdg-desktop-portal-hyprland
   ];
   services.flatpak.enable = true;
 
@@ -115,7 +119,6 @@
     rofi-wayland
     xwayland
     xdg-desktop-portal-gtk
-    xdg-desktop-portal-hyprland
     swww
     dolphin
     openvpn
@@ -167,19 +170,6 @@
     qbittorrent
   ];
 
-  programs.steam = {
-    enable = true;
-    package = pkgs.steam.override {
-      extraPkgs = pkgs:
-        with pkgs; [
-          libkrb5
-          keyutils
-        ];
-    };
-  };
-  programs.gamemode = {
-    enable = true;
-  };
   programs.virt-manager = {
     enable = true;
   };
