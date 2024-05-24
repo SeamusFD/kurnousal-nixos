@@ -23,6 +23,8 @@
     package = inputs.hyprland.packages."${pkgs.system}".hyprland;
   };
 
+  gaming.discord.enable = true;
+
   nix.optimise.automatic = true;
   nix.optimise.dates = ["03:45"];
 

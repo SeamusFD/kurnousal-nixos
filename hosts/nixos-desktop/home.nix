@@ -21,23 +21,24 @@
     };
   };
 
-  home.packages = with pkgs; [
+  home.packages = [
+    inputs.nievo.packages.${pkgs.system}
     # Shell Packages
-    fzf
-    grc
-    pfetch
+    pkgs.fzf
+    pkgs.grc
+    pkgs.pfetch
     # Theming packages
-    catppuccin
-    catppuccin-gtk
-    catppuccin-qt5ct
-    (catppuccin-kvantum.override {
+    pkgs.catppuccin
+    pkgs.catppuccin-gtk
+    pkgs.catppuccin-qt5ct
+    (pkgs.catppuccin-kvantum.override {
       accent = "Blue";
       variant = "Mocha";
     })
-    libsForQt5.qtstyleplugin-kvantum
-    libsForQt5.qt5ct
-    papirus-folders
-    catppuccin-papirus-folders
+    pkgs.libsForQt5.qtstyleplugin-kvantum
+    pkgs.libsForQt5.qt5ct
+    pkgs.papirus-folders
+    pkgs.catppuccin-papirus-folders
   ];
 
   home.pointerCursor = {

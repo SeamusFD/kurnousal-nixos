@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ lib, ... }:
 {
 # This determines our default non home-manager nix configurations. This is present across all machines unless edited by the specific machine config.
   imports = [
@@ -8,6 +8,7 @@
     (./. + "/environment/session-variables.nix")
     (./. + "/environment/super-user.nix")
     (./. + "/gaming/steam.nix")
+    (./. + "/gaming/discord.nix")
     (./. + "/lifecycle/nixhelper.nix")
     (./. + "/peripherals/bluetooth.nix")
     (./. + "/peripherals/keyboard.nix")
