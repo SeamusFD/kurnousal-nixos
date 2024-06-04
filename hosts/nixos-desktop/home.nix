@@ -1,8 +1,6 @@
-{
-  config,
-  pkgs,
-  inputs,
-  ...
+{ pkgs
+, inputs
+, ...
 }: {
   dconf.enable = true;
   dconf.settings = {
@@ -16,13 +14,13 @@
       name = "Catppuccin-Mocha-Standard-Blue-Dark";
     };
     "org/virt-manager/virt-manager/connections" = {
-      autoconnect = ["qemu:///system"];
-      uris = ["qemu:///system"];
+      autoconnect = [ "qemu:///system" ];
+      uris = [ "qemu:///system" ];
     };
   };
 
   home.packages = [
-    inputs.nievo.packages.${pkgs.system}
+    inputs.nievo.packages.${pkgs.system}.default
     # Shell Packages
     pkgs.fzf
     pkgs.grc
@@ -53,9 +51,9 @@
     theme = {
       name = "Catppuccin-Mocha-Standard-Blue-Dark";
       package = pkgs.catppuccin-gtk.override {
-        accents = ["blue"];
+        accents = [ "blue" ];
         size = "compact";
-        tweaks = ["rimless" "black"];
+        tweaks = [ "rimless" "black" ];
         variant = "mocha";
       };
     };
@@ -83,7 +81,7 @@
     platformTheme.name = "qt5ct";
   };
 
-  xdg.configFile."Kvantum/kvantum.kvconfig".source = (pkgs.formats.ini {}).generate "kvantum.kvconfig" {
+  xdg.configFile."Kvantum/kvantum.kvconfig".source = (pkgs.formats.ini { }).generate "kvantum.kvconfig" {
     General.theme = "Catppuccin-Mocha-Blue";
   };
   # xdg.configFile = {

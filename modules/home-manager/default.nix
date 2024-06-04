@@ -1,6 +1,7 @@
-{ pkgs, lib, ... }:
+{ ... }:
 {
   imports = [
+    (./. + "/browser")
     (./. + "/fish")
     (./. + "/hyprland")
     (./. + "/kitty")

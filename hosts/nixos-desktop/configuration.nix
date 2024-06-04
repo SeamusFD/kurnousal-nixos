@@ -1,8 +1,7 @@
-{
-  config,
-  pkgs,
-  inputs,
-  ...
+{ config
+, pkgs
+, inputs
+, ...
 }: {
   imports = [
     # Include the results of the hardware scan.
@@ -26,7 +25,7 @@
   gaming.discord.enable = true;
 
   nix.optimise.automatic = true;
-  nix.optimise.dates = ["03:45"];
+  nix.optimise.dates = [ "03:45" ];
 
   # Set host name
   network-conf.hostName = "nixos-desktop";
@@ -82,10 +81,10 @@
       noto-fonts-emoji
     ];
     fontconfig.defaultFonts = {
-      serif = ["CaskaydiaCove Nerd Font"];
-      sansSerif = ["CaskaydiaCove Nerd Font"];
-      monospace = ["CaskaydiaMono Nerd Font"];
-      emoji = ["CaskaydiaCove Nerd Font"];
+      serif = [ "CaskaydiaCove Nerd Font" ];
+      sansSerif = [ "CaskaydiaCove Nerd Font" ];
+      monospace = [ "CaskaydiaMono Nerd Font" ];
+      emoji = [ "CaskaydiaCove Nerd Font" ];
     };
   };
 
@@ -139,6 +138,8 @@
     wlroots
     # Programming Tools
     rustup
+    rustc
+    cargo
     go
     ruby
     nim
@@ -170,6 +171,7 @@
     ansible
     nmap
     qbittorrent
+    youtube-dl
   ];
 
   programs.virt-manager = {
