@@ -3,7 +3,7 @@
     enable = true;
     functions = {
       fish_greeting = {
-        body = "eval pfetch";
+        body = "eval neofetch";
       };
     };
     plugins = [

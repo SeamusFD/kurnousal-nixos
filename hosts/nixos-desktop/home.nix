@@ -1,18 +1,10 @@
 { pkgs
 , inputs
+, lib
 , ...
 }: {
   dconf.enable = true;
   dconf.settings = {
-    "org/gnome/desktop/interface" = {
-      gtk-theme = "Catppuccin-Mocha-Standard-Blue-Dark";
-      color-scheme = "prefer-dark";
-    };
-
-    # For Gnome shell
-    "org/gnome/shell/extensions/user-theme" = {
-      name = "Catppuccin-Mocha-Standard-Blue-Dark";
-    };
     "org/virt-manager/virt-manager/connections" = {
       autoconnect = [ "qemu:///system" ];
       uris = [ "qemu:///system" ];
@@ -24,7 +16,7 @@
     # Shell Packages
     pkgs.fzf
     pkgs.grc
-    pkgs.pfetch
+    pkgs.neofetch
     # Theming packages
     pkgs.catppuccin
     pkgs.catppuccin-gtk
@@ -39,24 +31,8 @@
     pkgs.catppuccin-papirus-folders
   ];
 
-  home.pointerCursor = {
-    name = "Bibata-Modern-Classic";
-    gtk.enable = true;
-    package = pkgs.bibata-cursors;
-    size = 5;
-  };
-
   gtk = {
     enable = true;
-    theme = {
-      name = "Catppuccin-Mocha-Standard-Blue-Dark";
-      package = pkgs.catppuccin-gtk.override {
-        accents = [ "blue" ];
-        size = "compact";
-        tweaks = [ "rimless" "black" ];
-        variant = "mocha";
-      };
-    };
     iconTheme = {
       name = "Papirus-Dark";
       package = pkgs.catppuccin-papirus-folders.override {
@@ -70,7 +46,7 @@
     gtk4 = {
       extraConfig.gtk-application-prefer-dark-theme = true;
     };
-    font = {
+    font = lib.mkDefault {
       name = "CaskaydiaCove Nerd Font";
       size = 11;
     };
@@ -80,15 +56,6 @@
     enable = true;
     platformTheme.name = "qt5ct";
   };
-
-  xdg.configFile."Kvantum/kvantum.kvconfig".source = (pkgs.formats.ini { }).generate "kvantum.kvconfig" {
-    General.theme = "Catppuccin-Mocha-Blue";
-  };
-  # xdg.configFile = {
-  #   "gtk-4.0/assets".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/assets";
-  #   "gtk-4.0/gtk.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk.css";
-  #   "gtk-4.0/gtk-dark.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk-dark.css";
-  # };
 
   programs.bash = {
     enable = true;
@@ -109,7 +76,7 @@
 
   programs.starship = {
     enable = true;
-    settings = {
+    settings = lib.mkForce {
       palette = "catppuccin_mocha";
       character = {
         success_symbol = "[[♥](green) ❯](maroon)";

@@ -15,6 +15,7 @@
   home-manager.extraSpecialArgs = { inherit inputs; };
   home-manager.sharedModules = [
     inputs.self.outputs.homeManagerModules.default
+    inputs.self.inputs.arkenfox.hmModules.arkenfox
   ];
 
   programs.hyprland = {

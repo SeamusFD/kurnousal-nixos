@@ -8,5 +8,6 @@
     (./. + "/rofi")
     (./. + "/waybar")
     (./. + "/xserver")
+    (./. + "/development")
   ];
 }

@@ -1,6 +1,6 @@
 { lib, ... }:
 {
-# This determines our default non home-manager nix configurations. This is present across all machines unless edited by the specific machine config.
+  # This determines our default non home-manager nix configurations. This is present across all machines unless edited by the specific machine config.
   imports = [
     (./. + "/services/bootloader.nix")
     (./. + "/services/networking.nix")
@@ -14,6 +14,7 @@
     (./. + "/peripherals/keyboard.nix")
     # Folder default imports
     (./. + "/development")
+    (./. + "/rice")
   ];
   # Enable the nix helper shell
   nh.enable = lib.mkDefault true;

@@ -6,9 +6,13 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    arkenfox.url = "github:dwarfmaster/arkenfox-nixos";
     nievo = {
       url = "path:/etc/nixos/nievo";
     };
+
+    # Dynamic ricing
+    stylix.url = "github:danth/stylix";
   };
 
   outputs =
@@ -29,6 +33,7 @@
             ./hosts/nixos-desktop/configuration.nix
             ./modules/nixos
             home-manager.nixosModules.home-manager
+            inputs.stylix.nixosModules.stylix
           ];
         };
       };
