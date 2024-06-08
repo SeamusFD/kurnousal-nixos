@@ -7,12 +7,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     arkenfox.url = "github:dwarfmaster/arkenfox-nixos";
+    fenix = {
+      url = "github:nix-community/fenix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nievo = {
       url = "path:/etc/nixos/nievo";
     };
-
-    # Dynamic ricing
-    stylix.url = "github:danth/stylix";
   };
 
   outputs =
@@ -33,7 +34,6 @@
             ./hosts/nixos-desktop/configuration.nix
             ./modules/nixos
             home-manager.nixosModules.home-manager
-            inputs.stylix.nixosModules.stylix
           ];
         };
       };

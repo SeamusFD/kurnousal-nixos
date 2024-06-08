@@ -18,11 +18,6 @@
     inputs.self.inputs.arkenfox.hmModules.arkenfox
   ];
 
-  programs.hyprland = {
-    enable = true;
-    package = inputs.hyprland.packages."${pkgs.system}".hyprland;
-  };
-
   gaming.discord.enable = true;
 
   nix.optimise.automatic = true;
@@ -34,6 +29,18 @@
   # Set your time zone.
   time.timeZone = "America/Chicago";
 
+  fonts = {
+    packages = with pkgs; [
+      nerdfonts
+      twitter-color-emoji
+    ];
+    fontconfig.defaultFonts = {
+      serif = [ "CaskaydiaCove Nerd Font" ];
+      sansSerif = [ "CaskaydiaCove Nerd Font" ];
+      monospace = [ "CaskaydiaMono Nerd Font" ];
+      emoji = [ "Twitter Color Emoji" ];
+    };
+  };
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
   i18n.extraLocaleSettings = {
@@ -76,19 +83,6 @@
   ];
   services.flatpak.enable = true;
 
-  fonts = {
-    packages = with pkgs; [
-      nerdfonts
-      noto-fonts-emoji
-    ];
-    fontconfig.defaultFonts = {
-      serif = [ "CaskaydiaCove Nerd Font" ];
-      sansSerif = [ "CaskaydiaCove Nerd Font" ];
-      monospace = [ "CaskaydiaMono Nerd Font" ];
-      emoji = [ "CaskaydiaCove Nerd Font" ];
-    };
-  };
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.permittedInsecurePackages = [
@@ -118,7 +112,6 @@
     libnotify
     wget
     unzip
-    rofi-wayland
     xwayland
     xdg-desktop-portal-gtk
     swww
@@ -138,9 +131,6 @@
     wl-clipboard
     wlroots
     # Programming Tools
-    rustup
-    rustc
-    cargo
     go
     ruby
     nim
@@ -162,8 +152,6 @@
     qemu_kvm
     qemu-utils
     # Misc
-    unicode-emoji
-    twitter-color-emoji
     jdk
     flatpak
     sshpass

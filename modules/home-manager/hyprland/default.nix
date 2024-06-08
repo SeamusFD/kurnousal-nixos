@@ -1,20 +1,21 @@
-{ ... }: {
+{ pkgs, inputs, ... }: {
   wayland.windowManager.hyprland = {
     enable = true;
+    package = inputs.hyprland.packages."${pkgs.system}".hyprland;
     extraConfig = ''
       monitor=HDMI-A-1,2560x1440@144,0x0,1
       monitor=DP-3,1920x1080@120,2560x0,1
       exec-once = waybar & dunst & swww-daemon
       exec-once = set-primary-monitor
-      exec-once = hyprctl setcursor Bibata-Modern-Classic 5
+      exec-once = hyprctl setcursor Bibata-Modern-Ice 7
 
       env = GDK_BACKEND,wayland,x11
       env = QT_QPA_PLATFORM,wayland;xcb
       env = SLD_VIDEODRIVER,wayland
       env = CLUTTER_BACKEND,wayland
-      env = HYPRCURSOR_THEME,Bibata-Modern-Classic
-      env = HYPRCURSOR_SIZE,5
-      env = XCURSOR_SIZE,5
+      env = HYPRCURSOR_THEME,Bibata-Modern-Ice
+      env = HYPRCURSOR_SIZE,7
+      env = XCURSOR_SIZE,7
 
       workspace=1,monitor:HDMI-A-1
       workspace=2,monitor:DP-3

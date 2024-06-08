@@ -3,14 +3,34 @@
 , lib
 , ...
 }: {
+  programs.rust.customToolchain.toolchainPackage = inputs.fenix.packages.${pkgs.system}.complete.toolchain;
+  programs.rust.cargo-leptos = {
+    enable = true;
+    package = pkgs.cargo-leptos;
+  };
+
   dconf.enable = true;
   dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      gtk-theme = "Catppuccin-Mocha-Standard-Blue-Dark";
+      color-scheme = "prefer-dark";
+    };
+
+    # For Gnome shell
+    "org/gnome/shell/extensions/user-theme" = {
+      name = "Catppuccin-Mocha-Standard-Blue-Dark";
+    };
     "org/virt-manager/virt-manager/connections" = {
       autoconnect = [ "qemu:///system" ];
       uris = [ "qemu:///system" ];
     };
   };
-
+  home.pointerCursor = {
+    name = "Bibata-Modern-Ice";
+    gtk.enable = true;
+    package = pkgs.bibata-cursors;
+    size = 7;
+  };
   home.packages = [
     inputs.nievo.packages.${pkgs.system}.default
     # Shell Packages
@@ -29,10 +49,25 @@
     pkgs.libsForQt5.qt5ct
     pkgs.papirus-folders
     pkgs.catppuccin-papirus-folders
+
+    # Fix these and put them in the /development path
+    pkgs.cargo-leptos
+    pkgs.cargo-generate
+    pkgs.wasm-pack
+    pkgs.wasm-tools
   ];
 
   gtk = {
     enable = true;
+    theme = {
+      name = "Catppuccin-Mocha-Standard-Blue-Dark";
+      package = pkgs.catppuccin-gtk.override {
+        accents = [ "blue" ];
+        size = "compact";
+        tweaks = [ "rimless" "black" ];
+        variant = "mocha";
+      };
+    };
     iconTheme = {
       name = "Papirus-Dark";
       package = pkgs.catppuccin-papirus-folders.override {
@@ -57,6 +92,10 @@
     platformTheme.name = "qt5ct";
   };
 
+  xdg.configFile."Kvantum/kvantum.kvconfig".source = (pkgs.formats.ini { }).generate "kvantum.kvconfig" {
+    General.theme = "Catppuccin-Mocha-Blue";
+  };
+
   programs.bash = {
     enable = true;
     initExtra = ''
@@ -76,7 +115,7 @@
 
   programs.starship = {
     enable = true;
-    settings = lib.mkForce {
+    settings = {
       palette = "catppuccin_mocha";
       character = {
         success_symbol = "[[♥](green) ❯](maroon)";

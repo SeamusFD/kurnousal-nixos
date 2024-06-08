@@ -14,7 +14,6 @@
     (./. + "/peripherals/keyboard.nix")
     # Folder default imports
     (./. + "/development")
-    (./. + "/rice")
   ];
   # Enable the nix helper shell
   nh.enable = lib.mkDefault true;

@@ -1,10 +1,10 @@
-{pkgs, ...}:
-with builtins; {
+{ ... }:
+{
   programs.kitty = {
     enable = true;
     settings = {
       cursor_shape = "beam";
-      font_family = "CaskaydiaCove Nerd Font Mono";
+      font_family = "CaskaydiaCove Nerd Font";
       bold_font = "auto";
       italic_font = "auto";
       bell_on_tab = "🔔 ";

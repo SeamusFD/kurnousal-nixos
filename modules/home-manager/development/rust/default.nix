@@ -12,6 +12,7 @@ in
     ./rustc.nix
     ./rustfmt.nix
     ./rustup.nix
+    ./cargo-leptos.nix
     ./custom-toolchain.nix
   ];
   options = {
@@ -31,6 +32,7 @@ in
         internal = true;
         default = lib.optional cfg.cargo.enable cfg.cargo.package
           ++ lib.optional cfg.clippy.enable cfg.clippy.package
+          ++ lib.optional cfg.cargo-leptos.enable cfg.cargo-leptos.package
           ++ lib.optional cfg.rustc.enable cfg.rustc.package
           ++ lib.optional cfg.rustfmt.enable cfg.rustfmt.package;
       };
@@ -38,7 +40,7 @@ in
   };
   config = {
     assertions = [{
-      assertions = !cfg.rustup.enable || !cfg.customToolchain.customEnabled;
+      assertion = !cfg.rustup.enable || !cfg.customToolchain.customEnabled;
       message = "Cannot activate rustup and custom toolchain at once";
     }];
     home.packages = cfg.finalPackages;
