@@ -1,5 +1,9 @@
-{ pkgs, config, lib, ... }:
 {
+  pkgs,
+  config,
+  lib,
+  ...
+}: {
   options = {
     super-user.enable = lib.mkEnableOption "enable administrator user module";
     super-user.userName = lib.mkOption {

@@ -1,13 +1,18 @@
-{ pkgs
-, inputs
-, lib
-, ...
+{
+  pkgs,
+  inputs,
+  lib,
+  ...
 }: {
-  programs.rust.customToolchain.toolchainPackage = inputs.fenix.packages.${pkgs.system}.complete.toolchain;
-  programs.rust.cargo-leptos = {
-    enable = true;
-    package = pkgs.cargo-leptos;
-  };
+  # programs.rust.customToolchain = {
+  #   toolchainPackage = inputs.fenix.packages.${pkgs.system}.complete.toolchain;
+  #   targets = [ "wasm32-unknown-unknown" ];
+  #   customEnabled = true;
+  # };
+  # programs.rust.cargo-leptos = {
+  #   enable = true;
+  #   package = pkgs.cargo-leptos;
+  # };
 
   dconf.enable = true;
   dconf.settings = {
@@ -15,14 +20,13 @@
       gtk-theme = "Catppuccin-Mocha-Standard-Blue-Dark";
       color-scheme = "prefer-dark";
     };
-
     # For Gnome shell
     "org/gnome/shell/extensions/user-theme" = {
       name = "Catppuccin-Mocha-Standard-Blue-Dark";
     };
     "org/virt-manager/virt-manager/connections" = {
-      autoconnect = [ "qemu:///system" ];
-      uris = [ "qemu:///system" ];
+      autoconnect = ["qemu:///system"];
+      uris = ["qemu:///system"];
     };
   };
   home.pointerCursor = {
@@ -51,10 +55,19 @@
     pkgs.catppuccin-papirus-folders
 
     # Fix these and put them in the /development path
+    (
+      with inputs.fenix.packages.${pkgs.system};
+        combine [
+          complete.toolchain
+          targets.x86_64-unknown-linux-musl.latest.rust-std
+          targets.wasm32-unknown-unknown.latest.rust-std
+        ]
+    )
     pkgs.cargo-leptos
     pkgs.cargo-generate
     pkgs.wasm-pack
     pkgs.wasm-tools
+    pkgs.sass
   ];
 
   gtk = {
@@ -62,9 +75,9 @@
     theme = {
       name = "Catppuccin-Mocha-Standard-Blue-Dark";
       package = pkgs.catppuccin-gtk.override {
-        accents = [ "blue" ];
-        size = "compact";
-        tweaks = [ "rimless" "black" ];
+        accents = ["blue"];
+        size = "standard";
+        tweaks = ["rimless" "black"];
         variant = "mocha";
       };
     };
@@ -89,10 +102,11 @@
 
   qt = {
     enable = true;
-    platformTheme.name = "qt5ct";
+    platformTheme.name = "qtct";
+    style.name = "kvantum";
   };
 
-  xdg.configFile."Kvantum/kvantum.kvconfig".source = (pkgs.formats.ini { }).generate "kvantum.kvconfig" {
+  xdg.configFile."Kvantum/kvantum.kvconfig".source = (pkgs.formats.ini {}).generate "kvantum.kvconfig" {
     General.theme = "Catppuccin-Mocha-Blue";
   };
 

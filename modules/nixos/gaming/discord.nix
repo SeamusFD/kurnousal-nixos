@@ -1,5 +1,9 @@
-{ pkgs, config, lib, ... }:
 {
+  pkgs,
+  config,
+  lib,
+  ...
+}: {
   options = {
     gaming.discord.enable = lib.mkEnableOption "enables custom discord and it's subsequent services";
   };

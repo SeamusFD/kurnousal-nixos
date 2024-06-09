@@ -35,10 +35,10 @@ fi
 # Shows your changes
 git diff -U0
 
-echo "NixOS Rebuilding..."
+echo "Starting Nix Helper command line..."
 
 # Rebuild, output simplified errors, log trackebacks
-sudo nixos-rebuild switch --flake /etc/nixos/kurnousal-nixos#default &>nixos-switch.log || (cat nixos-switch.log | grep --color error && exit 1)
+nh os switch --update &>nixos-switch.log
 
 # Get current generation metadata
 current=$(nixos-rebuild list-generations | grep current)

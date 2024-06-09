@@ -1,6 +1,7 @@
-{ pkgs
-, lib
-, ...
+{
+  pkgs,
+  lib,
+  ...
 }: {
   programs.rofi = {
     enable = true;
@@ -49,6 +50,6 @@
       kb-mode-previous = "Shift+Left";
       kb-mode-complete = "Control+l";
     };
-    theme = (./. + "/themes/catppuccin-mocha.rasi");
+    theme = ./. + "/themes/catppuccin-mocha.rasi";
   };
 }

@@ -1,13 +1,16 @@
-{ config, pkgs, lib, ... }:
-let
-  cfg = config.programs.rust.cargo;
-  tomlFormat = pkgs.format.toml { };
-in
 {
+  config,
+  pkgs,
+  lib,
+  ...
+}: let
+  cfg = config.programs.rust.cargo;
+  tomlFormat = pkgs.format.toml {};
+in {
   options = {
     programs.rust.cargo = {
       enable = lib.mkEnableOption "cargo, the Rust build system";
-      package = lib.mkPackageOption config.programs.rust.toolchainPackages "cargo" { };
+      package = lib.mkPackageOption config.programs.rust.toolchainPackages "cargo" {};
       settings = lib.mkOption {
         type = lib.types.nullOr tomlFormat.type;
         description = ''

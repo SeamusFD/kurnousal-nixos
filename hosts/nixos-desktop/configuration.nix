@@ -1,7 +1,8 @@
-{ config
-, pkgs
-, inputs
-, ...
+{
+  config,
+  pkgs,
+  inputs,
+  ...
 }: {
   imports = [
     # Include the results of the hardware scan.
@@ -12,7 +13,7 @@
   super-user.userName = "bcampbell";
 
   home-manager.users.${config.super-user.userName} = ./home.nix;
-  home-manager.extraSpecialArgs = { inherit inputs; };
+  home-manager.extraSpecialArgs = {inherit inputs;};
   home-manager.sharedModules = [
     inputs.self.outputs.homeManagerModules.default
     inputs.self.inputs.arkenfox.hmModules.arkenfox
@@ -21,7 +22,7 @@
   gaming.discord.enable = true;
 
   nix.optimise.automatic = true;
-  nix.optimise.dates = [ "03:45" ];
+  nix.optimise.dates = ["03:45"];
 
   # Set host name
   network-conf.hostName = "nixos-desktop";
@@ -35,10 +36,10 @@
       twitter-color-emoji
     ];
     fontconfig.defaultFonts = {
-      serif = [ "CaskaydiaCove Nerd Font" ];
-      sansSerif = [ "CaskaydiaCove Nerd Font" ];
-      monospace = [ "CaskaydiaMono Nerd Font" ];
-      emoji = [ "Twitter Color Emoji" ];
+      serif = ["CaskaydiaCove Nerd Font"];
+      sansSerif = ["CaskaydiaCove Nerd Font"];
+      monospace = ["CaskaydiaMono Nerd Font"];
+      emoji = ["Twitter Color Emoji"];
     };
   };
   # Select internationalisation properties.

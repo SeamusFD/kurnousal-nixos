@@ -1,6 +1,4 @@
-{ ...
-}:
-{
+{...}: {
   programs.waybar = {
     enable = true;
     settings = {
@@ -13,9 +11,9 @@
           "HDMI-A-1"
           "DP-3"
         ];
-        modules-left = [ "clock" "custom/weather" "cpu" "custom/gpu-usage" "memory" ];
-        modules-center = [ "hyprland/workspaces" ];
-        modules-right = [ "gamemode" "systemd-failed-units" "bluetooth" "network" "custom/pipewire" "tray" "custom/dunst" ];
+        modules-left = ["clock" "custom/weather" "cpu" "custom/gpu-usage" "memory"];
+        modules-center = ["hyprland/workspaces"];
+        modules-right = ["gamemode" "systemd-failed-units" "bluetooth" "network" "custom/pipewire" "tray" "custom/dunst"];
 
         "custom/pipewire" = {
           "tooltip" = false;
@@ -47,8 +45,8 @@
             "default" = "";
           };
           "persistent-workspaces" = {
-            "1" = [ ];
-            "2" = [ ];
+            "1" = [];
+            "2" = [];
           };
         };
         "tray" = {

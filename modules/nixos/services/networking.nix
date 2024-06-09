@@ -1,5 +1,9 @@
-{ lib, config, pkgs, ...}:
 {
+  lib,
+  config,
+  pkgs,
+  ...
+}: {
   options = {
     network-conf.enable = lib.mkEnableOption "enables usage of network-conf";
     network-conf.hostName = lib.mkOption {

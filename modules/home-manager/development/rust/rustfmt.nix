@@ -1,13 +1,16 @@
-{ config, pkgs, lib, ... }:
-let
-  cfg = config.programs.rust.rustfmt;
-  tomlFormat = pkgs.formats.toml { };
-in
 {
+  config,
+  pkgs,
+  lib,
+  ...
+}: let
+  cfg = config.programs.rust.rustfmt;
+  tomlFormat = pkgs.formats.toml {};
+in {
   options.programs.rust.rustfmt = {
     enable = lib.mkEnableOption "rustfmt, the Rust formatter";
     package =
-      lib.mkPackageOption config.programs.rust.toolchainPackages "rustfmt" { };
+      lib.mkPackageOption config.programs.rust.toolchainPackages "rustfmt" {};
     settings = lib.mkOption {
       type = lib.types.nullOr tomlFormat.type;
       description = ''

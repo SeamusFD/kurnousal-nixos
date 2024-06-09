@@ -1,5 +1,9 @@
-{ pkgs, config, lib, ... }:
 {
+  pkgs,
+  config,
+  lib,
+  ...
+}: {
   options = {
     systemd-bootloader.enable = lib.mkEnableOption "enables systemd-bootloader";
   };

@@ -1,8 +1,11 @@
-{ config, pkgs, lib, ... }:
-let
-  cfg = config.programs.rust;
-in
 {
+  config,
+  pkgs,
+  lib,
+  ...
+}: let
+  cfg = config.programs.rust;
+in {
   imports = [
     ./cargo.nix
     ./clippy.nix
@@ -30,7 +33,8 @@ in
       finalPackages = lib.mkOption {
         type = with lib.types; listOf package;
         internal = true;
-        default = lib.optional cfg.cargo.enable cfg.cargo.package
+        default =
+          lib.optional cfg.cargo.enable cfg.cargo.package
           ++ lib.optional cfg.clippy.enable cfg.clippy.package
           ++ lib.optional cfg.cargo-leptos.enable cfg.cargo-leptos.package
           ++ lib.optional cfg.rustc.enable cfg.rustc.package
@@ -39,10 +43,12 @@ in
     };
   };
   config = {
-    assertions = [{
-      assertion = !cfg.rustup.enable || !cfg.customToolchain.customEnabled;
-      message = "Cannot activate rustup and custom toolchain at once";
-    }];
+    assertions = [
+      {
+        assertion = !cfg.rustup.enable || !cfg.customToolchain.customEnabled;
+        message = "Cannot activate rustup and custom toolchain at once";
+      }
+    ];
     home.packages = cfg.finalPackages;
   };
 }
