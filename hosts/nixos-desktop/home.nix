@@ -14,6 +14,9 @@
   #   package = pkgs.cargo-leptos;
   # };
 
+  programs.tor-browser.enable = true;
+  programs.arkenfox.enable = true;
+
   dconf.enable = true;
   dconf.settings = {
     "org/gnome/desktop/interface" = {

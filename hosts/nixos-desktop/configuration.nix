@@ -75,15 +75,6 @@
     pulse.enable = true;
   };
 
-  xdg.portal.enable = true;
-  xdg.portal.extraPortals = with pkgs; [
-    xdg-desktop-portal-gtk
-  ];
-  xdg.portal.configPackages = with pkgs; [
-    xdg-desktop-portal-gtk
-  ];
-  services.flatpak.enable = true;
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.permittedInsecurePackages = [
@@ -94,7 +85,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     brave
-    obsidian
     tor-browser
     jetbrains-toolbox
     protonup-qt
@@ -114,7 +104,6 @@
     wget
     unzip
     xwayland
-    xdg-desktop-portal-gtk
     swww
     dolphin
     openvpn
@@ -129,7 +118,6 @@
     yad
     wayland-protocols
     wayland-utils
-    wl-clipboard
     wlroots
     # Programming Tools
     go

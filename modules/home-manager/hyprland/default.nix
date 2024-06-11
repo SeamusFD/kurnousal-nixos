@@ -3,6 +3,16 @@
   inputs,
   ...
 }: {
+  imports = [
+    ./xdg.nix
+  ];
+
+  home.packages = with pkgs; [
+    grim
+    grimblast
+    wl-clipboard
+    xwaylandvideobridge
+  ];
   wayland.windowManager.hyprland = {
     enable = true;
     package = inputs.hyprland.packages."${pkgs.system}".hyprland;
@@ -60,5 +70,10 @@
       source = /etc/nixos/kurnousal-nixos/modules/home-manager/hyprland/conf/window_decorations.conf
       source = /etc/nixos/kurnousal-nixos/modules/home-manager/hyprland/conf/window_rules.conf
     '';
+    systemd = {
+      enable = true;
+      variables = ["--all"];
+    };
+    xwayland.enable = true;
   };
 }
