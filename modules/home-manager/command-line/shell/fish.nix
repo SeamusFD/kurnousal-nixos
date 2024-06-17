@@ -1,0 +1,46 @@
+{ pkgs, config, lib, ... }: {
+  options = {
+    command-line.shell.fish.enable = lib.mkEnableOption "Enables fish shell with default config";
+  };
+  config = lib.mkIf config.command-line.shell.fish.enable {
+    programs.fish = {
+      enable = true;
+      functions = {
+        fish_greeting = {
+          body = "eval neofetch";
+        };
+      };
+      plugins = [
+        {
+          name = "grc";
+          src = pkgs.fishPlugins.grc.src;
+        }
+        {
+          name = "hydro";
+          src = pkgs.fishPlugins.hydro.src;
+        }
+        {
+          name = "forgit";
+          src = pkgs.fishPlugins.forgit.src;
+        }
+        {
+          name = "fzf";
+          src = pkgs.fishPlugins.fzf.src;
+        }
+        {
+          name = "fzf-fish";
+          src = pkgs.fishPlugins.fzf-fish.src;
+        }
+        {
+          name = "fifc";
+          src = pkgs.fishPlugins.fifc.src;
+        }
+        {
+          name = "done";
+          src = pkgs.fishPlugins.done.src;
+        }
+      ];
+    };
+    programs.zoxide.enable = true;
+  };
+}

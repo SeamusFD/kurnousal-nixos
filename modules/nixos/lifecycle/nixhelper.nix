@@ -1,15 +1,8 @@
-{
-  pkgs,
-  config,
-  lib,
-  ...
-}: {
-  options = {
-    nh.enable = lib.mkEnableOption "enable nix helper";
-  };
-  config = lib.mkIf config.nh.enable {
-    environment.systemPackages = with pkgs; [
-      nh
-    ];
+{ ... }: {
+  programs.nh = {
+    enable = true;
+    clean.enable = true;
+    clean.extraArgs = "--keep 3 --keep-since 4d";
+    flake = "/etc/nixos/kurnousal-nixos";
   };
 }

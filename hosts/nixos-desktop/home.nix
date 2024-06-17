@@ -1,8 +1,7 @@
-{
-  pkgs,
-  inputs,
-  lib,
-  ...
+{ pkgs
+, inputs
+, lib
+, ...
 }: {
   # programs.rust.customToolchain = {
   #   toolchainPackage = inputs.fenix.packages.${pkgs.system}.complete.toolchain;
@@ -14,8 +13,26 @@
   #   package = pkgs.cargo-leptos;
   # };
 
-  programs.tor-browser.enable = true;
-  programs.arkenfox.enable = true;
+  ### Home Manager Modules ###
+  programs = {
+    browser.tor-browser.enable = true;
+    browser.arkenfox.enable = true;
+    music.tidal.enable = true;
+    terminal.kitty.enable = true;
+  };
+  command-line = {
+    shell.fish.enable = true;
+  };
+
+  window-manager = {
+    apps.rofi.enable = true;
+    apps.waybar.enable = true;
+
+    services = {
+      notifications.dunst = true;
+    };
+  };
+  ### Home Manager Modules ###
 
   dconf.enable = true;
   dconf.settings = {
@@ -28,8 +45,8 @@
       name = "Catppuccin-Mocha-Standard-Blue-Dark";
     };
     "org/virt-manager/virt-manager/connections" = {
-      autoconnect = ["qemu:///system"];
-      uris = ["qemu:///system"];
+      autoconnect = [ "qemu:///system" ];
+      uris = [ "qemu:///system" ];
     };
   };
   home.pointerCursor = {
@@ -60,11 +77,11 @@
     # Fix these and put them in the /development path
     (
       with inputs.fenix.packages.${pkgs.system};
-        combine [
-          complete.toolchain
-          targets.x86_64-unknown-linux-musl.latest.rust-std
-          targets.wasm32-unknown-unknown.latest.rust-std
-        ]
+      combine [
+        complete.toolchain
+        targets.x86_64-unknown-linux-musl.latest.rust-std
+        targets.wasm32-unknown-unknown.latest.rust-std
+      ]
     )
     pkgs.cargo-leptos
     pkgs.cargo-generate
@@ -78,9 +95,9 @@
     theme = {
       name = "Catppuccin-Mocha-Standard-Blue-Dark";
       package = pkgs.catppuccin-gtk.override {
-        accents = ["blue"];
+        accents = [ "blue" ];
         size = "standard";
-        tweaks = ["rimless" "black"];
+        tweaks = [ "rimless" "black" ];
         variant = "mocha";
       };
     };
@@ -109,7 +126,7 @@
     style.name = "kvantum";
   };
 
-  xdg.configFile."Kvantum/kvantum.kvconfig".source = (pkgs.formats.ini {}).generate "kvantum.kvconfig" {
+  xdg.configFile."Kvantum/kvantum.kvconfig".source = (pkgs.formats.ini { }).generate "kvantum.kvconfig" {
     General.theme = "Catppuccin-Mocha-Blue";
   };
 
