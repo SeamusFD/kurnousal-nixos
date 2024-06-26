@@ -3,7 +3,6 @@
   imports = [
     (./. + "/services/bootloader.nix")
     (./. + "/services/networking.nix")
-    (./. + "/services/monitoring.nix")
     (./. + "/environment/session-variables.nix")
     (./. + "/environment/super-user.nix")
     (./. + "/environment/bash-scripts.nix")
@@ -16,7 +15,7 @@
     (./. + "/development")
   ];
   # Enable the nix helper shell
-  systemd-bootloader.enable = lib.mkDefault true;
-  network-conf.enable = lib.mkDefault true;
+  services.bootloader.systemd-bootloader.enable = lib.mkDefault true;
+  services.network-conf.enable = lib.mkDefault true;
   super-user.enable = lib.mkDefault true;
 }

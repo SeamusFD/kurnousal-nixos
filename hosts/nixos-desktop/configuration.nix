@@ -1,8 +1,7 @@
-{
-  config,
-  pkgs,
-  inputs,
-  ...
+{ config
+, pkgs
+, inputs
+, ...
 }: {
   imports = [
     # Include the results of the hardware scan.
@@ -13,19 +12,22 @@
   super-user.userName = "bcampbell";
 
   home-manager.users.${config.super-user.userName} = ./home.nix;
-  home-manager.extraSpecialArgs = {inherit inputs;};
+  home-manager.extraSpecialArgs = {
+    inherit inputs;
+  };
   home-manager.sharedModules = [
     inputs.self.outputs.homeManagerModules.default
     inputs.self.inputs.arkenfox.hmModules.arkenfox
+    inputs.self.inputs.stylix.homeManagerModules.stylix
   ];
 
   gaming.discord.enable = true;
 
   nix.optimise.automatic = true;
-  nix.optimise.dates = ["03:45"];
+  nix.optimise.dates = [ "03:45" ];
 
   # Set host name
-  network-conf.hostName = "nixos-desktop";
+  services.network-conf.hostName = "nixos-desktop";
 
   # Set your time zone.
   time.timeZone = "America/Chicago";
@@ -36,10 +38,10 @@
       twitter-color-emoji
     ];
     fontconfig.defaultFonts = {
-      serif = ["CaskaydiaCove Nerd Font"];
-      sansSerif = ["CaskaydiaCove Nerd Font"];
-      monospace = ["CaskaydiaMono Nerd Font"];
-      emoji = ["Twitter Color Emoji"];
+      serif = [ "CaskaydiaCove Nerd Font" ];
+      sansSerif = [ "CaskaydiaCove Nerd Font" ];
+      monospace = [ "CaskaydiaMono Nerd Font" ];
+      emoji = [ "Twitter Color Emoji" ];
     };
   };
   # Select internationalisation properties.
@@ -81,21 +83,21 @@
     "electron-25.9.0"
   ];
 
+  environment.etc = {
+    "xdg/gtk-3.0/settings.ini".text = ''
+      [Settings]
+      gtk-application-prefer-dark-theme=1
+    '';
+  };
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    brave
-    tor-browser
     jetbrains-toolbox
     protonup-qt
-    freetube
-    spotube
-    libreoffice-fresh
     # Application Theming
     glib
     dconf
     xcur2png
-
     vim
     nodejs
     nodePackages_latest.pnpm
@@ -105,7 +107,6 @@
     unzip
     xwayland
     swww
-    dolphin
     openvpn
     protonvpn-cli_2
     vlc
@@ -150,6 +151,7 @@
     nmap
     qbittorrent
     youtube-dl
+    tree-sitter
   ];
 
   programs.virt-manager = {

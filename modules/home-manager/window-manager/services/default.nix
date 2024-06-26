@@ -1,5 +1,6 @@
 {
   imports = [
     ./notifications
+    ./xorg
   ];
 }

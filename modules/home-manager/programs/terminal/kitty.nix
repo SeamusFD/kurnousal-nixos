@@ -4,6 +4,7 @@
     programs.terminal.kitty.enable = lib.mkEnableOption "Enables the kitty terminal with it's default config";
   };
   config = lib.mkIf config.programs.terminal.kitty.enable {
+    stylix.targets.kitty.enable = lib.mkIf config.rice.stylix.enable true;
     programs.kitty = {
       enable = true;
       settings = {

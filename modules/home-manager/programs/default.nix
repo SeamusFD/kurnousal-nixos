@@ -4,5 +4,6 @@
     ./music
     ./terminal
     ./email
+    ./file-manager
   ];
 }

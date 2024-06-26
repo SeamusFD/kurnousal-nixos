@@ -12,8 +12,7 @@
           height = 34;
           exclusive = true;
           output = [
-            "HDMI-A-1"
-            "DP-3"
+            "DP-1"
           ];
           modules-left = [ "clock" "custom/weather" "cpu" "custom/gpu-usage" "memory" ];
           modules-center = [ "hyprland/workspaces" ];
