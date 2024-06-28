@@ -1,7 +1,5 @@
-{
-  config,
-  pkgs,
-  ...
+{ pkgs
+, ...
 }: {
   environment.systemPackages = with pkgs; [
     # Bluetooth modules

@@ -8,10 +8,10 @@
     ./hardware-configuration.nix
   ];
 
-  super-user.enable = true;
-  super-user.userName = "bcampbell";
+  environment.super-user.enable = true;
+  environment.super-user.userName = "bcampbell";
 
-  home-manager.users.${config.super-user.userName} = ./home.nix;
+  home-manager.users.${config.environment.super-user.userName} = ./home.nix;
   home-manager.extraSpecialArgs = {
     inherit inputs;
   };
@@ -21,7 +21,8 @@
     inputs.self.inputs.stylix.homeManagerModules.stylix
   ];
 
-  gaming.discord.enable = true;
+  programs.gaming.discord.enable = true;
+  programs.gaming.steam.enable = true;
 
   nix.optimise.automatic = true;
   nix.optimise.dates = [ "03:45" ];
