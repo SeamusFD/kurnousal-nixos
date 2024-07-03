@@ -6,10 +6,16 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
+    # Common imports used everywhere without config
+    ../../common/nix-defaults/nix-features.nix
+    ../../common/nix-defaults/nix-garbage-collection.nix
   ];
 
   environment.super-user.enable = true;
   environment.super-user.userName = "bcampbell";
+
+  services.bootloader.systemd-bootloader.enable = true;
+  services.network-conf.enable = true;
 
   home-manager.users.${config.environment.super-user.userName} = ./home.nix;
   home-manager.extraSpecialArgs = {
@@ -24,14 +30,10 @@
   programs.gaming.discord.enable = true;
   programs.gaming.steam.enable = true;
 
-  nix.optimise.automatic = true;
-  nix.optimise.dates = [ "03:45" ];
-
   # Set host name
   services.network-conf.hostName = "nixos-desktop";
-
-  # Set your time zone.
-  time.timeZone = "America/Chicago";
+  services.xserver.amd.enable = true;
+  services.gpu.amd.enable = false;
 
   fonts = {
     packages = with pkgs; [
@@ -45,28 +47,6 @@
       emoji = [ "Twitter Color Emoji" ];
     };
   };
-  # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "en_US.UTF-8";
-    LC_IDENTIFICATION = "en_US.UTF-8";
-    LC_MEASUREMENT = "en_US.UTF-8";
-    LC_MONETARY = "en_US.UTF-8";
-    LC_NAME = "en_US.UTF-8";
-    LC_NUMERIC = "en_US.UTF-8";
-    LC_PAPER = "en_US.UTF-8";
-    LC_TELEPHONE = "en_US.UTF-8";
-    LC_TIME = "en_US.UTF-8";
-  };
-
-  # Configure keymap in X11
-  services.xserver = {
-    enable = true;
-    xkb = {
-      layout = "us";
-      variant = "";
-    };
-  };
 
   sound.enable = true;
   security.rtkit.enable = true;
@@ -78,12 +58,6 @@
     pulse.enable = true;
   };
 
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.permittedInsecurePackages = [
-    "electron-25.9.0"
-  ];
-
   environment.etc = {
     "xdg/gtk-3.0/settings.ini".text = ''
       [Settings]
@@ -93,11 +67,8 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    jetbrains-toolbox
-    protonup-qt
     # Application Theming
     glib
-    dconf
     xcur2png
     vim
     nodejs
@@ -136,12 +107,6 @@
     # Sound
     pavucontrol
     qpwgraph
-    # Virtualization
-    qemu
-    quickemu
-    qemu_full
-    qemu_kvm
-    qemu-utils
     # Misc
     jdk
     flatpak
@@ -153,18 +118,12 @@
     qbittorrent
     youtube-dl
     tree-sitter
+    unrar
+    protontricks
   ];
 
-  programs.virt-manager = {
-    enable = true;
-  };
   programs.gamescope.enable = true;
   programs.java.enable = true;
-  virtualisation.libvirtd.enable = true;
-
-  nix.extraOptions = ''
-    experimental-features = nix-command flakes
-  '';
 
   system.stateVersion = "23.11"; # Did you read the comment?
 }

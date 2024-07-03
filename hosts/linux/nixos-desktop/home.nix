@@ -16,8 +16,11 @@
   };
   command-line = {
     shell.fish.enable = true;
+    shell.greeter = {
+      enable = true;
+      name = "fastfetch";
+    };
   };
-
   window-manager = {
     wayland.hyprland.enable = true;
 
@@ -31,7 +34,10 @@
 
   rice.stylix.enable = true;
 
-  development.vcs.git.enable = true;
+  development = {
+    jetbrains.toolbox.enable = true;
+    vcs.git.enable = true;
+  };
   ### Home Manager Modules ###
 
   dconf.enable = true;
@@ -44,7 +50,6 @@
   home.packages = [
     inputs.nievo.packages.${pkgs.system}.default
     # Shell Packages
-    pkgs.neofetch
     # Theming packages
     # pkgs.catppuccin
     # pkgs.catppuccin-gtk

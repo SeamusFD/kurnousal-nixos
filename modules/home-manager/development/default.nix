@@ -2,5 +2,6 @@
   imports = [
     ./rust
     ./vcs
+    ./jetbrains
   ];
 }

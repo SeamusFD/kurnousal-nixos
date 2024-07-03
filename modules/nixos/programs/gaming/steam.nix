@@ -19,5 +19,6 @@
       };
     };
     programs.gamemode.enable = true;
+    environment.systemPackages = [ pkgs.protonup-qt pkgs.er-patcher ];
   };
 }

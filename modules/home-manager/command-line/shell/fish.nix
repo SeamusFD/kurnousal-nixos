@@ -1,15 +1,22 @@
-{ pkgs, config, lib, ... }: {
+{ pkgs, config, lib, ... }:
+let
+  cfg = config.command-line.shell;
+  rice-cfg = config.rice.stylix;
+in
+{
   options = {
-    command-line.shell.fish.enable = lib.mkEnableOption "Enables fish shell with default config";
+    command-line.shell.fish = {
+      enable = lib.mkEnableOption "Enables fish shell with default config";
+    };
   };
-  config = lib.mkIf config.command-line.shell.fish.enable {
-    stylix.targets.fish.enable = lib.mkIf config.rice.stylix.enable true;
-    stylix.targets.fzf.enable = lib.mkIf config.rice.stylix.enable true;
+  config = lib.mkIf cfg.fish.enable {
+    stylix.targets.fish.enable = lib.mkIf rice-cfg.enable true;
+    stylix.targets.fzf.enable = lib.mkIf rice-cfg.enable true;
     programs.fish = {
       enable = true;
       functions = {
         fish_greeting = {
-          body = "eval neofetch";
+          body = "eval ${cfg.greeter.name}";
         };
       };
       plugins = [
@@ -61,13 +68,12 @@
     };
 
     home.packages = with pkgs; [
-      neofetch
       grc
       fzf
     ];
 
     ## Sets the default aliases for fish (bash based shells only)
-    command-line.shell.aliases.git.enable = lib.mkDefault true;
+    command-line.shell.aliases.basics.enable = lib.mkDefault true;
 
     programs.zoxide.enable = true;
     programs.bash = {

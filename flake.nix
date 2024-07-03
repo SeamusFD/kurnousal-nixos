@@ -1,6 +1,7 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -18,6 +19,7 @@
 
   outputs =
     { nixpkgs
+    , nixos-wsl
     , home-manager
     , stylix
     , ...
@@ -34,7 +36,20 @@
             inherit inputs;
           };
           modules = [
-            ./hosts/nixos-desktop/configuration.nix
+            ./hosts/linux/nixos-desktop/configuration.nix
+            ./modules/nixos
+            home-manager.nixosModules.home-manager
+          ];
+        };
+        wsl-fedex = nixpkgs.lib.nixosSystem {
+          system = system;
+          specialArgs = {
+            inherit inputs;
+          };
+          modules = [
+            # Install wsl module for use on windows systems
+            nixos-wsl.nixosModules.default
+            ./hosts/wsl/wsl-fedex/configuration.nix
             ./modules/nixos
             home-manager.nixosModules.home-manager
           ];

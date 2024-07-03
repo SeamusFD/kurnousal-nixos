@@ -8,10 +8,11 @@
   };
   config = lib.mkIf config.programs.gaming.discord.enable {
     environment.systemPackages = [
-      (pkgs.discord.override {
-        withOpenASAR = true;
-        withVencord = true;
-      })
+      # (pkgs.discord.override {
+      #   withOpenASAR = true;
+      #   withVencord = true;
+      # })
+      pkgs.discord
     ];
   };
 }

@@ -1,5 +1,5 @@
 {
   imports = [
-    ./basics.nix
+    ./bash-scripts.nix
   ];
 }

@@ -9,8 +9,4 @@
     ./programs
     ./peripherals
   ];
-  # Enable the nix helper shell
-  services.bootloader.systemd-bootloader.enable = lib.mkDefault true;
-  services.network-conf.enable = lib.mkDefault true;
-  environment.super-user.enable = lib.mkDefault true;
 }

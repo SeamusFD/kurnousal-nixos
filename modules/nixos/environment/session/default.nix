@@ -1,0 +1,5 @@
+{
+  imports = [
+    ./session-variables.nix
+  ];
+}

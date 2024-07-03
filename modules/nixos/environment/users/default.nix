@@ -1,5 +1,5 @@
 {
   imports = [
-    ./basics.nix
+    ./super-user.nix
   ];
 }
