@@ -8,7 +8,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nievo = {
-      url = "./modules/nievo";
+      url = "github:SeamusFD/Nievo";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
@@ -21,10 +21,10 @@
   };
 
   outputs =
-    { nixpkgs
+    { self
+    , nixpkgs
     , nixos-wsl
     , home-manager
-    , stylix
     , nur
     , ...
     } @ inputs:
@@ -60,6 +60,6 @@
           ];
         };
       };
-      homeManagerModules.default = ./modules/home-manager;
+      homeManagerModules.default = import ./modules/home-manager self;
     };
 }
