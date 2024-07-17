@@ -693,8 +693,8 @@
         "nixvim": "nixvim"
       },
       "locked": {
-        "lastModified": 1721251938,
-        "narHash": "sha256-67M0uCmNHay6jV/BHNc8NMj3XmsF/ixKJ10ESIn5rew=",
+        "lastModified": 1721252337,
+        "narHash": "sha256-ap7JTimoXqTMI83iaxCwDPKN2HCWF4m7H+D0EXgOKSA=",
         "path": "/etc/nixos/nievo",
         "type": "path"
       },

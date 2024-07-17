@@ -27,7 +27,7 @@ git diff -U0
 echo "Starting Nix Helper command line..."
 
 # Rebuild, output simplified errors, log trackebacks
-nh os switch --update | tee -a "$(tty)" &>nixos-switch.log
+nh os switch "$1" | tee -a "$(tty)" &>nixos-switch.log
 
 # Get current generation metadata
 current=$(nixos-rebuild list-generations | grep current)
