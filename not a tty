@@ -11,3 +11,9 @@ Selection state changes:
 [C-]  #1  tree-sitter  0.22.5
 Closure size: 3360 -> 3360 (24 paths added, 24 paths removed, delta +0, disk usage -1.4KiB).
 setting up /etc...
+<<< /run/current-system
+>>> /tmp/nh-os-V2Prq5/result
+Selection state changes:
+[C+]  #1  tree-sitter  0.22.5
+Closure size: 3360 -> 3360 (12 paths added, 12 paths removed, delta +0, disk usage +1.4KiB).
+setting up /etc...
