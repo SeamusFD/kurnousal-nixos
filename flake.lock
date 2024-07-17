@@ -693,8 +693,8 @@
         "nixvim": "nixvim"
       },
       "locked": {
-        "lastModified": 1721250298,
-        "narHash": "sha256-l7tY8bP3oX8d1YCPAjOs6BJdNdDytjSqL+nzAJcktoI=",
+        "lastModified": 1721251938,
+        "narHash": "sha256-67M0uCmNHay6jV/BHNc8NMj3XmsF/ixKJ10ESIn5rew=",
         "path": "/etc/nixos/nievo",
         "type": "path"
       },
@@ -912,11 +912,11 @@
     },
     "nur": {
       "locked": {
-        "lastModified": 1721241063,
-        "narHash": "sha256-jBAuwmtJmSNT6xwjtGINslFK0m3R3+Ydw+xrd+a3tSE=",
+        "lastModified": 1721251440,
+        "narHash": "sha256-PMXhfffSXkbbPi4fJZTp3zwuUbthOG0PMoeAwm9ZUrg=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "f33f46c1e38b07b20a978ac39208058ab9ddedb1",
+        "rev": "e4b352e596dee37e52c707996966336108bd8c11",
         "type": "github"
       },
       "original": {

@@ -66,6 +66,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     # Application Theming
+    treesitter
     lact
     dconf
     glib
