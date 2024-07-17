@@ -7,13 +7,16 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nievo = {
+      url = "./modules/nievo";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
     fenix = {
       url = "github:nix-community/fenix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     arkenfox.url = "github:dwarfmaster/arkenfox-nixos";
-    nievo.url = "./modules/nievo";
     stylix.url = "github:danth/stylix";
   };
 
