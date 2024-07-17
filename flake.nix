@@ -13,7 +13,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     arkenfox.url = "github:dwarfmaster/arkenfox-nixos";
-    nievo.url = "git+file://./modules/nievo";
+    nievo.url = "./modules/nievo";
     stylix.url = "github:danth/stylix";
   };
 
