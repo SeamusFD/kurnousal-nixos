@@ -1,4 +1,8 @@
-{ config, lib, ... }: {
+{
+  config,
+  lib,
+  ...
+}: {
   options = {
     window-manager.apps.waybar.enable = lib.mkEnableOption "Enables the Waybar app withd default config";
   };
@@ -14,9 +18,9 @@
           output = [
             "DP-1"
           ];
-          modules-left = [ "clock" "custom/weather" "cpu" "custom/gpu-usage" "memory" ];
-          modules-center = [ "hyprland/workspaces" ];
-          modules-right = [ "gamemode" "systemd-failed-units" "bluetooth" "network" "custom/pipewire" "tray" "custom/dunst" ];
+          modules-left = ["clock" "custom/weather" "cpu" "custom/gpu-usage" "memory"];
+          modules-center = ["hyprland/workspaces"];
+          modules-right = ["gamemode" "systemd-failed-units" "bluetooth" "network" "custom/pipewire" "tray" "custom/dunst"];
 
           "custom/pipewire" = {
             "tooltip" = false;
@@ -48,8 +52,8 @@
               "default" = "";
             };
             "persistent-workspaces" = {
-              "1" = [ ];
-              "2" = [ ];
+              "1" = [];
+              "2" = [];
             };
           };
           "tray" = {

@@ -1,5 +1,9 @@
-{ pkgs, config, lib, ... }:
 {
+  pkgs,
+  config,
+  lib,
+  ...
+}: {
   options = {
     development.vcs.git.enable = lib.mkEnableOption "Enable the git vcs system";
   };

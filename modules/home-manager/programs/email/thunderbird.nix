@@ -1,4 +1,8 @@
-{ config, lib, ... }: {
+{
+  config,
+  lib,
+  ...
+}: {
   options = {
     programs.email.thunderbird.enable = lib.mkEnableOption "Enables the Thunderbrid email client with default config";
   };

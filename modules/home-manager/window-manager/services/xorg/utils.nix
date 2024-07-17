@@ -1,5 +1,9 @@
-{ pkgs, lib, config, ... }:
 {
+  pkgs,
+  lib,
+  config,
+  ...
+}: {
   options = {
     window-manager.services.xorg.utils.enable = lib.mkEnableOption "Enables the xorg utils (for both wayland and xserver)";
   };

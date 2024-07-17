@@ -1,5 +1,8 @@
-{ lib, config, ... }:
 {
+  lib,
+  config,
+  ...
+}: {
   options = {
     environment.internationalisation.locale.enable = lib.mkEnableOption "Enables the default locale options";
     environment.internationalisation.locale.type = lib.mkOption {

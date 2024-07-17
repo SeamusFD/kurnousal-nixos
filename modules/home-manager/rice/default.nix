@@ -1,5 +1,9 @@
-{ pkgs, config, lib, ... }:
 {
+  pkgs,
+  config,
+  lib,
+  ...
+}: {
   options = {
     rice.stylix.enable = lib.mkEnableOption "Enables the default ricing config using stylix";
   };

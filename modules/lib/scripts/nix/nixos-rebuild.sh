@@ -16,11 +16,11 @@ set -e
 pushd /etc/nixos/kurnousal-nixos
 
 # Autoformat your nix files
-alejandra . &>/dev/null ||
-	(
-		alejandra .
-		echo "formatting failed!" && exit 1
-	)
+# alejandra . &>/dev/null ||
+# 	(
+# 		alejandra .
+# 		echo "formatting failed!" && exit 1
+# 	)
 
 # Ensure all changes are staged
 git add .
@@ -37,8 +37,10 @@ git diff -U0
 
 echo "Starting Nix Helper command line..."
 
+set -x
 # Rebuild, output simplified errors, log trackebacks
 nh os switch --update &>nixos-switch.log
+set -e
 
 # Get current generation metadata
 current=$(nixos-rebuild list-generations | grep current)

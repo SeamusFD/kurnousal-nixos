@@ -1,7 +1,8 @@
-{ pkgs
-, lib
-, config
-, ...
+{
+  pkgs,
+  lib,
+  config,
+  ...
 }: {
   options = {
     window-manager.apps.rofi.enable = lib.mkEnableOption "Enables Rofi with default config";

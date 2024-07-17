@@ -1,5 +1,8 @@
-{ config, lib, ... }:
 {
+  config,
+  lib,
+  ...
+}: {
   options = {
     services.xserver.amd.enable = lib.mkEnableOption "Enables xserver's amd driver options";
   };
@@ -11,7 +14,7 @@
         layout = "us";
         variant = "";
       };
-      videoDrivers = [ "amdgpu" ];
+      videoDrivers = ["amdgpu"];
     };
   };
 }

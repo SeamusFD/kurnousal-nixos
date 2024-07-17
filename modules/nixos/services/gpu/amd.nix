@@ -1,5 +1,9 @@
-{ pkgs, config, lib, ... }:
 {
+  pkgs,
+  config,
+  lib,
+  ...
+}: {
   options = {
     services.gpu.amd.enable = lib.mkEnableOption "Enables the default amd gpu drivers and config";
   };

@@ -1,5 +1,8 @@
-{ config, lib, ... }:
 {
+  config,
+  lib,
+  ...
+}: {
   options = {
     programs.terminal.monitoring.btop.enable = lib.mkEnableOption "Enables the btop monitoring tool with it's default config";
   };

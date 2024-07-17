@@ -6,6 +6,7 @@
     XDG_STATE_HOME = "$HOME/.local/state";
 
     NIXOS_OZONE_WL = "1";
+    OPENSSL_DIR = "/home/bcampbell/.nix-profile/bin/openssl";
     FLAKE = "/etc/nixos/kurnousal-nixos";
   };
 }

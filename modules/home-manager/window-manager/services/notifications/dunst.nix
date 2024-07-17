@@ -1,4 +1,8 @@
-{ config, lib, ... }: {
+{
+  config,
+  lib,
+  ...
+}: {
   options = {
     window-manager.services.notifications.dunst.enable = lib.mkEnableOption "Enables the Dunst notification service with default config";
   };

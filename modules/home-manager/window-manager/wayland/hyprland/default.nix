@@ -1,8 +1,9 @@
-{ pkgs
-, lib
-, config
-, inputs
-, ...
+{
+  pkgs,
+  lib,
+  config,
+  inputs,
+  ...
 }: {
   imports = [
     ./xdg.nix
@@ -16,17 +17,19 @@
       grim
       grimblast
       wl-clipboard
+      xwayland
       xwaylandvideobridge
       psmisc
     ];
     window-manager.services.xorg.utils.enable = true;
+    window-manager.services.wallpaper.enable = true;
 
     wayland.windowManager.hyprland = {
       enable = true;
       package = inputs.hyprland.packages."${pkgs.system}".hyprland;
       extraConfig = ''
         # monitor=HDMI-A-1,2560x1440@144,0x0,1
-        monitor=DP-1,5120x1440@120,0x0,1
+        monitor=DP-1,5120x1440@120.05,0x0,1
         exec-once = waybar & dunst & swww-daemon
         exec-once = set-primary-monitor
         exec-once = hyprctl setcursor Bibata-Modern-Ice 7
@@ -75,10 +78,9 @@
       '';
       systemd = {
         enable = true;
-        variables = [ "--all" ];
+        variables = ["--all"];
       };
       xwayland.enable = true;
     };
   };
-
 }

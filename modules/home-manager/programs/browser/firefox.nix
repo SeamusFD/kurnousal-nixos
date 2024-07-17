@@ -1,6 +1,7 @@
-{ config
-, lib
-, ...
+{
+  config,
+  lib,
+  ...
 }: {
   options = {
     programs.browser.arkenfox.enable = lib.mkEnableOption "Enables the Arkenfox config and the default profile with privacy extensions";

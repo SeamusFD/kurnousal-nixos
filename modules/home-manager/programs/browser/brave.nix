@@ -1,7 +1,8 @@
-{ pkgs
-, config
-, lib
-, ...
+{
+  pkgs,
+  config,
+  lib,
+  ...
 }: {
   options = {
     programs.browser.brave.enable = lib.mkEnableOption "Enables the Brave application with default config";

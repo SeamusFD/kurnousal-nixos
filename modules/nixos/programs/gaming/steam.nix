@@ -1,7 +1,8 @@
-{ pkgs
-, config
-, lib
-, ...
+{
+  pkgs,
+  config,
+  lib,
+  ...
 }: {
   options = {
     programs.gaming.steam.enable = lib.mkEnableOption "Enables Steam with a default config of Gamescope and Gamemode";
@@ -10,6 +11,7 @@
     programs.steam = {
       enable = true;
       gamescopeSession.enable = true;
+      protontricks.enable = true;
       package = pkgs.steam.override {
         extraPkgs = pkgs:
           with pkgs; [
@@ -19,6 +21,6 @@
       };
     };
     programs.gamemode.enable = true;
-    environment.systemPackages = [ pkgs.protonup-qt pkgs.er-patcher ];
+    environment.systemPackages = with pkgs; [protonup-qt er-patcher];
   };
 }

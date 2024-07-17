@@ -1,6 +1,7 @@
-{ config
-, lib
-, ...
+{
+  config,
+  lib,
+  ...
 }: {
   options = {
     environment.super-user.enable = lib.mkEnableOption "enable administrator user module";
@@ -16,7 +17,7 @@
     users.users.${config.environment.super-user.userName} = {
       isNormalUser = true;
       description = "super user";
-      extraGroups = [ "networkmanager" "wheel" "gamemode" "libvirtd" ];
+      extraGroups = ["networkmanager" "wheel" "gamemode" "libvirtd"];
     };
   };
 }

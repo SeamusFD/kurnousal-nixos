@@ -1,5 +1,9 @@
-{ pkgs, config, lib, ... }:
 {
+  pkgs,
+  config,
+  lib,
+  ...
+}: {
   options = {
     programs.file-manager.nemo.enable = lib.mkEnableOption "Enable the Nemo file manager and default config";
   };

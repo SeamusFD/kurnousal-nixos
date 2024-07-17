@@ -1,4 +1,8 @@
-{ config, lib, ... }: {
+{
+  config,
+  lib,
+  ...
+}: {
   options = {
     command-line.shell.aliases.basics.enable = lib.mkEnableOption "Enables the basic shell aliases for the default shell";
   };

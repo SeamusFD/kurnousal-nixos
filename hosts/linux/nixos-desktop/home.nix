@@ -1,9 +1,11 @@
-{ pkgs
-, inputs
-, ...
+{
+  pkgs,
+  inputs,
+  ...
 }: {
   ### Home Manager Modules ###
   programs = {
+    office.libre-office.enable = true;
     browser.tor-browser.enable = true;
     browser.arkenfox.enable = true;
     browser.brave.enable = true;
@@ -13,12 +15,18 @@
     terminal.monitoring.btop.enable = true;
     terminal.monitoring.amdgpu.enable = true;
     file-manager.nemo.enable = true;
+    game-dev.godot.enable = true;
   };
   command-line = {
     shell.fish.enable = true;
     shell.greeter = {
       enable = true;
       name = "fastfetch";
+      package = pkgs.fastfetch;
+    };
+    shell.tools = {
+      grep.enable = true;
+      archive.enable = true;
     };
   };
   window-manager = {
@@ -32,6 +40,13 @@
     };
   };
 
+  services = {
+    remmina = {
+      enable = true;
+      systemdService.enable = true;
+    };
+  };
+
   rice.stylix.enable = true;
 
   development = {
@@ -41,12 +56,6 @@
   ### Home Manager Modules ###
 
   dconf.enable = true;
-  dconf.settings = {
-    "org/virt-manager/virt-manager/connections" = {
-      autoconnect = [ "qemu:///system" ];
-      uris = [ "qemu:///system" ];
-    };
-  };
   home.packages = [
     inputs.nievo.packages.${pkgs.system}.default
     # Shell Packages
@@ -67,14 +76,16 @@
     # Fix these and put them in the /development path
     (
       with inputs.fenix.packages.${pkgs.system};
-      combine [
-        complete.toolchain
-        targets.x86_64-unknown-linux-musl.latest.rust-std
-        targets.wasm32-unknown-unknown.latest.rust-std
-      ]
+        combine [
+          complete.toolchain
+          targets.x86_64-unknown-linux-musl.latest.rust-std
+          targets.wasm32-unknown-unknown.latest.rust-std
+        ]
     )
     pkgs.cargo-leptos
     pkgs.cargo-generate
+    pkgs.openssl
+    pkgs.pkg-config
     pkgs.wasm-pack
     pkgs.wasm-tools
     pkgs.sass

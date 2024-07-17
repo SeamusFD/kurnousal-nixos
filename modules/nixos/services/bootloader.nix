@@ -1,6 +1,7 @@
-{ config
-, lib
-, ...
+{
+  config,
+  lib,
+  ...
 }: {
   options = {
     services.bootloader.systemd-bootloader.enable = lib.mkEnableOption "enables systemd-bootloader";

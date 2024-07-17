@@ -1,0 +1,1728 @@
+[32m>[39m Updating flake
+warning: Git tree '/etc/nixos/kurnousal-nixos' is dirty
+[K[K[K[K[K[Kwarning: updating lock file '/etc/nixos/kurnousal-nixos/flake.lock':
+• Updated input 'nievo':
+    'path:/etc/nixos/nievo?lastModified=1721232396&narHash=sha256-74hiOk5PMIJJiFwW0jFYreZXHqK7D/LTLvdHHMOWPFM%3D' (2024-07-17)
+  → 'path:/etc/nixos/nievo?lastModified=1721246956&narHash=sha256-XbnKnl6GGAyhYA4Q24MwHbQ/iLskS2wdB/5KnkMpTNg%3D' (2024-07-17)
+• Updated input 'nievo/nixpkgs':
+    'path:/nix/store/xr9wjzx0cdnwkmhzz74h8lphgn5jmyv3-source?lastModified=0&narHash=sha256-ZgnNHuKV6h2%2BfQ5LuqnUaqZey1Lqqt5dTUAiAnqH0QQ%3D' (1970-01-01)
+  → 'path:/nix/store/iqxdbcjlg9wx8gdc8bdhy9nsd5imcbjp-source?lastModified=0&narHash=sha256-oedh2RwpjEa%2BTNxhg5Je9Ch6d3W1NKi7DbRO1ziHemA%3D' (1970-01-01)
+warning: Git tree '/etc/nixos/kurnousal-nixos' is dirty
+[32m>[39m Building NixOS configuration
+[?25l[35;1mwarning:[0m Git tree '/etc/nixos/kurnousal-nixos' is dirty
+[1m⏱ 0s[0m[1G[2K[1m⏱ 0s[0m[1G[2K[1m⏱ 0s[0m[1G[2K[1m⏱ 0s[0m[1G[2K[1m⏱ 0s[0m[1G[2K[1m⏱ 0s[0m[1G[2K[1m⏱ 0s[0m[1G[2K[1m⏱ 0s[0m[1G[2K[1m⏱ 0s[0m[1G[2K[1m⏱ 0s[0m[1G[2K[1m⏱ 0s[0m[1G[2K[1m⏱ 0s[0m[1G[2K[1m⏱ 0s[0m[1G[2K[1m⏱ 0s[0m[1G[2K[1m⏱ 0s[0m[1G[2K[1m⏱ 1s[0m[1G[2K[1m⏱ 1s[0m[1G[2K[1m⏱ 1s[0m[1G[2K[1m⏱ 1s[0m[1G[2K[1m⏱ 1s[0m[1G[2K[1m⏱ 1s[0m[1G[2K[1m⏱ 1s[0m[1G[2K[1m⏱ 1s[0m[1G[2K[1m⏱ 1s[0m[1G[2K[1m⏱ 1s[0m[1G[2K[1m⏱ 1s[0m[1G[2K[1m⏱ 1s[0m[1G[2K[1m⏱ 1s[0m[1G[2K[1m⏱ 1s[0m[1G[2K[1m⏱ 1s[0m[1G[2K[1m⏱ 1s[0m[1G[2K[1m⏱ 2s[0m[1G[2K[1m⏱ 2s[0m[1G[2K[1m⏱ 2s[0m[1G[2K[1m⏱ 2s[0m[1G[2K[1m⏱ 2s[0m[1G[2K[1m⏱ 2s[0m[1G[2K[1m⏱ 2s[0m[1G[2K[1m⏱ 2s[0m[1G[2K[1m⏱ 2s[0m[1G[2K[1m⏱ 2s[0m[1G[2K[1m⏱ 2s[0m[1G[2K[1m⏱ 3s[0m[1G[2K[1m⏱ 3s[0m[1G[2K[1m⏱ 3s[0m[1G[2K[1m⏱ 3s[0m[1G[2K[1m⏱ 3s[0m[1G[2K[1m⏱ 3s[0m[1G[2K[1m⏱ 3s[0m[1G[2K[1m⏱ 4s[0m[1G[2K[1m⏱ 4s[0m[1G[2K[1m⏱ 4s[0m[1G[2K[1m⏱ 4s[0m[1G[2K[1m⏱ 4s[0m[1G[2K[1m⏱ 4s[0m[1G[2K[1m⏱ 4s[0m[1G[2K[1m⏱ 4s[0m[1G[2K[1m⏱ 4s[0m[1G[2K[1m⏱ 4s[0m[1G[2K[1m⏱ 4s[0m[1G[2K[1m⏱ 4s[0m[1G[2K[1m⏱ 4s[0m[1G[2K[1m⏱ 4s[0m[1G[2K[1m⏱ 5s[0m[1G[2K[1m⏱ 5s[0m[1G[2K[1m⏱ 5s[0m[1G[2K[1m⏱ 5s[0m[1G[2K[1m⏱ 5s[0m[1G[2K[1m⏱ 5s[0m[1G[2K[1m⏱ 5s[0m[1G[2K[1m⏱ 5s[0m[1G[2K[1m⏱ 5s[0m[1G[2K[1m⏱ 5s[0m[1G[2K[1m⏱ 6s[0m[1G[2K[1m⏱ 6s[0m[1G[2K[1m⏱ 6s[0m[1G[2K[1m⏱ 6s[0m[1G[2K[1m⏱ 6s[0m[1G[2K[1m⏱ 6s[0m[1G[2K[1m⏱ 6s[0m[1G[2K[1m⏱ 6s[0m[1G[2K[1m⏱ 6s[0m[1G[2K[1m⏱ 6s[0m[1G[2K[1m⏱ 6s[0m[1G[2K[1m⏱ 7s[0m[1G[2K[1m⏱ 7s[0m[1G[2K[1m⏱ 7s[0m[1G[2K[1m⏱ 7s[0m[1G[2K[1m⏱ 7s[0m[1G[2K[1m⏱ 7s[0m[1G[2K[1m⏱ 7s[0m[1G[2K[1m⏱ 7s[0m[1G[2K[1m⏱ 7s[0m[1G[2K[1m⏱ 7s[0m[1G[2K[1m⏱ 8s[0m[1G[2K[1m⏱ 8s[0m[1G[2K[1m⏱ 8s[0m[1G[2K[1m⏱ 8s[0m[1G[2K[1m⏱ 8s[0m[1G[2K[1m⏱ 8s[0m[1G[2K[1m⏱ 8s[0m[1G[2K[1m⏱ 9s[0m[1G[2K[1m⏱ 9s[0m[1G[2K[1m⏱ 9s[0m[1G[2K[1m⏱ 9s[0m[1G[2K[1m⏱ 9s[0m[1G[2K[1m⏱ 9s[0m[1G[2K[1m⏱ 9s[0m[1G[2K[1m⏱ 9s[0m[1G[2K[1m⏱ 9s[0m[1G[2K[1m⏱ 9s[0m[1G[2K[1m⏱ 9s[0m[1G[2K[1m⏱ 9s[0m[1G[2K[1m⏱ 10s[0m[1G[2K[1m⏱ 10s[0m[1G[2K[1m⏱ 10s[0m[1G[2K[1m⏱ 10s[0m[1G[2K[1m⏱ 10s[0m[1G[2K[1m⏱ 10s[0m[1G[2K[1m⏱ 10s[0m[1G[2K[1m⏱ 11s[0m[1G[2K[1m⏱ 11s[0m[1G[2K[1m⏱ 11s[0m[1G[2K[1m⏱ 11s[0m[1G[2K[1m⏱ 11s[0m[1G[2K[1m⏱ 11s[0m[1G[2K[1m⏱ 11s[0m[1G[2K[1m⏱ 11s[0m[1G[2K[1m⏱ 11s[0m[1G[2K[1m⏱ 11s[0m[1G[2K[1m⏱ 11s[0m[1G[2K[1m⏱ 11s[0m[1G[2K[1m⏱ 11s[0m[1G[2K[1m⏱ 12s[0m[1G[2K[1m⏱ 12s[0m[1G[2K[1m⏱ 12s[0m[1G[2K[1m⏱ 12s[0m[1G[2K[1m⏱ 12s[0m[1G[2K[1m⏱ 12s[0m[1G[2K[1m⏱ 12s[0m[1G[2K[1m⏱ 12s[0m[1G[2K[1m⏱ 12s[0m[1G[2K[1m⏱ 12s[0m[1G[2K[1m⏱ 12s[0m[1G[2K[1m⏱ 12s[0m[1G[2K[1m⏱ 12s[0m[1G[2K[1m⏱ 12s[0m[1G[2K[1m⏱ 12s[0m[1G[2K[1m⏱ 12s[0m[1G[2K[1m⏱ 13s[0m[1G[2K[1m⏱ 13s[0m[1G[2K[1m⏱ 13s[0m[1G[2K[1m⏱ 13s[0m[1G[2K[1m⏱ 13s[0m[1G[2K[1m⏱ 13s[0m[1G[2K[1m⏱ 13s[0m[1G[2K[1m⏱ 13s[0m[1G[2K[1m⏱ 13s[0m[1G[2K[1m⏱ 13s[0m[1G[2K[1m⏱ 13s[0m[1G[2K[1m⏱ 13s[0m[1G[2K[1m⏱ 13s[0m[1G[2K[1m⏱ 13s[0m[1G[2K[1m⏱ 13s[0m[1G[2K[1m⏱ 13s[0m[1G[2K[1m⏱ 14s[0m[1G[2K[1m⏱ 14s[0m[1G[2K[1m⏱ 14s[0m[1G[2K[1m⏱ 14s[0m[1G[2K[1m⏱ 15s[0m[1G[2K[1m⏱ 15s[0m[1G[2K[1m⏱ 15s[0m[1G[2K[1m⏱ 15s[0m[1G[2K[1m⏱ 15s[0m[1G[2K[1m⏱ 16s[0m[1G[2K[1m⏱ 16s[0m[1G[2K[1m⏱ 16s[0m[1G[2K[1m⏱ 16s[0m[1G[2K[1m⏱ 16s[0m[1G[2K[1m⏱ 16s[0m[1G[2K[1m⏱ 16s[0m[1G[2K[1m⏱ 16s[0m[1G[2K[1m⏱ 16s[0m[1G[2K[1m⏱ 16s[0m[1G[2K[1m⏱ 16s[0m[1G[2K[1m⏱ 16s[0m[1G[2K[1m⏱ 16s[0m[1G[2K[1m⏱ 16s[0m[1G[2K[1m⏱ 17s[0m[1G[2K[1m⏱ 17s[0m[1G[2K[1m⏱ 17s[0m[1G[2K[1m⏱ 17s[0m[1G[2K[1m⏱ 17s[0m[1G[2K[1m⏱ 17s[0m[1G[2K[1m⏱ 17s[0m[1G[2K[1m⏱ 17s[0m[1G[2K[1m⏱ 17s[0m[1G[2K[1m⏱ 17s[0m[1G[2K[1m⏱ 17s[0m[1G[2K[1m⏱ 17s[0m[1G[2Kthese 14 derivations will be built:
+  /nix/store/vv8cvdq4nkdp5h9m50is8j9q3jc6pa5i-home-manager-path.drv
+  /nix/store/fmhy5w468n6p0qvn7xm08j7l4yx7xd1j-hm_fontconfigconf.d10hmfonts.conf.drv
+  /nix/store/v29bl6ji7xw7v2s2imwrn8k7b196wjhn-man-paths.drv
+  /nix/store/i9j2zjk43fza14iq0bw97ql2k8bwfflw-man-cache.drv
+  /nix/store/vn785amni308wb1ss8jnzyrsj4djk1w9-hm_.manpath.drv
+  /nix/store/nn05k8j74qjyr3z0yj160y56aj2c5sdh-nixvim-fish-completions.drv
+┏━ [1mDependency Graph[0m with 3 roots:
+┃ [34m┌─ [0m[34m⏸ home-manager-path[0m
+┃ [34m⏸ hm_fontconfigconf.d10hmfonts.conf[0m
+┃    [34m┌─ [0m[34m⏸ man-paths[0m
+┃ [34m┌─ [0m[34m⏸ man-cache[0m
+┃ [34m⏸ hm_.manpath[0m
+┃ [34m⏸ nixvim-fish-completions[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ 0[0m │ [32m✔ 0[0m │ [34m⏸ [1m6[0m[0m │ [1m⏱ 17s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K  /nix/store/y9f48nay5bzyd1knka70b53n3r7m2qxw-bcampbell-fish-completions.drv
+  /nix/store/x75gs2zfz6wi72f3lm8yd7v833xzzrq1-home-manager-files.drv
+  /nix/store/kwqsmlib202a20q164dm7279vxh5ldz4-home-manager-generation.drv
+  /nix/store/hpcjcwig67asislkm0sxai8jrvgg3vs0-unit-home-manager-bcampbell.service.drv
+  /nix/store/dj5pdv6zh93bknfvwymdgjl4fmr16g3p-system-units.drv
+  /nix/store/p7vddkkiz49xlyxskk9k7dfga9igsbkr-user-environment.drv
+  /nix/store/xdhbiwbajdirv4lksq0ffpdhcvh0nii1-etc.drv
+  /nix/store/brmzbfzmrw7w3jsrp8gl94i20466p07j-nixos-system-nixos-desktop-24.11.20240714.693bc46.drv
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[34m⏸ user-environment[0m
+┃    [34m│  [0m            [34m┌─ [0m[34m⏸ nixvim-fish-completions[0m
+┃    [34m│  [0m         [34m┌─ [0m[34m⏸ bcampbell-fish-completions[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[34m⏸ man-paths[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[34m⏸ man-cache[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_fontconfigconf.d10hmfonts.conf[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m      [34m├─ [0m[34m⏸ home-manager-path[0m
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ 0[0m │ [32m✔ 0[0m │ [34m⏸ [1m14[0m[0m │ [1m⏱ 19s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[34m⏸ user-environment[0m
+┃    [34m│  [0m            [34m┌─ [0m[34m⏸ nixvim-fish-completions[0m
+┃    [34m│  [0m         [34m┌─ [0m[34m⏸ bcampbell-fish-completions[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[34m⏸ man-paths[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[34m⏸ man-cache[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_fontconfigconf.d10hmfonts.conf[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m      [34m├─ [0m[34m⏸ home-manager-path[0m
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ 0[0m │ [32m✔ 0[0m │ [34m⏸ [1m14[0m[0m │ [1m⏱ 19s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mhome-manager-path> [0mbuilding '/nix/store/vv8cvdq4nkdp5h9m50is8j9q3jc6pa5i-home-manager-path.drv'
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[34m⏸ user-environment[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m            [34m┌─ [0m[34m⏸ nixvim-fish-completions[0m
+┃    [34m│  [0m         [34m┌─ [0m[34m⏸ bcampbell-fish-completions[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[34m⏸ man-paths[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[34m⏸ man-cache[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_fontconfigconf.d10hmfonts.conf[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m      [34m├─ [0m[33m[1m⏵ home-manager-path[0m[0m
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ 0[0m │ [34m⏸ [1m13[0m[0m │ [1m⏱ 19s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[34m⏸ user-environment[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m            [34m┌─ [0m[34m⏸ nixvim-fish-completions[0m
+┃    [34m│  [0m         [34m┌─ [0m[34m⏸ bcampbell-fish-completions[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[34m⏸ man-paths[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[34m⏸ man-cache[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_fontconfigconf.d10hmfonts.conf[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m      [34m├─ [0m[33m[1m⏵ home-manager-path[0m[0m
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ 0[0m │ [34m⏸ [1m13[0m[0m │ [1m⏱ 19s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mman-paths> [0mbuilding '/nix/store/v29bl6ji7xw7v2s2imwrn8k7b196wjhn-man-paths.drv'
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[34m⏸ user-environment[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m            [34m┌─ [0m[34m⏸ nixvim-fish-completions[0m
+┃    [34m│  [0m         [34m┌─ [0m[34m⏸ bcampbell-fish-completions[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[33m[1m⏵ man-paths[0m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[34m⏸ man-cache[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_fontconfigconf.d10hmfonts.conf[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m      [34m├─ [0m[33m[1m⏵ home-manager-path[0m[0m
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ 0[0m │ [34m⏸ [1m12[0m[0m │ [1m⏱ 19s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mnixvim-fish-completions> [0mbuilding '/nix/store/nn05k8j74qjyr3z0yj160y56aj2c5sdh-nixvim-fish-completions.drv'
+[0m[34mhome-manager-path> [0msourcing setup hook '/nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0/nix-support/setup-hook'
+[0m[34mhome-manager-path> [0msourcing setup hook '/nix/store/iks1pihvbilsh5sy8qvpd638k422w9i8-update-autotools-gnu-config-scripts-hook/nix-support/setup-hook'
+[0m[34mhome-manager-path> [0msourcing setup hook '/nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh'
+[0m[34mhome-manager-path> [0msourcing setup hook '/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh'
+[0m[34mhome-manager-path> [0msourcing setup hook '/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh'
+[0m[34mhome-manager-path> [0msourcing setup hook '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh'
+[0m[34mhome-manager-path> [0msourcing setup hook '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh'
+[0m[34mhome-manager-path> [0msourcing setup hook '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh'
+[0m[34mhome-manager-path> [0msourcing setup hook '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh'
+[0m[34mhome-manager-path> [0msourcing setup hook '/nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh'
+[0m[34mhome-manager-path> [0msourcing setup hook '/nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh'
+[0m[34mhome-manager-path> [0msourcing setup hook '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh'
+[0m[34mhome-manager-path> [0msourcing setup hook '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh'
+[0m[34mhome-manager-path> [0msourcing setup hook '/nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh'
+[0m[34mhome-manager-path> [0msourcing setup hook '/nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh'
+[0m[34mhome-manager-path> [0mcreated 2500 symlinks in user environment
+[0m[34mman-paths> [0msourcing setup hook '/nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0/nix-support/setup-hook'
+[0m[34mman-paths> [0msourcing setup hook '/nix/store/iks1pihvbilsh5sy8qvpd638k422w9i8-update-autotools-gnu-config-scripts-hook/nix-support/setup-hook'
+[0m[34mman-paths> [0msourcing setup hook '/nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh'
+[0m[34mman-paths> [0msourcing setup hook '/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh'
+[0m[34mman-paths> [0msourcing setup hook '/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh'
+[0m[34mman-paths> [0msourcing setup hook '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh'
+[0m[34mman-paths> [0msourcing setup hook '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh'
+[0m[34mman-paths> [0msourcing setup hook '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh'
+[0m[34mman-paths> [0msourcing setup hook '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh'
+[0m[34mman-paths> [0msourcing setup hook '/nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh'
+[0m[34mman-paths> [0msourcing setup hook '/nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh'
+[0m[34mman-paths> [0msourcing setup hook '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh'
+[0m[34mman-paths> [0msourcing setup hook '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh'
+[0m[34mman-paths> [0msourcing setup hook '/nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh'
+[0m[34mman-paths> [0msourcing setup hook '/nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh'
+[0m[34mnixvim-fish-completions> [0msourcing setup hook '/nix/store/z7xxy35k7620hs6fn6la5fg2lgklv72l-python3-3.12.4/nix-support/setup-hook'
+[0m[34mnixvim-fish-completions> [0msourcing setup hook '/nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0/nix-support/setup-hook'
+[0m[34mnixvim-fish-completions> [0msourcing setup hook '/nix/store/iks1pihvbilsh5sy8qvpd638k422w9i8-update-autotools-gnu-config-scripts-hook/nix-support/setup-hook'
+[0m[34mnixvim-fish-completions> [0msourcing setup hook '/nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh'
+[0m[34mnixvim-fish-completions> [0msourcing setup hook '/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh'
+[0m[34mnixvim-fish-completions> [0msourcing setup hook '/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh'
+[0m[34mnixvim-fish-completions> [0msourcing setup hook '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh'
+[0m[34mnixvim-fish-completions> [0msourcing setup hook '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh'
+[0m[34mnixvim-fish-completions> [0msourcing setup hook '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh'
+[0m[34mnixvim-fish-completions> [0msourcing setup hook '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh'
+[0m[34mnixvim-fish-completions> [0msourcing setup hook '/nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh'
+[0m[34mnixvim-fish-completions> [0msourcing setup hook '/nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh'
+[0m[34mnixvim-fish-completions> [0msourcing setup hook '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh'
+[0m[34mnixvim-fish-completions> [0msourcing setup hook '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh'
+[0m[34mnixvim-fish-completions> [0msourcing setup hook '/nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh'
+[0m[34mnixvim-fish-completions> [0msourcing setup hook '/nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh'
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[34m⏸ user-environment[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m            [34m┌─ [0m[33m[1m⏵ nixvim-fish-completions[0m[0m
+┃    [34m│  [0m         [34m┌─ [0m[34m⏸ bcampbell-fish-completions[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[33m[1m⏵ man-paths[0m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[34m⏸ man-cache[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_fontconfigconf.d10hmfonts.conf[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m      [34m├─ [0m[33m[1m⏵ home-manager-path[0m[0m
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m3[0m[0m │ [32m✔ 0[0m │ [34m⏸ [1m11[0m[0m │ [1m⏱ 19s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mnixvim-fish-completions> [0msourcing setup hook '/nix/store/kpicyzzxir2hr4j4ng94wywlsraz4k8p-gettext-0.21.1/nix-support/setup-hook'
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/z7xxy35k7620hs6fn6la5fg2lgklv72l-python3-3.12.4
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/z7xxy35k7620hs6fn6la5fg2lgklv72l-python3-3.12.4
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/iks1pihvbilsh5sy8qvpd638k422w9i8-update-autotools-gnu-config-scripts-hook
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/iks1pihvbilsh5sy8qvpd638k422w9i8-update-autotools-gnu-config-scripts-hook
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/p09zk2hi4q999kyl6b56i7lz3742xqfk-fish-3.7.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/p09zk2hi4q999kyl6b56i7lz3742xqfk-fish-3.7.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/dhv5gh89him9a7ddr56cqg87zfkmjihp-coreutils-9.5
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/dhv5gh89him9a7ddr56cqg87zfkmjihp-coreutils-9.5
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/mdiqq9b2rvv7fajlmg3f7d6r6g78l547-gnugrep-3.11
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/mdiqq9b2rvv7fajlmg3f7d6r6g78l547-gnugrep-3.11
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/cdhx572ij0pvn9ayd33lk8118137j6m8-gnused-4.9
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/cdhx572ij0pvn9ayd33lk8118137j6m8-gnused-4.9
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/6a268isvfrfa4kfq5d02xyp6s3i0hcf4-groff-1.23.0
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/6a268isvfrfa4kfq5d02xyp6s3i0hcf4-groff-1.23.0
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/kpicyzzxir2hr4j4ng94wywlsraz4k8p-gettext-0.21.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/kpicyzzxir2hr4j4ng94wywlsraz4k8p-gettext-0.21.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'addPythonPath' /nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildBuildHook' function hook 'sysconfigdataHook' /nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/z7xxy35k7620hs6fn6la5fg2lgklv72l-python3-3.12.4
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/z7xxy35k7620hs6fn6la5fg2lgklv72l-python3-3.12.4
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/iks1pihvbilsh5sy8qvpd638k422w9i8-update-autotools-gnu-config-scripts-hook
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/iks1pihvbilsh5sy8qvpd638k422w9i8-update-autotools-gnu-config-scripts-hook
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/p09zk2hi4q999kyl6b56i7lz3742xqfk-fish-3.7.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/p09zk2hi4q999kyl6b56i7lz3742xqfk-fish-3.7.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/dhv5gh89him9a7ddr56cqg87zfkmjihp-coreutils-9.5
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/dhv5gh89him9a7ddr56cqg87zfkmjihp-coreutils-9.5
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/mdiqq9b2rvv7fajlmg3f7d6r6g78l547-gnugrep-3.11
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/mdiqq9b2rvv7fajlmg3f7d6r6g78l547-gnugrep-3.11
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/cdhx572ij0pvn9ayd33lk8118137j6m8-gnused-4.9
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/cdhx572ij0pvn9ayd33lk8118137j6m8-gnused-4.9
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/6a268isvfrfa4kfq5d02xyp6s3i0hcf4-groff-1.23.0
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/6a268isvfrfa4kfq5d02xyp6s3i0hcf4-groff-1.23.0
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/kpicyzzxir2hr4j4ng94wywlsraz4k8p-gettext-0.21.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/kpicyzzxir2hr4j4ng94wywlsraz4k8p-gettext-0.21.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'addPythonPath' /nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildHostHook' function hook 'sysconfigdataHook' /nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/z7xxy35k7620hs6fn6la5fg2lgklv72l-python3-3.12.4
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/z7xxy35k7620hs6fn6la5fg2lgklv72l-python3-3.12.4
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/iks1pihvbilsh5sy8qvpd638k422w9i8-update-autotools-gnu-config-scripts-hook
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/iks1pihvbilsh5sy8qvpd638k422w9i8-update-autotools-gnu-config-scripts-hook
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/p09zk2hi4q999kyl6b56i7lz3742xqfk-fish-3.7.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/p09zk2hi4q999kyl6b56i7lz3742xqfk-fish-3.7.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/dhv5gh89him9a7ddr56cqg87zfkmjihp-coreutils-9.5
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/dhv5gh89him9a7ddr56cqg87zfkmjihp-coreutils-9.5
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/mdiqq9b2rvv7fajlmg3f7d6r6g78l547-gnugrep-3.11
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/mdiqq9b2rvv7fajlmg3f7d6r6g78l547-gnugrep-3.11
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/cdhx572ij0pvn9ayd33lk8118137j6m8-gnused-4.9
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/cdhx572ij0pvn9ayd33lk8118137j6m8-gnused-4.9
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/6a268isvfrfa4kfq5d02xyp6s3i0hcf4-groff-1.23.0
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/6a268isvfrfa4kfq5d02xyp6s3i0hcf4-groff-1.23.0
+[0m[34mman-paths> [0mcreated 712 symlinks in user environment
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/kpicyzzxir2hr4j4ng94wywlsraz4k8p-gettext-0.21.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/kpicyzzxir2hr4j4ng94wywlsraz4k8p-gettext-0.21.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'addPythonPath' /nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envBuildTargetHook' function hook 'sysconfigdataHook' /nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/z7xxy35k7620hs6fn6la5fg2lgklv72l-python3-3.12.4
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/iks1pihvbilsh5sy8qvpd638k422w9i8-update-autotools-gnu-config-scripts-hook
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[34m⏸ user-environment[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m            [34m┌─ [0m[33m[1m⏵ nixvim-fish-completions[0m[0m
+┃    [34m│  [0m         [34m┌─ [0m[34m⏸ bcampbell-fish-completions[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[33m[1m⏵ man-paths[0m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[34m⏸ man-cache[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_fontconfigconf.d10hmfonts.conf[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m      [34m├─ [0m[33m[1m⏵ home-manager-path[0m[0m
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m3[0m[0m │ [32m✔ 0[0m │ [34m⏸ [1m11[0m[0m │ [1m⏱ 19s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[34m⏸ user-environment[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m            [34m┌─ [0m[33m[1m⏵ nixvim-fish-completions[0m[0m
+┃    [34m│  [0m         [34m┌─ [0m[34m⏸ bcampbell-fish-completions[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[34m⏸ man-cache[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_fontconfigconf.d10hmfonts.conf[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m      [34m├─ [0m[33m[1m⏵ home-manager-path[0m[0m
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ [1m1[0m[0m │ [34m⏸ [1m11[0m[0m │ [1m⏱ 19s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mman-cache> [0mbuilding '/nix/store/i9j2zjk43fza14iq0bw97ql2k8bwfflw-man-cache.drv'
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/p09zk2hi4q999kyl6b56i7lz3742xqfk-fish-3.7.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/dhv5gh89him9a7ddr56cqg87zfkmjihp-coreutils-9.5
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/mdiqq9b2rvv7fajlmg3f7d6r6g78l547-gnugrep-3.11
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/cdhx572ij0pvn9ayd33lk8118137j6m8-gnused-4.9
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/6a268isvfrfa4kfq5d02xyp6s3i0hcf4-groff-1.23.0
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/kpicyzzxir2hr4j4ng94wywlsraz4k8p-gettext-0.21.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostHostHook' function hook 'gettextDataDirsHook' /nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/z7xxy35k7620hs6fn6la5fg2lgklv72l-python3-3.12.4
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/iks1pihvbilsh5sy8qvpd638k422w9i8-update-autotools-gnu-config-scripts-hook
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/p09zk2hi4q999kyl6b56i7lz3742xqfk-fish-3.7.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/dhv5gh89him9a7ddr56cqg87zfkmjihp-coreutils-9.5
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/mdiqq9b2rvv7fajlmg3f7d6r6g78l547-gnugrep-3.11
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/cdhx572ij0pvn9ayd33lk8118137j6m8-gnused-4.9
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/6a268isvfrfa4kfq5d02xyp6s3i0hcf4-groff-1.23.0
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/kpicyzzxir2hr4j4ng94wywlsraz4k8p-gettext-0.21.1
+[0m[34mnixvim-fish-completions> [0mcalling 'envHostTargetHook' function hook 'gettextDataDirsHook' /nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[34m⏸ user-environment[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m               [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m            [34m┌─ [0m[33m[1m⏵ man-cache[0m[0m
+┃    [34m│  [0m         [34m┌─ [0m[34m⏸ hm_.manpath[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[33m[1m⏵ nixvim-fish-completions[0m[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ bcampbell-fish-completions[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_fontconfigconf.d10hmfonts.conf[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m      [34m├─ [0m[33m[1m⏵ home-manager-path[0m[0m
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m3[0m[0m │ [32m✔ [1m1[0m[0m │ [34m⏸ [1m10[0m[0m │ [1m⏱ 20s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mman-cache> [0msourcing setup hook '/nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0/nix-support/setup-hook'
+[0m[34mman-cache> [0msourcing setup hook '/nix/store/iks1pihvbilsh5sy8qvpd638k422w9i8-update-autotools-gnu-config-scripts-hook/nix-support/setup-hook'
+[0m[34mman-cache> [0msourcing setup hook '/nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh'
+[0m[34mman-cache> [0msourcing setup hook '/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh'
+[0m[34mman-cache> [0msourcing setup hook '/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh'
+[0m[34mman-cache> [0msourcing setup hook '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh'
+[0m[34mman-cache> [0msourcing setup hook '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh'
+[0m[34mman-cache> [0msourcing setup hook '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh'
+[0m[34mman-cache> [0msourcing setup hook '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh'
+[0m[34mman-cache> [0msourcing setup hook '/nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh'
+[0m[34mman-cache> [0msourcing setup hook '/nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh'
+[0m[34mman-cache> [0msourcing setup hook '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh'
+[0m[34mman-cache> [0msourcing setup hook '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh'
+[0m[34mman-cache> [0msourcing setup hook '/nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh'
+[0m[34mman-cache> [0msourcing setup hook '/nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh'
+[0m[34mman-cache> [0mProcessing manual pages under /nix/store/4vmpkrk8abf1bldcbz6ghjxzzymzzsmw-man-paths/share/man...
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[34m⏸ user-environment[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m               [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m            [34m┌─ [0m[33m[1m⏵ man-cache[0m[0m
+┃    [34m│  [0m         [34m┌─ [0m[34m⏸ hm_.manpath[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[33m[1m⏵ nixvim-fish-completions[0m[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ bcampbell-fish-completions[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_fontconfigconf.d10hmfonts.conf[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m      [34m├─ [0m[33m[1m⏵ home-manager-path[0m[0m
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m3[0m[0m │ [32m✔ [1m1[0m[0m │ [34m⏸ [1m10[0m[0m │ [1m⏱ 20s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[34m⏸ user-environment[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m               [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m            [34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 1s
+┃    [34m│  [0m         [34m┌─ [0m[34m⏸ hm_.manpath[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[33m[1m⏵ nixvim-fish-completions[0m[0m ⏱ 1s
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ bcampbell-fish-completions[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_fontconfigconf.d10hmfonts.conf[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m      [34m├─ [0m[33m[1m⏵ home-manager-path[0m[0m ⏱ 1s
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m3[0m[0m │ [32m✔ [1m1[0m[0m │ [34m⏸ [1m10[0m[0m │ [1m⏱ 21s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[34m⏸ user-environment[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m               [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m            [34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 1s
+┃    [34m│  [0m         [34m┌─ [0m[34m⏸ hm_.manpath[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[33m[1m⏵ nixvim-fish-completions[0m[0m ⏱ 2s
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ bcampbell-fish-completions[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_fontconfigconf.d10hmfonts.conf[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m      [34m├─ [0m[33m[1m⏵ home-manager-path[0m[0m ⏱ 2s
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m3[0m[0m │ [32m✔ [1m1[0m[0m │ [34m⏸ [1m10[0m[0m │ [1m⏱ 21s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[34m⏸ user-environment[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m               [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m            [34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 2s
+┃    [34m│  [0m         [34m┌─ [0m[34m⏸ hm_.manpath[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ bcampbell-fish-completions[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_fontconfigconf.d10hmfonts.conf[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m      [34m├─ [0m[33m[1m⏵ home-manager-path[0m[0m ⏱ 2s
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ [1m2[0m[0m │ [34m⏸ [1m10[0m[0m │ [1m⏱ 22s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mbcampbell-fish-completions> [0mbuilding '/nix/store/y9f48nay5bzyd1knka70b53n3r7m2qxw-bcampbell-fish-completions.drv'
+[0m[34mbcampbell-fish-completions> [0msourcing setup hook '/nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0/nix-support/setup-hook'
+[0m[34mbcampbell-fish-completions> [0msourcing setup hook '/nix/store/iks1pihvbilsh5sy8qvpd638k422w9i8-update-autotools-gnu-config-scripts-hook/nix-support/setup-hook'
+[0m[34mbcampbell-fish-completions> [0msourcing setup hook '/nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh'
+[0m[34mbcampbell-fish-completions> [0msourcing setup hook '/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh'
+[0m[34mbcampbell-fish-completions> [0msourcing setup hook '/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh'
+[0m[34mbcampbell-fish-completions> [0msourcing setup hook '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh'
+[0m[34mbcampbell-fish-completions> [0msourcing setup hook '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh'
+[0m[34mbcampbell-fish-completions> [0msourcing setup hook '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh'
+[0m[34mbcampbell-fish-completions> [0msourcing setup hook '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh'
+[0m[34mbcampbell-fish-completions> [0msourcing setup hook '/nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh'
+[0m[34mbcampbell-fish-completions> [0msourcing setup hook '/nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh'
+[0m[34mbcampbell-fish-completions> [0msourcing setup hook '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh'
+[0m[34mbcampbell-fish-completions> [0msourcing setup hook '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh'
+[0m[34mbcampbell-fish-completions> [0msourcing setup hook '/nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh'
+[0m[34mbcampbell-fish-completions> [0msourcing setup hook '/nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh'
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[34m⏸ user-environment[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[33m[1m⏵ bcampbell-fish-completions[0m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 2s
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_fontconfigconf.d10hmfonts.conf[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m      [34m├─ [0m[33m[1m⏵ home-manager-path[0m[0m ⏱ 2s
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m3[0m[0m │ [32m✔ [1m2[0m[0m │ [34m⏸ [1m9[0m[0m │ [1m⏱ 22s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[34m⏸ user-environment[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m               [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m            [34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 2s
+┃    [34m│  [0m         [34m┌─ [0m[34m⏸ hm_.manpath[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_fontconfigconf.d10hmfonts.conf[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m├─ [0m[33m[1m⏵ bcampbell-fish-completions[0m[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m      [34m├─ [0m[33m[1m⏵ home-manager-path[0m[0m ⏱ 2s
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m3[0m[0m │ [32m✔ [1m2[0m[0m │ [34m⏸ [1m9[0m[0m │ [1m⏱ 22s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[34m⏸ user-environment[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m               [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m            [34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 2s
+┃    [34m│  [0m         [34m┌─ [0m[34m⏸ hm_.manpath[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_fontconfigconf.d10hmfonts.conf[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m      [34m├─ [0m[33m[1m⏵ home-manager-path[0m[0m ⏱ 2s
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ [1m3[0m[0m │ [34m⏸ [1m9[0m[0m │ [1m⏱ 22s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[34m⏸ user-environment[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m               [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m            [34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 3s
+┃    [34m│  [0m         [34m┌─ [0m[34m⏸ hm_.manpath[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_fontconfigconf.d10hmfonts.conf[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m      [34m├─ [0m[33m[1m⏵ home-manager-path[0m[0m ⏱ 3s
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ [1m3[0m[0m │ [34m⏸ [1m9[0m[0m │ [1m⏱ 23s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[34m⏸ user-environment[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 4s
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_fontconfigconf.d10hmfonts.conf[0m[90m waiting for [0m[33m1 ⏵[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m      [34m├─ [0m[33m[1m⏵ home-manager-path[0m[0m ⏱ 4s
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ [1m3[0m[0m │ [34m⏸ [1m9[0m[0m │ [1m⏱ 24s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[34m⏸ user-environment[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 4s
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_fontconfigconf.d10hmfonts.conf[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m      [34m├─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m4[0m[0m │ [34m⏸ [1m9[0m[0m │ [1m⏱ 24s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mhm_fontconfigconf.d10hmfonts.conf> [0mbuilding '/nix/store/fmhy5w468n6p0qvn7xm08j7l4yx7xd1j-hm_fontconfigconf.d10hmfonts.conf.drv'
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[34m⏸ user-environment[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[33m[1m⏵ hm_fontconfigconf.d10hmfonts.conf[0m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 4s
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ [1m4[0m[0m │ [34m⏸ [1m8[0m[0m │ [1m⏱ 24s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34muser-environment> [0mbuilding '/nix/store/p7vddkkiz49xlyxskk9k7dfga9igsbkr-user-environment.drv'
+[0m[34mhm_fontconfigconf.d10hmfonts.conf> [0msourcing setup hook '/nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0/nix-support/setup-hook'
+[0m[34mhm_fontconfigconf.d10hmfonts.conf> [0msourcing setup hook '/nix/store/iks1pihvbilsh5sy8qvpd638k422w9i8-update-autotools-gnu-config-scripts-hook/nix-support/setup-hook'
+[0m[34mhm_fontconfigconf.d10hmfonts.conf> [0msourcing setup hook '/nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh'
+[0m[34mhm_fontconfigconf.d10hmfonts.conf> [0msourcing setup hook '/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh'
+[0m[34mhm_fontconfigconf.d10hmfonts.conf> [0msourcing setup hook '/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh'
+[0m[34mhm_fontconfigconf.d10hmfonts.conf> [0msourcing setup hook '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh'
+[0m[34mhm_fontconfigconf.d10hmfonts.conf> [0msourcing setup hook '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh'
+[0m[34mhm_fontconfigconf.d10hmfonts.conf> [0msourcing setup hook '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh'
+[0m[34mhm_fontconfigconf.d10hmfonts.conf> [0msourcing setup hook '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh'
+[0m[34mhm_fontconfigconf.d10hmfonts.conf> [0msourcing setup hook '/nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh'
+[0m[34mhm_fontconfigconf.d10hmfonts.conf> [0msourcing setup hook '/nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh'
+[0m[34mhm_fontconfigconf.d10hmfonts.conf> [0msourcing setup hook '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh'
+[0m[34mhm_fontconfigconf.d10hmfonts.conf> [0msourcing setup hook '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh'
+[0m[34mhm_fontconfigconf.d10hmfonts.conf> [0msourcing setup hook '/nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh'
+[0m[34mhm_fontconfigconf.d10hmfonts.conf> [0msourcing setup hook '/nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh'
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[33m[1m⏵ user-environment[0m[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 4s
+┃    [34m│  [0m         [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[33m[1m⏵ hm_fontconfigconf.d10hmfonts.conf[0m[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m3[0m[0m │ [32m✔ [1m4[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 24s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34muser-environment> [0msourcing setup hook '/nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0/nix-support/setup-hook'
+[0m[34muser-environment> [0msourcing setup hook '/nix/store/iks1pihvbilsh5sy8qvpd638k422w9i8-update-autotools-gnu-config-scripts-hook/nix-support/setup-hook'
+[0m[34muser-environment> [0msourcing setup hook '/nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh'
+[0m[34muser-environment> [0msourcing setup hook '/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh'
+[0m[34muser-environment> [0msourcing setup hook '/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh'
+[0m[34muser-environment> [0msourcing setup hook '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh'
+[0m[34muser-environment> [0msourcing setup hook '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh'
+[0m[34muser-environment> [0msourcing setup hook '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh'
+[0m[34muser-environment> [0msourcing setup hook '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh'
+[0m[34muser-environment> [0msourcing setup hook '/nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh'
+[0m[34muser-environment> [0msourcing setup hook '/nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh'
+[0m[34muser-environment> [0msourcing setup hook '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh'
+[0m[34muser-environment> [0msourcing setup hook '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh'
+[0m[34muser-environment> [0msourcing setup hook '/nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh'
+[0m[34muser-environment> [0msourcing setup hook '/nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh'
+┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 4s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[33m[1m⏵ user-environment[0m[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ [1m5[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 24s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34muser-environment> [0mcreated 488 symlinks in user environment
+┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 4s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[33m[1m⏵ user-environment[0m[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ [1m5[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 24s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34muser-environment> [0mgtk-update-icon-cache: Cache file created successfully.
+┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 4s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[33m[1m⏵ user-environment[0m[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ [1m5[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 24s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 5s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[33m[1m⏵ user-environment[0m[0m ⏱ 1s
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ [1m5[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 25s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 6s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[33m[1m⏵ user-environment[0m[0m ⏱ 2s
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ [1m5[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 26s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 7s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[33m[1m⏵ user-environment[0m[0m ⏱ 3s
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ [1m5[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 27s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34muser-environment> [0mgtk-update-icon-cache: Cache file created successfully.
+┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 7s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[33m[1m⏵ user-environment[0m[0m ⏱ 3s
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ [1m5[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 27s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 8s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[33m[1m⏵ user-environment[0m[0m ⏱ 4s
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ [1m5[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 28s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 9s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[33m[1m⏵ user-environment[0m[0m ⏱ 5s
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ [1m5[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 29s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 10s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[33m[1m⏵ user-environment[0m[0m ⏱ 6s
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ [1m5[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 30s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34muser-environment> [0mgtk-update-icon-cache: Cache file created successfully.
+┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 10s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[33m[1m⏵ user-environment[0m[0m ⏱ 6s
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ [1m5[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 30s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 11s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[33m[1m⏵ user-environment[0m[0m ⏱ 7s
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ [1m5[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 31s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 12s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[33m[1m⏵ user-environment[0m[0m ⏱ 8s
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ [1m5[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 32s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34muser-environment> [0mgtk-update-icon-cache: Cache file created successfully.
+┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 13s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[33m[1m⏵ user-environment[0m[0m ⏱ 9s
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ [1m5[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 33s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 13s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[33m[1m⏵ user-environment[0m[0m ⏱ 9s
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m2[0m[0m │ [32m✔ [1m5[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 33s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 14s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m6[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 34s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 15s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m6[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 35s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 16s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m6[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 36s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 17s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m6[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 37s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 18s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m6[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 38s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 19s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m6[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 39s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 20s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m6[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 40s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mman-cache> [0mUpdating index cache for path `/nix/store/4vmpkrk8abf1bldcbz6ghjxzzymzzsmw-man-paths/share/man/man3'. Wait.../nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1/bin/mandb: warning: failed to store entry for OSSL_CMP_LOG_WARNING(3ssl)
+┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 20s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m6[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 40s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mman-cache> [0m/nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1/bin/mandb: warning: failed to store entry for OSSL_CMP_LOG_EMERG(3ssl)
+[0m[34mman-cache> [0m/nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1/bin/mandb: warning: failed to store entry for OSSL_CMP_severity(3ssl)
+[0m[34mman-cache> [0m/nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1/bin/mandb: warning: failed to store entry for OSSL_CMP_print_to_bio(3ssl)
+[0m[34mman-cache> [0m/nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1/bin/mandb: warning: failed to store entry for OSSL_CMP_LOG_INFO(3ssl)
+[0m[34mman-cache> [0m/nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1/bin/mandb: warning: failed to store entry for OSSL_CMP_print_errors_cb(3ssl)
+[0m[34mman-cache> [0m/nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1/bin/mandb: warning: failed to store entry for OSSL_CMP_log_cb_t(3ssl)
+[0m[34mman-cache> [0m/nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1/bin/mandb: warning: failed to store entry for OSSL_CMP_LOG_ERR(3ssl)
+[0m[34mman-cache> [0m/nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1/bin/mandb: warning: failed to store entry for OSSL_CMP_LOG_TRACE(3ssl)
+[0m[34mman-cache> [0m/nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1/bin/mandb: warning: failed to store entry for OSSL_CMP_LOG_DEBUG(3ssl)
+[0m[34mman-cache> [0m/nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1/bin/mandb: warning: failed to store entry for OSSL_CMP_LOG_CRIT(3ssl)
+[0m[34mman-cache> [0m/nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1/bin/mandb: warning: failed to store entry for OSSL_CMP_log_open(3ssl)
+[0m[34mman-cache> [0m/nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1/bin/mandb: warning: failed to store entry for OSSL_CMP_LOG_NOTICE(3ssl)
+[0m[34mman-cache> [0m/nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1/bin/mandb: warning: failed to store entry for OSSL_CMP_LOG_ALERT(3ssl)
+[0m[34mman-cache> [0m/nix/store/x2fsynyikfn7vk47l4ijhszdiqgdpz31-man-db-2.12.1/bin/mandb: warning: failed to store entry for OSSL_CMP_log_close(3ssl)
+┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 21s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m6[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 41s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 22s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m6[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 42s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 23s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m6[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 43s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 24s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m6[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 44s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mman-cache> [0mUpdating index cache for path `/nix/store/4vmpkrk8abf1bldcbz6ghjxzzymzzsmw-man-paths/share/man/man1'. Wait...done.
+┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 24s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m6[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 44s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mman-cache> [0mBDB3028 /nix/store/laxbdpv03rl984c3s3na8clbxgjrdqws-man-cache/5: unable to flush: No such file or directory
+[0m[34mman-cache> [0mProcessing manual pages under /nix/store/4vmpkrk8abf1bldcbz6ghjxzzymzzsmw-man-paths/share/man/it...
+┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 24s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m6[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 44s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mman-cache> [0mUpdating index cache for path `/nix/store/4vmpkrk8abf1bldcbz6ghjxzzymzzsmw-man-paths/share/man/it/man1'. Wait...done.
+[0m[34mman-cache> [0mBDB3028 /nix/store/laxbdpv03rl984c3s3na8clbxgjrdqws-man-cache/it/5: unable to flush: No such file or directory
+[0m[34mman-cache> [0m9 man subdirectories contained newer manual pages.
+[0m[34mman-cache> [0m6044 manual pages were added.
+┏━ [1mDependency Graph[0m:
+┃                   [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃                [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃                [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃                [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃                [34m│  [0m[34m┌─ [0m[33m[1m⏵ man-cache[0m[0m ⏱ 25s
+┃                [34m├─ [0m[34m⏸ hm_.manpath[0m
+┃             [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃          [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃       [34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m┌─ [0m[34m⏸ system-units[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m├─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m6[0m[0m │ [34m⏸ [1m7[0m[0m │ [1m⏱ 45s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mhm_.manpath> [0mbuilding '/nix/store/vn785amni308wb1ss8jnzyrsj4djk1w9-hm_.manpath.drv'
+[0m[34mhm_.manpath> [0msourcing setup hook '/nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0/nix-support/setup-hook'
+[0m[34mhm_.manpath> [0msourcing setup hook '/nix/store/iks1pihvbilsh5sy8qvpd638k422w9i8-update-autotools-gnu-config-scripts-hook/nix-support/setup-hook'
+[0m[34mhm_.manpath> [0msourcing setup hook '/nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh'
+[0m[34mhm_.manpath> [0msourcing setup hook '/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh'
+[0m[34mhm_.manpath> [0msourcing setup hook '/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh'
+[0m[34mhm_.manpath> [0msourcing setup hook '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh'
+[0m[34mhm_.manpath> [0msourcing setup hook '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh'
+[0m[34mhm_.manpath> [0msourcing setup hook '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh'
+[0m[34mhm_.manpath> [0msourcing setup hook '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh'
+[0m[34mhm_.manpath> [0msourcing setup hook '/nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh'
+[0m[34mhm_.manpath> [0msourcing setup hook '/nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh'
+[0m[34mhm_.manpath> [0msourcing setup hook '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh'
+[0m[34mhm_.manpath> [0msourcing setup hook '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh'
+[0m[34mhm_.manpath> [0msourcing setup hook '/nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh'
+[0m[34mhm_.manpath> [0msourcing setup hook '/nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh'
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[33m[1m⏵ hm_.manpath[0m[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m7[0m[0m │ [34m⏸ [1m6[0m[0m │ [1m⏱ 45s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[34m⏸ home-manager-files[0m
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ 0[0m │ [32m✔ [1m8[0m[0m │ [34m⏸ [1m6[0m[0m │ [1m⏱ 45s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mhome-manager-files> [0mbuilding '/nix/store/x75gs2zfz6wi72f3lm8yd7v833xzzrq1-home-manager-files.drv'
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[33m[1m⏵ home-manager-files[0m[0m
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m8[0m[0m │ [34m⏸ [1m5[0m[0m │ [1m⏱ 45s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mhome-manager-files> [0msourcing setup hook '/nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0/nix-support/setup-hook'
+[0m[34mhome-manager-files> [0msourcing setup hook '/nix/store/iks1pihvbilsh5sy8qvpd638k422w9i8-update-autotools-gnu-config-scripts-hook/nix-support/setup-hook'
+[0m[34mhome-manager-files> [0msourcing setup hook '/nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh'
+[0m[34mhome-manager-files> [0msourcing setup hook '/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh'
+[0m[34mhome-manager-files> [0msourcing setup hook '/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh'
+[0m[34mhome-manager-files> [0msourcing setup hook '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh'
+[0m[34mhome-manager-files> [0msourcing setup hook '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh'
+[0m[34mhome-manager-files> [0msourcing setup hook '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh'
+[0m[34mhome-manager-files> [0msourcing setup hook '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh'
+[0m[34mhome-manager-files> [0msourcing setup hook '/nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh'
+[0m[34mhome-manager-files> [0msourcing setup hook '/nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh'
+[0m[34mhome-manager-files> [0msourcing setup hook '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh'
+[0m[34mhome-manager-files> [0msourcing setup hook '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh'
+[0m[34mhome-manager-files> [0msourcing setup hook '/nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh'
+[0m[34mhome-manager-files> [0msourcing setup hook '/nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh'
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[33m[1m⏵ home-manager-files[0m[0m
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m8[0m[0m │ [34m⏸ [1m5[0m[0m │ [1m⏱ 45s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[33m[1m⏵ home-manager-files[0m[0m
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m8[0m[0m │ [34m⏸ [1m5[0m[0m │ [1m⏱ 45s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃    [34m│  [0m   [34m┌─ [0m[34m⏸ home-manager-generation[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ 0[0m │ [32m✔ [1m9[0m[0m │ [34m⏸ [1m5[0m[0m │ [1m⏱ 45s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mhome-manager-generation> [0mbuilding '/nix/store/kwqsmlib202a20q164dm7279vxh5ldz4-home-manager-generation.drv'
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃    [34m│  [0m   [34m┌─ [0m[33m[1m⏵ home-manager-generation[0m[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m9[0m[0m │ [34m⏸ [1m4[0m[0m │ [1m⏱ 45s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mhome-manager-generation> [0msourcing setup hook '/nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0/nix-support/setup-hook'
+[0m[34mhome-manager-generation> [0msourcing setup hook '/nix/store/iks1pihvbilsh5sy8qvpd638k422w9i8-update-autotools-gnu-config-scripts-hook/nix-support/setup-hook'
+[0m[34mhome-manager-generation> [0msourcing setup hook '/nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh'
+[0m[34mhome-manager-generation> [0msourcing setup hook '/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh'
+[0m[34mhome-manager-generation> [0msourcing setup hook '/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh'
+[0m[34mhome-manager-generation> [0msourcing setup hook '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh'
+[0m[34mhome-manager-generation> [0msourcing setup hook '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh'
+[0m[34mhome-manager-generation> [0msourcing setup hook '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh'
+[0m[34mhome-manager-generation> [0msourcing setup hook '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh'
+[0m[34mhome-manager-generation> [0msourcing setup hook '/nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh'
+[0m[34mhome-manager-generation> [0msourcing setup hook '/nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh'
+[0m[34mhome-manager-generation> [0msourcing setup hook '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh'
+[0m[34mhome-manager-generation> [0msourcing setup hook '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh'
+[0m[34mhome-manager-generation> [0msourcing setup hook '/nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh'
+[0m[34mhome-manager-generation> [0msourcing setup hook '/nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh'
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃    [34m│  [0m   [34m┌─ [0m[33m[1m⏵ home-manager-generation[0m[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds         [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m9[0m[0m │ [34m⏸ [1m4[0m[0m │ [1m⏱ 45s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃    [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃    [34m│  [0m[34m┌─ [0m[34m⏸ unit-home-manager-bcampbell.service[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ 0[0m │ [32m✔ [1m10[0m[0m │ [34m⏸ [1m4[0m[0m │ [1m⏱ 45s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34munit-home-manager-bcampbell.service> [0mbuilding '/nix/store/hpcjcwig67asislkm0sxai8jrvgg3vs0-unit-home-manager-bcampbell.service.drv'
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃    [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃    [34m│  [0m[34m┌─ [0m[33m[1m⏵ unit-home-manager-bcampbell.service[0m[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m10[0m[0m │ [34m⏸ [1m3[0m[0m │ [1m⏱ 45s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34munit-home-manager-bcampbell.service> [0msourcing setup hook '/nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0/nix-support/setup-hook'
+[0m[34munit-home-manager-bcampbell.service> [0msourcing setup hook '/nix/store/iks1pihvbilsh5sy8qvpd638k422w9i8-update-autotools-gnu-config-scripts-hook/nix-support/setup-hook'
+[0m[34munit-home-manager-bcampbell.service> [0msourcing setup hook '/nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh'
+[0m[34munit-home-manager-bcampbell.service> [0msourcing setup hook '/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh'
+[0m[34munit-home-manager-bcampbell.service> [0msourcing setup hook '/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh'
+[0m[34munit-home-manager-bcampbell.service> [0msourcing setup hook '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh'
+[0m[34munit-home-manager-bcampbell.service> [0msourcing setup hook '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh'
+[0m[34munit-home-manager-bcampbell.service> [0msourcing setup hook '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh'
+[0m[34munit-home-manager-bcampbell.service> [0msourcing setup hook '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh'
+[0m[34munit-home-manager-bcampbell.service> [0msourcing setup hook '/nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh'
+[0m[34munit-home-manager-bcampbell.service> [0msourcing setup hook '/nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh'
+[0m[34munit-home-manager-bcampbell.service> [0msourcing setup hook '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh'
+[0m[34munit-home-manager-bcampbell.service> [0msourcing setup hook '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh'
+[0m[34munit-home-manager-bcampbell.service> [0msourcing setup hook '/nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh'
+[0m[34munit-home-manager-bcampbell.service> [0msourcing setup hook '/nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh'
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃    [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃    [34m│  [0m[34m┌─ [0m[33m[1m⏵ unit-home-manager-bcampbell.service[0m[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m10[0m[0m │ [34m⏸ [1m3[0m[0m │ [1m⏱ 46s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃    [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ unit-home-manager-bcampbell.service[0m [90m[0m
+┃    [34m├─ [0m[34m⏸ system-units[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ 0[0m │ [32m✔ [1m11[0m[0m │ [34m⏸ [1m3[0m[0m │ [1m⏱ 46s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34msystem-units> [0mbuilding '/nix/store/dj5pdv6zh93bknfvwymdgjl4fmr16g3p-system-units.drv'
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃    [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ unit-home-manager-bcampbell.service[0m [90m[0m
+┃    [34m├─ [0m[33m[1m⏵ system-units[0m[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m11[0m[0m │ [34m⏸ [1m2[0m[0m │ [1m⏱ 46s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34msystem-units> [0msourcing setup hook '/nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0/nix-support/setup-hook'
+[0m[34msystem-units> [0msourcing setup hook '/nix/store/iks1pihvbilsh5sy8qvpd638k422w9i8-update-autotools-gnu-config-scripts-hook/nix-support/setup-hook'
+[0m[34msystem-units> [0msourcing setup hook '/nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh'
+[0m[34msystem-units> [0msourcing setup hook '/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh'
+[0m[34msystem-units> [0msourcing setup hook '/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh'
+[0m[34msystem-units> [0msourcing setup hook '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh'
+[0m[34msystem-units> [0msourcing setup hook '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh'
+[0m[34msystem-units> [0msourcing setup hook '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh'
+[0m[34msystem-units> [0msourcing setup hook '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh'
+[0m[34msystem-units> [0msourcing setup hook '/nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh'
+[0m[34msystem-units> [0msourcing setup hook '/nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh'
+[0m[34msystem-units> [0msourcing setup hook '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh'
+[0m[34msystem-units> [0msourcing setup hook '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh'
+[0m[34msystem-units> [0msourcing setup hook '/nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh'
+[0m[34msystem-units> [0msourcing setup hook '/nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh'
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃    [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ unit-home-manager-bcampbell.service[0m [90m[0m
+┃    [34m├─ [0m[33m[1m⏵ system-units[0m[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m11[0m[0m │ [34m⏸ [1m2[0m[0m │ [1m⏱ 46s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃    [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ unit-home-manager-bcampbell.service[0m [90m[0m
+┃    [34m├─ [0m[33m[1m⏵ system-units[0m[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m11[0m[0m │ [34m⏸ [1m2[0m[0m │ [1m⏱ 47s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃    [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ unit-home-manager-bcampbell.service[0m [90m[0m
+┃    [34m├─ [0m[32m✔ system-units[0m [90m[0m
+┃ [34m┌─ [0m[34m⏸ etc[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ 0[0m │ [32m✔ [1m12[0m[0m │ [34m⏸ [1m2[0m[0m │ [1m⏱ 47s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34metc> [0mbuilding '/nix/store/xdhbiwbajdirv4lksq0ffpdhcvh0nii1-etc.drv'
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃    [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ unit-home-manager-bcampbell.service[0m [90m[0m
+┃    [34m├─ [0m[32m✔ system-units[0m [90m[0m
+┃ [34m┌─ [0m[33m[1m⏵ etc[0m[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m12[0m[0m │ [34m⏸ [1m1[0m[0m │ [1m⏱ 47s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34metc> [0msourcing setup hook '/nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0/nix-support/setup-hook'
+[0m[34metc> [0msourcing setup hook '/nix/store/iks1pihvbilsh5sy8qvpd638k422w9i8-update-autotools-gnu-config-scripts-hook/nix-support/setup-hook'
+[0m[34metc> [0msourcing setup hook '/nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh'
+[0m[34metc> [0msourcing setup hook '/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh'
+[0m[34metc> [0msourcing setup hook '/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh'
+[0m[34metc> [0msourcing setup hook '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh'
+[0m[34metc> [0msourcing setup hook '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh'
+[0m[34metc> [0msourcing setup hook '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh'
+[0m[34metc> [0msourcing setup hook '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh'
+[0m[34metc> [0msourcing setup hook '/nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh'
+[0m[34metc> [0msourcing setup hook '/nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh'
+[0m[34metc> [0msourcing setup hook '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh'
+[0m[34metc> [0msourcing setup hook '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh'
+[0m[34metc> [0msourcing setup hook '/nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh'
+[0m[34metc> [0msourcing setup hook '/nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh'
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃    [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ unit-home-manager-bcampbell.service[0m [90m[0m
+┃    [34m├─ [0m[32m✔ system-units[0m [90m[0m
+┃ [34m┌─ [0m[33m[1m⏵ etc[0m[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m12[0m[0m │ [34m⏸ [1m1[0m[0m │ [1m⏱ 47s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃    [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ unit-home-manager-bcampbell.service[0m [90m[0m
+┃    [34m├─ [0m[32m✔ system-units[0m [90m[0m
+┃ [34m┌─ [0m[33m[1m⏵ etc[0m[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m12[0m[0m │ [34m⏸ [1m1[0m[0m │ [1m⏱ 47s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃    [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ unit-home-manager-bcampbell.service[0m [90m[0m
+┃    [34m├─ [0m[32m✔ system-units[0m [90m[0m
+┃ [34m┌─ [0m[32m✔ etc[0m [90m[0m
+┃ [34m⏸ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ 0[0m │ [32m✔ [1m13[0m[0m │ [34m⏸ [1m1[0m[0m │ [1m⏱ 47s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mnixos-system-nixos-desktop-24.11.20240714.693bc> [0mbuilding '/nix/store/brmzbfzmrw7w3jsrp8gl94i20466p07j-nixos-system-nixos-desktop-24.11.20240714.693bc46.drv'
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃    [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ unit-home-manager-bcampbell.service[0m [90m[0m
+┃    [34m├─ [0m[32m✔ system-units[0m [90m[0m
+┃ [34m┌─ [0m[32m✔ etc[0m [90m[0m
+┃ [33m[1m⏵ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m13[0m[0m │ [34m⏸ 0[0m │ [1m⏱ 47s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[0m[34mnixos-system-nixos-desktop-24.11.20240714.693bc> [0msourcing setup hook '/nix/store/yq6n8b0mnk0qxzbs3ajsjcp8ziwqylrl-patchelf-0.15.0/nix-support/setup-hook'
+[0m[34mnixos-system-nixos-desktop-24.11.20240714.693bc> [0msourcing setup hook '/nix/store/iks1pihvbilsh5sy8qvpd638k422w9i8-update-autotools-gnu-config-scripts-hook/nix-support/setup-hook'
+[0m[34mnixos-system-nixos-desktop-24.11.20240714.693bc> [0msourcing setup hook '/nix/store/h9lc1dpi14z7is86ffhl3ld569138595-audit-tmpdir.sh'
+[0m[34mnixos-system-nixos-desktop-24.11.20240714.693bc> [0msourcing setup hook '/nix/store/m54bmrhj6fqz8nds5zcj97w9s9bckc9v-compress-man-pages.sh'
+[0m[34mnixos-system-nixos-desktop-24.11.20240714.693bc> [0msourcing setup hook '/nix/store/wgrbkkaldkrlrni33ccvm3b6vbxzb656-make-symlinks-relative.sh'
+[0m[34mnixos-system-nixos-desktop-24.11.20240714.693bc> [0msourcing setup hook '/nix/store/5yzw0vhkyszf2d179m0qfkgxmp5wjjx4-move-docs.sh'
+[0m[34mnixos-system-nixos-desktop-24.11.20240714.693bc> [0msourcing setup hook '/nix/store/fyaryjvghbkpfnsyw97hb3lyb37s1pd6-move-lib64.sh'
+[0m[34mnixos-system-nixos-desktop-24.11.20240714.693bc> [0msourcing setup hook '/nix/store/kd4xwxjpjxi71jkm6ka0np72if9rm3y0-move-sbin.sh'
+[0m[34mnixos-system-nixos-desktop-24.11.20240714.693bc> [0msourcing setup hook '/nix/store/pag6l61paj1dc9sv15l7bm5c17xn5kyk-move-systemd-user-units.sh'
+[0m[34mnixos-system-nixos-desktop-24.11.20240714.693bc> [0msourcing setup hook '/nix/store/jivxp510zxakaaic7qkrb7v1dd2rdbw9-multiple-outputs.sh'
+[0m[34mnixos-system-nixos-desktop-24.11.20240714.693bc> [0msourcing setup hook '/nix/store/ilaf1w22bxi6jsi45alhmvvdgy4ly3zs-patch-shebangs.sh'
+[0m[34mnixos-system-nixos-desktop-24.11.20240714.693bc> [0msourcing setup hook '/nix/store/cickvswrvann041nqxb0rxilc46svw1n-prune-libtool-files.sh'
+[0m[34mnixos-system-nixos-desktop-24.11.20240714.693bc> [0msourcing setup hook '/nix/store/xyff06pkhki3qy1ls77w10s0v79c9il0-reproducible-builds.sh'
+[0m[34mnixos-system-nixos-desktop-24.11.20240714.693bc> [0msourcing setup hook '/nix/store/ngg1cv31c8c7bcm2n8ww4g06nq7s4zhm-set-source-date-epoch-to-latest.sh'
+[0m[34mnixos-system-nixos-desktop-24.11.20240714.693bc> [0msourcing setup hook '/nix/store/gps9qrh99j7g02840wv5x78ykmz30byp-strip.sh'
+┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃    [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ unit-home-manager-bcampbell.service[0m [90m[0m
+┃    [34m├─ [0m[32m✔ system-units[0m [90m[0m
+┃ [34m┌─ [0m[32m✔ etc[0m [90m[0m
+┃ [33m[1m⏵ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m13[0m[0m │ [34m⏸ 0[0m │ [1m⏱ 48s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃    [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ unit-home-manager-bcampbell.service[0m [90m[0m
+┃    [34m├─ [0m[32m✔ system-units[0m [90m[0m
+┃ [34m┌─ [0m[32m✔ etc[0m [90m[0m
+┃ [33m[1m⏵ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ [1m1[0m[0m │ [32m✔ [1m13[0m[0m │ [34m⏸ 0[0m │ [1m⏱ 48s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃    [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ unit-home-manager-bcampbell.service[0m [90m[0m
+┃    [34m├─ [0m[32m✔ system-units[0m [90m[0m
+┃ [34m┌─ [0m[32m✔ etc[0m [90m[0m
+┃ [32m✔ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m [90m[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ 0[0m │ [32m✔ [1m14[0m[0m │ [34m⏸ 0[0m │ [1m⏱ 48s[0m[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K[1F[2K┏━ [1mDependency Graph[0m:
+┃    [34m┌─ [0m[32m✔ user-environment[0m [90m⏱ 9s[0m
+┃    [34m│  [0m            [34m┌─ [0m[32m✔ nixvim-fish-completions[0m [90m⏱ 2s[0m
+┃    [34m│  [0m         [34m┌─ [0m[32m✔ bcampbell-fish-completions[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ home-manager-path[0m [90m⏱ 4s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_fontconfigconf.d10hmfonts.conf[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m   [34m┌─ [0m[32m✔ man-paths[0m [90m[0m
+┃    [34m│  [0m         [34m│  [0m[34m┌─ [0m[32m✔ man-cache[0m [90m⏱ 25s[0m
+┃    [34m│  [0m         [34m├─ [0m[32m✔ hm_.manpath[0m [90m[0m
+┃    [34m│  [0m      [34m┌─ [0m[32m✔ home-manager-files[0m [90m[0m
+┃    [34m│  [0m   [34m┌─ [0m[32m✔ home-manager-generation[0m [90m[0m
+┃    [34m│  [0m[34m┌─ [0m[32m✔ unit-home-manager-bcampbell.service[0m [90m[0m
+┃    [34m├─ [0m[32m✔ system-units[0m [90m[0m
+┃ [34m┌─ [0m[32m✔ etc[0m [90m[0m
+┃ [32m✔ nixos-system-nixos-desktop-24.11.20240714.693bc46[0m [90m[0m[0m
+┣━━━ [1mBuilds          [0m
+┗━ ∑ [33m⏵ 0[0m │ [32m✔ [1m14[0m[0m │ [34m⏸ 0[0m │ [1m[32mFinished at 15:17:22 after 48s[0m[0m[?25h
+[32m>[39m Comparing changes
+<<< /run/current-system
+>>> /tmp/nh-os-dSTSpF/result
+Version changes:
+[C.]  #01  aws-c-auth               0.7.22 x2 -> 0.7.22
+[C.]  #02  aws-c-cal                0.6.15 x2 -> 0.6.15
+[C.]  #03  aws-c-common             0.9.21, 0.9.23 -> 0.9.23
+[C.]  #04  aws-c-compression        0.2.18 x2 -> 0.2.18
+[C.]  #05  aws-c-event-stream       0.4.2 x2 -> 0.4.2
+[C.]  #06  aws-c-http               0.8.2 x2 -> 0.8.2
+[C.]  #07  aws-c-io                 0.14.9 x2 -> 0.14.9
+[C.]  #08  aws-c-mqtt               0.10.4 x2 -> 0.10.4
+[C.]  #09  aws-c-s3                 0.5.10, 0.6.0 -> 0.6.0
+[C.]  #10  aws-c-sdkutils           0.1.16 x2 -> 0.1.16
+[C.]  #11  aws-checksums            0.1.18 x2 -> 0.1.18
+[C.]  #12  aws-crt-cpp              0.26.12, 0.26.8 -> 0.26.12
+[C.]  #13  aws-sdk-cpp              1.11.336 x2 -> 1.11.336
+[U.]  #14  dotnet-runtime           8.0.6 -> 8.0.7
+[C.]  #15  fzf                      0.53.0, 0.54.0, 0.54.0-fish-completions, 0.54.0-man -> 0.54.0, 0.54.0-fish-completions, 0.54.0-man
+[U.]  #16  lazygit                  0.42.0 -> 0.43.1
+[U.]  #17  markdownlint-cli2        0.9.0 -> 0.13.0
+[C*]  #18  nix                      2.18.5, 2.18.5-doc, 2.18.5-man, 2.19.5, 2.19.5-man -> 2.18.5, 2.18.5-doc, 2.18.5-man, 2.19.6, 2.19.6-man
+[U.]  #19  ruff                     0.5.0 -> 0.5.1
+[U.]  #20  rust-analyzer            2024-06-24 -> 2024-07-01
+[U.]  #21  rust-analyzer-unwrapped  2024-06-24 -> 2024-07-01
+[U.]  #22  vale                     3.6.0 -> 3.6.1
+[C.]  #23  zoxide                   0.9.4 x2, 0.9.4-fish-completions -> 0.9.4, 0.9.4-fish-completions
+Closure size: 3375 -> 3360 (35 paths added, 50 paths removed, delta -15, disk usage -12.9MiB).
+[32m>[39m Activating configuration
+activating the configuration...
+setting up /etc...
+reloading user units for lightdm...
+reloading user units for bcampbell...
+restarting sysinit-reactivation.target
+restarting the following units: home-manager-bcampbell.service
+[32m>[39m Adding configuration to bootloader

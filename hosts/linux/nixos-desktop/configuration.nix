@@ -1,7 +1,8 @@
-{ config
-, pkgs
-, inputs
-, ...
+{
+  config,
+  pkgs,
+  inputs,
+  ...
 }: {
   imports = [
     # Include the results of the hardware scan.
@@ -11,51 +12,49 @@
     ../../common/nix-defaults/nix-garbage-collection.nix
   ];
 
-  environment.super-user.enable = true;
-  environment.super-user.userName = "bcampbell";
+  environment = {
+    super-user = {
+      enable = true;
+      userName = "bcampbell";
+    };
+    internationalisation.timezone.enable = true;
+  };
 
-  services.bootloader.systemd-bootloader.enable = true;
-  services.network-conf.enable = true;
-
+  home-manager.useGlobalPkgs = true;
+  home-manager.useUserPackages = true;
   home-manager.users.${config.environment.super-user.userName} = ./home.nix;
   home-manager.extraSpecialArgs = {
     inherit inputs;
   };
   home-manager.sharedModules = [
     inputs.self.outputs.homeManagerModules.default
+    inputs.self.inputs.nur.hmModules.nur
     inputs.self.inputs.arkenfox.hmModules.arkenfox
     inputs.self.inputs.stylix.homeManagerModules.stylix
   ];
 
   programs.gaming.discord.enable = true;
   programs.gaming.steam.enable = true;
+  programs.gaming.lutris.enable = true;
 
   # Set host name
+  services.network-conf.enable = true;
   services.network-conf.hostName = "nixos-desktop";
+  services.bootloader.systemd-bootloader.enable = true;
   services.xserver.amd.enable = true;
   services.gpu.amd.enable = false;
+  services.sound.enable = true;
 
-  fonts = {
-    packages = with pkgs; [
-      nerdfonts
-      twitter-color-emoji
-    ];
-    fontconfig.defaultFonts = {
-      serif = [ "CaskaydiaCove Nerd Font" ];
-      sansSerif = [ "CaskaydiaCove Nerd Font" ];
-      monospace = [ "CaskaydiaMono Nerd Font" ];
-      emoji = [ "Twitter Color Emoji" ];
+  system = {
+    fonts = {
+      packages = with pkgs; [nerdfonts twitter-color-emoji];
+      globalDefaults.enable = true;
+      name = "CaskaydiaCove Nerd Font";
+      serif = "CaskaydiaCove Nerd Font";
+      sansSerif = "CaskaydiaCove Nerd Font";
+      monospace = "CaskaydiaCove Nerd Font";
+      emoji = "Twitter Color Emoji";
     };
-  };
-
-  sound.enable = true;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    wireplumber.enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
   };
 
   environment.etc = {
@@ -68,6 +67,8 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     # Application Theming
+    lact
+    dconf
     glib
     xcur2png
     vim
@@ -77,8 +78,6 @@
     libnotify
     wget
     unzip
-    xwayland
-    swww
     openvpn
     protonvpn-cli_2
     vlc
@@ -98,28 +97,23 @@
     nim
     nimble
     #
-    ripgrep
-    unzip
     haskell-ci
     dotnet-sdk
     dotnet-sdk_7
     dotnet-sdk_8
-    # Sound
-    pavucontrol
-    qpwgraph
     # Misc
     jdk
-    flatpak
     sshpass
     wttrbar
     # Automation (move some day)
-    ansible
     nmap
     qbittorrent
-    youtube-dl
+    yt-dlp
     tree-sitter
-    unrar
-    protontricks
+    memtest86-efi
+    memtest86plus
+    memtest_vulkan
+    memtester
   ];
 
   programs.gamescope.enable = true;

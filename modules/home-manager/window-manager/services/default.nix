@@ -2,5 +2,6 @@
   imports = [
     ./notifications
     ./xorg
+    ./wallpaper
   ];
 }

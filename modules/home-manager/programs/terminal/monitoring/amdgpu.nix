@@ -1,5 +1,9 @@
-{ pkgs, config, lib, ... }:
 {
+  pkgs,
+  config,
+  lib,
+  ...
+}: {
   options = {
     programs.terminal.monitoring.amdgpu.enable = lib.mkEnableOption "Enable the amdgpu top console monitor with default config";
   };

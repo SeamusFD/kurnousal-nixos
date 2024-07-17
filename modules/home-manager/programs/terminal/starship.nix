@@ -1,5 +1,8 @@
-{ lib, config, ... }:
 {
+  lib,
+  config,
+  ...
+}: {
   options = {
     programs.terminal.starship.enable = lib.mkEnableOption "Enables Starship and it's default config";
   };
@@ -7,15 +10,27 @@
     programs.starship = {
       enable = true;
       settings = {
+        format = ''
+          [┌───────────────────❯](bold green)
+          [│](bold green)$username$hostname$localip$shlvl$directory$git_branch$git_commit$git_state$git_metricss$git_status$package$c$cmake$cobol$daml$dart$dotnet$rust$golang$python$java$sudo$shell
+          [└─❯ ](bold green)
+        '';
         palette = "default";
-        character = {
-          success_symbol = "[[♥](green) ❯](maroon)";
-          error_symbol = "[❯](red)";
-          vimcmd_symbol = "[❮](green)";
-        };
+        add_newline = false;
+        # character = {
+        #   success_symbol = "[[](green) ❯](maroon)";
+        #   error_symbol = "[❯](red)";
+        #   vimcmd_symbol = "[❮](green)";
+        # };
         directory = {
           truncation_length = 4;
           style = "bold lavender";
+          substitutions = {
+            "Documents" = "󰈙 ";
+            "Downloads" = " ";
+            "Music" = " ";
+            "Pictures" = " ";
+          };
         };
         palettes.default = {
           rosewater = "#f5e0dc";
