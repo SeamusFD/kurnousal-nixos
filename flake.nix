@@ -13,48 +13,50 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     arkenfox.url = "github:dwarfmaster/arkenfox-nixos";
-    nievo.url = "path:/etc/nixos/nievo";
+    nievo.url = "path:./modules/nievo";
     stylix.url = "github:danth/stylix";
   };
 
-  outputs = {
-    nixpkgs,
-    nixos-wsl,
-    home-manager,
-    stylix,
-    nur,
-    ...
-  } @ inputs: let
-    system = "x86_64-linux";
-    pkgs = import nixpkgs {inherit system;};
-  in {
-    nixosConfigurations = {
-      nixos-desktop = nixpkgs.lib.nixosSystem {
-        system = system;
-        specialArgs = {
-          inherit inputs;
+  outputs =
+    { nixpkgs
+    , nixos-wsl
+    , home-manager
+    , stylix
+    , nur
+    , ...
+    } @ inputs:
+    let
+      system = "x86_64-linux";
+      pkgs = import nixpkgs { inherit system; };
+    in
+    {
+      nixosConfigurations = {
+        nixos-desktop = nixpkgs.lib.nixosSystem {
+          system = system;
+          specialArgs = {
+            inherit inputs;
+          };
+          modules = [
+            { nixpkgs.overlays = [ nur.overlay ]; }
+            ./hosts/linux/nixos-desktop/configuration.nix
+            ./modules/nixos
+            home-manager.nixosModules.home-manager
+          ];
         };
-        modules = [
-          {nixpkgs.overlays = [nur.overlay];}
-          ./hosts/linux/nixos-desktop/configuration.nix
-          ./modules/nixos
-          home-manager.nixosModules.home-manager
-        ];
-      };
-      wsl-fedex = nixpkgs.lib.nixosSystem {
-        system = system;
-        specialArgs = {
-          inherit inputs;
+        wsl-fedex = nixpkgs.lib.nixosSystem {
+          system = system;
+          specialArgs = {
+            inherit inputs;
+          };
+          modules = [
+            # install wsl module for use on windows systems
+            nixos-wsl.nixosModules.default
+            ./hosts/wsl/wsl-fedex/configuration.nix
+            ./modules/nixos
+            home-manager.nixosModules.home-manager
+          ];
         };
-        modules = [
-          # install wsl module for use on windows systems
-          nixos-wsl.nixosModules.default
-          ./hosts/wsl/wsl-fedex/configuration.nix
-          ./modules/nixos
-          home-manager.nixosModules.home-manager
-        ];
       };
+      homeManagerModules.default = ./modules/home-manager;
     };
-    homeManagerModules.default = ./modules/home-manager;
-  };
 }
