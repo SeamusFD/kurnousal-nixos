@@ -13,7 +13,7 @@
 set -e
 
 # cd to your config dir
-pushd /etc/nixos/kurnousal-nixos
+# pushd /etc/nixos/kurnousal-nixos
 
 # Autoformat your nix files
 # alejandra . &>/dev/null ||
@@ -37,10 +37,8 @@ git diff -U0
 
 echo "Starting Nix Helper command line..."
 
-set -x
 # Rebuild, output simplified errors, log trackebacks
-nh os switch --update &>nixos-switch.log
-set -e
+nh os switch --update | tee -a "$(tty)"
 
 # Get current generation metadata
 current=$(nixos-rebuild list-generations | grep current)
@@ -49,7 +47,7 @@ current=$(nixos-rebuild list-generations | grep current)
 git commit -am "$current"
 
 # Back to where you were
-popd
+# popd
 
 # Notify all OK!
 notify-send -e "NixOS Rebuilt OK!" --icon=software-update-available
