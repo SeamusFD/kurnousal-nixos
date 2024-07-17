@@ -1,5 +1,8 @@
 <<< /run/current-system
->>> /tmp/nh-os-nf4Aj6/result
-No version or selection state changes.
-Closure size: 3360 -> 3360 (13 paths added, 13 paths removed, delta +0, disk usage -976B).
+>>> /tmp/nh-os-OyAxwJ/result
+Version changes:
+[C.]  #1  hyprland  0.41.2, 0.41.2+date=2024-07-16_293e687, 0.41.2+date=2024-07-16_293e687-fish-completions, 0.41.2+date=2024-07-16_293e687-man -> 0.41.2, 0.41.2+date=2024-07-17_300228b, 0.41.2+date=2024-07-17_300228b-fish-completions, 0.41.2+date=2024-07-17_300228b-man
+Selection state changes:
+[C-]  #1  tree-sitter  0.22.5
+Closure size: 3360 -> 3360 (24 paths added, 24 paths removed, delta +0, disk usage -1.4KiB).
 setting up /etc...

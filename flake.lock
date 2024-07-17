@@ -565,11 +565,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1721160190,
-        "narHash": "sha256-dnC7b/C8QRPoGs2H2cAYWmrTRVhN5m1xDpyrNTqV8r8=",
+        "lastModified": 1721248202,
+        "narHash": "sha256-VAhuQQ4EKbw/6z7K2IoR83+gXUdMksLWFQOhJNhSvQE=",
         "ref": "refs/heads/main",
-        "rev": "293e687389a19b369f312c5c335c9afe7c886be1",
-        "revCount": 4929,
+        "rev": "300228b503b36e5977b0d58713c5b4cf1f07b8a9",
+        "revCount": 4930,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/hyprwm/Hyprland"
@@ -693,8 +693,8 @@
         "nixvim": "nixvim"
       },
       "locked": {
-        "lastModified": 1721246956,
-        "narHash": "sha256-XbnKnl6GGAyhYA4Q24MwHbQ/iLskS2wdB/5KnkMpTNg=",
+        "lastModified": 1721250298,
+        "narHash": "sha256-l7tY8bP3oX8d1YCPAjOs6BJdNdDytjSqL+nzAJcktoI=",
         "path": "/etc/nixos/nievo",
         "type": "path"
       },

@@ -1,8 +1,7 @@
-{
-  config,
-  pkgs,
-  inputs,
-  ...
+{ config
+, pkgs
+, inputs
+, ...
 }: {
   imports = [
     # Include the results of the hardware scan.
@@ -47,7 +46,7 @@
 
   system = {
     fonts = {
-      packages = with pkgs; [nerdfonts twitter-color-emoji];
+      packages = with pkgs; [ nerdfonts twitter-color-emoji ];
       globalDefaults.enable = true;
       name = "CaskaydiaCove Nerd Font";
       serif = "CaskaydiaCove Nerd Font";
@@ -109,7 +108,6 @@
     nmap
     qbittorrent
     yt-dlp
-    tree-sitter
     memtest86-efi
     memtest86plus
     memtest_vulkan
