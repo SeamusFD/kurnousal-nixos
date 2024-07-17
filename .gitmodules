@@ -1,0 +1,3 @@
+[submodule "modules/nievo"]
+	path = modules/nievo
+	url = git@github.com:SeamusFD/Nievo.git
