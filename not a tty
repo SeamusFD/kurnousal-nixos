@@ -8,3 +8,95 @@ setting up /etc...
 No version or selection state changes.
 Closure size: 3360 -> 3360 (0 paths added, 0 paths removed, delta +0, disk usage +0B).
 setting up /etc...
+<<< /run/current-system
+>>> /tmp/nh-os-NCd2Dh/result
+Version changes:
+[D.]  #01  c_sharp-grammar                                   0.0.0+rev=82fa8f0 -> 0.0.0+rev=31a64b2
+[U.]  #02  cargo-nightly-complete                            2024-07-17 -> 2024-07-18
+[U.]  #03  clippy-preview-nightly-complete                   2024-07-17 -> 2024-07-18
+[U.]  #04  electron                                          30.1.1 -> 30.2.0
+[U.]  #05  electron-unwrapped                                30.1.1 -> 30.2.0
+[U.]  #06  erlang-grammar                                    0.0.0+rev=da275db -> 0.0.0+rev=19ca500
+[U.]  #07  esbuild                                           0.22.0 -> 0.23.0
+[U.]  #08  fastfetch                                         2.17.2, 2.17.2-fish-completions, 2.17.2-man -> 2.18.1, 2.18.1-fish-completions, 2.18.1-man
+[D.]  #09  fortran-grammar                                   0.0.0+rev=f73d473 -> 0.0.0+rev=dde9829
+[D.]  #10  groovy-grammar                                    0.0.0+rev=6c5c881 -> 0.0.0+rev=f361500
+[D.]  #11  hare-grammar                                      0.0.0+rev=0705249 -> 0.0.0+rev=4af5d82
+[D.]  #12  http-grammar                                      0.0.0+rev=2dacda9 -> 0.0.0+rev=e061995
+[C.]  #13  hyprland                                          0.41.2, 0.41.2+date=2024-07-17_300228b, 0.41.2+date=2024-07-17_300228b-fish-completions, 0.41.2+date=2024-07-17_300228b-man -> 0.41.2, 0.41.2+date=2024-07-18_8e15f91, 0.41.2+date=2024-07-18_8e15f91-fish-completions, 0.41.2+date=2024-07-18_8e15f91-man
+[D.]  #14  idl-grammar                                       0.0.0+rev=966797b -> 0.0.0+rev=1a495f4
+[U.]  #15  imagemagick                                       7.1.1-34 x2 -> 7.1.1-35 x2
+[U.]  #16  initrd-linux                                      6.6.39 -> 6.6.40
+[D.]  #17  javascript-grammar                                0.0.0+rev=391a8fc -> 0.0.0+rev=12e4537
+[U.]  #18  linux                                             6.6.39, 6.6.39-modules, 6.6.39-modules-shrunk -> 6.6.40, 6.6.40-modules, 6.6.40-modules-shrunk
+[U.]  #19  liquid-grammar                                    0.0.0+rev=0419ac4 -> 0.0.0+rev=7862a34
+[U.]  #20  llvm-tools-preview-nightly-complete               2024-07-17 -> 2024-07-18
+[U.]  #21  miri-preview-nightly-complete                     2024-07-17 -> 2024-07-18
+[D.]  #22  mlir-grammar                                      0.0.0+rev=268bc99 -> 0.0.0+rev=affbd6f
+[U*]  #23  networkmanager                                    1.48.2, 1.48.2-doc, 1.48.2-man -> 1.48.4, 1.48.4-doc, 1.48.4-man
+[D.]  #24  nim-grammar                                       0.0.0+rev=961c279 -> 0.0.0+rev=897e5d3
+[U.]  #25  nixos-system-nixos-desktop                        24.11.20240714.693bc46 -> 24.11.20240716.ad0b5ee
+[U.]  #26  php-grammar                                       0.0.0+rev=4f124bc -> 0.0.0+rev=575a080
+[U.]  #27  php_only-grammar                                  0.0.0+rev=4f124bc -> 0.0.0+rev=575a080
+[D.]  #28  python-grammar                                    0.0.0+rev=71778c2 -> 0.0.0+rev=ccc2408
+[D.]  #29  rbs-grammar                                       0.0.0+rev=88d8ed4 -> 0.0.0+rev=8d8e65a
+[U.]  #30  rls-preview-nightly-complete                      2024-07-17 -> 2024-07-18
+[U.]  #31  ruff                                              0.5.1 -> 0.5.2
+[U.]  #32  rust-analysis-nightly-complete                    2024-07-17 -> 2024-07-18
+[U.]  #33  rust-analyzer-preview-nightly-complete            2024-07-17 -> 2024-07-18
+[U.]  #34  rust-docs-nightly-complete                        2024-07-17 -> 2024-07-18
+[U.]  #35  rust-src-nightly-complete                         2024-07-17 -> 2024-07-18
+[U.]  #36  rust-std-nightly-complete                         2024-07-17 -> 2024-07-18
+[U.]  #37  rust-std-nightly-latest                           2024-07-17 x2 -> 2024-07-18 x2
+[U.]  #38  rustc-codegen-cranelift-preview-nightly-complete  2024-07-17 -> 2024-07-18
+[U.]  #39  rustc-nightly-complete                            2024-07-17 -> 2024-07-18
+[U.]  #40  rustfmt-preview-nightly-complete                  2024-07-17 -> 2024-07-18
+[D.]  #41  scfg-grammar                                      0.0.0+rev=6deae0c -> 0.0.0+rev=a551280
+[U.]  #42  squirrel-grammar                                  0.0.0+rev=0a50d31 -> 0.0.0+rev=072c969
+[U.]  #43  swift-grammar                                     0.0.0+rev=631f1e6 -> 0.0.0+rev=6248145
+[D.]  #44  tlaplus-grammar                                   0.0.0+rev=200f9da -> 0.0.0+rev=bba02e7
+[D.]  #45  tsx-grammar                                       0.0.0+rev=4f3eb66 -> 0.0.0+rev=e45cb32
+[D.]  #46  turtle-grammar                                    0.0.0+rev=085437f -> 0.0.0+rev=7f789ea
+[D.]  #47  typescript-grammar                                0.0.0+rev=4f3eb66 -> 0.0.0+rev=e45cb32
+[D.]  #48  typst-grammar                                     0.0.0+rev=3924cb9 -> 0.0.0+rev=90f6af2
+[U.]  #49  v-grammar                                         0.0.0+rev=e91f8a4 -> 0.0.0+rev=7f80a04
+[U.]  #50  vencord                                           1.9.3 -> 1.9.4
+[U.]  #51  vimplugin-better-escape.nvim                      2024-01-21 -> 2024-07-12
+[U.]  #52  vimplugin-bufferline.nvim                         2024-06-25 -> 2024-07-10
+[U.]  #53  vimplugin-catppuccin-nvim                         2024-06-27 -> 2024-07-11
+[U.]  #54  vimplugin-dashboard-nvim                          2024-07-01 -> 2024-07-14
+[U.]  #55  vimplugin-flash.nvim                              2024-06-04 -> 2024-07-13
+[U.]  #56  vimplugin-friendly-snippets                       2024-06-17 -> 2024-07-08
+[U.]  #57  vimplugin-guess-indent.nvim                       2024-06-19 -> 2024-07-06
+[U.]  #58  vimplugin-lazy.nvim                               2024-07-02 -> 2024-07-13
+[U.]  #59  vimplugin-lazygit.nvim                            2024-05-13 -> 2024-07-08
+[U.]  #60  vimplugin-lua5.1-gitsigns.nvim-scm                1-unstable-2024-06-28 -> 1-unstable-2024-07-12
+[U.]  #61  vimplugin-lua5.1-nvim-cmp-scm                     1-unstable-2024-06-08 -> 1-unstable-2024-07-14
+[U.]  #62  vimplugin-lualine.nvim                            2024-04-05 -> 2024-07-08
+[U.]  #63  vimplugin-mini.nvim                               2024-07-02 -> 2024-07-13
+[U.]  #64  vimplugin-neodev.nvim                             2024-06-04 -> 2024-07-06
+[U.]  #65  vimplugin-noice.nvim                              2024-06-27 -> 2024-07-13
+[U.]  #66  vimplugin-nvim-autopairs                          2024-05-19 -> 2024-07-07
+[U.]  #67  vimplugin-nvim-lspconfig                          2024-07-03 -> 2024-07-12
+[U.]  #68  vimplugin-nvim-treesitter                         2024-07-02 -> 2024-07-13
+[U.]  #69  vimplugin-nvim-treesitter-context                 2024-07-02 -> 2024-07-06
+[U.]  #70  vimplugin-persistence.nvim                        2024-06-12 -> 2024-07-13
+[U.]  #71  vimplugin-rainbow-delimiters.nvim                 2024-06-14 -> 2024-07-07
+[U.]  #72  vimplugin-trouble.nvim                            2024-06-29 -> 2024-07-13
+[U.]  #73  vimplugin-which-key.nvim                          2024-06-07 -> 2024-07-14
+[U.]  #74  wit-grammar                                       0.0.0+rev=cab9479 -> 0.0.0+rev=cd7e653
+Selection state changes:
+[C-]  #1  nodejs  20.14.0
+[C-]  #2  unzip   6.0 x2, 6.0-fish-completions
+[C-]  #3  wget    1.24.5
+Added packages:
+[A.]  #1  direnv                                     2.34.0
+[A.]  #2  editorconfig-grammar                       0.0.0+rev=c5f8368
+[A.]  #3  goctl-grammar                              0.0.0+rev=f107937
+[A.]  #4  nix-direnv                                 3.0.5
+[A.]  #5  vimplugin-treesitter-grammar-editorconfig  <none>
+[A.]  #6  vimplugin-treesitter-grammar-goctl         <none>
+Removed packages:
+[R-]  #1  pnpm  9.4.0
+Closure size: 3360 -> 3365 (252 paths added, 247 paths removed, delta +5, disk usage +25.3MiB).
+setting up /etc...

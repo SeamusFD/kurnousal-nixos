@@ -72,12 +72,8 @@
     glib
     xcur2png
     vim
-    nodejs
-    nodePackages_latest.pnpm
     alejandra
     libnotify
-    wget
-    unzip
     openvpn
     protonvpn-cli_2
     vlc

@@ -1,7 +1,6 @@
-{
-  pkgs,
-  inputs,
-  ...
+{ pkgs
+, inputs
+, ...
 }: {
   ### Home Manager Modules ###
   programs = {
@@ -16,6 +15,10 @@
     terminal.monitoring.amdgpu.enable = true;
     file-manager.nemo.enable = true;
     game-dev.godot.enable = true;
+    direnv = {
+      enable = true;
+      nix-direnv.enable = true;
+    };
   };
   command-line = {
     shell.fish.enable = true;
@@ -76,11 +79,11 @@
     # Fix these and put them in the /development path
     (
       with inputs.fenix.packages.${pkgs.system};
-        combine [
-          complete.toolchain
-          targets.x86_64-unknown-linux-musl.latest.rust-std
-          targets.wasm32-unknown-unknown.latest.rust-std
-        ]
+      combine [
+        complete.toolchain
+        targets.x86_64-unknown-linux-musl.latest.rust-std
+        targets.wasm32-unknown-unknown.latest.rust-std
+      ]
     )
     pkgs.cargo-leptos
     pkgs.cargo-generate
