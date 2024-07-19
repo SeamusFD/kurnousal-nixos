@@ -38,7 +38,7 @@
 
   # Set host name
   services.network-conf.enable = true;
-  services.network-conf.hostName = "nixos-desktop";
+  services.network-conf.hostName = "primaire";
   services.bootloader.systemd-bootloader.enable = true;
   services.xserver.amd.enable = true;
   services.gpu.amd.enable = false;

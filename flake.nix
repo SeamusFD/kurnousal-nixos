@@ -1,6 +1,7 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-24.11";
     nur.url = "github:nix-community/NUR";
     nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
     home-manager = {
@@ -34,19 +35,21 @@
     in
     {
       nixosConfigurations = {
-        nixos-desktop = nixpkgs.lib.nixosSystem {
+        # Primary Desktop
+        primaire = nixpkgs.lib.nixosSystem {
           system = system;
           specialArgs = {
             inherit inputs;
           };
           modules = [
             { nixpkgs.overlays = [ nur.overlay ]; }
-            ./hosts/linux/nixos-desktop/configuration.nix
+            ./hosts/linux/primaire/configuration.nix
             ./modules/nixos
             home-manager.nixosModules.home-manager
           ];
         };
-        wsl-fedex = nixpkgs.lib.nixosSystem {
+        # Primary Work Laptop
+        travail = nixpkgs.lib.nixosSystem {
           system = system;
           specialArgs = {
             inherit inputs;
@@ -54,7 +57,20 @@
           modules = [
             # install wsl module for use on windows systems
             nixos-wsl.nixosModules.default
-            ./hosts/wsl/wsl-fedex/configuration.nix
+            ./hosts/wsl/travail/configuration.nix
+            ./modules/nixos
+            home-manager.nixosModules.home-manager
+          ];
+        };
+        # Primary Server
+        lumiere = nixpkgs.lib.nixosSystem {
+          system = system;
+          specialArgs = {
+            inherit inputs;
+          };
+          modules = [
+            { nixpkgs.overlays = [ nur.overlay ]; }
+            ./hosts/linux/lumiere/configuration.nix
             ./modules/nixos
             home-manager.nixosModules.home-manager
           ];
