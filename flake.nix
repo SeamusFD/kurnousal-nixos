@@ -1,7 +1,8 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-24.11";
+    disko.url = "github:nix-community/disko";
+    disko.inputs.nixpkgs.follows = "nixpkgs";
     nur.url = "github:nix-community/NUR";
     nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
     home-manager = {
@@ -24,6 +25,7 @@
   outputs =
     { self
     , nixpkgs
+    , disko
     , nixos-wsl
     , home-manager
     , nur
@@ -65,14 +67,12 @@
         # Primary Server
         lumiere = nixpkgs.lib.nixosSystem {
           system = system;
-          specialArgs = {
-            inherit inputs;
-          };
           modules = [
-            { nixpkgs.overlays = [ nur.overlay ]; }
-            ./hosts/linux/lumiere/configuration.nix
+            { nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ]; }
+            disko.nixosModules.disko
+            ./hosts/server/lumiere/configuration.nix
+            ./hosts/server/lumiere/disk-config.nix
             ./modules/nixos
-            home-manager.nixosModules.home-manager
           ];
         };
       };
