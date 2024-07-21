@@ -67,9 +67,13 @@
         # Primary Server
         lumiere = nixpkgs.lib.nixosSystem {
           system = system;
+          specialArgs = {
+            inherit inputs;
+          };
           modules = [
             { nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ]; }
             disko.nixosModules.disko
+            home-manager.nixosModules.home-manager
             ./hosts/server/lumiere/configuration.nix
             ./hosts/server/lumiere/disk-config.nix
             ./modules/nixos

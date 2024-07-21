@@ -1,4 +1,4 @@
-{ pkgs, modulesPath, ... }:
+{ inputs, pkgs, modulesPath, ... }:
 {
   imports = [
     ../../common/nix-defaults/nix-features.nix
@@ -28,14 +28,28 @@
   users.users.root.openssh.authorizedKeys.keys = [
     "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC+XfQLulR+OLpJ3PkN14iu/am0SDxCLlePGoxL027+k root@lumiere"
   ];
-  users.users.bcampbell = {
+  users.users.lumiere = {
     isNormalUser = true;
-    home = "/home/bcampbell";
+    home = "/home/lumiere";
     extraGroups = [ "wheel" "networkmanager" ];
     openssh.authorizedKeys.keys = [
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKE0++FS6236ilBUK2jeGCO1pxDKUsW3OOCdg40hUi7q bcampbell@192.168.1.77"
     ];
 
   };
+
+  home-manager.useGlobalPkgs = true;
+  home-manager.useUserPackages = true;
+  home-manager.users.lumiere = ./home.nix;
+  home-manager.extraSpecialArgs = {
+    inherit inputs;
+  };
+  home-manager.sharedModules = [
+    inputs.self.outputs.homeManagerModules.default
+    inputs.self.inputs.nur.hmModules.nur
+    inputs.self.inputs.arkenfox.hmModules.arkenfox
+    inputs.self.inputs.stylix.homeManagerModules.stylix
+  ];
+
   system.stateVersion = "23.11";
 }
