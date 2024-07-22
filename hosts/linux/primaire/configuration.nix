@@ -7,8 +7,7 @@
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     # Common imports used everywhere without config
-    ../../common/nix-defaults/nix-features.nix
-    ../../common/nix-defaults/nix-garbage-collection.nix
+    ../../common/nix-defaults
   ];
 
   environment = {
