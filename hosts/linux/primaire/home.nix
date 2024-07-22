@@ -4,6 +4,8 @@
 }: {
   ### Home Manager Modules ###
   programs = {
+    nix-index.enable = true;
+
     office.libre-office.enable = true;
     browser.tor-browser.enable = true;
     browser.arkenfox.enable = true;
