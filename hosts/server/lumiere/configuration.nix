@@ -4,6 +4,8 @@
     ../../common/nix-defaults/nix-features.nix
     ../../common/nix-defaults/nix-garbage-collection.nix
 
+    ../../common/server-defaults
+
     (modulesPath + "/installer/scan/not-detected.nix")
     (modulesPath + "/profiles/qemu-guest.nix")
   ];
@@ -18,8 +20,6 @@
     enable = true;
     hostName = "lumiere";
   };
-
-  environment.systemPackages = with pkgs; [ vim ];
 
   environment.internationalisation.timezone.enable = true;
 

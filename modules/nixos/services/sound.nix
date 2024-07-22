@@ -1,8 +1,7 @@
-{
-  pkgs,
-  config,
-  lib,
-  ...
+{ pkgs
+, config
+, lib
+, ...
 }: {
   options = {
     services.sound.enable = lib.mkEnableOption "Enables the default sound options";
@@ -19,6 +18,8 @@
     environment.systemPackages = with pkgs; [
       pavucontrol
       qpwgraph
+      alsa-lib
+      alsa-utils
     ];
   };
 }
