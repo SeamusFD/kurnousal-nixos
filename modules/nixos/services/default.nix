@@ -6,5 +6,6 @@
     ./sound.nix
 
     ./gpu
+    ./cpu
   ];
 }

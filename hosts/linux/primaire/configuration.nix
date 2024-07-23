@@ -41,6 +41,9 @@
   services.bootloader.systemd-bootloader.enable = true;
   services.xserver.amd.enable = true;
   services.gpu.amd.enable = false;
+  services.cpu.amd = {
+    enable = true;
+  };
   services.sound.enable = true;
 
   system = {
@@ -108,6 +111,8 @@
     memtest86plus
     memtest_vulkan
     memtester
+    sops
+    furmark
   ];
 
   programs.gamescope.enable = true;

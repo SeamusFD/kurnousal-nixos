@@ -1,7 +1,4 @@
-{ pkgs, config, lib, ... }:
-let
-  builtins = lib.builtins;
-in
+{ pkgs, config, ... }:
 {
   # Show installed packages (https://www.reddit.com/r/NixOS/comments/fsummx/comment/fm45htj/?utm_source=share&utm_medium=web2x&context=3)
   environment.etc."current-system-packages".text =

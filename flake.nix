@@ -1,6 +1,8 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixinate.url = "github:matthewcroughan/nixinate";
+    sops-nix.url = "github:Mic92/sops-nix";
     disko.url = "github:nix-community/disko";
     disko.inputs.nixpkgs.follows = "nixpkgs";
     nur.url = "github:nix-community/NUR";
@@ -25,6 +27,7 @@
   outputs =
     { self
     , nixpkgs
+    , nixinate
     , disko
     , nixos-wsl
     , home-manager
@@ -33,9 +36,9 @@
     } @ inputs:
     let
       system = "x86_64-linux";
-      pkgs = import nixpkgs { inherit system; };
     in
     {
+      apps = nixinate.nixinate.x86_64-linux self;
       nixosConfigurations = {
         # Primary Desktop
         primaire = nixpkgs.lib.nixosSystem {
@@ -71,12 +74,22 @@
             inherit inputs;
           };
           modules = [
+            {
+              _module.args.nixinate = {
+                host = "192.168.1.129";
+                sshUser = "root";
+                buildOn = "remote";
+                substituteOnTarget = true;
+                hermetic = false;
+              };
+            }
             { nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ]; }
             disko.nixosModules.disko
             home-manager.nixosModules.home-manager
             ./hosts/server/lumiere/configuration.nix
             ./hosts/server/lumiere/disk-config.nix
             ./modules/nixos
+            ./modules/server
           ];
         };
       };
