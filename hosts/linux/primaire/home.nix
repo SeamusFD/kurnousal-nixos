@@ -2,6 +2,11 @@
 , inputs
 , ...
 }: {
+
+  imports = [
+    inputs.ags.homeManagerModules.default
+  ];
+
   ### Home Manager Modules ###
   programs = {
     # Nix helper options
@@ -11,11 +16,12 @@
     ags = {
       enable = true;
       configDir = ../../../modules/lib/ags;
-      extraPackages = with pkgs; [
-        gtksourceview
-        webkitgtk
-        accountsservice
-      ];
+      extraPackages = with pkgs;
+        [
+          gtksourceview
+          webkitgtk
+          accountsservice
+        ];
     };
 
     # Direnv options
