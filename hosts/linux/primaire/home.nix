@@ -5,22 +5,43 @@
   ### Home Manager Modules ###
   programs = {
     nix-index.enable = true;
+    ags = {
+      enable = true;
+      configDir = ../../../modules/lib/ags;
+      extraPackages = with pkgs; [
+        gtksourceview
+        webkitgtk
+        accountsservice
+      ];
+    };
 
-    office.libre-office.enable = true;
-    browser.tor-browser.enable = true;
-    browser.arkenfox.enable = true;
-    browser.brave.enable = true;
-    music.tidal.enable = true;
-    terminal.kitty.enable = true;
-    terminal.starship.enable = true;
-    terminal.monitoring.btop.enable = true;
-    terminal.monitoring.amdgpu.enable = true;
-    file-manager.nemo.enable = true;
-    game-dev.godot.enable = true;
+    terminal = {
+      kitty.enable = true;
+      starship.enable = true;
+      monitoring = {
+        btop.enable = true;
+        amdgpu.enable = true;
+      };
+    };
+
+    browser = {
+      tor-browser.enable = true;
+      arkenfox.enable = true;
+      brave.enable = true;
+    };
+
     direnv = {
       enable = true;
       nix-direnv.enable = true;
     };
+
+    office.libre-office.enable = true;
+
+    music.tidal.enable = true;
+
+    file-manager.nemo.enable = true;
+
+    game-dev.godot.enable = true;
   };
   command-line = {
     shell.fish.enable = true;
