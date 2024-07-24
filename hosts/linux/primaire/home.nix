@@ -4,7 +4,10 @@
 }: {
   ### Home Manager Modules ###
   programs = {
+    # Nix helper options
     nix-index.enable = true;
+
+    # Ags options
     ags = {
       enable = true;
       configDir = ../../../modules/lib/ags;
@@ -15,6 +18,13 @@
       ];
     };
 
+    # Direnv options
+    direnv = {
+      enable = true;
+      nix-direnv.enable = true;
+    };
+
+    # Terminal options
     terminal = {
       kitty.enable = true;
       starship.enable = true;
@@ -24,23 +34,23 @@
       };
     };
 
+    # Browser options
     browser = {
       tor-browser.enable = true;
       arkenfox.enable = true;
       brave.enable = true;
     };
 
-    direnv = {
-      enable = true;
-      nix-direnv.enable = true;
-    };
-
+    # Office options
     office.libre-office.enable = true;
 
+    # Music streaming options
     music.tidal.enable = true;
 
+    # File manager options
     file-manager.nemo.enable = true;
 
+    # Game-dev options
     game-dev.godot.enable = true;
   };
   command-line = {
