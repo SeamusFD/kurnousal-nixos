@@ -5,7 +5,6 @@
     sops-nix.url = "github:Mic92/sops-nix";
     disko.url = "github:nix-community/disko";
     disko.inputs.nixpkgs.follows = "nixpkgs";
-    nur.url = "github:nix-community/NUR";
     nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -22,6 +21,7 @@
     };
     arkenfox.url = "github:dwarfmaster/arkenfox-nixos";
     stylix.url = "github:danth/stylix";
+    ags.url = "github:Aylur/ags";
   };
 
   outputs =
@@ -31,7 +31,6 @@
     , disko
     , nixos-wsl
     , home-manager
-    , nur
     , ...
     } @ inputs:
     let
@@ -47,7 +46,6 @@
             inherit inputs;
           };
           modules = [
-            { nixpkgs.overlays = [ nur.overlay ]; }
             ./hosts/linux/primaire/configuration.nix
             ./modules/nixos
             home-manager.nixosModules.home-manager
@@ -76,7 +74,7 @@
           modules = [
             {
               _module.args.nixinate = {
-                host = "192.168.1.129";
+                host = "192.168.1.3";
                 sshUser = "root";
                 buildOn = "remote";
                 substituteOnTarget = true;

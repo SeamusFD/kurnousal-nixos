@@ -178,3 +178,8 @@ Removed packages:
 [R.]  #1  ig5if1f09b9nnaqndjfibyjraqyfk8z1-systemd-boot  <none>
 Closure size: 3365 -> 3377 (199 paths added, 187 paths removed, delta +12, disk usage +19.6MiB).
 setting up /etc...
+<<< /run/current-system
+>>> /tmp/nh-os-TLSa8e/result
+No version or selection state changes.
+Closure size: 3388 -> 3388 (0 paths added, 0 paths removed, delta +0, disk usage +0B).
+setting up /etc...

@@ -26,8 +26,8 @@
   };
   home-manager.sharedModules = [
     inputs.self.outputs.homeManagerModules.default
-    inputs.self.inputs.nur.hmModules.nur
     inputs.self.inputs.arkenfox.hmModules.arkenfox
+    inputs.self.inputs.ags.homeManagerModules.default
     inputs.self.inputs.stylix.homeManagerModules.stylix
   ];
 
