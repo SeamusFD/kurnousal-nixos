@@ -1,9 +1,8 @@
-{
-  pkgs,
-  lib,
-  config,
-  inputs,
-  ...
+{ pkgs
+, lib
+, config
+, inputs
+, ...
 }: {
   imports = [
     ./xdg.nix
@@ -14,6 +13,7 @@
   };
   config = lib.mkIf config.window-manager.wayland.hyprland.enable {
     home.packages = with pkgs; [
+      polkit
       grim
       grimblast
       wl-clipboard
@@ -63,6 +63,17 @@
             }
         }
 
+        misc {
+            disable_hyprland_logo = true
+            disable_splash_rendering = true
+            vrr = 1
+            no_direct_scanout = false
+        }
+
+        opengl {
+            force_introspection = 1
+        }
+
         dwindle {
             pseudotile = yes # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
             preserve_split = yes # you probably want this
@@ -78,7 +89,7 @@
       '';
       systemd = {
         enable = true;
-        variables = ["--all"];
+        variables = [ "--all" ];
       };
       xwayland.enable = true;
     };

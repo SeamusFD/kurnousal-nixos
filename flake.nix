@@ -22,6 +22,7 @@
     arkenfox.url = "github:dwarfmaster/arkenfox-nixos";
     stylix.url = "github:danth/stylix";
     ags.url = "github:Aylur/ags";
+    hardware.url = "github:NixOS/nixos-hardware/master";
   };
 
   outputs =

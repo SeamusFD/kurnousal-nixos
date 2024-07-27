@@ -19,7 +19,9 @@
         pkgs.mkShell {
           packages = with pkgs; [
             nodejs
-            nodePackages.pnpm
+            nodePackages_latest.pnpm
+            nodePackages_latest.typescript
+            nodePackages_latest.eslint
           ];
 
           shellHook = ''

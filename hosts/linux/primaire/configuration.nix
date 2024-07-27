@@ -8,6 +8,8 @@
     ./hardware-configuration.nix
     # Common imports used everywhere without config
     ../../common/nix-defaults
+    inputs.hardware.nixosModules.common-cpu-amd
+    inputs.hardware.nixosModules.common-gpu-amd
   ];
 
   environment = {
@@ -39,10 +41,10 @@
   services.network-conf.hostName = "primaire";
   services.bootloader.systemd-bootloader.enable = true;
   services.xserver.amd.enable = true;
-  services.gpu.amd.enable = false;
-  services.cpu.amd = {
-    enable = true;
-  };
+  # services.gpu.amd.enable = false;
+  # services.cpu.amd = {
+  #   enable = true;
+  # };
   services.sound.enable = true;
 
   system = {
@@ -77,16 +79,10 @@
     libnotify
     openvpn
     protonvpn-cli_2
-    vlc
     # Build Tools
     meson
     scdoc
     coreutils
-    xdotool
-    xorg.xwininfo
-    yad
-    wayland-protocols
-    wayland-utils
     wlroots
     # Programming Tools
     go
@@ -101,17 +97,18 @@
     # Misc
     jdk
     sshpass
+    xdotool
+    xorg.xwininfo
+    yad
+    wayland-protocols
+    wayland-utils
+    wlroots
     wttrbar
     # Automation (move some day)
     nmap
     qbittorrent
     yt-dlp
-    memtest86-efi
-    memtest86plus
-    memtest_vulkan
-    memtester
     sops
-    furmark
   ];
 
   programs.gamescope.enable = true;

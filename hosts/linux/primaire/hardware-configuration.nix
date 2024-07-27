@@ -2,6 +2,7 @@
 # and may be overwritten by future invocations.  Please make changes
 # to /etc/nixos/configuration.nix instead.
 { config
+, pkgs
 , lib
 , modulesPath
 , ...
@@ -11,6 +12,7 @@
   ];
 
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "sd_mod" ];
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   services.fstrim.enable = true;
 
