@@ -46,6 +46,7 @@
   #   enable = true;
   # };
   services.sound.enable = true;
+  services.login.sddm.enable = true;
 
   system = {
     fonts = {

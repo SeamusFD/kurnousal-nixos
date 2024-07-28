@@ -7,5 +7,6 @@
 
     ./gpu
     ./cpu
+    ./login
   ];
 }

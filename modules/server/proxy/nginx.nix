@@ -36,6 +36,16 @@
             recommendedProxySettings = true;
           };
         };
+        "gitlab.kurnousal.net" = {
+          # Generate lets encrypt certificate using DNS challenge
+          forceSSL = true;
+          enableACME = true;
+          acmeRoot = null;
+
+          locations."/" = {
+            proxyPass = "http://unix:/run/gitlab/gitlab-workhorse.socket";
+          };
+        };
       };
     };
   };

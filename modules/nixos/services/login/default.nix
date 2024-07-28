@@ -1,6 +1,5 @@
 {
   imports = [
-    ./docker
-    ./nix
+    ./sddm
   ];
 }

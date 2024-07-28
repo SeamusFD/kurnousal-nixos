@@ -188,3 +188,43 @@ setting up /etc...
 No version or selection state changes.
 Closure size: 3844 -> 3844 (22 paths added, 22 paths removed, delta +0, disk usage +84.9KiB).
 setting up /etc...
+<<< /run/current-system
+>>> /tmp/nh-os-SSochq/result
+Version changes:
+[C.]  #1  freerdp  3.6.3 -> 2.11.7, 3.6.3
+Selection state changes:
+[C-]  #1  accountsservice     23.13.9
+[C-]  #2  adwaita-icon-theme  46.0
+[C+]  #3  hicolor-icon-theme  0.18
+Added packages:
+[A.]  #01  Xsetup                <none>
+[A.]  #02  Xstop                 <none>
+[A.]  #03  aml                   0.3.0
+[A.]  #04  neatvnc               0.8.0
+[A.]  #05  sddm-autologin.pam    <none>
+[A.]  #06  sddm-catppucin-theme  <none>
+[A.]  #07  sddm-greeter.pam      <none>
+[A.]  #08  sddm-unwrapped        0.21.0
+[A+]  #09  sddm-wrapped          <none>
+[A.]  #10  sddm.conf             <none>
+[A.]  #11  sddm.pam              <none>
+[A.]  #12  weston                13.0.3
+[A.]  #13  weston.ini            <none>
+Removed packages:
+[R.]  #01  busybox                                    1.36.1
+[R-]  #02  gnome-themes-extra                         3.28
+[R-]  #03  lightdm                                    1.32.0
+[R.]  #04  lightdm-autologin.pam                      <none>
+[R.]  #05  lightdm-greeter.pam                        <none>
+[R.]  #06  lightdm-gtk-greeter                        2.0.9
+[R.]  #07  lightdm-gtk-greeter-xgreeters              <none>
+[R.]  #08  lightdm-gtk-greeter.conf                   <none>
+[R.]  #09  lightdm.conf                               <none>
+[R.]  #10  lightdm.pam                                <none>
+[R.]  #11  nix-wallpaper-simple-dark-gray_bottom.png  <none>
+[R.]  #12  plymouth                                   24.004.60
+[R.]  #13  simple-dark-gray                           2018-08-28
+[R.]  #14  unit-accounts-daemon.service               <none>
+[R.]  #15  users.conf                                 <none>
+Closure size: 3853 -> 3852 (38 paths added, 39 paths removed, delta -1, disk usage +16.7MiB).
+setting up /etc...

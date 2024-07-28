@@ -3,40 +3,11 @@
   imports = [
     ../../common/nix-defaults
     ../../common/server-defaults
-
-    inputs.sops-nix.nixosModules.sops
+    ./secrets.nix
 
     (modulesPath + "/installer/scan/not-detected.nix")
     (modulesPath + "/profiles/qemu-guest.nix")
   ];
-
-  sops.defaultSopsFile = ../../../secrets/secrets.yaml;
-  sops.defaultSopsFormat = "yaml";
-
-  sops.age.keyFile = "/etc/sops/age/keys.txt";
-
-  sops.secrets.dreamhost-api-key = {
-    owner = "sops-secret-handler";
-  };
-
-  systemd.services."sops-secret-handler" = {
-    enable = true;
-    script = ''
-      cat ${config.sops.secrets.dreamhost-api-key.path} > /var/lib/sops-secret-handler/dreamhost-api-key
-    '';
-    serviceConfig = {
-      User = "sops-secret-handler";
-      WorkingDirectory = "/var/lib/sops-secret-handler";
-    };
-  };
-
-  users.users.sops-secret-handler = {
-    home = "/var/lib/sops-secret-handler";
-    createHome = true;
-    isSystemUser = true;
-    group = "sops-secret-handler";
-  };
-  users.groups.sops-secret-handler = { };
 
   boot.loader.grub = {
     efiSupport = true;
