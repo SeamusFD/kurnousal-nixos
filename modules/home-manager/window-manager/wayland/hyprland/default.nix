@@ -70,10 +70,6 @@
             no_direct_scanout = false
         }
 
-        opengl {
-            force_introspection = 1
-        }
-
         dwindle {
             pseudotile = yes # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
             preserve_split = yes # you probably want this

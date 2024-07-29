@@ -228,3 +228,23 @@ Removed packages:
 [R.]  #15  users.conf                                 <none>
 Closure size: 3853 -> 3852 (38 paths added, 39 paths removed, delta -1, disk usage +16.7MiB).
 setting up /etc...
+<<< /run/current-system
+>>> /tmp/nh-os-1Bh0oZ/result
+Version changes:
+[U.]  #01  cargo-nightly-complete                            2024-07-28 -> 2024-07-29
+[U.]  #02  clippy-preview-nightly-complete                   2024-07-28 -> 2024-07-29
+[C.]  #03  hyprland                                          0.41.2, 0.41.2+date=2024-07-28_a9d87bd, 0.41.2+date=2024-07-28_a9d87bd-fish-completions, 0.41.2+date=2024-07-28_a9d87bd-man -> 0.41.2, 0.41.2+date=2024-07-29_e673220, 0.41.2+date=2024-07-29_e673220-fish-completions, 0.41.2+date=2024-07-29_e673220-man
+[U.]  #04  llvm-tools-preview-nightly-complete               2024-07-28 -> 2024-07-29
+[U.]  #05  miri-preview-nightly-complete                     2024-07-28 -> 2024-07-29
+[U.]  #06  rls-preview-nightly-complete                      2024-07-28 -> 2024-07-29
+[U.]  #07  rust-analysis-nightly-complete                    2024-07-28 -> 2024-07-29
+[U.]  #08  rust-analyzer-preview-nightly-complete            2024-07-28 -> 2024-07-29
+[U.]  #09  rust-docs-nightly-complete                        2024-07-28 -> 2024-07-29
+[U.]  #10  rust-src-nightly-complete                         2024-07-28 -> 2024-07-29
+[U.]  #11  rust-std-nightly-complete                         2024-07-28 -> 2024-07-29
+[U.]  #12  rust-std-nightly-latest                           2024-07-28 x2 -> 2024-07-29 x2
+[U.]  #13  rustc-codegen-cranelift-preview-nightly-complete  2024-07-28 -> 2024-07-29
+[U.]  #14  rustc-nightly-complete                            2024-07-28 -> 2024-07-29
+[U.]  #15  rustfmt-preview-nightly-complete                  2024-07-28 -> 2024-07-29
+Closure size: 3853 -> 3853 (32 paths added, 32 paths removed, delta +0, disk usage +6.3MiB).
+setting up /etc...

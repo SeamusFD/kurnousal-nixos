@@ -12,5 +12,8 @@
         theme = "${import ./themes/sugar-catppuccin-theme.nix { inherit pkgs; }}";
       };
     };
+    environment.systemPackages = with pkgs; [
+      libsForQt5.qt5.qtgraphicaleffects
+    ];
   };
 }

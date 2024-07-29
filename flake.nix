@@ -11,7 +11,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nievo = {
-      url = "github:SeamusFD/Nievo";
+      url = "path:/etc/nixos/kurnousal-nixos/modules/nievo";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
