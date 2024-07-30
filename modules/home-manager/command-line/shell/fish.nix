@@ -1,12 +1,13 @@
-{
-  pkgs,
-  config,
-  lib,
-  ...
-}: let
+{ pkgs
+, config
+, lib
+, ...
+}:
+let
   cfg = config.command-line.shell;
   rice-cfg = config.rice.stylix;
-in {
+in
+{
   options = {
     command-line.shell.fish = {
       enable = lib.mkEnableOption "Enables fish shell with default config";
@@ -68,6 +69,7 @@ in {
           src = pkgs.fishPlugins.done.src;
         }
       ];
+      shellInitLast = "direnv hook fish | source";
     };
 
     home.packages = with pkgs; [

@@ -11,7 +11,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nievo = {
-      url = "path:/etc/nixos/kurnousal-nixos/modules/nievo";
+      url = "github:SeamusFD/Nievo";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
@@ -92,6 +92,19 @@
           ];
         };
       };
+      devShells."${system}".default =
+        let
+          pkgs = import nixpkgs {
+            inherit system;
+          };
+        in
+        pkgs.mkShell {
+          packages = with pkgs; [
+            alejandra
+            nixd
+            nixdoc
+          ];
+        };
       homeManagerModules.default = import ./modules/home-manager self;
     };
 }
