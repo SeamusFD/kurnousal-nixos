@@ -57,6 +57,7 @@
     containers = {
       docker.enable = true;
       jellyfin-container.enable = true;
+      gitlab-container.enable = true;
       # vaultwarden-container.enable = true;
     };
     networking = {

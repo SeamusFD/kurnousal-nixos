@@ -10,6 +10,16 @@ in
     services.gitlab = {
       enable = true;
       host = "gitlab.kurnousal.net";
+      port = 443;
+      https = true;
+      smtp = {
+        enable = true;
+        port = 25;
+        domain = "gitlab.kurnousal.net";
+      };
+      packages = {
+        inherit (pkgs) gitlab gitlab-shell gitlab-workhorse gitaly;
+      };
 
       databasePasswordFile = "${secrets-dir}" + "/gitlab/dbPassword";
       initialRootPasswordFile = "${secrets-dir}" + "/gitlab/initialRootPassword";
@@ -21,5 +31,9 @@ in
       };
     };
     systemd.services.gitlab-backup.environment.BACKUP = "dump";
+
+    services.postgresql = {
+      enable = true;
+    };
   };
 }

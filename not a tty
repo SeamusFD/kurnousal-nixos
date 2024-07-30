@@ -248,3 +248,188 @@ Version changes:
 [U.]  #15  rustfmt-preview-nightly-complete                  2024-07-28 -> 2024-07-29
 Closure size: 3853 -> 3853 (32 paths added, 32 paths removed, delta +0, disk usage +6.3MiB).
 setting up /etc...
+<<< /run/current-system
+>>> /tmp/nh-os-fChBzi/result
+Version changes:
+[U.]  #001  angular-grammar                                   0.0.0+rev=b96a0d1 -> 0.0.0+rev=31182d4
+[C.]  #002  appstream                                         1.0.2 x2 -> 1.0.2, 1.0.3
+[U.]  #003  aquamarine                                        0.1.0+date=2024-07-27_4918e57 -> 0.2.0+date=2024-07-30_7c3565f
+[U.]  #004  ayatana-ido                                       0.10.2 -> 0.10.3
+[U.]  #005  beancount-grammar                                 0.0.0+rev=c25f803 -> 0.0.0+rev=384c55e
+[C*]  #006  bluez                                             5.75 x3 -> 5.75, 5.76 x2
+[U.]  #007  bundler                                           2.5.11 -> 2.5.16
+[D.]  #008  c-grammar                                         0.0.0+rev=deca017 -> 0.0.0+rev=be23d2c
+[U.]  #009  cargo-nightly-complete                            2024-07-29 -> 2024-07-30
+[U.]  #010  clippy-preview-nightly-complete                   2024-07-29 -> 2024-07-30
+[D.]  #011  cpp-grammar                                       0.0.0+rev=7ce8946 -> 0.0.0+rev=0b4aa47
+[C.]  #012  cracklib                                          2.9.11 x3 -> 2.10.0 x2, 2.9.11
+[U.]  #013  cuda-grammar                                      0.0.0+rev=b93070b -> 0.0.0+rev=07f2f15
+[C.]  #014  cups                                              2.4.8 x2, 2.4.8-dev, 2.4.8-lib x3, 2.4.8-man x2 -> 2.4.10 x2, 2.4.10-dev, 2.4.10-lib x2, 2.4.10-man x2, 2.4.8-lib
+[C.]  #015  dav1d                                             1.4.1 x3 -> 1.4.1, 1.4.3 x2
+[C*]  #016  dhcpcd                                            10.0.6 x2 -> 10.0.6, 10.0.8
+[U*]  #017  discord                                           0.0.60 -> 0.0.61
+[U.]  #018  djot-grammar                                      0.0.0+rev=87bf828 -> 0.0.0+rev=886601b
+[C.]  #019  dns-root-data                                     2023-11-27 x3 -> 2023-11-27, 2024-06-20 x2
+[U.]  #020  editorconfig-grammar                              0.0.0+rev=c5f8368 -> 0.0.0+rev=fd0d64d
+[C.]  #021  ell                                               0.65 x3 -> 0.65, 0.67 x2
+[D.]  #022  erlang-grammar                                    0.0.0+rev=19ca500 -> 0.0.0+rev=8f41b58
+[C.]  #023  ffado                                             2.4.8 x3 -> 2.4.8, 2.4.9 x2
+[U.]  #024  fortran-grammar                                   0.0.0+rev=dde9829 -> 0.0.0+rev=6b63343
+[U.]  #025  freeglut                                          3.4.0 x2 -> 3.6.0 x2
+[U.]  #026  fzf                                               0.54.1, 0.54.1-fish-completions, 0.54.1-man -> 0.54.2, 0.54.2-fish-completions, 0.54.2-man
+[U.]  #027  gdb                                               14.2 -> 15.1
+[D.]  #028  git_rebase-grammar                                0.0.0+rev=274e27e -> 0.0.0+rev=bff4b66
+[U.]  #029  gleam-grammar                                     0.0.0+rev=02a17bf -> 0.0.0+rev=426e670
+[C*]  #030  glib                                              2.80.2, 2.80.2-bin, 2.80.3 x2, 2.80.3-bin x2, 2.80.3-dev -> 2.80.2, 2.80.2-bin, 2.80.4 x2, 2.80.4-bin x2, 2.80.4-dev
+[D.]  #031  glsl-grammar                                      0.0.0+rev=3736dfc -> 0.0.0+rev=ddc3137
+[C.]  #032  gnutls                                            3.8.5 x3, 3.8.5-bin x2, 3.8.5-man x2 -> 3.8.5, 3.8.6 x2, 3.8.6-bin x2, 3.8.6-man x2
+[U.]  #033  groovy-grammar                                    0.0.0+rev=f361500 -> 0.0.0+rev=3912291
+[C.]  #034  gtk+3                                             3.24.42 x3, 3.24.42-dev -> 3.24.42, 3.24.43 x2, 3.24.43-dev
+[C.]  #035  harfbuzz                                          8.4.0 x3, 8.4.0-dev -> 8.4.0, 9.0.0 x2, 9.0.0-dev
+[U.]  #036  harfbuzz-icu                                      8.4.0 -> 9.0.0
+[U.]  #037  heex-grammar                                      0.0.0+rev=b5ad6e3 -> 0.0.0+rev=6dd0303
+[C.]  #038  hwdata                                            0.382, 0.383 x2 -> 0.382, 0.384 x2
+[C.]  #039  hyprland                                          0.41.2, 0.41.2+date=2024-07-29_e673220, 0.41.2+date=2024-07-29_e673220-fish-completions, 0.41.2+date=2024-07-29_e673220-man -> 0.41.2, 0.41.2+date=2024-07-30_3b9b534, 0.41.2+date=2024-07-30_3b9b534-fish-completions, 0.41.2+date=2024-07-30_3b9b534-man
+[D.]  #040  idl-grammar                                       0.0.0+rev=556f287 -> 0.0.0+rev=1a6683f
+[U.]  #041  initrd-linux                                      6.10.1 -> 6.10.2
+[C*]  #042  iproute2                                          6.8.0, 6.9.0 -> 6.10.0, 6.8.0
+[D.]  #043  janet_simple-grammar                              0.0.0+rev=3b08641 -> 0.0.0+rev=ea842cb
+[U.]  #044  krb5                                              1.21.2 -> 1.21.3
+[D.]  #045  latex-grammar                                     0.0.0+rev=08d8b88 -> 0.0.0+rev=f074e14
+[C.]  #046  ldb                                               2.9.0 x3 -> 2.9.0, 2.9.1 x2
+[C.]  #047  libaom                                            3.9.0 x3 -> 3.9.0, 3.9.1 x2
+[C.]  #048  libass                                            0.17.1, 0.17.2 x2 -> 0.17.1, 0.17.3 x2
+[C.]  #049  libavif                                           1.0.4 x3 -> 1.0.4, 1.1.0 x2
+[C.]  #050  libbpf                                            1.4.2, 1.4.3 x2 -> 1.4.2, 1.4.5 x2
+[C.]  #051  libbsd                                            0.11.8 x3, 0.11.8-man x2 -> 0.11.8, 0.12.2 x2, 0.12.2-man x2
+[C*]  #052  libcap                                            2.69 x2, 2.69-dev, 2.69-doc, 2.69-lib x3, 2.69-man x2 -> 2.69-lib, 2.70 x2, 2.70-dev, 2.70-doc, 2.70-lib x2, 2.70-man x2
+[U.]  #053  libcxx                                            17.0.6 -> 18.1.8
+[C.]  #054  libdrm                                            2.4.120, 2.4.121 x2, 2.4.121-bin x2, 2.4.121-dev -> 2.4.120, 2.4.122 x2, 2.4.122-bin x2, 2.4.122-dev
+[C.]  #055  libedit                                           20230828-3.1 x2 -> 20230828-3.1, 20240517-3.1
+[U.]  #056  libevdev                                          1.13.1 x2 -> 1.13.2 x2
+[C.]  #057  libfido2                                          1.14.0 x3 -> 1.14.0, 1.15.0 x2
+[C.]  #058  libgcrypt                                         1.10.3 x3 -> 1.10.3, 1.10.3-bin x2, 1.10.3-lib x2
+[C.]  #059  libgpg-error                                      1.49 x3 -> 1.49, 1.50 x2
+[U.]  #060  libheif                                           1.17.6 -> 1.18.0
+[U.]  #061  libimagequant                                     4.3.0 -> 4.3.1
+[C.]  #062  libinput                                          1.26.0, 1.26.0-bin, 1.26.0-dev -> 1.26.0, 1.26.0-bin, 1.26.0-dev, 1.26.1
+[U.]  #063  libjxl                                            0.10.2 -> 0.10.3
+[C.]  #064  libkrb5                                           1.21.2 x3 -> 1.21.2, 1.21.3 x2
+[C.]  #065  libmicrohttpd                                     0.9.77 x3 -> 0.9.77, 1.0.1 x2
+[C.]  #066  libnftnl                                          1.2.6 x3 -> 1.2.6, 1.2.7 x2
+[C.]  #067  libplist                                          2.4.0 x2 -> 2.4.0, 2.6.0
+[C.]  #068  librsvg                                           2.58.1 x3 -> 2.58.1, 2.58.2 x2
+[U.]  #069  libsepol                                          3.6 x2 -> 3.7 x2
+[C.]  #070  libunistring                                      1.1 x3 -> 1.1, 1.2 x2
+[C.]  #071  libva                                             1.8.3 x2, 2.21.0 x3 -> 1.8.3 x2, 2.21.0, 2.22.0 x2
+[C.]  #072  libva-minimal                                     2.21.0 x3 -> 2.21.0, 2.22.0 x2
+[C.]  #073  libxml2                                           2.12.7 x3, 2.12.7-bin x2, 2.12.7-dev -> 2.12.7, 2.13.2 x2, 2.13.2-bin x2, 2.13.2-dev
+[C.]  #074  libxslt                                           1.1.39, 1.1.41 x2, 1.1.41-bin x2, 1.1.41-dev -> 1.1.39, 1.1.42 x2, 1.1.42-bin x2, 1.1.42-dev
+[U.]  #075  linux                                             6.10.1, 6.10.1-modules, 6.10.1-modules-shrunk -> 6.10.2, 6.10.2-modules, 6.10.2-modules-shrunk
+[C.]  #076  llvm                                              16.0.6-lib, 17.0.6 x2, 17.0.6-lib x2 -> 16.0.6-lib, 18.1.8 x2, 18.1.8-lib x2
+[U.]  #077  llvm-tools-preview-nightly-complete               2024-07-29 -> 2024-07-30
+[D.]  #078  m68k-grammar                                      0.0.0+rev=9e082a2 -> 0.0.0+rev=e128454
+[C.]  #079  mailcap                                           2.1.53 x3 -> 2.1.53, 2.1.54 x2
+[D.]  #080  matlab-grammar                                    0.0.0+rev=2825fb5 -> 0.0.0+rev=821f7bd
+[U.]  #081  mesa                                              24.1.2 x2, 24.1.2-dev, 24.1.2-drivers x2 -> 24.1.4 x2, 24.1.4-dev, 24.1.4-drivers x2
+[U*]  #082  meson                                             1.4.0 -> 1.4.1
+[U.]  #083  miri-preview-nightly-complete                     2024-07-29 -> 2024-07-30
+[U.]  #084  msgpack-c                                         6.0.1 -> 6.0.2
+[C.]  #085  nghttp2                                           1.61.0 x2, 1.61.0-lib x3 -> 1.61.0-lib, 1.62.1 x2, 1.62.1-lib x2
+[U.]  #086  nixd                                              2.2.3 -> 2.3.0
+[U.]  #087  nixf                                              2.2.3 -> 2.3.0
+[U.]  #088  nixos-system-primaire                             24.11.20240727.b73c222 -> 24.11.20240728.52ec9ac
+[U.]  #089  nixt                                              2.2.3 -> 2.3.0
+[C.]  #090  nodejs                                            20.14.0, 22.3.0 -> 20.15.1, 22.4.1
+[C.]  #091  nss                                               3.102.1, 3.90.2 x3 -> 3.101.1 x2, 3.102.1, 3.90.2
+[U.]  #092  nss-cacert                                        3.101, 3.101-p11kit -> 3.101.1, 3.101.1-p11kit
+[C.]  #093  openldap                                          2.6.7 x3, 2.6.7-man x2 -> 2.6.7, 2.6.8 x2, 2.6.8-man x2
+[C.]  #094  orc                                               0.4.38 x3 -> 0.4.38, 0.4.39 x2
+[C.]  #095  p11-kit                                           0.25.3 x3, 0.25.3-bin x2 -> 0.25.3, 0.25.5 x2, 0.25.5-bin x2
+[C.]  #096  pcsclite                                          2.1.0-lib x3 -> 2.1.0-lib, 2.2.3-lib x2
+[U.]  #097  perl-grammar                                      0.0.0+rev=309cb8d -> 0.0.0+rev=7581cbf
+[D.]  #098  php-grammar                                       0.0.0+rev=575a080 -> 0.0.0+rev=c07d697
+[D.]  #099  php_only-grammar                                  0.0.0+rev=575a080 -> 0.0.0+rev=c07d697
+[C*]  #100  pipewire                                          1.0.7, 1.2.0 x2, 1.2.0-dev, 1.2.0-doc, 1.2.0-man x2 -> 1.0.7, 1.2.1 x2, 1.2.1-dev, 1.2.1-doc, 1.2.1-man x2
+[U.]  #101  prettier                                          3.3.2 -> 3.3.3
+[U.]  #102  python3.12-cryptography                           42.0.5 -> 42.0.8
+[U.]  #103  qca                                               2.3.8 -> 2.3.9
+[U.]  #104  rls-preview-nightly-complete                      2024-07-29 -> 2024-07-30
+[U*]  #105  ruby                                              3.1.5 -> 3.1.6
+[U.]  #106  ruff                                              0.5.4 -> 0.5.5
+[U.]  #107  rust-analysis-nightly-complete                    2024-07-29 -> 2024-07-30
+[U.]  #108  rust-analyzer-preview-nightly-complete            2024-07-29 -> 2024-07-30
+[U.]  #109  rust-docs-nightly-complete                        2024-07-29 -> 2024-07-30
+[U.]  #110  rust-src-nightly-complete                         2024-07-29 -> 2024-07-30
+[U.]  #111  rust-std-nightly-complete                         2024-07-29 -> 2024-07-30
+[U.]  #112  rust-std-nightly-latest                           2024-07-29 x2 -> 2024-07-30 x2
+[U.]  #113  rustc-codegen-cranelift-preview-nightly-complete  2024-07-29 -> 2024-07-30
+[U.]  #114  rustc-nightly-complete                            2024-07-29 -> 2024-07-30
+[U.]  #115  rustfmt-preview-nightly-complete                  2024-07-29 -> 2024-07-30
+[U.]  #116  s2n-tls                                           1.4.16 -> 1.4.17
+[D.]  #117  scala-grammar                                     0.0.0+rev=599d12b -> 0.0.0+rev=a13f2d1
+[C*]  #118  shadow                                            4.14.6 x3, 4.14.6-man, 4.14.6-su x2 -> 4.14.6, 4.14.6-su, 4.16.0 x2, 4.16.0-man, 4.16.0-su
+[U.]  #119  slint-grammar                                     0.0.0+rev=d82ab8c -> 0.0.0+rev=4a0558c
+[U.]  #120  snakemake-grammar                                 0.0.0+rev=5a7b140 -> 0.0.0+rev=46d4de8
+[C.]  #121  source                                            <none> x12 -> <none> x13
+[D.]  #122  sourcepawn-grammar                                0.0.0+rev=645d093 -> 0.0.0+rev=6b9bf9c
+[C+]  #123  speech-dispatcher                                 0.11.5 -> 0.11.5 x2
+[D.]  #124  sql-grammar                                       0.0.0+rev=89fd00d -> 0.0.0+rev=a966446
+[C.]  #125  sqlite                                            3.45.3 x3, 3.45.3-bin x2, 3.45.3-dev -> 3.45.3, 3.46.0 x2, 3.46.0-bin x2, 3.46.0-dev
+[U.]  #126  starship                                          1.20.0 -> 1.20.1
+[D.]  #127  svelte-grammar                                    0.0.0+rev=7218cf6 -> 0.0.0+rev=7ab8221
+[C.]  #128  svt-av1                                           2.0.0 x3 -> 2.0.0, 2.1.2 x2
+[D.]  #129  swift-grammar                                     0.0.0+rev=9653f29 -> 0.0.0+rev=b3dc8cc
+[C*]  #130  systemd                                           <none>, 255.6 x3, 255.6-man -> <none>, 255.6, 256.2 x2, 256.2-man
+[C.]  #131  systemd-minimal                                   255.6 x3 -> 255.6, 256.2 x2
+[C.]  #132  systemd-minimal-libs                              255.6 x3, 255.6-dev -> 255.6, 256.2 x2, 256.2-dev
+[U.]  #133  systemverilog-grammar                             0.0.0+rev=a478beb -> 0.0.0+rev=4f897d5
+[U*]  #134  texinfo-interactive                               7.0.3 -> 7.1
+[U*]  #135  tree-sitter                                       0.22.5 -> 0.22.6
+[U.]  #136  tsx-grammar                                       0.0.0+rev=e45cb32 -> 0.0.0+rev=198d035
+[U.]  #137  typescript-grammar                                0.0.0+rev=e45cb32 -> 0.0.0+rev=198d035
+[D.]  #138  typst-grammar                                     0.0.0+rev=90f6af2 -> 0.0.0+rev=abe60cb
+[C.]  #139  udev-rules                                        <none> x2 -> <none>
+[U*]  #140  vim                                               9.1.0509, 9.1.0509-xxd -> 9.1.0595, 9.1.0595-xxd
+[U.]  #141  vimplugin-better-escape.nvim                      2024-07-12 -> 2024-07-27
+[U.]  #142  vimplugin-bufferline.nvim                         2024-07-17 -> 2024-07-18
+[U.]  #143  vimplugin-catppuccin-nvim                         2024-07-11 -> 2024-07-25
+[U.]  #144  vimplugin-conform.nvim                            2024-07-18 -> 2024-07-23
+[U.]  #145  vimplugin-flash.nvim                              2024-07-15 -> 2024-07-22
+[U.]  #146  vimplugin-lazy.nvim                               2024-07-17 -> 2024-07-25
+[U.]  #147  vimplugin-lspkind-nvim                            2024-01-11 -> 2024-07-25
+[U.]  #148  vimplugin-lua5.1-gitsigns.nvim-scm                1-unstable-2024-07-16 -> 1-unstable-2024-07-25
+[U.]  #149  vimplugin-lua5.1-telescope.nvim-scm               1-unstable-2024-07-01 -> 1-unstable-2024-07-26
+[U.]  #150  vimplugin-mini.nvim                               2024-07-15 -> 2024-07-26
+[U.]  #151  vimplugin-noice.nvim                              2024-07-17 -> 2024-07-25
+[U.]  #152  vimplugin-nvim-autopairs                          2024-07-07 -> 2024-07-23
+[U.]  #153  vimplugin-nvim-colorizer.lua                      2024-07-16 -> 2024-07-24
+[U.]  #154  vimplugin-nvim-lspconfig                          2024-07-16 -> 2024-07-26
+[U.]  #155  vimplugin-nvim-treesitter                         2024-07-17 -> 2024-07-27
+[U.]  #156  vimplugin-nvim-web-devicons                       2024-06-09 -> 2024-07-27
+[U.]  #157  vimplugin-persistence.nvim                        2024-07-15 -> 2024-07-22
+[U.]  #158  vimplugin-rainbow-delimiters.nvim                 2024-07-07 -> 2024-07-25
+[U.]  #159  vimplugin-telescope-file-browser.nvim             2024-06-09 -> 2024-07-21
+[U.]  #160  vimplugin-trouble.nvim                            2024-07-15 -> 2024-07-22
+[U.]  #161  vimplugin-which-key.nvim                          2024-07-17 -> 2024-07-24
+[C.]  #162  wayland                                           1.22.0 x3, 1.22.0-bin x2, 1.22.0-dev, 1.22.0-man x2 -> 1.22.0, 1.23.0 x2, 1.23.0-bin x2, 1.23.0-dev, 1.23.0-man x2
+[U.]  #163  wayland-protocols                                 1.35 -> 1.36
+Added packages:
+[A.]  #1  lib.sh                                   <none>
+[A.]  #2  powershell-grammar                       0.0.0+rev=804d86f
+[A.]  #3  shutdown-ramfs-contents.json             <none>
+[A.]  #4  vhdl-grammar                             0.0.0+rev=4ab3e25
+[A.]  #5  vimplugin-treesitter-grammar-powershell  <none>
+[A.]  #6  vimplugin-treesitter-grammar-vhdl        <none>
+Removed packages:
+[R.]  #01  extra-utils                   <none>
+[R.]  #02  gamin                         0.1.10
+[R.]  #03  gnome-vfs                     2.24.4
+[R.]  #04  initrd-fsinfo                 <none>
+[R.]  #05  initrd-kmod-blacklist-ubuntu  <none>
+[R.]  #06  keymap                        <none>
+[R.]  #07  link-units                    <none>
+[R.]  #08  mbrola-voices                 3.3
+[R.]  #09  shutdown-ramfs-contents       <none>
+[R.]  #10  stage                         1-init.sh
+Closure size: 3853 -> 3853 (3354 paths added, 3354 paths removed, delta +0, disk usage +1.7MiB).

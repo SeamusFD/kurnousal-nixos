@@ -9,7 +9,11 @@
       dbBackend = "postgresql";
       environmentFile = "/var/lib/vaultwarden/.env";
       config = {
-        SIGNUPS_ALLOWED = false;
+        ROCKET_ADDRESS = "192.168.1.3";
+        ROCKER_PORT = 8222;
+        ROCKET_LOG = "critical";
+
+        SIGNUPS_ALLOWED = true;
         DOMAIN = "https://vaultwarden.kurnousal.net";
       };
     };

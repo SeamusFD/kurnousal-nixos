@@ -23,6 +23,10 @@
       enable = true;
       recommendedProxySettings = false;
 
+      upstreams.gitlab-workhorse.servers = {
+        "unix:/run/gitlab/gitlab-workhorse.socket" = { };
+      };
+
       virtualHosts = {
         "jellyfin.kurnousal.net" = {
           # Generate lets encrypt certificate using DNS challenge
@@ -36,6 +40,18 @@
             recommendedProxySettings = true;
           };
         };
+        "vaultwarden.kurnousal.net" = {
+          # Generate lets encrypt certificate using DNS challenge
+          forceSSL = true;
+          enableACME = true;
+          acmeRoot = null;
+
+          locations."/" = {
+            proxyPass = "http://192.168.1.3:8222";
+            proxyWebsockets = true;
+            recommendedProxySettings = true;
+          };
+        };
         "gitlab.kurnousal.net" = {
           # Generate lets encrypt certificate using DNS challenge
           forceSSL = true;
@@ -43,7 +59,13 @@
           acmeRoot = null;
 
           locations."/" = {
-            proxyPass = "http://unix:/run/gitlab/gitlab-workhorse.socket";
+            proxyPass = "http://gitlab-workhorse";
+            extraConfig = ''
+              proxy_http_version 1.1;
+              proxy_set_header Upgrade $http_upgrade;
+              proxy_set_header Connection $connection_upgrade;
+            '';
+            recommendedProxySettings = true;
           };
         };
       };
