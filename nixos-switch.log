@@ -1,5 +1,5 @@
 <<< /run/current-system
->>> /tmp/nh-os-fChBzi/result
+>>> /tmp/nh-os-99D7jH/result
 Version changes:
 [U.]  #001  angular-grammar                                   0.0.0+rev=b96a0d1 -> 0.0.0+rev=31182d4
 [C.]  #002  appstream                                         1.0.2 x2 -> 1.0.2, 1.0.3
@@ -183,3 +183,5 @@ Removed packages:
 [R.]  #09  shutdown-ramfs-contents       <none>
 [R.]  #10  stage                         1-init.sh
 Closure size: 3853 -> 3853 (3354 paths added, 3354 paths removed, delta +0, disk usage +1.7MiB).
+setting up /etc...
+updating systemd-boot from 255.6 to 256.2
